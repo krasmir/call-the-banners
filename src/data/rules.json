@@ -1,0 +1,26 @@
+[
+    {
+        "id": "50101",
+        "faction": "Lannister",
+        "name": "Baratheon Banners",
+        "text": "The Kingsguard come with 4 Baratheon Banners. At the start of its Activation, it may remove Baratheon Banners to gain the following. Each may be selected only once per Activation:\n• This Turn, this unit's Attacks gain **Critical Blow** and **Sundering**.\n• This Turn, this unit's Attacks gains **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.\n• This Turn, when this unit is performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.\n• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn.",
+        "back": "",
+        "version": "2021"
+    },
+    {
+        "id": "50301",
+        "faction": "Free Folk",
+        "name": "Chieftain of the Giants",
+        "text": "**You may select Mag the\nMighty as your Commander**\n*(but must still pay his points cost).*\n\nWhen you include Mag the\nMighty as your Commander,\nreplace the Free Folk Tactics\nDeck with Mag's deck.",
+        "back": "Mag The Mighty;Mag Mar Tun Doh Weg;\"You can kneel to him if you like, he won't mind.\";Replace the Free Folk Tactics deck with Mag's Tactics deck",
+        "version": "2021"
+    },
+    {
+        "id": "50701",
+        "faction": "Targaryen",
+        "name": "House of the Undying",
+        "text": "**There can only be 1 House of the Undying in the Game.**\nYour opponent must discard 1 Tactics card at random from their hand.",
+        "back": "",
+        "version": "2021"
+    }
+]

@@ -1,0 +1,1968 @@
+{
+    "Lannister": [
+        {
+            "faction": "Lannister",
+            "name": "Assault Veteran",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Intimidating Presence",
+            "id": "20101",
+            "quote": ""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Guard Captain",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Hold the Line!",
+            "id": "20102",
+            "quote": ""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Sandor Clegane, The Hound",
+            "character": "Sandor Clegane",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Clegane /\nFueled By Slaughter /\nFurious Charge",
+            "id": "20103",
+            "quote": "\"Killing is the sweetest thing there is.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Tywin Lannister, Lord of Casterly Rock",
+            "character": "Tywin Lannister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Threaten /\nOrder: Lannister Supremacy",
+            "id": "20104",
+            "quote": "\"There is a tool for every task, and a task for every tool.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Tyrion Lannister, Halfman",
+            "character": "Tyrion Lannister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Counterstrategy /\nOrder: Tactical Reposition",
+            "id": "20105",
+            "quote": "\"Those are brave men. Let's go kill them.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Barristan Selmy, Lord Commander of The Kingsguard",
+            "character": "Barristan Selmy",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Duty To The Crown / \nStalwart",
+            "id": "20106",
+            "quote": "\"Of these seven, only Ser Barristan Selmy is made of the true steel, and Selmy is old.\" -Varys"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Jaime Lannister, Kingsguard",
+            "character": "Jaime Lannister",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Expert Duelist /\nCounterstrike",
+            "id": "20107",
+            "quote": "\"...A Sworn Brother of the White Swords, and we all know what his oath is worth.\" -Varys"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Mandon Moore, Kingsguard",
+            "character": "Mandon Moore",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Dominance Of The Crown",
+            "id": "20108",
+            "quote": "\"Death in snow-white silk.\" -Tyrion Lannister"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Meryn Trant, Kingsguard",
+            "character": "Meryn Trant",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Intimidation Of The Crown",
+            "id": "20109",
+            "quote": "\"Once they were a marvel, a shining lesson to the world...\" -Bran Stark"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Arys Oakheart, Kingsguard",
+            "character": "Arys Oakheart",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Protection Of The Crown",
+            "id": "20110",
+            "quote": "\"There have always been men who found it easier to speak vows than to keep them.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Boros Blount, Kingsguard",
+            "character": "Boros Blount",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Vengeance Of The Crown",
+            "id": "20111",
+            "quote": "\"No man threatens His Grace in the presence of the Kingsuard!\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Preston Greenfield, Kingsguard",
+            "character": "Preston Greenfield",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Orders Of The Crown (Preston Greenfield)",
+            "id": "20112",
+            "quote": "\"Who listens to everything yet hears nothing?\" \"A Knight of the Kingsuard.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Champion of the Faith",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: War Cry",
+            "id": "20113",
+            "quote": ""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Gregor Clegane, Lord Tywin's Mad Dog",
+            "character": "Gregor Clegane",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Unstoppable Wrath /\nUncontrolled Rage",
+            "id": "20114",
+            "quote": "\"No one could ever withstand Gregor.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Jaime Lannister, The Kingslayer",
+            "character": "Jaime Lannister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Counterstrike /\nDisrupt",
+            "id": "20115",
+            "quote": "\"They called him the Lion of Lannister to his face and whispered \"Kingslayer\" behind his back.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Gregor Clegane, The Mountain",
+            "character": "Gregor Clegane",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Clegane /\nFurious Charge /\nUnstoppable Wrath",
+            "id": "20116",
+            "quote": "\"No other knight in the realm inspires such terror in our enemies.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Jaime Lannister, The Young Lion",
+            "character": "Jaime Lannister",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Martial Training /\nStalwart",
+            "id": "20117",
+            "quote": "\"There are no men like me. There's only me.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Gregor Clegane, Mounted Behemoth",
+            "character": "Gregor Clegane",
+            "cost": "3",
+            "type": "Cavalry",
+            "abilities": "Unstoppable Wrath /\nUncontrolled Rage",
+            "id": "20118",
+            "quote": "\"That beast's head would make a noble gift for all the people of the realm, I vow.\" -Brynden Tully"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Tyrion Lannister, The Giant of Lannister",
+            "character": "Tyrion Lannister",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Counterstrategy",
+            "id": "20120",
+            "quote": "\"I think he is a giant come among us, here at the end of the world.\" -Maester Aemon"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Joffrey Baratheon, First of His Name",
+            "character": "Joffrey Lannister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "The King is Dead!",
+            "id": "20121",
+            "quote": "\"My son. How could I have made a son like that, Ned?.\" -Robert Baratheon"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Sentinel Enforcer",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Taunt",
+            "id": "20123",
+            "quote": ""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Clegane Butcher",
+            "character": "",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Order: Spread Fear /\nWeaken Resolve",
+            "id": "20124",
+            "quote": ""
+        },
+        {
+            "faction": "Lannister",
+            "name": "The High Sparrow, His High Holiness",
+            "character": "The High Sparrow",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Incite /\nEmbolden",
+            "id": "20125",
+            "quote": "\"What have we become, when kings and high lords must dance to the twittering of Sparrows.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Qyburn, Forbidden Knowledge",
+            "character": "Qyburn",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Experiment Enhancements /\nViolent Reactions",
+            "id": "20126",
+            "quote": "\"The Citadel took my chain, but they could not take my knowledge.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Addam Marbrand, Trusted Bannerman",
+            "character": "Addam Marbrand",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Jaime's Vassal /\nJaime's Protector",
+            "id": "20127",
+            "quote": "\"I should welcome the chance to try my own steel against this Stark boy.\""
+        },
+        {
+            "faction": "Lannister",
+            "name": "Ser Robert Strong, The Silent Giant",
+            "character": "Ser Robert Strong",
+            "cost": "3",
+            "type": "Infantry",
+            "abilities": "Order: Resilience /\nUnstoppable Wrath",
+            "id": "20128",
+            "quote": "\"We do not even know if he's alive.\" -Kevan Lannister"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Addam Marbrand, Commander of the City Watch",
+            "character": "Addam Marbrand,",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Hardened /\nIron Resolve",
+            "id": "20129",
+            "quote": "\"Like Jaime, he was the sort of man other men liked to follow.\" -Tyrion Lannister"
+        },
+        {
+            "faction": "Lannister",
+            "name": "Kevan Lannister, Protector of the Realm",
+            "character": "Kevan Lannister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Lannister Supremacy /\nMight of the Throne",
+            "id": "20130",
+            "quote": "\"There are many like you, good men in service to bad causes ...\" -Varys"
+        }
+    ],
+    "Stark": [
+        {
+            "faction": "Stark",
+            "name": "Robb Stark, The Wolf Lord",
+            "character": "Robb Stark",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Tactical Reposition /\nRegroup",
+            "id": "20201",
+            "quote": "\"All men should keep their word, kings most of all.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Greatjon Umber, Lord of Last Hearth",
+            "character": "Greatjon Umber",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Overrun /\nOrder: Reckless Heroism /\nAffiliation: House Umber",
+            "id": "20202",
+            "quote": "\"Grey Wind ate two of his fingers, and he laughed about it.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Umber Champion",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Incite",
+            "id": "20203",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Sworn Sword Captain",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Martial Training",
+            "id": "20204",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Greatjon Umber, Fierce Bannerman",
+            "character": "Greatjon Umber",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "To The Last! /\nFurious Charge",
+            "id": "20205",
+            "quote": "\"Your father once told me that the Greatjon was as fearless as any man he had ever known.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Robb Stark, The Young Wolf",
+            "character": "Robb Stark",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Swift Retreat /\nEnhanced Mobility",
+            "id": "20206",
+            "quote": "\"No sword is strong until it’s been tempered.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Bran and Hodor, Protector and Ward",
+            "character": "Bran Stark, Hodor",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Hodor! /\nHodor!!!",
+            "id": "20207",
+            "quote": "\"Hodor. Hodor Hodor.\"\n\"You're right, it seems dangerous.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Brynden Tully, The Blackfish",
+            "character": "Brynden Tully",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Tully /\nStalwart /\nStand Your Ground!",
+            "id": "20208",
+            "quote": "\"My first rule of war, Cat, is never give the enemy his wish.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Brynden Tully, Unyielding Knight",
+            "character": "Brynden Tully",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Tully /\nDauntless /\nIron Resolve",
+            "id": "20209",
+            "quote": "\"Lift your eyes, and you will see the direwolf still flies above our walls!\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Eddard Stark, Lord of Winterfell",
+            "character": "Eddard Stark",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Rally Cry /\nIron Resolve",
+            "id": "20210",
+            "quote": "\"Know the men who follow you and let them know you. Don't ask your men to die for a stranger.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Rodrik Cassel, Master-at-Arms",
+            "character": "Rodrik Cassel",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Mark Target /\nBoldness and Courage",
+            "id": "20211",
+            "quote": "\"When we speak of the morrow nothing is ever certain.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Crannogman Warden",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Overwatch",
+            "id": "20212",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Maege Mormont, The She-Bear",
+            "character": "Maege Mormont",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Go Down Fighting /\nUnyielding",
+            "id": "20213",
+            "quote": "\"Maege is a hoary old snark, stubborn, short-tempered, and willful.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Brynden Tully, Vanguard Infiltrator",
+            "character": "Brynden Tully",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Order: Mark Target /\nOutflank",
+            "id": "20214",
+            "quote": "\"No one knows the lands of the North quite as well as Brynden.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Brynden Tully, Outrider Commander",
+            "character": "Brynden Tully",
+            "cost": "C",
+            "type": "Cavalry",
+            "abilities": "Order: Sentinel /\nElusive Escape",
+            "id": "20215",
+            "quote": "\"It is no good hammering your sword into a plowshare if you must forge it again on the morrow.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Meera Reed, Cunning Trapper",
+            "character": "Meera Reed",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Hidden Traps /\nAffiliation: Crannogman",
+            "id": "20216",
+            "quote": "\"Mudmen are sneaks, they won't fight like decent folks.\" -Little Walder Frey"
+        },
+        {
+            "faction": "Stark",
+            "name": "Jojen Reed, Greensight",
+            "character": "Jojen Reed",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Affiliation: Crannogman /\nJojen's Greensight",
+            "id": "20217",
+            "quote": "\"To Winterfell we pledge the faith of Greywater. Hearth and heart and harvest we yield up to you.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Syrio Forel, First Blade of Braavos",
+            "character": "Syrio Forel",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Precision /\nAgile",
+            "id": "20218",
+            "quote": "\"My words lied. My eyes and my arm shouted out the truth, but you were not seeing.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Rickon Stark, Prince of Winterfell",
+            "character": "Rickon Stark",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Valuable Captive (Rickon Stark)",
+            "id": "20219",
+            "quote": "\"Are we going where Shaggydog is?\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Osha, Spearwife Guardian",
+            "character": "Osha",
+            "cost": "0",
+            "type": "Infantry",
+            "abilities": "Counterstrike /\nStubborn Tenacity /\nMust be attached to 'Rickon Stark'",
+            "id": "20220",
+            "quote": "\"The giants I’ve seen, the children I’ve heard tell of, and the white walkers ...\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Mormont Veteran",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Hardened",
+            "id": "20222",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Crannogman Survivalist",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Elusive Escape /\nPathfinder",
+            "id": "20223",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Winterfell Guardian",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Dauntless /\nStubborn Tenacity",
+            "id": "20224",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Howland Reed, Lord of the Crannogs",
+            "character": "Howland Reed",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Superior Flanking /\nAffiliation: Crannogman /\nDisrupt",
+            "id": "20225",
+            "quote": "\"You never see them, but they see you. Those who go into the bogs after them get lost and never come out.\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Loyalist Captain",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Furious Charge /\nSuperior Numbers",
+            "id": "20226",
+            "quote": ""
+        },
+        {
+            "faction": "Stark",
+            "name": "Rickard Karstark, Vengeful Bannerman",
+            "character": "Rickard Karstark",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Stark Fury /\nUncontrolled Rage",
+            "id": "20227",
+            "quote": "\"Make no mistake, Robb—these are your bannermen, not your friends.\" -Catelyn Stark"
+        },
+        {
+            "faction": "Stark",
+            "name": "Rickard Karstark, Lord of Karhold",
+            "character": "Rickard Karstark",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Karstark /\nSuperior Numbers /\nFueled by Slaughter",
+            "id": "20228",
+            "quote": "\"In war you kill your enemies.  Didn't your father teach you that, boy?\""
+        },
+        {
+            "faction": "Stark",
+            "name": "Maege Mormont, Lady of Bear Island",
+            "character": "Maege Mormont",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Mormont /\nBattle Scars (Maege)",
+            "id": "20229",
+            "quote": "\"Like as not, my sister is marching in your brother’s host, her and those daughters of hers, dressed in men’s mail\" -Jeor Mormont to Jon Snow"
+        }
+    ],
+    "Free Folk": [
+        {
+            "faction": "Free Folk",
+            "name": "Tormund Giantsbane, Thunderfist",
+            "character": "Tormund Giantsbane",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Overrun /\nFurious Charge",
+            "id": "20301",
+            "quote": "\"He seemed to me the sort of man who would make a good friend and a bad enemy.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Tormund Giantsbane, Tall-Talker, Horn-Blower, Breaker of Ice",
+            "character": "Tormund Giantsbane",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: War Cry /\nStalwart",
+            "id": "20302",
+            "quote": "\"Now bring out the mead!\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Mance Rayder, King Beyond the Wall",
+            "character": "Mance Rayder",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Counterstrategy /\nInspiring Presence /\nRally Point",
+            "id": "20303",
+            "quote": "\"I am my own champion, my own fool, and my own harpist.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Raid Leader",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Gang-Up",
+            "id": "20304",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Cave Dweller Alpha",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Incite",
+            "id": "20305",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Spearwife Matriarch",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Swift Retreat",
+            "id": "20306",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Skinchanger",
+            "character": "-",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Bonded Skinchanger /\nStalwart",
+            "id": "20307",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Eagle",
+            "character": "-",
+            "cost": "0",
+            "type": "None",
+            "abilities": "Bonded Eagle /\nAerial Scouting /\nFielded by Skinchanger",
+            "id": "20308",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Wolf",
+            "character": "-",
+            "cost": "0",
+            "type": "None",
+            "abilities": "Bonded Wolf /\nPredator's Instincts /\nFielded by Skinchanger",
+            "id": "20309",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Chosen of Styr",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Go Down Fighting",
+            "id": "20310",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Styr, Magnar of Thenn",
+            "character": "Styr",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Thenn Supremacy /\nIron Resolve",
+            "id": "20313",
+            "quote": "\"To the Thenns, the Magnar is more a living god than a man.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Champion of Bone",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Intimidating Presence",
+            "id": "20314",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Rattleshirt, The Lord of Bones",
+            "character": "Rattleshirt",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Trophy Collecting /\nIntimidating Presence",
+            "id": "20315",
+            "quote": "\"Rattleshirt could wash his hands a hundred times a day and he'd still have blood beneath his nails.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Rattleshirt, Ruthless Slaughterer",
+            "character": "Rattleshirt",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Spread Fear /\nIntimidating Presence",
+            "id": "20316",
+            "quote": "\"A small, malicious, treacherous man, as stupid as he is cruel.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Harma, Vanguard Commander",
+            "character": "Harma",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Superior Flanking /\nEnhanced Mobility",
+            "id": "20317",
+            "quote": "\"I'll keep his head for my standard. A turncloak's worse than a dog.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Harma, The Dogshead",
+            "character": "Harma",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Sentinel /\r\nEnhanced Mobility",
+            "id": "20318",
+            "quote": "\"Every fortnight a new dog, a new banner.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Harma's Bannerman",
+            "character": "Harma's Bannerman",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Harma's Vassal /\nRegroup",
+            "id": "20319",
+            "quote": "\"She hates dogs almost as much as she hates crows.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "The Weeper, Horrific Butcher",
+            "character": "The Weeper",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Grisly Example /\nWeaken Resolve",
+            "id": "20320",
+            "quote": "\"Cutting out the eyes, that's the Weeper's work. The best crow's a blind crow, he likes to say.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "The Weeper, Cruel Tyrant",
+            "character": "The Weeper",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Grisly Example /\nVicious",
+            "id": "20321",
+            "quote": "\"The Weeper will not say the words. He will not wear the cloak. Even other raiders do not trust him.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Ygritte, Spearwife Archer",
+            "character": "Ygritte",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Mark Target /\r\nDisrupt",
+            "id": "20322",
+            "quote": "\"Men can’t own the land no more’n they can own the sea or the sky.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Jarl, Advance Raid Leader",
+            "character": "Jarl",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Outflank",
+            "id": "20323",
+            "quote": "\"The Wall defends itself.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Walrus Clan Chieftain",
+            "character": "",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Resilience /\nIron Resolve",
+            "id": "20324",
+            "quote": ""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "The Great Walrus, Steeled Through Ice and Snow",
+            "character": "The Great Walrus",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Battle Scars (The Great Walrus)",
+            "id": "20325",
+            "quote": "\"Hrmph.\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Jon Snow, The Crow-Come-Over",
+            "character": "Jon Snow",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism /\nSouthern Knowledge",
+            "id": "20326",
+            "quote": "\"Men are men and women women, no matter which side of the Wall we were born on.\"\r\n-Lady Val"
+        },
+        {
+            "faction": "Free Folk",
+            "name": "Borroq, Boar Skinchanger",
+            "character": "Borroq",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Hidden Traps /\nStalwart",
+            "id": "20328",
+            "quote": "\"And where will you be, crow? Hiding here in Castle Black with your white dog?\""
+        },
+        {
+            "faction": "Free Folk",
+            "name": "The Great Walrus, Lord of the Frozen Shore",
+            "character": "The Great Walrus",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: Frozen Shore /\nGo Down Fighting /\nHardened",
+            "id": "20329",
+            "quote": "\"A savage folk. The men are bad, the women worse.\" -Tormund Giantsbane"
+        }
+    ],
+    "Neutral": [
+        {
+            "faction": "Neutral",
+            "name": "Dreadfort Captain",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Prey on Fear",
+            "id": "20401",
+            "quote": ""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Ramsay Snow, The Bastard of Bolton",
+            "character": "Ramsay Snow",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Bolton /\nHorrific Visage",
+            "id": "20402",
+            "quote": "\"Snow, my wife called me before she ate her fingers, but I say Bolton.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Ramsay Snow, Sadist",
+            "character": "Ramsay Snow",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Affiliation: House Bolton /\nFueled By Slaughter /\nIntimidating Presence",
+            "id": "20403",
+            "quote": "\"A naked man has few secrets, but a flayed man's got none.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Theon Greyjoy, Reek",
+            "character": "Theon Greyjoy",
+            "cost": "0",
+            "type": "Infantry",
+            "abilities": "Order: Set An Example / \nMust be attached to 'Ramsay Snow'",
+            "id": "20404",
+            "quote": "\"I'm not him, I'm not the turncloak, he died at Winterfell. My name is Reek!\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Brienne, Maiden of Tarth",
+            "character": "Brienne of Tarth",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Knightly Vow /\nStalwart",
+            "id": "20406",
+            "quote": "\"A true knight is sworn to protect those who are weaker than himself, or die in the attempt.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Bronn, The Sellsword",
+            "character": "Bronn",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Loyalty through Coin /\nMotivated by Coin (Bronn)",
+            "id": "20407",
+            "quote": "\"I sell my sword, I don’t give it away.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Bolton Flayer",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Spread Fear",
+            "id": "20408",
+            "quote": ""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Vargo Hoat, The Goat of Harrenhal",
+            "character": "Vargo Hoat",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Threaten /\nAffiliation: Bloody Mummers /\nSadistic Mutilation",
+            "id": "20409",
+            "quote": "\"The goat is Lord of Harrenhal, and the Lord of Harrenhal does not haggle.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Vargo Hoat, The Crippler",
+            "character": "Vargo Hoat",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Sadistic Mutilation /\nVicious / \nWeaken Resolve",
+            "id": "20410",
+            "quote": "\"How many monsters does Lord Tywin have?\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Daario Naharis, Stormcrow Captain",
+            "character": "Daario Naharis",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: Stormcrows /\nImproved Armaments /\nMotivated by Coin (Daario Naharis)",
+            "id": "20411",
+            "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Daario Naharis, Reckless Mercenary",
+            "character": "Daario Naharis",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Reckless Strikes",
+            "id": "20412",
+            "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Jaqen H'ghar, Unnamed",
+            "character": "Jaqen H'ghar",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Taking a New Name",
+            "id": "20413",
+            "quote": "\"Valar Morghulis.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Stormcrow Lieutenant",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Improved Armaments",
+            "id": "20414",
+            "quote": ""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Roose Bolton, The Leech Lord",
+            "character": "Roose Bolton",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Spread Fear /\nAffiliation: House Bolton /\nIntimidating Presence",
+            "id": "20415",
+            "quote": "\"Fear is what keeps a man alive in this world of treachery and deceit.\""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Fortune Seeker",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Dauntless /\nMotivated by Coin (Fortune Seeker)",
+            "id": "20416",
+            "quote": ""
+        },
+        {
+            "faction": "Neutral",
+            "name": "Glory Seeker",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Rally Cry",
+            "id": "20417",
+            "quote": ""
+        }
+    ],
+    "Night's Watch": [
+        {
+            "faction": "Night's Watch",
+            "name": "Jeor Mormont, 997th Lord Commander",
+            "character": "Jeor Mormont",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Dauntless /\nEmbolden",
+            "id": "20501",
+            "quote": "\"When dead men come hunting in the night, do you think it matters who sits the Iron Throne?\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Jon Snow, 998th Lord Commander",
+            "character": "Jon Snow",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage /\nRally Cry",
+            "id": "20502",
+            "quote": "\"There's no shame in fear, my father told me, what matters is how we face it.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Jon Snow, \"Lord Snow\"",
+            "character": "Jon Snow",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism /\nOrder: War Cry",
+            "id": "20503",
+            "quote": "\"The only gods he worshipped were honor and duty.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Watch Captain",
+            "character": "-",
+            "cost": "3",
+            "type": "Infantry",
+            "abilities": "Order: Relentless /\nBoldness and Courage",
+            "id": "20504",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Watch Recruiter",
+            "character": "-",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Incite /\nReinforcements",
+            "id": "20505",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Alliser Thorne, Master-at-Arms",
+            "character": "Alliser Thorne",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Vicious /\nPrey On Fear",
+            "id": "20509",
+            "quote": "\"When the winter comes you will die like flies.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Alliser Thorne, Vindictive Overseer",
+            "character": "Alliser Thorne",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Iron Resolve /\nStubborn Tenacity",
+            "id": "20510",
+            "quote": "\"I have seen dead men with more humor than your Ser Alliser.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Donal Noye, Defender of Castle Black",
+            "character": "Donal Noye",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Shield Wall /\nImproved Armaments",
+            "id": "20511",
+            "quote": "\"A one-armed smith slew Mag the Mighty? Har! That must o' been a fight to see.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Grenn, Aurochs",
+            "character": "Grenn",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Taunt",
+            "id": "20512",
+            "quote": "\"Grenn's the ugly one.\" -Pypar"
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Pypar, Monkey",
+            "character": "Pypar",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Swift Retreat",
+            "id": "20513",
+            "quote": "\"You're uglier than me. At least I don't have ears like a bat.\" -Grenn"
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Qhorin Halfhand, Grizzled Ranger",
+            "character": "Qhorin Halfhand",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Battle Scars (Qhorin Halfhand)/\nGo Down Fighting",
+            "id": "20514",
+            "quote": "\"Why else do we don these black cloaks, but to die in defense of the realm?\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Othell Yarwyck, Spotter",
+            "character": "Othell Yarwyck",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Improved Defenses /\nSpotter",
+            "id": "20516",
+            "quote": "\"Pick who you want. Just so it's not me.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Scorpion Modifications (Othell Yarwyck)",
+            "character": "",
+            "cost": "1",
+            "type": "Siege Engine",
+            "abilities": "Stake Mountings",
+            "id": "20517",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Senior Builder",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Improved Defenses /\nStake Building",
+            "id": "20518",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Hardened Ranger",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Furious Charge /\nElusive Escape",
+            "id": "20519",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Watch Marshal",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Order: Adaptive Planning /\nOrder: Swift Retreat",
+            "id": "20520",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Scorpion Modifications (Builder)",
+            "character": "",
+            "cost": "1",
+            "type": "Siege Engine",
+            "abilities": "Order: Overwatch",
+            "id": "20521",
+            "quote": ""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Othell Yarwyck, First Builder",
+            "character": "Othell Yarwyck",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: Builder /\nHardened /\nSpotter",
+            "id": "20522",
+            "quote": "\"Few men possess the knowledge or skills of the First Builder.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Benjen Stark, Wolf of the Wall",
+            "character": "Benjen Stark",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Sentinel /\nAmbush",
+            "id": "20523",
+            "quote": "\"The Night's Watch is a sworn brotherhood. We have no families.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Coldhands, Enigmatic Guide",
+            "character": "Coldhands, Benjen Stark",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Outflank /\nPathfinder",
+            "id": "20524",
+            "quote": "\"They killed him long ago.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Samwell Tarley, Sam The Slayer",
+            "character": "Samwell Tarley",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Battle Plan /\nBookkeeping (Samwell Tarley)",
+            "id": "20525",
+            "quote": "\"I went beyond the Wall and fought in battles. They call me Sam the Slayer.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Coldhands, Former Crow",
+            "character": "Coldhands, Benjen Stark",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Order: Sentinel /\nIntimidating Presence",
+            "id": "20526",
+            "quote": "\"Dead meat, dry blood, a faint whiff of rot. And cold. Cold over all.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Benjen Stark, First Ranger",
+            "character": "Benjen Stark",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: Rangers /\nAmbush /\nEnhanced Mobility",
+            "id": "20527",
+            "quote": "\"There's not a man on the Wall knows the haunted forest better than Benjen Stark.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Cotter Pyke, Ironborn Brother",
+            "character": "Cotter Pyke",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism /\nFurious Charge",
+            "id": "20528",
+            "quote": "\"... if you muck this up, I'm going to rip your liver out and eat it raw with onions.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Yoren, Harsh Recruiter",
+            "character": "Yoren",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Incite /\nIntimidating Presence /\nReinforcements",
+            "id": "20529",
+            "quote": "\"I got thirty this time, men and boys all bound for the Wall...\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Satin, Commander's Steward",
+            "character": "Satin",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Commander's Vassal",
+            "id": "20530",
+            "quote": "\"Whatever Satin may have done in Oldtown, he is our brother now...\" -Jon Snow"
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Satin, Brave Recruit",
+            "character": "Satin",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Dauntless",
+            "id": "20531",
+            "quote": "\"Half a year at Castle Black had toughened up his hands... Whether he had the courage to face what was coming, though...\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Eddison Tollett, Dolorous Edd",
+            "character": "Eddison Tollett",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Gallows Humor",
+            "id": "20532",
+            "quote": "\"Once they figure a way to work a dead horse, we'll be next. Likely I'll be the first too.\""
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Benjen Stark, Beyond The Wall",
+            "character": "Benjen Stark",
+            "cost": "C",
+            "type": "Cavalry",
+            "abilities": "Ranging Specialist (Benjen) /\nOrder: Hidden Traps /\nDisrupt",
+            "id": "20533",
+            "quote": "\"I've not seen Benjen Stark for three years. And if truth be told, I never once missed him.\" -Craster"
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Cotter Pyke, Eastwatch Commander",
+            "character": "Cotter Pyke",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism /\nFueled by Slaughter",
+            "id": "20534",
+            "quote": "\"Cotter Pyke always had more guts than sense.\" -Mance Rayder"
+        },
+        {
+            "faction": "Night's Watch",
+            "name": "Ser Denys Mallister, Shadow Tower Commander",
+            "character": "Ser Denys Mallister",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Knightly Vow /\nDutiful Commander",
+            "id": "20535",
+            "quote": "\"Do not make me die regretful.\""
+        }
+    ],
+    "Baratheon": [
+        {
+            "faction": "Baratheon",
+            "name": "Renly Baratheon, The Charismatic Heir",
+            "character": "Renly Baratheon",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage / \nEmbolden / \nLoyalty: Renly Baratheon",
+            "id": "20601",
+            "quote": "\"As in so much else, Renly was like his brother Robert, and utterly unlike Stannis.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Stannis Baratheon, The Rightful Heir",
+            "character": "Stannis Baratheon",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Adaptive Planning /\nOrder: Mark Target / \nLoyalty: Stannis Baratheon",
+            "id": "20602",
+            "quote": "\"Kings have no friends, only subjects and enemies.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Stag Knight Noble",
+            "character": "",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Go Down Fighting /\nIron Resolve /\nStubborn Tenacity",
+            "id": "20603",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Master Warden",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Hold The Line!",
+            "id": "20604",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Stannis Baratheon, The One True King",
+            "character": "Stannis Baratheon",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: R'hllor / \nDauntless /\nIron Resolve / \nLoyalty: Stannis Baratheon",
+            "id": "20605",
+            "quote": "\"His claim is the true one... and he is utterly without mercy.\" -Varys"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Devan Seaworth, King's Squire",
+            "character": "Devan Seaworth",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism / \nTrue Conviction / \nLoyalty: Stannis Baratheon",
+            "id": "20606",
+            "quote": "\"You have a passing clever father, Devan\" -Stannis Baratheon"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Davos Seaworth, Hero of Blackwater",
+            "character": "Davos Seaworth",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Loyalty: Stannis Baratheon / \nOutflank /\nPathfinder",
+            "id": "20607",
+            "quote": "\"He makes me wish I had more smugglers in my service. And fewer lords.\" -Stannis Baratheon"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Davos Seaworth, Onion Knight",
+            "character": "Davos Seaworth",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Supply Aid /\nTrue Conviction / \nLoyalty: Stannis Baratheon",
+            "id": "20608",
+            "quote": "\"A smuggler must be a fair judge of men.\" -Stannis Baratheon"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Andrew Estermont, True Loyalist",
+            "character": "Andrew Estermont",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Incite /\nTrue Conviction / \nLoyalty: Stannis Baratheon",
+            "id": "20609",
+            "quote": "\"Even after Blackwater, he remained fully devoted to the One True King.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Andrew Estermont, First of the King's Men",
+            "character": "Andrew Estermont",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "True Conviction /\nFirst of The King's Men /\nLoyalty: Stannis Baratheon",
+            "id": "20610",
+            "quote": "\"The Estermont's loyalty to Stannis is without question.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Renly Baratheon, Lord Paramount of the Stormlands",
+            "character": "Renly Baratheon",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Boisterous Charisma /\nLoyalty: Renly Baratheon /\nStalwart",
+            "id": "20611",
+            "quote": "\"As in so much else, Renly was like his brother Robert, and utterly unlike Stannis.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Loras Tyrell, The Knight of Flowers",
+            "character": "Loras Tyrell",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Expert Duelist /\nDauntless /\nLoyalty: Renly Baratheon",
+            "id": "20612",
+            "quote": "\"I will never betray Renly, by word or deed.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Loras Tyrell, King's Squire",
+            "character": "Loras Tyrell",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Expert Duelist / \nPrecision /\nLoyalty: Renly Baratheon",
+            "id": "20613",
+            "quote": "\"Ser Loras is so Tyrell he pisses rosewater\" -Cersei Lannister"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Brienne, The Blue",
+            "character": "Brienne",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Renly's Protector / \nLoyalty: Renly Baratheon",
+            "id": "20614",
+            "quote": "\"...all that Brienne wanted was to die for him.\" -Loras Tyrell"
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Eldon Estermont, Lord of Greenstone",
+            "character": "Eldon Estermont",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Mark Target /\r\nHardened /\r\nLoyalty: Renly Baratheon",
+            "id": "20615",
+            "quote": "\"It takes a certain cunning to reach his age\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Red Priestess",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Divine Sacrifices / \nLoyalty: Stannis Baratheon",
+            "id": "20617",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Pikeman Captain",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage / \nLoyalty: Renly Baratheon",
+            "id": "20618",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Thorn Watch Sentinel",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Dauntless /\nPathfinder /\nLoyalty: Renly Baratheon",
+            "id": "20619",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Dragonstone Noble",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Order: Sentinel / \nLoyalty: Stannis Baratheon",
+            "id": "20620",
+            "quote": ""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Axell Florent, Fanatical Devotee",
+            "character": "Axell Florent",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Affiliation: R'hllor /\nZealous Fanaticism /\nIntimidating Presence /\nLoyalty: Stannis Baratheon",
+            "id": "20621",
+            "quote": "\"One land, one god, one king!\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Axell Florent, First of the Queen's Men",
+            "character": "Axell Florent",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: R'hllor /\nIntimidating Presence /\nStalwart /\nLoyalty: Stannis Baratheon",
+            "id": "20622",
+            "quote": "\"Stannis Baratheon will sit the Iron Throne. I have seen it. And I know what must be done.\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Cortnay Penrose, Loyal Tactician",
+            "character": "Cortnay Penrose",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Tactical Reposition /\nOrders Of The Crown (Cortnay Penrose) / \nLoyalty: Renly Baratheon",
+            "id": "20623",
+            "quote": "\"May the Others bugger your Lord of Light!\""
+        },
+        {
+            "faction": "Baratheon",
+            "name": "Cortnay Penrose, Castellan of Storm's End",
+            "character": "Cortnay Penrose",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Bookkeeping (Cortnay Penrose) /\nOrders Of The Crown (Cortnay Penrose) / \nLoyalty: Renly Baratheon",
+            "id": "20624",
+            "quote": "\"A stubborn man\" -Davos Seaworth"
+        }
+    ],
+    "Targaryen": [
+        {
+            "faction": "Targaryen",
+            "name": "Khal Drogo, The Great Khal",
+            "character": "Khal Drogo",
+            "cost": "C",
+            "type": "Cavalry",
+            "abilities": "Expert Duelist /\nIron Resolve",
+            "id": "20701",
+            "quote": "\"The Dothraki follow only the strong.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Jorah Mormont, Westerosi Tactician",
+            "character": "Jorah Mormont",
+            "cost": "C",
+            "type": "Cavalry",
+            "abilities": "Ambush /\nStubborn Tenacity",
+            "id": "20702",
+            "quote": "\"I vow to serve you, to obey you, to die for you if need be. Whatever may come.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Jorah Mormont, The Exiled Knight",
+            "character": "Jorah Mormont",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Order: Tactical Reposition /\nStubborn Tenacity",
+            "id": "20703",
+            "quote": "\"I did things it shames me to speak of... In the end it cost me all.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Screamer Ko",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Order: Martial Training",
+            "id": "20704",
+            "quote": ""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Outrider Ko",
+            "character": "",
+            "cost": "1",
+            "type": "Cavalry",
+            "abilities": "Disrupt",
+            "id": "20705",
+            "quote": ""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Unsullied Officer",
+            "character": "",
+            "cost": "3",
+            "type": "Infantry",
+            "abilities": "Order: Relentless /\nGo Down Fighting",
+            "id": "20706",
+            "quote": ""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Barristan Selmy, The Bold",
+            "character": "Barristan Selmy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Knightly Vow /\nEmbolden",
+            "id": "20707",
+            "quote": "\" I am a knight. I shall die a knight.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Belwas, Veteran Pit-Fighter",
+            "character": "Belwas",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Battle Scars (Belwas)",
+            "id": "20708",
+            "quote": "\" Bad fighting, good dying. Strong Belwas hates it when they scream.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Jorah Mormont, Penitent Betrayer",
+            "character": "Jorah Mormont",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Whatever May Come /\nMust be attached to 'Daenerys Targaryen'",
+            "id": "20709",
+            "quote": "\"He lied to me, informed on me, but he loved me too, and he always gave good counsel.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Jorah Mormont, The Andal",
+            "character": "Jorah Mormont",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Martial Training /\nStand Your Ground!",
+            "id": "20710",
+            "quote": "\"There is a savage beast in every man, and when you hand that man a sword or spear and send him forth to war, the beast stirs.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Belwas, The Strong",
+            "character": "Belwas",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Taunt /\nHardened",
+            "id": "20711",
+            "quote": "\"I let each man cut me once, before I kill him. Count the cuts and you will know how many Strong Belwas has slain.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Grey Worm, Unsullied Commander",
+            "character": "Grey Worm",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage /\nCounterstrike",
+            "id": "20712",
+            "quote": "\"I don't make peace with the queen's enemies. I kill the queen's enemies.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Grey Worm, Freed by the Dragon",
+            "character": "Grey Worm",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage /\nRally Cry",
+            "id": "20713",
+            "quote": "\"Grey Worm is the name this one drew the day Daenerys Stormborn set him free.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Daenerys Targaryen, Mother of Dragons",
+            "character": "Daenerys Targaryen",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Heir Of House Targaryen / \nMother Of Dragons",
+            "id": "20714",
+            "quote": "\"I am the blood of the dragon. If they are monsters, so am I.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Daenerys Targaryen, Queen of Meereen",
+            "character": "Daenerys Targaryen",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Intimidating Presence /\nThe Rightful Queen",
+            "id": "20715",
+            "quote": "\"Why do the gods make kings and queens, if not to protect the ones who can't protect themselves?\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Daario Naharis, Reckless Mercenary",
+            "character": "Daario Naharis",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Reckless Strikes",
+            "id": "20716",
+            "quote": "\"I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Daario Naharis, Stormcrow Captain",
+            "character": "Daario Naharis",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Affiliation: Stormcrows /\nImproved Armaments /\nMotivated by Coin (Daario Naharis)",
+            "id": "20717",
+            "quote": "\"He has a sellsword's conscience, That is to say, none at all.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Stormcrow Lieutenant",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Improved Armaments",
+            "id": "20718",
+            "quote": ""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Rakharo, Bloodrider",
+            "character": "Rakharo",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Bloodrider/\nOrder: Sentinel/\nElusive Escape",
+            "id": "20719",
+            "quote": "\"As you say, I do, blood of my blood.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Qotho, Bloodrider",
+            "character": "Qotho",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Bloodrider/\nIntimidating Presence/\nPrey On Fear",
+            "id": "20720",
+            "quote": "\"The Dothraki say a man and\nhis bloodriders share one life...\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Cohollo, Bloodrider",
+            "character": "Cohollo",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Bloodrider/\nBattle Scars (Cohollo)",
+            "id": "20721",
+            "quote": "\"They were the khal's brothers,\nhis shadows, his fiercest friends.\""
+        },
+        {
+            "faction": "Targaryen",
+            "name": "Haggo, Bloodrider",
+            "character": "Haggo",
+            "cost": "2",
+            "type": "Cavalry",
+            "abilities": "Bloodrider/\nFueled By Slaughter",
+            "id": "20722",
+            "quote": "\"'Blood of my blood', Drogo called them,\nand so it was; they shared a single life.\""
+        }
+    ],
+    "Greyjoy": [
+        {
+            "faction": "Greyjoy",
+            "name": "Asha Greyjoy, The Kraken's Daughter",
+            "character": "Asha Greyjoy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Inspiring Presence / \nRally Point / \nStubborn Tenacity",
+            "id": "20801",
+            "quote": "\"I am the heir of Balon's body.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Asha Greyjoy, Captain of the Black Wind",
+            "character": "Asha Greyjoy",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: War Cry / \nInspiring Presence",
+            "id": "20802",
+            "quote": "\"No fight is hopeless till it has been fought..\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Victarion Greyjoy, The Iron Captain",
+            "character": "Victarion Greyjoy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Overrun / \nFurious Charge",
+            "id": "20803",
+            "quote": "\"I could sail the Iron Fleet to hell if need be.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Victarion Greyjoy, Master of the Iron Victory",
+            "character": "Victarion Greyjoy",
+            "cost": "3",
+            "type": "Infantry",
+            "abilities": "Order: Relentless/ \nFurious Charge",
+            "id": "20804",
+            "quote": "\"Wizards may be well and good, but blood and steel win wars.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Reaver Captain",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Outflank / \nAttached to Faction: Greyjoy",
+            "id": "20805",
+            "quote": ""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Warsworn",
+            "character": "",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Fueled By Slaughter",
+            "id": "20806",
+            "quote": ""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Theon Greyjoy, Kinslayer",
+            "character": "Theon Greyjoy",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Reckless Heroism / \nSwift Strike",
+            "id": "20807",
+            "quote": "\"The cloak my father swaddled me in bore a kraken, not a direwolf.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Theon Greyjoy, \"Prince\" of Winterfell",
+            "character": "Theon Greyjoy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Ambush / \nEnhanced Mobility",
+            "id": "20808",
+            "quote": "\"Your lord father did what he could to gentle Theon, but I fear it was too little and too late...\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Qarl, Asha's Champion",
+            "character": "Qarl",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Expert Duelist",
+            "id": "20809",
+            "quote": "“If you liked the Shadow so well, go back there,” -Qarl to Euron Greyjoy"
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Qarl, The Maid",
+            "character": "Qarl",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Expert Duelist / \nStalwart",
+            "id": "20810",
+            "quote": "\"... to distinguish him from Qarl Shepherd, Qarl Quickaxe, and Qarl the Thrall, but more for his smooth cheeks.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Nute, The Barber",
+            "character": "Nute",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Furious Charge / \nVictarion's Vassal/ \nMotivated by Coin (Nute)",
+            "id": "20811",
+            "quote": "\"Glory is good, but gold is better.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Euron Greyjoy, Lord Reaper of Pyke",
+            "character": "Euron Greyjoy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Sow Discord / \nIntimidating Presence",
+            "id": "20812",
+            "quote": "\"Balon was mad, Aeron is madder, and Euron is the maddest of them all.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Balon Greyjoy, The Kraken King",
+            "character": "Balon Greyjoy",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Fueled By Slaughter / \nIron Resolve",
+            "id": "20813",
+            "quote": "\"I pay the iron price. I will take my crown, as Urron Redhand did five thousand years ago.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Euron Greyjoy, Crow's Eye",
+            "character": "Euron Greyjoy",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Order: Strange Relics / \nPoisoned Gifts",
+            "id": "20814",
+            "quote": "\"I am the storm, my lord. The first storm, and the last.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Erik Ironmaker, Anvil-Breaker",
+            "character": "Erik Ironmaker",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Just Shares / \nGifts of Silver and Bronze",
+            "id": "20815",
+            "quote": "\"King Erik, aye, I like the sound o' that. Come, say it with me. ERIK! ERIK ANVIL-BREAKER! ERIK KING!\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Asha Greyjoy, \"Lady Greyjoy\"",
+            "character": "Asha Greyjoy",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Sentinel /\nGang-Up",
+            "id": "20816",
+            "quote": "\"I am Asha of House Greyjoy, aye. Opinions differ on whether I'm a lady.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Dagmer Cleftjaw, Captain of the Foamdrinker",
+            "character": "Dagmer Cleftjaw",
+            "cost": "1",
+            "type": "Infantry",
+            "abilities": "Battle Scars (Dagmer)",
+            "id": "20817",
+            "quote": "\"His hair is white and his teeth are rotten, but he still has a taste for glory.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Baelor Blacktyde, Captain of the Nightflyer",
+            "character": "Baelor Blacktyde",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Boldness and Courage /\nUnyielding",
+            "id": "20818",
+            "quote": "\"Balon the Widowmaker, I call him. I will gladly trade his freedom for a father. Have you one to give?\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Moqorro, Slave of R'hllor",
+            "character": "Moqorro",
+            "cost": "2",
+            "type": "Infantry",
+            "abilities": "Order: Incite /\nOrder: Supply Aid",
+            "id": "20819",
+            "quote": "\"The Lord of Light has shown me your worth, lord Captain. Every night in my fires I glimpse the glory that awaits you.\""
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Baelor Blacktyde, Lord of Blacktyde",
+            "character": "Baelor Blacktyde",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "To The Last! /\nHardened",
+            "id": "20820",
+            "quote": "\"Lord Blacktyde says this kingsmoot is a dangerous folly... \" -Rodrik Harlaw"
+        },
+        {
+            "faction": "Greyjoy",
+            "name": "Dagmer Cleftjaw, Master-at-Arms",
+            "character": "Dagmer Cleftjaw",
+            "cost": "C",
+            "type": "Infantry",
+            "abilities": "Order: Martial Training /\nGang-Up",
+            "id": "20821",
+            "quote": "\"The living should smile, for the dead cannot.\""
+        }
+    ]
+}
