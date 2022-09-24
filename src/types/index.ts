@@ -33,6 +33,7 @@ export interface CombatUnit {
     name: string;
     character: string;
     id: string;
+    uuid?: string;
     cost: string;
     type: UnitType;
     speed: string;
@@ -68,6 +69,7 @@ export interface Attachment {
     type: UnitType;
     abilities: string;
     id: string;
+    uuid?: string;
     quote: string;
 }
 

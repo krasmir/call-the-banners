@@ -1,6 +1,9 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
+import DisplayAttachments from "./DisplayAttachments";
 import DisplayCombatUnits from "./DisplayCombatUnits";
+import DisplayCommanders from "./DisplayCommanders";
+import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
 import DisplayUnits from "./DisplayUnits";
 import { Faction } from "./types";
 
@@ -53,15 +56,15 @@ function Layout({ children }: LayoutProps): JSX.Element {
                 <DisplayUnits typeOfUnits="Units">
                     <DisplayCombatUnits faction={faction} />
                 </DisplayUnits>
-                {/* <DisplayUnits>
-                    <Commanders faction={faction}></Commanders>
+                <DisplayUnits typeOfUnits="Commanders">
+                    <DisplayCommanders faction={faction} />
                 </DisplayUnits>
-                <DisplayUnits>
-                    <NonCombatUnits faction={faction}></NonCombatUnits>
+                <DisplayUnits typeOfUnits="Non Combat Units">
+                    <DisplayNonCombatUnits faction={faction} />
                 </DisplayUnits>
-                <DisplayUnits>
-                    <Attachments faction={faction}></Attachments>
-                </DisplayUnits> */}
+                <DisplayUnits typeOfUnits="Attachments">
+                    <DisplayAttachments faction={faction} />
+                </DisplayUnits>
             </UnitDiv>
         </Div>
     );
