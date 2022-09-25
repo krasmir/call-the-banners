@@ -15,10 +15,12 @@ const IMG = styled.img`
 `;
 interface DisplayNonCombatUnitsProps {
     faction: Faction;
+    selectedCharacters: string[];
 }
 
 function DisplayNonCombatUnits({
     faction,
+    selectedCharacters,
 }: DisplayNonCombatUnitsProps): JSX.Element {
     let factionNCUS = (ncus as NCUS)[faction];
 
@@ -42,17 +44,18 @@ function DisplayNonCombatUnits({
             {factionNCUS.map((ncu) => (
                 <TR
                     key={ncu.id}
-                    // style={{
-                    //     opacity: characters.includes(ncu.character)
-                    //         ? "0.2"
-                    //         : "1",
-                    // }}
+                    style={{
+                        opacity: selectedCharacters.includes(ncu.character)
+                            ? "0.2"
+                            : "1",
+                    }}
                 >
                     <td>{ncu.name}</td>
                     <td>
                         <IMG
                             alt={ncu.character}
-                            src={`/assets/UnitTypeNCU.png`}
+                            src={`./UnitTypeNCU.png`}
+                            title="Non Combat Unit"
                         />
                     </td>
                     <td>{ncu.cost}</td>

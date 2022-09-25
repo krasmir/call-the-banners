@@ -2,19 +2,18 @@ import styled from "styled-components/macro";
 
 const Units = styled.div`
     overflow-y: scroll;
-    /* scrollbar-color: darkgrey ${(props) => props.theme.bg}; */
     scrollbar-width: thin;
 
-    /* color: beige; */
     text-align: center;
     font-weight: bold;
     border: #f7af14 solid 2px;
-    /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9); */
 `;
 
 const Div = styled.div`
+    background-color: ${(props) => props.theme.bg};
+    position: sticky;
     top: 0;
-    /* z-index: 5; */
+    z-index: 2;
 `;
 
 const TableDiv = styled.div`
@@ -26,10 +25,10 @@ const UnitsTable = styled.table`
 `;
 
 const TH = styled.th`
-    background-color: lightgrey;
+    background-color: grey;
     color: darkmagenta;
     position: sticky;
-    top: 0;
+    top: 18px;
     z-index: 2;
     padding: 8px;
 `;

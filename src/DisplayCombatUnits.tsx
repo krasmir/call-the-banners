@@ -17,9 +17,13 @@ const IMG = styled.img`
 
 interface DisplayCombatUnitsProps {
     faction: Faction;
+    selectedCharacters: string[];
 }
 
-function DisplayCombatUnits({ faction }: DisplayCombatUnitsProps): JSX.Element {
+function DisplayCombatUnits({
+    faction,
+    selectedCharacters,
+}: DisplayCombatUnitsProps): JSX.Element {
     let factionUnits = (units as CombatUnits)[faction];
 
     // Free Folk can't have neutral units in their army
@@ -43,11 +47,11 @@ function DisplayCombatUnits({ faction }: DisplayCombatUnitsProps): JSX.Element {
             {factionUnits.map((unit) => (
                 <TR
                     key={unit.id}
-                    // style={{
-                    //   opacity: selectedCharacters[faction].includes(ncu.character)
-                    //     ? "0.2"
-                    //     : "1",
-                    // }}
+                    style={{
+                        opacity: selectedCharacters.includes(unit.character)
+                            ? "0.2"
+                            : "1",
+                    }}
                 >
                     <td>{unit.name}</td>
                     <td>

@@ -1,8 +1,5 @@
 import attachments from "./data/attachments.json";
-// import { useArmy, useCharacters } from "./contexts/ArmyContext";
 import styled from "styled-components/macro";
-// import AttachButton from "./AttachButton";
-// import { unitTypes } from "./utils/unitTypes";
 import { Faction, Attachments, Attachment } from "./types";
 import { Button } from "./Button";
 import { addAttachment } from "./store/userArmy/userArmySlice";
@@ -20,15 +17,13 @@ const IMG = styled.img`
 
 interface DisplayCommandersProps {
     faction: Faction;
+    selectedCharacters: string[];
 }
 
-function DisplayCommanders({ faction }: DisplayCommandersProps): JSX.Element {
-    // const army = useArmy();
-    // const characters = useCharacters();
-    // const combatUnits = army.filter(
-    //     (unit) => unit.unitType === unitTypes.combatUnit
-    // );
-
+function DisplayCommanders({
+    faction,
+    selectedCharacters,
+}: DisplayCommandersProps): JSX.Element {
     let factionAttachments = (attachments as Attachments)[faction].filter(
         ({ cost }) => cost === "C"
     );
@@ -56,20 +51,23 @@ function DisplayCommanders({ faction }: DisplayCommandersProps): JSX.Element {
             {factionAttachments.map((attachment) => (
                 <TR
                     key={attachment.id}
-                    // style={{
-                    //     opacity: characters.includes(attachment.character)
-                    //         ? "0.2"
-                    //         : "1",
-                    // }}
+                    style={{
+                        opacity: selectedCharacters.includes(
+                            attachment.character
+                        )
+                            ? "0.2"
+                            : "1",
+                    }}
                 >
                     <td>{attachment.name}</td>
                     <td>
                         <IMG
                             alt={attachment.type}
-                            src={`/assets/UnitType${attachment.type.replace(
+                            src={`./UnitType${attachment.type.replace(
                                 " ",
                                 ""
                             )}.png`}
+                            title={attachment.type}
                         />
                     </td>
                     <td>{attachment.cost}</td>
