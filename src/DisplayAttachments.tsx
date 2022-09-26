@@ -1,6 +1,5 @@
-import attachments from "./data/attachments.json";
 import styled from "styled-components/macro";
-import { Faction, Attachments, Attachment } from "./types";
+import { Attachment } from "./types";
 import { Button } from "./Button";
 import { addAttachment } from "./store/userArmy/userArmySlice";
 import { useDispatch } from "react-redux";
@@ -16,28 +15,14 @@ const IMG = styled.img`
 `;
 
 interface DisplayAttachmentsProps {
-    faction: Faction;
+    factionAttachments: Attachment[];
     selectedCharacters: string[];
 }
 
 function DisplayAttachments({
-    faction,
+    factionAttachments,
     selectedCharacters,
 }: DisplayAttachmentsProps): JSX.Element {
-    let factionAttachments = (attachments as Attachments)[faction].filter(
-        ({ cost }) => cost !== "C"
-    );
-
-    // Free Folk can't have neutral units in their army
-    if (faction !== "Free Folk" && faction !== "Neutral") {
-        const neutralAttachments = (attachments as Attachments).Neutral.filter(
-            ({ cost }) => cost !== "C"
-        );
-        factionAttachments = factionAttachments.concat(neutralAttachments);
-    }
-
-    factionAttachments.sort((a, b) => +a.cost - +b.cost);
-
     console.log("ATTACHMENTS");
 
     const dispatch = useDispatch();

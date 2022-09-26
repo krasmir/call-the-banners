@@ -1,64 +1,49 @@
-import styled from "styled-components/macro";
-
-const Units = styled.div`
-    overflow-y: scroll;
-    scrollbar-width: thin;
-
-    text-align: center;
-    font-weight: bold;
-    border: #f7af14 solid 2px;
-`;
-
-const Div = styled.div`
-    background-color: ${(props) => props.theme.bg};
-    position: sticky;
-    top: 0;
-    z-index: 2;
-`;
-
-const TableDiv = styled.div`
-    width: 100%;
-`;
-
-const UnitsTable = styled.table`
-    width: 100%;
-`;
-
-const TH = styled.th`
-    background-color: grey;
-    color: darkmagenta;
-    position: sticky;
-    top: 18px;
-    z-index: 2;
-    padding: 8px;
-`;
+import DisplayAttachments from "./DisplayAttachments";
+import DisplayCombatUnits from "./DisplayCombatUnits";
+import DisplayCommanders from "./DisplayCommanders";
+import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
+import useSelectedCharacters from "./hooks/useSelectedCharacters";
+import useUnits from "./hooks/useUnits";
+import { Faction } from "./types";
+import UnitsTable from "./UnitsTable";
 
 interface DisplayUnitsProps {
     children?: React.ReactNode;
-    typeOfUnits: string;
+    faction: Faction;
 }
 
-function DisplayUnits({
-    children,
-    typeOfUnits,
-}: DisplayUnitsProps): JSX.Element {
+function DisplayUnits({ children, faction }: DisplayUnitsProps): JSX.Element {
+    const selectedCharacters = useSelectedCharacters(faction);
+    const { factionAttachments, factionCommanders, factionNCUS, factionUnits } =
+        useUnits(faction);
+
     return (
-        <Units>
-            <Div>{typeOfUnits}</Div>
-            <TableDiv>
-                <UnitsTable>
-                    <thead>
-                        <tr>
-                            <TH>Name</TH>
-                            <TH>Type</TH>
-                            <TH>Cost</TH>
-                            <TH>Add</TH>
-                        </tr>
-                    </thead>
-                    <tbody>{children}</tbody>
-                </UnitsTable>
-            </TableDiv>
-        </Units>
+        <>
+            <UnitsTable typeOfUnits="Units">
+                <DisplayCombatUnits
+                    factionUnits={factionUnits}
+                    selectedCharacters={selectedCharacters}
+                />
+            </UnitsTable>
+            <UnitsTable typeOfUnits="Commanders">
+                <DisplayCommanders
+                    factionCommanders={factionCommanders}
+                    selectedCharacters={selectedCharacters}
+                />
+            </UnitsTable>
+            <UnitsTable typeOfUnits="Non Combat Units">
+                <DisplayNonCombatUnits
+                    factionNCUS={factionNCUS}
+                    selectedCharacters={selectedCharacters}
+                />
+            </UnitsTable>
+            <UnitsTable typeOfUnits="Attachments">
+                <DisplayAttachments
+                    factionAttachments={factionAttachments}
+                    selectedCharacters={selectedCharacters}
+                />
+            </UnitsTable>
+        </>
     );
 }
 

@@ -70,6 +70,7 @@ export interface Attachment {
     abilities: string;
     id: string;
     uuid?: string;
+    attachedTo?: string;
     quote: string;
 }
 

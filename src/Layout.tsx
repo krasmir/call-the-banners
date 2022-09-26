@@ -1,11 +1,12 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
-import DisplayAttachments from "./DisplayAttachments";
-import DisplayCombatUnits from "./DisplayCombatUnits";
-import DisplayCommanders from "./DisplayCommanders";
-import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
 import DisplayUnits from "./DisplayUnits";
-import useSelectedCharacters from "./hooks/useSelectedCharacters";
+// import DisplayAttachments from "./DisplayAttachments";
+// import DisplayCombatUnits from "./DisplayCombatUnits";
+// import DisplayCommanders from "./DisplayCommanders";
+// import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
+// import DisplayUnits from "./UnitsTable";
+// import useSelectedCharacters from "./hooks/useSelectedCharacters";
 import { Faction } from "./types";
 
 const Div = styled.div`
@@ -45,7 +46,7 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps): JSX.Element {
     const faction = Faction.Lannister;
 
-    const selectedCharacters = useSelectedCharacters(faction);
+    // const selectedCharacters = useSelectedCharacters(faction);
 
     return (
         <Div>
@@ -54,7 +55,8 @@ function Layout({ children }: LayoutProps): JSX.Element {
                 <Army faction={faction} />
             </ArmyDiv>
             <UnitDiv>
-                <DisplayUnits typeOfUnits="Units">
+                <DisplayUnits faction={faction} />
+                {/* <DisplayUnits typeOfUnits="Units">
                     <DisplayCombatUnits
                         faction={faction}
                         selectedCharacters={selectedCharacters}
@@ -77,7 +79,7 @@ function Layout({ children }: LayoutProps): JSX.Element {
                         faction={faction}
                         selectedCharacters={selectedCharacters}
                     />
-                </DisplayUnits>
+                </DisplayUnits> */}
             </UnitDiv>
         </Div>
     );

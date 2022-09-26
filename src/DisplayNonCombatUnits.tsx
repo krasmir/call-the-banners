@@ -1,6 +1,5 @@
-import ncus from "./data/ncus.json";
 import styled from "styled-components/macro";
-import { Faction, NCU, NCUS } from "./types";
+import { NCU } from "./types";
 import { addNCU } from "./store/userArmy/userArmySlice";
 import { useDispatch } from "react-redux";
 import { Button } from "./Button";
@@ -14,23 +13,14 @@ const IMG = styled.img`
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
 `;
 interface DisplayNonCombatUnitsProps {
-    faction: Faction;
+    factionNCUS: NCU[];
     selectedCharacters: string[];
 }
 
 function DisplayNonCombatUnits({
-    faction,
+    factionNCUS,
     selectedCharacters,
 }: DisplayNonCombatUnitsProps): JSX.Element {
-    let factionNCUS = (ncus as NCUS)[faction];
-
-    // Free Folk can't have neutral units in their army
-    if (faction !== "Free Folk" && faction !== "Neutral") {
-        const neutralNCUs = (ncus as NCUS).Neutral;
-        factionNCUS = factionNCUS.concat(neutralNCUs);
-    }
-    factionNCUS.sort((a, b) => +a.cost - +b.cost);
-
     console.log("NCU");
 
     const dispatch = useDispatch();

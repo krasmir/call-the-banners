@@ -1,7 +1,6 @@
-import units from "./data/units.json";
 import styled from "styled-components/macro";
 import { Button } from "./Button";
-import { Faction, CombatUnit, CombatUnits } from "./types";
+import { CombatUnit } from "./types";
 import { useDispatch } from "react-redux";
 import { addUnit } from "./store/userArmy/userArmySlice";
 import { v4 as uuid } from "uuid";
@@ -16,24 +15,14 @@ const IMG = styled.img`
 `;
 
 interface DisplayCombatUnitsProps {
-    faction: Faction;
+    factionUnits: CombatUnit[];
     selectedCharacters: string[];
 }
 
 function DisplayCombatUnits({
-    faction,
+    factionUnits,
     selectedCharacters,
 }: DisplayCombatUnitsProps): JSX.Element {
-    let factionUnits = (units as CombatUnits)[faction];
-
-    // Free Folk can't have neutral units in their army
-    if (faction !== "Free Folk" && faction !== "Neutral") {
-        const neutralUnits = (units as CombatUnits).Neutral;
-        factionUnits = factionUnits.concat(neutralUnits);
-    }
-
-    factionUnits.sort((a, b) => +a.cost - +b.cost);
-
     const dispatch = useDispatch();
 
     const handleAddCombatUnit = (combatUnit: CombatUnit): void => {
