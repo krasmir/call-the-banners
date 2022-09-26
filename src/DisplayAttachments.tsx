@@ -1,18 +1,10 @@
-import styled from "styled-components/macro";
 import { Attachment } from "./types";
 import { Button } from "./Button";
+import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
+import UnitTypeIcon from "./UnitTypeIcon";
 import { addAttachment } from "./store/userArmy/userArmySlice";
 import { useDispatch } from "react-redux";
 import { v4 as uuid } from "uuid";
-
-const TR = styled.tr`
-    border-bottom: 1px solid #f7af14;
-`;
-
-const IMG = styled.img`
-    height: 40px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-`;
 
 interface DisplayAttachmentsProps {
     factionAttachments: Attachment[];
@@ -34,26 +26,14 @@ function DisplayAttachments({
     return (
         <>
             {factionAttachments.map((attachment) => (
-                <TR
+                <DisplayUnitsTableRow
                     key={attachment.id}
-                    style={{
-                        opacity: selectedCharacters.includes(
-                            attachment.character
-                        )
-                            ? "0.2"
-                            : "1",
-                    }}
+                    selectedCharacters={selectedCharacters}
+                    character={attachment.character}
                 >
                     <td>{attachment.name}</td>
                     <td>
-                        <IMG
-                            alt={attachment.type}
-                            src={`./UnitType${attachment.type.replace(
-                                " ",
-                                ""
-                            )}.png`}
-                            title={attachment.type}
-                        />
+                        <UnitTypeIcon type={attachment.type} />
                     </td>
                     <td>{attachment.cost}</td>
                     <td>
@@ -78,7 +58,7 @@ function DisplayAttachments({
                             Add
                         </Button>
                     </td>
-                </TR>
+                </DisplayUnitsTableRow>
             ))}
         </>
     );

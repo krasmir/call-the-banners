@@ -3,7 +3,7 @@ import DisplayCombatUnits from "./DisplayCombatUnits";
 import DisplayCommanders from "./DisplayCommanders";
 import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
 import useSelectedCharacters from "./hooks/useSelectedCharacters";
-import useUnits from "./hooks/useUnits";
+import getUnits from "./utils/getUnits";
 import { Faction } from "./types";
 import UnitsTable from "./UnitsTable";
 
@@ -15,7 +15,7 @@ interface DisplayUnitsProps {
 function DisplayUnits({ children, faction }: DisplayUnitsProps): JSX.Element {
     const selectedCharacters = useSelectedCharacters(faction);
     const { factionAttachments, factionCommanders, factionNCUS, factionUnits } =
-        useUnits(faction);
+        getUnits(faction);
 
     return (
         <>

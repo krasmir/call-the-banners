@@ -1,18 +1,10 @@
-import styled from "styled-components/macro";
 import { Button } from "./Button";
 import { CombatUnit } from "./types";
 import { useDispatch } from "react-redux";
 import { addUnit } from "./store/userArmy/userArmySlice";
 import { v4 as uuid } from "uuid";
-
-const TR = styled.tr`
-    border-bottom: 1px solid #f7af14;
-`;
-
-const IMG = styled.img`
-    height: 40px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-`;
+import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
+import UnitTypeIcon from "./UnitTypeIcon";
 
 interface DisplayCombatUnitsProps {
     factionUnits: CombatUnit[];
@@ -34,21 +26,14 @@ function DisplayCombatUnits({
     return (
         <>
             {factionUnits.map((unit) => (
-                <TR
+                <DisplayUnitsTableRow
                     key={unit.id}
-                    style={{
-                        opacity: selectedCharacters.includes(unit.character)
-                            ? "0.2"
-                            : "1",
-                    }}
+                    selectedCharacters={selectedCharacters}
+                    character={unit.character}
                 >
                     <td>{unit.name}</td>
                     <td>
-                        <IMG
-                            alt={unit.type}
-                            src={`./UnitType${unit.type.replace(" ", "")}.png`}
-                            title={unit.type}
-                        />
+                        <UnitTypeIcon type={unit.type} />
                     </td>
                     <td>{unit.cost}</td>
                     <td>
@@ -60,7 +45,7 @@ function DisplayCombatUnits({
                             Add
                         </Button>
                     </td>
-                </TR>
+                </DisplayUnitsTableRow>
             ))}
         </>
     );

@@ -134,20 +134,3 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
         </Units>
     );
 }
-
-// export default function Army({ faction }) {
-//     const army = useArmy();
-//     const combatUnits = army.filter(
-//         (unit) => unit.unitType === unitTypes.combatUnit
-//     );
-//     const ncus = army.filter((unit) => unit.unitType === unitTypes.ncu);
-//     const attachments = army.filter(
-//         (unit) =>
-//             unit.unitType === unitTypes.attachment ||
-//             unit.unitType === unitTypes.commander
-//     );
-//     const dispatch = useArmyDispatch();
-//     console.log(ncus);
-//     console.log(combatUnits);
-
-// }
