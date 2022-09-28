@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { CombatUnit } from "./types";
+import { ArmyCombatUnit, CombatUnit } from "./types";
 import { useDispatch } from "react-redux";
 import { addUnit } from "./store/userArmy/userArmySlice";
 import { v4 as uuid } from "uuid";
@@ -8,7 +8,7 @@ import UnitTypeIcon from "./UnitTypeIcon";
 
 interface DisplayCombatUnitsProps {
     factionUnits: CombatUnit[];
-    selectedCharacters: string[];
+    selectedCharacters: Set<string>;
 }
 
 function DisplayCombatUnits({
@@ -17,7 +17,7 @@ function DisplayCombatUnits({
 }: DisplayCombatUnitsProps): JSX.Element {
     const dispatch = useDispatch();
 
-    const handleAddCombatUnit = (combatUnit: CombatUnit): void => {
+    const handleAddCombatUnit = (combatUnit: ArmyCombatUnit): void => {
         dispatch(addUnit(combatUnit));
     };
 
@@ -37,13 +37,18 @@ function DisplayCombatUnits({
                     </td>
                     <td>{unit.cost}</td>
                     <td>
-                        <Button
-                            onClick={() =>
-                                handleAddCombatUnit({ ...unit, uuid: uuid() })
-                            }
-                        >
-                            Add
-                        </Button>
+                        {!selectedCharacters.has(unit.character) && (
+                            <Button
+                                onClick={() =>
+                                    handleAddCombatUnit({
+                                        ...unit,
+                                        uuid: uuid(),
+                                    })
+                                }
+                            >
+                                Add
+                            </Button>
+                        )}
                     </td>
                 </DisplayUnitsTableRow>
             ))}

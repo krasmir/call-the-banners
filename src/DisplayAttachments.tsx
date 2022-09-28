@@ -1,26 +1,39 @@
-import { Attachment } from "./types";
-import { Button } from "./Button";
+import { Attachment, ArmyCombatUnit, ArmyAttachment } from "./types";
 import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
 import UnitTypeIcon from "./UnitTypeIcon";
-import { addAttachment } from "./store/userArmy/userArmySlice";
-import { useDispatch } from "react-redux";
-import { v4 as uuid } from "uuid";
+import AttachButton from "./AttachButton";
 
 interface DisplayAttachmentsProps {
     factionAttachments: Attachment[];
-    selectedCharacters: string[];
+    selectedCharacters: Set<string>;
+    selectedCombatUnits: Map<string, ArmyCombatUnit[]> | undefined;
+    selectedCommander?: ArmyAttachment | undefined;
 }
 
 function DisplayAttachments({
     factionAttachments,
     selectedCharacters,
+    selectedCombatUnits,
+    selectedCommander,
 }: DisplayAttachmentsProps): JSX.Element {
     console.log("ATTACHMENTS");
 
-    const dispatch = useDispatch();
-
-    const handleAddAttachment = (attachment: Attachment): void => {
-        dispatch(addAttachment(attachment));
+    const shouldDisplayAttachButton = (attachment: Attachment): JSX.Element => {
+        if (
+            selectedCombatUnits?.get(attachment.type) !== undefined &&
+            !selectedCharacters.has(attachment.character)
+        )
+            return (
+                <AttachButton
+                    attachment={attachment}
+                    combatUnits={
+                        selectedCombatUnits.get(
+                            attachment.type
+                        ) as ArmyCombatUnit[]
+                    }
+                />
+            );
+        else return <></>;
     };
 
     return (
@@ -30,34 +43,14 @@ function DisplayAttachments({
                     key={attachment.id}
                     selectedCharacters={selectedCharacters}
                     character={attachment.character}
+                    selectedCommander={selectedCommander}
                 >
                     <td>{attachment.name}</td>
                     <td>
                         <UnitTypeIcon type={attachment.type} />
                     </td>
                     <td>{attachment.cost}</td>
-                    <td>
-                        {/* {combatUnits.length > 0 &&
-                            !characters.includes(attachment.character) && (
-                                <AttachButton
-                                    faction={faction}
-                                    attachment={attachment}
-                                    unitType={unitTypes.attachment}
-                                    type={attachment.type}
-                                    name={attachment.name}
-                                />
-                            )} */}
-                        <Button
-                            onClick={() =>
-                                handleAddAttachment({
-                                    ...attachment,
-                                    uuid: uuid(),
-                                })
-                            }
-                        >
-                            Add
-                        </Button>
-                    </td>
+                    <td>{shouldDisplayAttachButton(attachment)}</td>
                 </DisplayUnitsTableRow>
             ))}
         </>

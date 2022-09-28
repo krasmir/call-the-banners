@@ -1,21 +1,23 @@
 import DisplayAttachments from "./DisplayAttachments";
 import DisplayCombatUnits from "./DisplayCombatUnits";
-import DisplayCommanders from "./DisplayCommanders";
+// import DisplayCommanders from "./DisplayCommanders";
 import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
-import useSelectedCharacters from "./hooks/useSelectedCharacters";
+import useSelectedUnits from "./hooks/useSelectedUnits";
 import getUnits from "./utils/getUnits";
 import { Faction } from "./types";
 import UnitsTable from "./UnitsTable";
+import { useMemo } from "react";
 
 interface DisplayUnitsProps {
-    children?: React.ReactNode;
     faction: Faction;
 }
 
-function DisplayUnits({ children, faction }: DisplayUnitsProps): JSX.Element {
-    const selectedCharacters = useSelectedCharacters(faction);
+function DisplayUnits({ faction }: DisplayUnitsProps): JSX.Element {
+    const { selectedCharacters, selectedCombatUnits, selectedCommander } =
+        useSelectedUnits(faction);
     const { factionAttachments, factionCommanders, factionNCUS, factionUnits } =
-        getUnits(faction);
+        useMemo(() => getUnits(faction), [faction]);
+    console.log(selectedCharacters);
 
     return (
         <>
@@ -26,9 +28,11 @@ function DisplayUnits({ children, faction }: DisplayUnitsProps): JSX.Element {
                 />
             </UnitsTable>
             <UnitsTable typeOfUnits="Commanders">
-                <DisplayCommanders
-                    factionCommanders={factionCommanders}
+                <DisplayAttachments
+                    selectedCommander={selectedCommander}
+                    factionAttachments={factionCommanders}
                     selectedCharacters={selectedCharacters}
+                    selectedCombatUnits={selectedCombatUnits}
                 />
             </UnitsTable>
             <UnitsTable typeOfUnits="Non Combat Units">
@@ -41,6 +45,7 @@ function DisplayUnits({ children, faction }: DisplayUnitsProps): JSX.Element {
                 <DisplayAttachments
                     factionAttachments={factionAttachments}
                     selectedCharacters={selectedCharacters}
+                    selectedCombatUnits={selectedCombatUnits}
                 />
             </UnitsTable>
         </>

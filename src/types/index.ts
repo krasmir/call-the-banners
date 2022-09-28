@@ -28,6 +28,14 @@ export enum UnitType {
     None = "None",
 }
 
+export interface ArmyCombatUnit extends CombatUnit {
+    uuid: string;
+}
+export interface ArmyAttachment extends Attachment {
+    uuid: string;
+    attachedTo: string;
+}
+
 export interface CombatUnit {
     faction: Faction;
     name: string;

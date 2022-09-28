@@ -7,7 +7,7 @@ import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
 
 interface DisplayNonCombatUnitsProps {
     factionNCUS: NCU[];
-    selectedCharacters: string[];
+    selectedCharacters: Set<string>;
 }
 
 function DisplayNonCombatUnits({
@@ -36,13 +36,15 @@ function DisplayNonCombatUnits({
                     </td>
                     <td>{ncu.cost}</td>
                     <td>
-                        <Button
-                            onClick={() => {
-                                handleAddNCU({ ...ncu });
-                            }}
-                        >
-                            Add
-                        </Button>
+                        {!selectedCharacters.has(ncu.character) && (
+                            <Button
+                                onClick={() => {
+                                    handleAddNCU({ ...ncu });
+                                }}
+                            >
+                                Add
+                            </Button>
+                        )}
                     </td>
                 </DisplayUnitsTableRow>
             ))}

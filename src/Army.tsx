@@ -8,7 +8,12 @@ import {
     deleteNCU,
     deleteUnit,
 } from "./store/userArmy/userArmySlice";
-import { CombatUnit, Attachment } from "./types";
+import {
+    // CombatUnit,
+    // Attachment,
+    ArmyCombatUnit,
+    ArmyAttachment,
+} from "./types";
 
 const Units = styled.div`
     width: 60%;
@@ -48,14 +53,6 @@ interface ArmyProps {
     faction: keyof RootState["userArmy"];
 }
 
-interface ArmyCombatUnits extends CombatUnit {
-    uuid: string;
-}
-interface ArmyAttachments extends Attachment {
-    uuid: string;
-    // attachedTo: string;
-}
-
 export default function Army({ faction }: ArmyProps): JSX.Element {
     const { units, ncus, attachments } = useSelector(
         (state: RootState) => state.userArmy[faction] as ArmyI
@@ -77,7 +74,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
             <Div>
                 <H3>Combat Units</H3>
                 <ul>
-                    {(units as ArmyCombatUnits[]).map((unit) => (
+                    {(units as ArmyCombatUnit[]).map((unit) => (
                         <Li key={unit.uuid}>
                             <span>{unit.name}</span>
 
@@ -89,8 +86,12 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                             </RemoveButton>
 
                             <ul>
-                                {(attachments as ArmyAttachments[]).map(
-                                    (attachment) => (
+                                {(attachments as ArmyAttachment[])
+                                    .filter(
+                                        ({ attachedTo }) =>
+                                            attachedTo === unit.uuid
+                                    )
+                                    .map((attachment) => (
                                         <Li key={attachment.uuid}>
                                             <span>{attachment.name}</span>
 
@@ -107,8 +108,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                                                 Remove
                                             </RemoveButton>
                                         </Li>
-                                    )
-                                )}
+                                    ))}
                             </ul>
                         </Li>
                     ))}
