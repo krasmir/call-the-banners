@@ -28,15 +28,13 @@ function DisplayNonCombatUnits({
                     character={ncu.character}
                     unit={ncu}
                 >
-                    {!selectedCharacters.has(ncu.character) && (
-                        <Button
-                            onClick={() => {
-                                handleAddNCU({ ...ncu });
-                            }}
-                        >
-                            Add
-                        </Button>
-                    )}
+                    <Button
+                        onClick={() => {
+                            handleAddNCU({ ...ncu });
+                        }}
+                    >
+                        Add
+                    </Button>
                 </DisplayUnitsTableRow>
             ))}
         </>

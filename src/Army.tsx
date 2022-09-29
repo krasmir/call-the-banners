@@ -18,10 +18,16 @@ const Div = styled.div`
     z-index: 5;
 `;
 
-const H3 = styled.h3`
-    width: 100%;
+const H1 = styled.h1`
     text-align: center;
     text-transform: uppercase;
+    text-decoration-line: underline;
+`;
+
+const H3 = styled.h3`
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
     letter-spacing: 2px;
 `;
 
@@ -65,6 +71,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
 
     return (
         <Units>
+            <H1>{faction} Army</H1>
             <Div>
                 <H3>Combat Units</H3>
                 <ul>
@@ -109,7 +116,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                 </ul>
             </Div>
             <Div>
-                <H3>Non-combat Units</H3>
+                <H3>Non-Combat Units</H3>
                 <ul>
                     {ncus?.map((ncu) => (
                         <LI key={ncu.id}>

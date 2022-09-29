@@ -15,25 +15,6 @@ function DisplayAttachments({
     selectedCombatUnits,
     selectedCommander,
 }: DisplayAttachmentsProps): JSX.Element {
-    const shouldDisplayAttachButton = (attachment: Attachment): JSX.Element => {
-        if (
-            selectedCommander === undefined &&
-            selectedCombatUnits?.get(attachment.type) !== undefined &&
-            !selectedCharacters.has(attachment.character)
-        )
-            return (
-                <AttachButton
-                    attachment={attachment}
-                    combatUnits={
-                        selectedCombatUnits.get(
-                            attachment.type
-                        ) as ArmyCombatUnit[]
-                    }
-                />
-            );
-        else return <></>;
-    };
-
     return (
         <>
             {factionAttachments.map((attachment) => (
@@ -44,7 +25,17 @@ function DisplayAttachments({
                     selectedCommander={selectedCommander}
                     unit={attachment}
                 >
-                    {shouldDisplayAttachButton(attachment)}
+                    {selectedCombatUnits?.get(attachment.type) !==
+                        undefined && (
+                        <AttachButton
+                            attachment={attachment}
+                            combatUnits={
+                                selectedCombatUnits.get(
+                                    attachment.type
+                                ) as ArmyCombatUnit[]
+                            }
+                        />
+                    )}
                 </DisplayUnitsTableRow>
             ))}
         </>

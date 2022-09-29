@@ -29,18 +29,16 @@ function DisplayCombatUnits({
                     character={unit.character}
                     unit={unit}
                 >
-                    {!selectedCharacters.has(unit.character) && (
-                        <Button
-                            onClick={() =>
-                                handleAddCombatUnit({
-                                    ...unit,
-                                    uuid: uuid(),
-                                })
-                            }
-                        >
-                            Add
-                        </Button>
-                    )}
+                    <Button
+                        onClick={() =>
+                            handleAddCombatUnit({
+                                ...unit,
+                                uuid: uuid(),
+                            })
+                        }
+                    >
+                        Add
+                    </Button>
                 </DisplayUnitsTableRow>
             ))}
         </>

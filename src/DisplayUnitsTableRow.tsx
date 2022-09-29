@@ -21,24 +21,23 @@ function DisplayUnitsTableRow({
     selectedCommander,
     unit,
 }: DisplayUnitsTableRowProps): JSX.Element {
-    const calculateOpacity = (character: string): string => {
-        const visible = "1";
-        const transparent = "0.4";
-        if (selectedCommander !== undefined) return transparent;
+    const checkIfUnitCanBeChosen = (character: string): boolean => {
+        if (selectedCommander !== undefined) return false;
         if (character.includes(", ")) {
             const characterArr = character.split(", ");
-            return characterArr.some((char) => selectedCharacters.has(char))
-                ? transparent
-                : visible;
-        } else return selectedCharacters.has(character) ? transparent : visible;
+            return !characterArr.some((char) => selectedCharacters.has(char));
+        } else return !selectedCharacters.has(character);
     };
+    const canUnitBeChosen = checkIfUnitCanBeChosen(character);
+
+    const calculateOpacity = canUnitBeChosen ? "1" : "0.4";
 
     const type = unit.type ?? "NCU";
 
     return (
         <TR
             style={{
-                opacity: calculateOpacity(character),
+                opacity: calculateOpacity,
             }}
         >
             <td>{unit.name}</td>
@@ -46,7 +45,7 @@ function DisplayUnitsTableRow({
                 <UnitTypeIcon type={type} />
             </td>
             <td>{unit.cost}</td>
-            <td>{children}</td>
+            <td>{canUnitBeChosen && children}</td>
         </TR>
     );
 }

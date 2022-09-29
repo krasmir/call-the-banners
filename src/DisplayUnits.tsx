@@ -1,6 +1,5 @@
 import DisplayAttachments from "./DisplayAttachments";
 import DisplayCombatUnits from "./DisplayCombatUnits";
-// import DisplayCommanders from "./DisplayCommanders";
 import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
 import useSelectedUnits from "./hooks/useSelectedUnits";
 import getUnits from "./utils/getUnits";
@@ -20,7 +19,7 @@ function DisplayUnits({ faction }: DisplayUnitsProps): JSX.Element {
 
     return (
         <>
-            <UnitsTable typeOfUnits="Units">
+            <UnitsTable typeOfUnits="Combat Units">
                 <DisplayCombatUnits
                     factionUnits={factionUnits}
                     selectedCharacters={selectedCharacters}
@@ -34,7 +33,7 @@ function DisplayUnits({ faction }: DisplayUnitsProps): JSX.Element {
                     selectedCombatUnits={selectedCombatUnits}
                 />
             </UnitsTable>
-            <UnitsTable typeOfUnits="Non Combat Units">
+            <UnitsTable typeOfUnits="Non-Combat Units">
                 <DisplayNonCombatUnits
                     factionNCUS={factionNCUS}
                     selectedCharacters={selectedCharacters}
