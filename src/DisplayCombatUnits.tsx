@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { addUnit } from "./store/userArmy/userArmySlice";
 import { v4 as uuid } from "uuid";
 import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
-import UnitTypeIcon from "./UnitTypeIcon";
 
 interface DisplayCombatUnitsProps {
     factionUnits: CombatUnit[];
@@ -21,8 +20,6 @@ function DisplayCombatUnits({
         dispatch(addUnit(combatUnit));
     };
 
-    console.log("COMBAT UNITS");
-
     return (
         <>
             {factionUnits.map((unit) => (
@@ -30,26 +27,20 @@ function DisplayCombatUnits({
                     key={unit.id}
                     selectedCharacters={selectedCharacters}
                     character={unit.character}
+                    unit={unit}
                 >
-                    <td>{unit.name}</td>
-                    <td>
-                        <UnitTypeIcon type={unit.type} />
-                    </td>
-                    <td>{unit.cost}</td>
-                    <td>
-                        {!selectedCharacters.has(unit.character) && (
-                            <Button
-                                onClick={() =>
-                                    handleAddCombatUnit({
-                                        ...unit,
-                                        uuid: uuid(),
-                                    })
-                                }
-                            >
-                                Add
-                            </Button>
-                        )}
-                    </td>
+                    {!selectedCharacters.has(unit.character) && (
+                        <Button
+                            onClick={() =>
+                                handleAddCombatUnit({
+                                    ...unit,
+                                    uuid: uuid(),
+                                })
+                            }
+                        >
+                            Add
+                        </Button>
+                    )}
                 </DisplayUnitsTableRow>
             ))}
         </>

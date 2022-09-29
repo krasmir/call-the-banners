@@ -17,7 +17,6 @@ function DisplayUnits({ faction }: DisplayUnitsProps): JSX.Element {
         useSelectedUnits(faction);
     const { factionAttachments, factionCommanders, factionNCUS, factionUnits } =
         useMemo(() => getUnits(faction), [faction]);
-    console.log(selectedCharacters);
 
     return (
         <>

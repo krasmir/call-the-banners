@@ -8,6 +8,15 @@ const AttachModal = styled.div`
     top: 0;
     left: 0;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const ModalDiv = styled.div`
+    background-color: ${(props) => props.theme.bg};
+    width: 60%;
+    height: 60%;
 `;
 
 interface ModalProps {
@@ -17,7 +26,9 @@ interface ModalProps {
 
 function Modal({ children, showModal }: ModalProps): JSX.Element {
     return (
-        <AttachModal onClick={() => showModal(false)}>{children}</AttachModal>
+        <AttachModal onClick={() => showModal(false)}>
+            <ModalDiv>{children}</ModalDiv>
+        </AttachModal>
     );
 }
 

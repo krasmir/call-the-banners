@@ -49,8 +49,6 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
             return unitMap;
         }, new Map<string, ArmyCombatUnit[]>());
 
-    console.log("use selected unit");
-
     return {
         selectedCombatUnits,
         selectedCharacters,

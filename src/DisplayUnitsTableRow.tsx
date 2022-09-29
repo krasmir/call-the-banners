@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
-import { Attachment } from "./types";
+import { Attachment, CombatUnit, NCU } from "./types";
+import UnitTypeIcon from "./UnitTypeIcon";
 
 const TR = styled.tr`
     border-bottom: 1px solid #f7af14;
@@ -10,6 +11,7 @@ interface DisplayUnitsTableRowProps {
     character: string;
     selectedCharacters: Set<string>;
     selectedCommander?: Attachment | undefined;
+    unit: CombatUnit | Attachment | NCU;
 }
 
 function DisplayUnitsTableRow({
@@ -17,6 +19,7 @@ function DisplayUnitsTableRow({
     character,
     selectedCharacters,
     selectedCommander,
+    unit,
 }: DisplayUnitsTableRowProps): JSX.Element {
     const calculateOpacity = (character: string): string => {
         if (selectedCommander !== undefined) return "0.2";
@@ -28,13 +31,20 @@ function DisplayUnitsTableRow({
         } else return selectedCharacters.has(character) ? "0.2" : "1";
     };
 
+    const type = unit.type ?? "NCU";
+
     return (
         <TR
             style={{
                 opacity: calculateOpacity(character),
             }}
         >
-            {children}
+            <td>{unit.name}</td>
+            <td>
+                <UnitTypeIcon type={type} />
+            </td>
+            <td>{unit.cost}</td>
+            <td>{children}</td>
         </TR>
     );
 }

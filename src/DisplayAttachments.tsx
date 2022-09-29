@@ -1,6 +1,5 @@
 import { Attachment, ArmyCombatUnit, ArmyAttachment } from "./types";
 import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
-import UnitTypeIcon from "./UnitTypeIcon";
 import AttachButton from "./AttachButton";
 
 interface DisplayAttachmentsProps {
@@ -16,10 +15,9 @@ function DisplayAttachments({
     selectedCombatUnits,
     selectedCommander,
 }: DisplayAttachmentsProps): JSX.Element {
-    console.log("ATTACHMENTS");
-
     const shouldDisplayAttachButton = (attachment: Attachment): JSX.Element => {
         if (
+            selectedCommander === undefined &&
             selectedCombatUnits?.get(attachment.type) !== undefined &&
             !selectedCharacters.has(attachment.character)
         )
@@ -44,13 +42,9 @@ function DisplayAttachments({
                     selectedCharacters={selectedCharacters}
                     character={attachment.character}
                     selectedCommander={selectedCommander}
+                    unit={attachment}
                 >
-                    <td>{attachment.name}</td>
-                    <td>
-                        <UnitTypeIcon type={attachment.type} />
-                    </td>
-                    <td>{attachment.cost}</td>
-                    <td>{shouldDisplayAttachButton(attachment)}</td>
+                    {shouldDisplayAttachButton(attachment)}
                 </DisplayUnitsTableRow>
             ))}
         </>

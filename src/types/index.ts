@@ -67,6 +67,7 @@ export interface NCU {
     id: string;
     quote: string;
     restrictions: string;
+    type?: string;
 }
 
 export interface Attachment {
