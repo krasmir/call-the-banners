@@ -4,13 +4,13 @@ export const Button = styled.button`
     margin: 1em;
     padding: 0.25em 1em;
     text-transform: uppercase;
-    color: ${(props) => props.theme.buttonMain};
-    background-color: ${(props) => props.theme.buttonSecondary};
-    border: 2px solid ${(props) => props.theme.buttonMain};
-    border-radius: 10px;
+    color: ${(props) => props.theme.button.main};
+    background-color: ${(props) => props.theme.button.secondary};
+    border: 2px solid ${(props) => props.theme.button.main};
+    border-radius: 6px;
     &:hover {
         cursor: pointer;
-        background-color: ${(props) => props.theme.buttonMain};
-        color: ${(props) => props.theme.buttonSecondary};
+        background-color: ${(props) => props.theme.button.main};
+        color: ${(props) => props.theme.button.secondary};
     }
 `;

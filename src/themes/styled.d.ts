@@ -5,9 +5,11 @@ declare module "styled-components" {
     export interface DefaultTheme {
         bg: string;
         tableTitle: string;
-        buttonMain: string;
-        buttonSecondary: string;
         colors: {
+            main: string;
+            secondary: string;
+        };
+        button: {
             main: string;
             secondary: string;
         };
