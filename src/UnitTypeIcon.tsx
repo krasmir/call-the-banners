@@ -2,7 +2,10 @@ import styled from "styled-components/macro";
 
 const IMG = styled.img`
     height: 40px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9))
+        drop-shadow(-3px -3px 3px rgba(0, 0, 0, 0.9));
+    /* background-color: red;
+    color: black; */
 `;
 
 interface UnitTypeIconProps {

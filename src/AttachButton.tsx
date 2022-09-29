@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-// import styled from "styled-components/macro";
+import styled from "styled-components/macro";
 import { Button } from "./Button";
 import Modal from "./Modal";
 import { addAttachment } from "./store/userArmy/userArmySlice";
 import { ArmyAttachment, ArmyCombatUnit, Attachment } from "./types";
 import { v4 as uuid } from "uuid";
+
+const LI = styled.li`
+    list-style: none;
+`;
 
 interface AttachButtonProps {
     combatUnits: ArmyCombatUnit[];
@@ -34,7 +38,7 @@ function AttachButton({
                 <Modal showModal={setShowCombatUnits}>
                     <ul>
                         {combatUnits.map((unit) => (
-                            <li key={unit.uuid}>
+                            <LI key={unit.uuid}>
                                 <span>{unit.name}</span>
                                 <Button
                                     onClick={() =>
@@ -49,7 +53,7 @@ function AttachButton({
                                 >
                                     Attach to unit
                                 </Button>
-                            </li>
+                            </LI>
                         ))}
                     </ul>
                 </Modal>

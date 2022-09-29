@@ -15,8 +15,11 @@ const AttachModal = styled.div`
 
 const ModalDiv = styled.div`
     background-color: ${(props) => props.theme.bg};
+    border-radius: 10px;
     width: 60%;
     height: 60%;
+    overflow-y: auto;
+    font-size: 1.5em;
 `;
 
 interface ModalProps {

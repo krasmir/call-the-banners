@@ -1,12 +1,13 @@
 import { DefaultTheme } from "styled-components";
 
 const lightTheme: DefaultTheme = {
-    borderRadius: "20px",
-    bg: "lightgrey",
-
+    bg: "#eaeaea",
+    tableTitle: "#7b0f84",
+    buttonMain: "#030517",
+    buttonSecondary: "#dea5fd",
     colors: {
-        main: "#202020",
-        secondary: "#9090cc",
+        main: "#3e3c3c;",
+        secondary: "#98d8ff",
     },
 };
 

@@ -8,28 +8,21 @@ import {
     deleteNCU,
     deleteUnit,
 } from "./store/userArmy/userArmySlice";
-import {
-    // CombatUnit,
-    // Attachment,
-    ArmyCombatUnit,
-    ArmyAttachment,
-} from "./types";
+import { ArmyCombatUnit, ArmyAttachment } from "./types";
 
 const Units = styled.div`
     width: 60%;
-    color: beige;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    font-weight: bold;
 `;
 
 const Div = styled.div`
-    /* background-color: maroon; */
     z-index: 5;
 `;
 
 const H3 = styled.h3`
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 `;
 
 const RemoveButton = styled(Button)`
@@ -39,9 +32,10 @@ const RemoveButton = styled(Button)`
     right: 4px;
 `;
 
-const Li = styled.li`
+const LI = styled.li`
     position: relative;
     padding: 10px 0;
+    list-style: none;
 `;
 
 const PointsSpan = styled.span`
@@ -75,7 +69,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                 <H3>Combat Units</H3>
                 <ul>
                     {(units as ArmyCombatUnit[]).map((unit) => (
-                        <Li key={unit.uuid}>
+                        <LI key={unit.uuid}>
                             <span>{unit.name}</span>
 
                             <PointsSpan>{unit.cost}</PointsSpan>
@@ -92,7 +86,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                                             attachedTo === unit.uuid
                                     )
                                     .map((attachment) => (
-                                        <Li key={attachment.uuid}>
+                                        <LI key={attachment.uuid}>
                                             <span>{attachment.name}</span>
 
                                             <PointsSpan>
@@ -107,10 +101,10 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                                             >
                                                 Remove
                                             </RemoveButton>
-                                        </Li>
+                                        </LI>
                                     ))}
                             </ul>
-                        </Li>
+                        </LI>
                     ))}
                 </ul>
             </Div>
@@ -118,7 +112,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                 <H3>Non-combat Units</H3>
                 <ul>
                     {ncus?.map((ncu) => (
-                        <Li key={ncu.id}>
+                        <LI key={ncu.id}>
                             <span>{ncu.name}</span>
 
                             <PointsSpan>{ncu.cost}</PointsSpan>
@@ -127,7 +121,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                             >
                                 Remove
                             </RemoveButton>
-                        </Li>
+                        </LI>
                     ))}
                 </ul>
             </Div>

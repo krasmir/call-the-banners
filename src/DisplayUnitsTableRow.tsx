@@ -3,7 +3,7 @@ import { Attachment, CombatUnit, NCU } from "./types";
 import UnitTypeIcon from "./UnitTypeIcon";
 
 const TR = styled.tr`
-    border-bottom: 1px solid #f7af14;
+    border-bottom: ${(props) => props.theme.colors.secondary} solid 1px;
 `;
 
 interface DisplayUnitsTableRowProps {
@@ -22,13 +22,15 @@ function DisplayUnitsTableRow({
     unit,
 }: DisplayUnitsTableRowProps): JSX.Element {
     const calculateOpacity = (character: string): string => {
-        if (selectedCommander !== undefined) return "0.2";
+        const visible = "1";
+        const transparent = "0.4";
+        if (selectedCommander !== undefined) return transparent;
         if (character.includes(", ")) {
             const characterArr = character.split(", ");
             return characterArr.some((char) => selectedCharacters.has(char))
-                ? "0.2"
-                : "1";
-        } else return selectedCharacters.has(character) ? "0.2" : "1";
+                ? transparent
+                : visible;
+        } else return selectedCharacters.has(character) ? transparent : visible;
     };
 
     const type = unit.type ?? "NCU";

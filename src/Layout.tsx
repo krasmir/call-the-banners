@@ -1,23 +1,16 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
 import DisplayUnits from "./DisplayUnits";
-// import DisplayAttachments from "./DisplayAttachments";
-// import DisplayCombatUnits from "./DisplayCombatUnits";
-// import DisplayCommanders from "./DisplayCommanders";
-// import DisplayNonCombatUnits from "./DisplayNonCombatUnits";
-// import DisplayUnits from "./UnitsTable";
-// import useSelectedCharacters from "./hooks/useSelectedCharacters";
 import { Faction } from "./types";
 
 const Div = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: ${(props) => props.theme.bg};
-    color: ${(props) => props.theme.colors.main};
+    /* color: ${(props) => props.theme.colors.main}; */
     padding: 20px;
     display: grid;
     grid-template-rows: 100px 100px 300px 300px;
-    /* grid-template-rows: 1fr 1fr 3fr 3fr; */
     grid-template-columns: 240px 1fr 1fr 240px;
     grid-gap: 10px;
     grid-template-areas:
@@ -46,8 +39,6 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps): JSX.Element {
     const faction = Faction.Lannister;
 
-    // const selectedCharacters = useSelectedCharacters(faction);
-
     return (
         <Div>
             {children}
@@ -56,30 +47,6 @@ function Layout({ children }: LayoutProps): JSX.Element {
             </ArmyDiv>
             <UnitDiv>
                 <DisplayUnits faction={faction} />
-                {/* <DisplayUnits typeOfUnits="Units">
-                    <DisplayCombatUnits
-                        faction={faction}
-                        selectedCharacters={selectedCharacters}
-                    />
-                </DisplayUnits>
-                <DisplayUnits typeOfUnits="Commanders">
-                    <DisplayCommanders
-                        faction={faction}
-                        selectedCharacters={selectedCharacters}
-                    />
-                </DisplayUnits>
-                <DisplayUnits typeOfUnits="Non Combat Units">
-                    <DisplayNonCombatUnits
-                        faction={faction}
-                        selectedCharacters={selectedCharacters}
-                    />
-                </DisplayUnits>
-                <DisplayUnits typeOfUnits="Attachments">
-                    <DisplayAttachments
-                        faction={faction}
-                        selectedCharacters={selectedCharacters}
-                    />
-                </DisplayUnits> */}
             </UnitDiv>
         </Div>
     );

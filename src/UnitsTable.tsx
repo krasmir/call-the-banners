@@ -1,34 +1,33 @@
 import styled from "styled-components/macro";
 
 const Units = styled.div`
-    overflow-y: scroll;
+    border: ${(props) => props.theme.colors.secondary} solid 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     scrollbar-width: thin;
-
     text-align: center;
-    font-weight: bold;
-    border: #f7af14 solid 2px;
+    overflow-y: scroll;
 `;
 
 const Div = styled.div`
     background-color: ${(props) => props.theme.bg};
+    color: ${(props) => props.theme.tableTitle};
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px;
     position: sticky;
     top: 0;
     z-index: 2;
 `;
 
-const TableDiv = styled.div`
-    width: 100%;
-`;
-
 const Table = styled.table`
-    width: 100%;
+    border-collapse: collapse;
 `;
 
 const TH = styled.th`
-    background-color: grey;
-    color: darkmagenta;
+    background-color: ${(props) => props.theme.colors.secondary};
     position: sticky;
-    top: 18px;
+    top: 30px;
     z-index: 2;
     padding: 8px;
 `;
@@ -42,7 +41,7 @@ function UnitsTable({ children, typeOfUnits }: UnitsTableProps): JSX.Element {
     return (
         <Units>
             <Div>{typeOfUnits}</Div>
-            <TableDiv>
+            <div>
                 <Table>
                     <thead>
                         <tr>
@@ -54,7 +53,7 @@ function UnitsTable({ children, typeOfUnits }: UnitsTableProps): JSX.Element {
                     </thead>
                     <tbody>{children}</tbody>
                 </Table>
-            </TableDiv>
+            </div>
         </Units>
     );
 }
