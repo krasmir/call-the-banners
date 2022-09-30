@@ -1,25 +1,38 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { NCU, ArmyAttachment, ArmyCombatUnit } from "../../types";
-export interface userArmyState {
-    Lannister: Army;
-    Stark?: Army;
+export interface UserArmyState {
+    [key: string]: Army;
 }
 
 export interface Army {
-    id?: string;
-    units?: ArmyCombatUnit[];
-    ncus?: NCU[];
-    attachments?: ArmyAttachment[];
+    units: ArmyCombatUnit[];
+    ncus: NCU[];
+    attachments: ArmyAttachment[];
 }
 
-const initialState: userArmyState = {
-    Lannister: {
-        id: "army",
-        units: [],
-        ncus: [],
-        attachments: [],
-    },
+const emptyState: Army = {
+    units: [],
+    ncus: [],
+    attachments: [],
 };
+
+const factions = [
+    "Lannister",
+    "Stark",
+    "Free Folk",
+    "Neutral",
+    "Night's Watch",
+    "Baratheon",
+    "Targaryen",
+    "Greyjoy",
+];
+
+const userArmyState: UserArmyState = {};
+
+const initialState: UserArmyState = factions.reduce((state, key) => {
+    state[key] = emptyState;
+    return state;
+}, userArmyState);
 
 export const userArmySlice = createSlice({
     name: "userArmy",

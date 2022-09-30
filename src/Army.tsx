@@ -3,22 +3,23 @@ import styled from "styled-components/macro";
 import { Button } from "./Button";
 import { RootState } from "./store";
 import {
-    Army as ArmyI,
     deleteAttachment,
     deleteNCU,
     deleteUnit,
 } from "./store/userArmy/userArmySlice";
-import { ArmyCombatUnit, ArmyAttachment } from "./types";
+import { Faction } from "./types";
 
 const Units = styled.div`
-    width: 60%;
+    width: 90%;
+    margin: 0 auto;
 `;
 
 const Div = styled.div`
     z-index: 5;
 `;
 
-const H1 = styled.h1`
+const H2 = styled.h2`
+    margin-top: 0;
     text-align: center;
     text-transform: uppercase;
     text-decoration-line: underline;
@@ -50,12 +51,12 @@ const PointsSpan = styled.span`
 `;
 
 interface ArmyProps {
-    faction: keyof RootState["userArmy"];
+    faction: Faction;
 }
 
 export default function Army({ faction }: ArmyProps): JSX.Element {
     const { units, ncus, attachments } = useSelector(
-        (state: RootState) => state.userArmy[faction] as ArmyI
+        (state: RootState) => state.userArmy[faction]
     );
     const dispatch = useDispatch();
 
@@ -71,11 +72,11 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
 
     return (
         <Units>
-            <H1>{faction} Army</H1>
+            <H2>{faction} Army</H2>
             <Div>
                 <H3>Combat Units</H3>
                 <ul>
-                    {(units as ArmyCombatUnit[]).map((unit) => (
+                    {units.map((unit) => (
                         <LI key={unit.uuid}>
                             <span>{unit.name}</span>
 
@@ -87,7 +88,7 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                             </RemoveButton>
 
                             <ul>
-                                {(attachments as ArmyAttachment[])
+                                {attachments
                                     .filter(
                                         ({ attachedTo }) =>
                                             attachedTo === unit.uuid

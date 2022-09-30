@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
-import { Army } from "../store/userArmy/userArmySlice";
 import { ArmyAttachment, ArmyCombatUnit, Faction } from "../types";
 
 interface SelectedUnits {
@@ -12,7 +11,7 @@ interface SelectedUnits {
 function useSelectedUnits(faction: Faction): SelectedUnits {
     const { attachments, units, ncus } = useSelector(
         (state: RootState) =>
-            state.userArmy[faction as keyof RootState["userArmy"]] as Army
+            state.userArmy[faction as keyof RootState["userArmy"]]
     );
 
     const attachmentCharacters = attachments?.map(
@@ -34,11 +33,9 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
         )
     );
 
-    const selectedCommander = (attachments as ArmyAttachment[])?.find(
-        (att) => att.cost === "C"
-    );
+    const selectedCommander = attachments?.find((att) => att.cost === "C");
 
-    const selectedCombatUnits = (units as ArmyCombatUnit[])
+    const selectedCombatUnits = units
         ?.filter((unit) => unit.requirements !== "Solo")
         .reduce((unitMap, unit) => {
             if (unitMap.has(unit.type)) {
