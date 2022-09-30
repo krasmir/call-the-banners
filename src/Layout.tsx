@@ -1,9 +1,7 @@
-import { useState } from "react";
 import styled from "styled-components/macro";
 import Army from "./Army";
 import DisplayUnits from "./DisplayUnits";
 import SelectFactionForm from "./SelectFactionForm";
-import { Faction } from "./types";
 
 const Div = styled.div`
     width: 100vw;
@@ -75,8 +73,6 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps): JSX.Element {
-    const [faction, setFaction] = useState(Faction.Lannister);
-
     return (
         <Div>
             <H1>
@@ -89,13 +85,13 @@ function Layout({ children }: LayoutProps): JSX.Element {
                 <Img src="./Logo.png" alt="A Song of Ice and Fire logo" />
             </Logo>
             <FormDiv>
-                <SelectFactionForm setFaction={setFaction} />
+                <SelectFactionForm />
             </FormDiv>
             <ArmyDiv>
-                <Army faction={faction} />
+                <Army />
             </ArmyDiv>
             <UnitDiv>
-                <DisplayUnits faction={faction} />
+                <DisplayUnits />
             </UnitDiv>
         </Div>
     );

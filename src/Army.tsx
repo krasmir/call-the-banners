@@ -1,13 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components/macro";
 import { Button } from "./Button";
+import useCurrentFaction from "./hooks/useCurrentFaction";
 import { RootState } from "./store";
-import {
-    deleteAttachment,
-    deleteNCU,
-    deleteUnit,
-} from "./store/userArmy/userArmySlice";
-import { Faction } from "./types";
+import { deleteUnit, UnitType } from "./store/userArmy/userArmySlice";
 
 const Units = styled.div`
     width: 90%;
@@ -50,39 +46,38 @@ const PointsSpan = styled.span`
     right: 80px;
 `;
 
-interface ArmyProps {
-    faction: Faction;
-}
-
-export default function Army({ faction }: ArmyProps): JSX.Element {
-    const { units, ncus, attachments } = useSelector(
-        (state: RootState) => state.userArmy[faction]
+export default function Army(): JSX.Element {
+    const currentFaction = useCurrentFaction();
+    const { combatUnits, ncus, attachments } = useSelector(
+        (state: RootState) => state.userArmy[currentFaction]
     );
     const dispatch = useDispatch();
 
-    const handleDeleteUnit = (id: string): void => {
-        dispatch(deleteUnit(id));
-    };
-    const handleDeleteAttachment = (id: string): void => {
-        dispatch(deleteAttachment(id));
-    };
-    const handleDeleteNCU = (id: string): void => {
-        dispatch(deleteNCU(id));
+    const handleDeleteUnit = (deletePayload: {
+        id: string;
+        unitType: UnitType;
+    }): void => {
+        dispatch(deleteUnit({ ...deletePayload, currentFaction }));
     };
 
     return (
         <Units>
-            <H2>{faction} Army</H2>
+            <H2>{currentFaction} Army</H2>
             <Div>
                 <H3>Combat Units</H3>
                 <ul>
-                    {units.map((unit) => (
+                    {combatUnits.map((unit) => (
                         <LI key={unit.uuid}>
                             <span>{unit.name}</span>
 
                             <PointsSpan>{unit.cost}</PointsSpan>
                             <RemoveButton
-                                onClick={() => handleDeleteUnit(unit.uuid)}
+                                onClick={() =>
+                                    handleDeleteUnit({
+                                        id: unit.uuid,
+                                        unitType: "combatUnits",
+                                    })
+                                }
                             >
                                 Remove
                             </RemoveButton>
@@ -102,9 +97,10 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                                             </PointsSpan>
                                             <RemoveButton
                                                 onClick={() =>
-                                                    handleDeleteAttachment(
-                                                        attachment.uuid
-                                                    )
+                                                    handleDeleteUnit({
+                                                        id: attachment.uuid,
+                                                        unitType: "attachments",
+                                                    })
                                                 }
                                             >
                                                 Remove
@@ -120,12 +116,17 @@ export default function Army({ faction }: ArmyProps): JSX.Element {
                 <H3>Non-Combat Units</H3>
                 <ul>
                     {ncus?.map((ncu) => (
-                        <LI key={ncu.id}>
+                        <LI key={ncu.uuid}>
                             <span>{ncu.name}</span>
 
                             <PointsSpan>{ncu.cost}</PointsSpan>
                             <RemoveButton
-                                onClick={() => handleDeleteNCU(ncu.id)}
+                                onClick={() =>
+                                    handleDeleteUnit({
+                                        id: ncu.uuid,
+                                        unitType: "ncus",
+                                    })
+                                }
                             >
                                 Remove
                             </RemoveButton>

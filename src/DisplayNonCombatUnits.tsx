@@ -1,8 +1,10 @@
-import { NCU } from "./types";
+import { ArmyNCU, NCU } from "./types";
 import { addNCU } from "./store/userArmy/userArmySlice";
 import { useDispatch } from "react-redux";
 import { Button } from "./Button";
 import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
+import useCurrentFaction from "./hooks/useCurrentFaction";
+import { v4 as uuid } from "uuid";
 
 interface DisplayNonCombatUnitsProps {
     factionNCUS: NCU[];
@@ -14,8 +16,9 @@ function DisplayNonCombatUnits({
     selectedCharacters,
 }: DisplayNonCombatUnitsProps): JSX.Element {
     const dispatch = useDispatch();
+    const currentFaction = useCurrentFaction();
 
-    const handleAddNCU = (attachment: NCU): void => {
+    const handleAddNCU = (attachment: ArmyNCU): void => {
         dispatch(addNCU(attachment));
     };
 
@@ -30,7 +33,11 @@ function DisplayNonCombatUnits({
                 >
                     <Button
                         onClick={() => {
-                            handleAddNCU({ ...ncu });
+                            handleAddNCU({
+                                ...ncu,
+                                uuid: uuid(),
+                                currentFaction,
+                            });
                         }}
                     >
                         Add

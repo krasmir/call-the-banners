@@ -30,10 +30,17 @@ export enum UnitType {
 
 export interface ArmyCombatUnit extends CombatUnit {
     uuid: string;
+    currentFaction: string;
 }
 export interface ArmyAttachment extends Attachment {
     uuid: string;
     attachedTo: string;
+    currentFaction: string;
+}
+
+export interface ArmyNCU extends NCU {
+    uuid: string;
+    currentFaction: string;
 }
 
 export interface CombatUnit {
@@ -42,6 +49,7 @@ export interface CombatUnit {
     character: string;
     id: string;
     uuid?: string;
+    currentFaction?: string;
     cost: string;
     type: UnitType;
     speed: string;
@@ -67,7 +75,9 @@ export interface NCU {
     id: string;
     quote: string;
     restrictions: string;
+    uuid?: string;
     type?: string;
+    currentFaction?: string;
 }
 
 export interface Attachment {
@@ -80,6 +90,7 @@ export interface Attachment {
     id: string;
     uuid?: string;
     attachedTo?: string;
+    currentFaction?: string;
     quote: string;
 }
 

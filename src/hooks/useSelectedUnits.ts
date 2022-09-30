@@ -9,7 +9,7 @@ interface SelectedUnits {
 }
 
 function useSelectedUnits(faction: Faction): SelectedUnits {
-    const { attachments, units, ncus } = useSelector(
+    const { attachments, combatUnits, ncus } = useSelector(
         (state: RootState) =>
             state.userArmy[faction as keyof RootState["userArmy"]]
     );
@@ -17,7 +17,7 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
     const attachmentCharacters = attachments?.map(
         ({ character }) => character
     ) ?? [""];
-    const unitsCharacters = units?.reduce(
+    const unitsCharacters = combatUnits?.reduce(
         (arr, { character }) => {
             return character.includes(", ")
                 ? [...arr, ...character.split(", ")]
@@ -35,7 +35,7 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
 
     const selectedCommander = attachments?.find((att) => att.cost === "C");
 
-    const selectedCombatUnits = units
+    const selectedCombatUnits = combatUnits
         ?.filter((unit) => unit.requirements !== "Solo")
         .reduce((unitMap, unit) => {
             if (unitMap.has(unit.type)) {

@@ -6,16 +6,14 @@ import getUnits from "./utils/getUnits";
 import { Faction } from "./types";
 import UnitsTable from "./UnitsTable";
 import { useMemo } from "react";
+import useCurrentFaction from "./hooks/useCurrentFaction";
 
-interface DisplayUnitsProps {
-    faction: Faction;
-}
-
-function DisplayUnits({ faction }: DisplayUnitsProps): JSX.Element {
+function DisplayUnits(): JSX.Element {
+    const currentFaction = useCurrentFaction();
     const { selectedCharacters, selectedCombatUnits, selectedCommander } =
-        useSelectedUnits(faction);
+        useSelectedUnits(currentFaction as Faction);
     const { factionAttachments, factionCommanders, factionNCUS, factionUnits } =
-        useMemo(() => getUnits(faction), [faction]);
+        useMemo(() => getUnits(currentFaction as Faction), [currentFaction]);
 
     return (
         <>

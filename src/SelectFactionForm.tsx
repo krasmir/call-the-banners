@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Faction } from "./types";
 import styled from "styled-components/macro";
 import { Button } from "./Button";
+import { useDispatch } from "react-redux";
+import { setCurrentFaction } from "./store/currentFaction/currentFaction";
 
 const Form = styled.form`
     padding: 12px;
@@ -30,14 +32,9 @@ const Label = styled.label`
     margin: 12px;
 `;
 
-interface SelectFactionFormProps {
-    setFaction: React.Dispatch<React.SetStateAction<Faction>>;
-}
-
-function SelectFactionForm({
-    setFaction,
-}: SelectFactionFormProps): JSX.Element {
+function SelectFactionForm(): JSX.Element {
     const [chosenFaction, setChosenFaction] = useState("Lannister");
+    const dispatch = useDispatch();
 
     const factions = [
         "Lannister",
@@ -54,7 +51,7 @@ function SelectFactionForm({
             action=""
             onSubmit={(e) => {
                 e.preventDefault();
-                setFaction(chosenFaction as Faction);
+                dispatch(setCurrentFaction(chosenFaction as Faction));
             }}
         >
             <Label htmlFor="points">Choose number of points:</Label>
