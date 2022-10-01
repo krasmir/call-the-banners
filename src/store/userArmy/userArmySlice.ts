@@ -58,12 +58,14 @@ export const userArmySlice = createSlice({
             const newUnits: Unit[] = (
                 state[currentFaction][unitType] as Unit[]
             ).filter((unit: Unit) => unit.uuid !== id);
+
             if (unitType === "combatUnits") {
                 const newAttachments = state[currentFaction].attachments.filter(
                     (unit) => unit.attachedTo !== id
                 );
                 state[currentFaction].attachments = newAttachments;
             }
+
             state[currentFaction][unitType] = newUnits;
         },
         addNCU: (state, action: PayloadAction<ArmyNCU>) => {

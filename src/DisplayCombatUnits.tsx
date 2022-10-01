@@ -8,12 +8,10 @@ import useCurrentFaction from "./hooks/useCurrentFaction";
 
 interface DisplayCombatUnitsProps {
     factionUnits: CombatUnit[];
-    selectedCharacters: Set<string>;
 }
 
 function DisplayCombatUnits({
     factionUnits,
-    selectedCharacters,
 }: DisplayCombatUnitsProps): JSX.Element {
     const dispatch = useDispatch();
     const currentFaction = useCurrentFaction();
@@ -27,7 +25,6 @@ function DisplayCombatUnits({
             {factionUnits.map((unit) => (
                 <DisplayUnitsTableRow
                     key={unit.id}
-                    selectedCharacters={selectedCharacters}
                     character={unit.character}
                     unit={unit}
                 >

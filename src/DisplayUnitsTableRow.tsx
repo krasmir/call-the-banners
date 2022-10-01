@@ -1,5 +1,7 @@
 import styled from "styled-components/macro";
-import { Attachment, CombatUnit, NCU } from "./types";
+import useCurrentFaction from "./hooks/useCurrentFaction";
+import useSelectedUnits from "./hooks/useSelectedUnits";
+import { Attachment, CombatUnit, Faction, NCU } from "./types";
 import UnitTypeIcon from "./UnitTypeIcon";
 
 const TR = styled.tr`
@@ -9,20 +11,21 @@ const TR = styled.tr`
 interface DisplayUnitsTableRowProps {
     children?: React.ReactNode;
     character: string;
-    selectedCharacters: Set<string>;
-    selectedCommander?: Attachment | undefined;
     unit: CombatUnit | Attachment | NCU;
 }
 
 function DisplayUnitsTableRow({
     children,
     character,
-    selectedCharacters,
-    selectedCommander,
     unit,
 }: DisplayUnitsTableRowProps): JSX.Element {
+    const currentFaction = useCurrentFaction();
+    const { selectedCharacters, selectedCommander } = useSelectedUnits(
+        currentFaction as Faction
+    );
+
     const checkIfUnitCanBeChosen = (character: string): boolean => {
-        if (selectedCommander !== undefined) return false;
+        if (unit.cost === "C" && selectedCommander !== undefined) return false;
         if (character.includes(", ")) {
             const characterArr = character.split(", ");
             return !characterArr.some((char) => selectedCharacters.has(char));
