@@ -10,11 +10,17 @@ export interface Army {
     attachments: ArmyAttachment[];
 }
 
-type Unit = ArmyCombatUnit & ArmyAttachment & ArmyNCU;
+export type Unit = ArmyCombatUnit & ArmyAttachment & ArmyNCU;
 
 export type UnitType = "combatUnits" | "ncus" | "attachments";
 
-interface DeletePayload {
+interface AddUnitPayload {
+    unitType: UnitType;
+    unit: Unit;
+    currentFaction: string;
+}
+
+interface DeleteUnitPayload {
     unitType: UnitType;
     id: string;
     currentFaction: string;
@@ -48,12 +54,11 @@ export const userArmySlice = createSlice({
     name: "userArmy",
     initialState,
     reducers: {
-        addCombatUnit: (state, action: PayloadAction<ArmyCombatUnit>) => {
-            state[action.payload.currentFaction].combatUnits?.push(
-                action.payload
-            );
+        addUnit: (state, action: PayloadAction<AddUnitPayload>) => {
+            const { unit, currentFaction, unitType } = action.payload;
+            state[currentFaction][unitType].push(unit);
         },
-        deleteUnit: (state, action: PayloadAction<DeletePayload>) => {
+        deleteUnit: (state, action: PayloadAction<DeleteUnitPayload>) => {
             const { id, currentFaction, unitType } = action.payload;
             const newUnits: Unit[] = (
                 state[currentFaction][unitType] as Unit[]
@@ -68,18 +73,9 @@ export const userArmySlice = createSlice({
 
             state[currentFaction][unitType] = newUnits;
         },
-        addNCU: (state, action: PayloadAction<ArmyNCU>) => {
-            state[action.payload.currentFaction].ncus?.push(action.payload);
-        },
-        addAttachment: (state, action: PayloadAction<ArmyAttachment>) => {
-            state[action.payload.currentFaction].attachments?.push(
-                action.payload
-            );
-        },
     },
 });
 
-export const { addCombatUnit, deleteUnit, addNCU, addAttachment } =
-    userArmySlice.actions;
+export const { addUnit, deleteUnit } = userArmySlice.actions;
 
 export default userArmySlice.reducer;
