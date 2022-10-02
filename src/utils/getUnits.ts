@@ -12,14 +12,14 @@ import {
 } from "../types";
 
 interface Units {
-    factionUnits: CombatUnit[];
+    factionCombatUnits: CombatUnit[];
     factionAttachments: Attachment[];
     factionCommanders: Attachment[];
     factionNCUS: NCU[];
 }
 
 function getUnits(faction: Faction): Units {
-    let factionUnits = (units as CombatUnits)[faction];
+    let factionCombatUnits = (units as CombatUnits)[faction];
     let factionAttachments = (attachments as Attachments)[faction].filter(
         ({ cost }) => cost !== "C"
     );
@@ -31,7 +31,7 @@ function getUnits(faction: Faction): Units {
     // Free Folk can't have neutral units in their army
     if (faction !== "Free Folk" && faction !== "Neutral") {
         const neutralUnits = (units as CombatUnits).Neutral;
-        factionUnits = factionUnits.concat(neutralUnits);
+        factionCombatUnits = factionCombatUnits.concat(neutralUnits);
 
         const neutralAttachments = (attachments as Attachments).Neutral.filter(
             ({ cost }) => cost !== "C"
@@ -47,12 +47,17 @@ function getUnits(faction: Faction): Units {
         factionNCUS = factionNCUS.concat(neutralNCUs);
     }
 
-    factionUnits.sort((a, b) => +a.cost - +b.cost);
+    factionCombatUnits.sort((a, b) => +a.cost - +b.cost);
     factionAttachments.sort((a, b) => +a.cost - +b.cost);
     factionAttachments.sort((a, b) => +a.cost - +b.cost);
     factionNCUS.sort((a, b) => +a.cost - +b.cost);
 
-    return { factionAttachments, factionCommanders, factionNCUS, factionUnits };
+    return {
+        factionAttachments,
+        factionCommanders,
+        factionNCUS,
+        factionCombatUnits,
+    };
 }
 
 export default getUnits;

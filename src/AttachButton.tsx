@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addAttachment } from "./store/userArmy/userArmySlice";
+import { addUnit, Unit } from "./store/userArmy/userArmySlice";
 import styled from "styled-components/macro";
 import { Button } from "./Button";
 import Modal from "./Modal";
-import { ArmyAttachment, Attachment, Faction } from "./types";
+import { Faction } from "./types";
 import { v4 as uuid } from "uuid";
 import useCurrentFaction from "./hooks/useCurrentFaction";
 import useSelectedUnits from "./hooks/useSelectedUnits";
@@ -14,7 +14,7 @@ const LI = styled.li`
 `;
 
 interface AttachButtonProps {
-    attachment: Attachment;
+    attachment: Unit;
 }
 
 function AttachButton({ attachment }: AttachButtonProps): JSX.Element {
@@ -25,8 +25,14 @@ function AttachButton({ attachment }: AttachButtonProps): JSX.Element {
 
     const { selectedCombatUnits } = useSelectedUnits(currentFaction as Faction);
 
-    const handleAttachToUnit = (attachment: ArmyAttachment): void => {
-        dispatch(addAttachment(attachment));
+    const handleAttachToUnit = (attachment: Unit): void => {
+        dispatch(
+            addUnit({
+                unit: attachment,
+                currentFaction,
+                unitType: "attachments",
+            })
+        );
     };
 
     const combatUnits = selectedCombatUnits?.get(attachment.type);
@@ -42,10 +48,9 @@ function AttachButton({ attachment }: AttachButtonProps): JSX.Element {
                                 <Button
                                     onClick={() =>
                                         handleAttachToUnit({
-                                            ...(attachment as ArmyAttachment),
+                                            ...attachment,
                                             uuid: uuid(),
                                             attachedTo: unit.uuid,
-                                            currentFaction,
                                         })
                                     }
                                 >
