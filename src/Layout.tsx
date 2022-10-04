@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
+import DisplayDeck from "./DisplayDeck";
 import DisplayUnits from "./DisplayUnits";
 import SelectFactionForm from "./SelectFactionForm";
 
@@ -56,6 +57,13 @@ const FormDiv = styled.div`
     grid-area: form;
 `;
 
+const DeckDiv = styled.div`
+    grid-area: deck;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+`;
+
 const ArmyDiv = styled.div`
     grid-area: army;
     overflow-y: auto;
@@ -87,6 +95,9 @@ function Layout({ children }: LayoutProps): JSX.Element {
             <FormDiv>
                 <SelectFactionForm />
             </FormDiv>
+            <DeckDiv>
+                <DisplayDeck></DisplayDeck>
+            </DeckDiv>
             <ArmyDiv>
                 <Army />
             </ArmyDiv>
