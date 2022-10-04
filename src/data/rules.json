@@ -1,26 +1,66 @@
 [
-    {
-        "id": "50101",
-        "faction": "Lannister",
-        "name": "Baratheon Banners",
-        "text": "The Kingsguard come with 4 Baratheon Banners. At the start of its Activation, it may remove Baratheon Banners to gain the following. Each may be selected only once per Activation:\n• This Turn, this unit's Attacks gain **Critical Blow** and **Sundering**.\n• This Turn, this unit's Attacks gains **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.\n• This Turn, when this unit is performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.\n• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn.",
-        "back": "",
-        "version": "2021"
-    },
-    {
-        "id": "50301",
-        "faction": "Free Folk",
-        "name": "Chieftain of the Giants",
-        "text": "**You may select Mag the\nMighty as your Commander**\n*(but must still pay his points cost).*\n\nWhen you include Mag the\nMighty as your Commander,\nreplace the Free Folk Tactics\nDeck with Mag's deck.",
-        "back": "Mag The Mighty;Mag Mar Tun Doh Weg;\"You can kneel to him if you like, he won't mind.\";Replace the Free Folk Tactics deck with Mag's Tactics deck",
-        "version": "2021"
-    },
-    {
-        "id": "50701",
-        "faction": "Targaryen",
-        "name": "House of the Undying",
-        "text": "**There can only be 1 House of the Undying in the Game.**\nYour opponent must discard 1 Tactics card at random from their hand.",
-        "back": "",
-        "version": "2021"
-    }
+  {
+    "id": "50101",
+    "faction": "Lannister",
+    "name": "Baratheon Banners",
+    "text": "The Kingsguard come with 4 Baratheon Banners. At the start of its Activation, it may remove Baratheon Banners to gain the following. Each may be selected only once per Activation:\n• This Turn, this unit's Attacks gain **Critical Blow** and **Sundering**.\n• This Turn, this unit's Attacks gains **Vicious** and, if the Defender fails their Panic Test, they suffer +1 Wound.\n• This Turn, when this unit is performing an Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.\n• This unit restores 2 Wounds and may re-roll Charge and Retreat Distance Dice this Turn.",
+    "back": "",
+    "version": "2021"
+  },
+  {
+    "id": "50301",
+    "faction": "Free Folk",
+    "name": "Chieftain of the Giants",
+    "text": "**You may select Mag the\nMighty as your Commander**\n*(but must still pay his points cost).*\n\nWhen you include Mag the\nMighty as your Commander,\nreplace the Free Folk Tactics\nDeck with Mag's deck.",
+    "back": "Mag The Mighty;Mag Mar Tun Doh Weg;\"You can kneel to him if you like, he won't mind.\";Replace the Free Folk Tactics deck with Mag's Tactics deck",
+    "version": "2021"
+  },
+  {
+    "id": "50302",
+    "faction": "Free Folk",
+    "name": "Varamyr Sixskins",
+    "text": "You may select Varamyr Sixskins as your Commander. If you do, reduce his cost to 0.\nWhen you include Varamyr as your Commander, your army **must** also include Shadowcat and Wolf Pack.",
+    "back": "Varamyr Sixskins;Master Skinchanger;\"A vicious little runt.\" -Tormund Giantsbane;Bonded Command\nBonded Guardians\nSummon Companions",
+    "version": "2021"
+  },
+  {
+    "id": "50701",
+    "faction": "Targaryen",
+    "name": "House of the Undying",
+    "text": "**There can only be 1 House of the Undying in the Game.**\nYour opponent must discard 1 Tactics card at random from their hand.",
+    "back": "",
+    "version": "2021"
+  },
+  {
+    "id": "50900",
+    "faction": "Martell",
+    "name": "Water Gardens",
+    "text": "**There can only be 1 Water Gardens in the Game. While you Control this zone, opponents do not count as Controlling Tactics Zones for Abilities or Tactics cards.**\nOn your opponent’s next Turn, they must Activate a Combat Unit if possible.",
+    "back": "If your army includes Doran Martell, Prince of Dorne, before the game begins, place the Water Gardens Tactics zone card next to the Tactics Board. It acts as an additional  Tactics Zone for all purposes.",
+    "version": "2021"
+  },
+  {
+    "id": "50901",
+    "faction": "Martell",
+    "name": "Lord of Sunspear",
+    "text": "You may choose **Doran Martell, Lord of Sunspear** as your Commander *(you must still pay his points cost)*. If you do, your army **must** include **Areo Hotah, Captain of the Guard**. He counts as your Commander on the Battlefield for all gameplay purposes.",
+    "back": "",
+    "version": "2021"
+  },
+  {
+    "id": "50902",
+    "faction": "Martell",
+    "name": "Manticore Venom",
+    "text": "[SKILL:Venom]\n\nThis unit cannot restore Wounds.\n\nIf this unit would become **Vulnerable** but is already Vulnerable, it instead suffers 1 Wound.\n\nEach time this unit Activates, it becomes **Vulnerable**.",
+    "back": "Poison;\"No true man killed with poison. Poison was for cravens, women, and Dornishmen.\";Victarion Greyjoy;\nAt the Start of the Game, place this card close to your Tactics Deck.;\nAn Ability or effect will state when this card will be played.",
+    "version": "2021"
+  },
+  {
+    "id": "50903",
+    "faction": "Martell",
+    "name": "The Strangler",
+    "text": "[SKILL:Venom]\n\nAt the end of each \nRound, place 1 Order \ntoken on this card.\n\nIf this card has 2 Order \ntokens, destroy the unit \nthis card is attached to.",
+    "back": "Poison;\"No true man killed with poison. Poison was for cravens, women, and Dornishmen.\";Victarion Greyjoy;\nAt the Start of the Game, place this card close to your Tactics Deck.;\nAn Ability or effect will state when this card will be played.",
+    "version": "2021"
+  }
 ]

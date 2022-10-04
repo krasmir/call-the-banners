@@ -45,6 +45,7 @@ function SelectFactionForm(): JSX.Element {
         "Baratheon",
         "Targaryen",
         "Greyjoy",
+        "Martell",
     ];
     return (
         <Form

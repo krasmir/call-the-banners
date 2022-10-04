@@ -1,777 +1,845 @@
 {
-    "Lannister": [
-        {
-            "faction": "Lannister",
-            "name": "Tywin Lannister, The Great Lion",
-            "character": "Tywin Lannister",
-            "cost": "6",
-            "names": "The Rains of Castamere",
-            "descriptions": "Once per game, at the start of any Turn, target any number of enemy Combat Units:\n• 1 of those enemies becomes Panicked.\n• 1 of those enemies becomes Vulnerable.\n• 1 of those enemies suffers 4 Hits.\n• 1 of those enemies suffers 1 Panic Test.\n• 1 of those enemies loses all Abilities until the end of the Round.\n*(The same Combat Unit may be targeted by multiple effects)*",
-            "id": "30101",
-            "quote": "\"Some battles are won with swords and spears, others with quills and ravens.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Pycelle, Grand Maester",
-            "character": "Pycelle",
-            "cost": "4",
-            "names": "Manipulation and Deception",
-            "descriptions": "Each time Pycelle Claims a zone, target 1 enemy Combat Unit. They become **Weakened**.",
-            "id": "30102",
-            "quote": "\"Pycelle is a toad. But better a Lannister toad then a Tyrell toad, no?\" -Tyrion Lannister",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "The High Sparrow, Father of the Faithful",
-            "character": "High Sparrow",
-            "cost": "4",
-            "names": "Fealty to The Seven",
-            "descriptions": "**Influence** *(When this unit Claims a Tactics Zone, attach this card to a Combat Unit until the end of the Round)*: \nWhile Influencing an enemy, each time that enemy suffers Wounds from failing Panic Tests, target 1 friendly unit in Long Range. They restore that many Wounds, up to 3.",
-            "id": "30103",
-            "quote": "\"I seldom feel so close to god as when I am being whipped for mine own wickedness...\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Tyrion Lannister, The Imp",
-            "character": "Tyrion Lannister",
-            "cost": "5",
-            "names": "Tactical Mastermind",
-            "descriptions": "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.\nOnce per game, when an opponent plays a Tactics card, before resolving that card, you may search your Tactics deck or discard pile for 1 **Counterplot** card and play it. Shuffle your Tactics deck. ",
-            "id": "30104",
-            "quote": "\"He is a bigger man than he seems, I think.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Cersei Lannister, Queen Regent",
-            "character": "Cersei Lannister",
-            "cost": "4",
-            "names": "Playing The Game",
-            "descriptions": "Cersei begins the game with 2 Order tokens. \nEach time Cersei Claims a zone, you may remove 1 Order token from her.\nIf you do, perform the following: \nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Hear Me Roar!** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Subjugation of Power** card and add it to your hand. Shuffle your Tactics deck.",
-            "id": "30105",
-            "quote": "\"When you play the game of thrones, you win or you die. There is no middle ground.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Joffrey Baratheon, Lord of the Seven Kingdoms",
-            "character": "Joffrey Baratheon",
-            "cost": "5",
-            "names": "Might of The Iron Throne",
-            "descriptions": "While Joffrey is on the Tactics Board, you count as Controlling [CROWN].\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile lnfluencing an enemy, that enemy suffers +1 Wound from failing Panic Tests.",
-            "id": "30106",
-            "quote": "\"His Grace has a unique way of winning the hearts of his subjects.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Kevan Lannister, Master Of Law",
-            "character": "Kevan Lannister",
-            "cost": "5",
-            "names": "Unbiased Justice",
-            "descriptions": "Once per game, at the start of any Turn, target any number of friendly Combat Units:\n• 1 of those units restores 2 Wounds.\n• 1 of those units removes all Condition tokens.\n• 1 of those units performs a 2\" shift.\nUntil the end of the Round, 1 of those units Attacks using its highest Attack Die Value, and may re-roll any Attack Dice.\n*(The same Combat Unit may be targeted by multiple effects)*",
-            "id": "30107",
-            "quote": "\"The gods shaped him to be a follower, not a leader.\" -Tyrion Lannister",
-            "restrictions": ""
-        },
-        {
-            "faction": "Lannister",
-            "name": "Qyburn, Master Of Whisperers",
-            "character": "Qyburn",
-            "cost": "5",
-            "names": "Little Doves",
-            "descriptions": "Qyburn begins the game with 4 Order tokens.\nEach time an enemy NCU Claims a zone, before resolving that zone's effect, you may remove 1 Order token from Qyburn. If you do, gain the following based on that zone:\n[CROWN]: 1 enemy becomes **Panicked**.\n[MONEY]: 1 enemy Combat Unit suffers 1 Wound.\n[SWORDS]: Attacker counts as having -1 rank for Attack Dice.\n[LETTER]: Opponent draws 1 fewer Tactics Card.\n[HORSE]: Enemy moves with -1 [MOVEMENT].",
-            "id": "30108",
-            "quote": "\"Your secrets are safe with me.\"",
-            "restrictions": "*May not be fielded in an army that includes Varys.*"
-        },
-        {
-            "faction": "Lannister",
-            "name": "Tommen Baratheon, Next in Succession",
-            "character": "Tommen Baratheon",
-            "cost": "4",
-            "names": "Queen's Influence",
-            "descriptions": "Tommen begins the game with 2 Order tokens.\nEach time Tommen Claims a zone, you may remove 1 Order token from him. If you do, perform the following:\nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Fealty to the Crown** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Bribery** card and add it to your hand. Shuffle your Tactics deck.",
-            "id": "30109",
-            "quote": "\"When I'm king in my own right, I'm going to outlaw beets.\"",
-            "restrictions": ""
-        }
-    ],
-    "Stark": [
-        {
-            "faction": "Stark",
-            "name": "Catelyn Stark, Lady of Winterfell",
-            "character": "Catelyn Stark",
-            "cost": "4",
-            "names": "Family, Duty, Honor",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nEach time Catelyn Influences a unit, remove 1 Condition token from them.\nWhile lnfluencing a unit, that unit Attacks using its highest Attack Die Value.",
-            "id": "30201",
-            "quote": "\"Show me the path I must walk and do not let me stumble in the dark places that lie ahead.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Sansa Stark, Little Bird",
-            "character": "Sansa Stark",
-            "cost": "4",
-            "names": "Repeating the Words",
-            "descriptions": "Once per game, when Sansa Activates, you may return 1 Tactics card from your discard pile to your hand.\nEach time Sansa Claims a zone, you may replace that zone's effect with:\n*Return 1 Tactics card from your discard pile to your hand.*",
-            "id": "30202",
-            "quote": "\"The Hound is right ... I am only a little bird, repeating the words they taught me.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Eddard Stark, Warden of the North",
-            "character": "Eddard Stark",
-            "cost": "6",
-            "names": "Bravery in the Face of Death",
-            "descriptions": "Eddard begins the game with 4 Order tokens on him.\nEach time a friendly unit is performing a Panic Test, after rolling dice, you may remove 1 Order token from Eddard. If you do, that unit may re-roll any dice for this test.\nEach time a friendly unit passes a Panic Test, you may remove 1 Order token from Eddard. If you do, that unit restores 2 Wounds, +1 Wound for each of its destroyed ranks.",
-            "id": "30204",
-            "quote": "\"You wear your honor like a suit of armor, Stark.\"\n-Petyr Baelish",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Rodrik Cassel, Combat Veteran",
-            "character": "Rodrik Cassel",
-            "cost": "4",
-            "names": "Martial Expertise",
-            "descriptions": "Each time Rodrik Claims [SWORDS], target 1 enemy Combat Unit. They become Vulnerable.\nRodrik begins the game with 2 Order tokens on him.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, remove 1 Order token from 1 friendly unit. That Order may be used again this Round.",
-            "id": "30205",
-            "quote": "\"There is no better trainer than Rodrik.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Arya Stark, The Wolf Girl",
-            "character": "Arya Stark",
-            "cost": "4",
-            "names": "Never Do What They Expect.",
-            "descriptions": "Arya begins the game with 2 Order tokens on her. At the start of an enemy Turn, you may remove 1 Order token from Arya. If you do, target 1 friendly lnfantry unit. lt performs 1 Maneuver or Retreat Action.",
-            "id": "30206",
-            "quote": "\"Boy, girl, you are a sword, that is all.\" \n-Syrio Forel",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Howland Reed, Protector of the Neck",
-            "character": "Howland Reed",
-            "cost": "5",
-            "names": "Hunter's Guile",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, that enemy's Attacks suffer -1 to Hit and they treat all Terrain as having the Hindering and Rough keywords.",
-            "id": "30207",
-            "quote": "\"He could talk to trees and weave words and make castles appear and disappear.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Eddard Stark, Hand of The King",
-            "character": "Eddard Stark",
-            "cost": "6",
-            "names": "Price of Honor /\nHand's Orders",
-            "descriptions": "At the start of any Turn, you may destroy Eddard. If you do, target 1 enemy NCU. That NCU cannot Activate and loses all Abilities until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat  Unit until the end of the Round)*:\nWhile Influencing a unit, each time that unit is targeted by an NCU Ability or Tactics Zone, you may cancel the effect of that NCU or zone.",
-            "id": "30208",
-            "quote": "\"I have met so few of them in my life... When I see what honesty and honor have won you, I understand why...\" -Varys",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Lyanna Mormont, Youngest She-Bear",
-            "character": "Lyanna Mormont",
-            "cost": "4",
-            "names": "Avenging The North",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, it gains the following based on the number of destroyed friendly Combat Units *(effects are cumulative)*:\n**0+:** Unit gains +1 to Morale Test rolls.\n**1+:** Melee Attacks gain **Critical Blow**.\n**2+:** Automatically passes all Panic Tests.\n**3+:** May re-roll any Attack Dice.",
-            "id": "30209",
-            "quote": "\"Bear Island knows no king but the King in the North, whose name is STARK.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Stark",
-            "name": "Robb Stark, King in the North",
-            "character": "Robb Stark",
-            "cost": "5",
-            "names": "Wolf's Cunning",
-            "descriptions": "After deployment, target 1 friendly Combat Unit. Remove it from the battlefield, placing it off the table *(in Reserve)*. Once per game, when Robb Claims [HORSE], you may replace that zone's effect with:\n*Deploy the unit Robb placed in Reserve fully in Short Range of any Flank table edge and attach this card to them until the end of the game. While attached, enemies that unit Successfully Charges in the Flank or Rear become **Panicked** and **Vulnerable**.*",
-            "id": "30210",
-            "quote": "\"I thought the battles  would be the hard part...\"",
-            "restrictions": "*Your army may not include Eddard Stark.*"
-        }
-    ],
-    "Free Folk": [
-        {
-            "faction": "Free Folk",
-            "name": "Lady Val, The Wildling Princess",
-            "character": "Lady Val",
-            "cost": "4",
-            "names": "Lady of the Wilds",
-            "descriptions": "Each time Lady Val Claims a zone, you may replace that zone's effect with:\n*1 friendly Combat Unit performs 1 Manuever or Retreat Action. If they Retreat, 1 enemy they disengage from becomes **Vulnerable**.*",
-            "id": "30301",
-            "quote": "\"I know the forest better than all your black-cloaked rangers. It holds no ghosts for me.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Mance Rayder, Artful Tactician",
-            "character": "Mance Rayder",
-            "cost": "4",
-            "names": "Skillful Preparations",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, each time that unit is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card.",
-            "id": "30302",
-            "quote": "\"Mance has cunning. He was raised a crow, you know, and the crow's a tricksy bird.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Craster, Ally of Convenience",
-            "character": "Craster",
-            "cost": "4",
-            "names": "Refuge and Supplies",
-            "descriptions": "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly unit.\nEach time Craster Claims a zone, you may replace its effect with:\n*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.*",
-            "id": "30303",
-            "quote": "\"He's never turned a ranger away from his fire, nor does he love Mance Rayder...\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Styr, Iron-Fisted Tyrant",
-            "character": "Styr",
-            "cost": "5",
-            "names": "Fury of the Thenns",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly unit, that unit's Melee Attacks gain +1 Attack Die and **Sundering**. ",
-            "id": "30304",
-            "quote": "\"These are wildlings... more beast than man.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Ygritte, Kissed by Fire",
-            "character": "Ygritte",
-            "cost": "4",
-            "names": "Spearwife's Guile",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly unit, that unit gains +1 [MOVEMENT] and ignores the Hindering and Rough keywords.\nWhile Influencing an enemy unit, that enemy suffers -1 [MOVEMENT] and triggers Disorderly Charges on rolls of 1 or 2.",
-            "id": "30305",
-            "quote": "\"I know one thing. I know that you are wildling to the bone\" -Jon Snow",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Lady Dalla, Wife and Council",
-            "character": "Lady Dalla",
-            "cost": "5",
-            "names": "Spearwife Council",
-            "descriptions": "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:\n[CROWN]: 1 enemy becomes Weakened.\n[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.\n[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck.",
-            "id": "30306",
-            "quote": "\"We free folk know things you kneelers have forgotten. Sometimes the short road is not the safest, Jon Snow.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Mance Rayder, Deceptive Bard",
-            "character": "Mance Rayder",
-            "cost": "6",
-            "names": "Intrigue and Subterfuge /\nDisrupt Communication",
-            "descriptions": "Once per game, when an enemy NCU Activates, that NCU loses all Abilities until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, your opponent may not target that unit with Tactics Zone effects or Influence Abilities.",
-            "id": "30307",
-            "quote": "\"The Wall can stop an army, but not a man alone.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Free Folk",
-            "name": "Jon Snow, Turncloak Crow",
-            "character": "Jon Snow",
-            "cost": "4",
-            "names": "Southern Discipline",
-            "descriptions": "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Coordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck.",
-            "id": "30308",
-            "quote": "\"Mance Rayder swore an oath as well...\"",
-            "restrictions": ""
-        }
-    ],
-    "Neutral": [
-        {
-            "faction": "Neutral",
-            "name": "Petyr Baelish, Littlefinger",
-            "character": "Petyr Baelish",
-            "cost": "4",
-            "names": "Master of the Game",
-            "descriptions": "Each time Petyr Claims a zone, you may replace its effect with the effect of any unclaimed zone.\nOnce per game, at the start of any Turn, you may select 1 zone. Until the end of the Round, you count as Controlling that zone.",
-            "id": "30402",
-            "quote": "\"In King's Landing, there are two sorts of people. The players and the pieces.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "Lord Varys, The Spider",
-            "character": "Lord Varys",
-            "cost": "5",
-            "names": "Little Birds",
-            "descriptions": "Varys begins the game with 4 Order tokens. \nEach time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:\n[CROWN]: 1 enemy suffers 1 Panic Test. \n[MONEY]: Restore 2 Wounds to 1 friendly unit.\n[SWORDS]: 1 enemy suffers 3 Hits.\n[LETTER]: Draw 1 Tactics card.\n[HORSE]: 1 friendly unit shifts 3\".",
-            "id": "30403",
-            "quote": "\"Varys has ways of learning things that no man could know.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "The High Seneschal",
-            "character": "George Martin",
-            "cost": "0",
-            "names": "History is Written by the Victors",
-            "descriptions": "**The High Seneschal cannot activate and cannot be targeted in any way. He merely observes the battle.**\nOnce the victor has been determined, that player may define all actions and events that transpired throughout the game. No opponent may refute or deny any retelling of said events *(regardless of how unlikely or exaggerated)* until such a time where they best the victor in a new game.",
-            "id": "30404",
-            "quote": "\"He is the keeper of this world's history.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "Jaqen H'ghar, Follower of The Red God",
-            "character": "Jaqen H'ghar",
-            "cost": "5",
-            "names": "Choosing a Name /\nA Name Given",
-            "descriptions": "Each time Jaqen Activates, he may replace his Influence Ability with the Influence Ability of any friendly or enemy NCU until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly Infantry unit, its Melee Attacks gain **Precision**.",
-            "id": "30405",
-            "quote": "\"The Red God has his due, sweet girl, and only death may pay for life.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "Tycho Nestoris, Iron Banker",
-            "character": "Tycho Nestoris",
-            "cost": "5",
-            "names": "Backing of The Iron Bank",
-            "descriptions": "Once per game, at the start of any Turn, you may restore 5 Wounds *(total)* across any number of friendly Combat Units. ",
-            "id": "30406",
-            "quote": "\"We who serve the Iron Bank face death full as often as you who serve the Iron Throne.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "Walder Frey, Lord of the Crossing",
-            "character": "Walder Frey",
-            "cost": "4",
-            "names": "The Late Walder Frey",
-            "descriptions": "You may only Activate Walder if you have no other units that can Activate this Round.\nEach time Walder Claims a zone, you may replace that zone's effect with the effect of any zone. If Walder Claims [CROWN], you may replace that zone's effect with:\n*1 enemy becomes **Weakened**. 1 friendly unit restores 2 Wounds. At the start of the next Round, you become the First Player.*",
-            "id": "30407",
-            "quote": "\"He has an old man's caution and a young man's ambition, and has never lacked for cunning.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Neutral",
-            "name": "Roose Bolton, Calculating and Cruel",
-            "character": "Roose Bolton",
-            "cost": "4",
-            "names": "Horrific Rumors",
-            "descriptions": "Roose begins the game with 3 Order tokens. \nEach time Roose Activates, you may remove 1 Order token from him. \nIf you do, target 1 enemy Combat Unit. They become **Panicked**.\nEach time Roose Claims a zone, you may replace that zone's effect with:\n*1 enemy Combat Unit suffers 1 Panic Test.*",
-            "id": "30408",
-            "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\"",
-            "restrictions": ""
-        }
-    ],
-    "Night's Watch": [
-        {
-            "faction": "Night's Watch",
-            "name": "Bowen Marsh, First Steward",
-            "character": "Bowen Marsh",
-            "cost": "4",
-            "names": "Counts and Measures",
-            "descriptions": "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck.",
-            "id": "30501",
-            "quote": "\"For the Watch.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Aemon, Maester of Castle Black",
-            "character": "Aemon",
-            "cost": "4",
-            "names": "Maester's Healing",
-            "descriptions": "Each time Aemon Claims a zone, you may target 1 friendly Combat Unit. That unit restores 1 Wound, +1 additional Wound for each of its destroyed ranks.",
-            "id": "30502",
-            "quote": "\"Knowledge is a weapon, Jon. Arm yourself well before you ride forth to battle.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Jeor Mormont, The Old Bear",
-            "character": "Jeor Mormont",
-            "cost": "4",
-            "names": "Duty To The Realms Of Men",
-            "descriptions": "Each time Jeor Claims a zone, you may target 2 friendly Night's Watch Combat Units in Long Range of each other. Move 1 friendly attached Tactics card from 1 of those units to the other.\nOnce per game, when Jeor Claims a zone, you may replace that zone's effect with:\n*Take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*",
-            "id": "30503",
-            "quote": "\"The Wall was made to guard the realms of men... and not against other men\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Qhorin Halfhand, Unwavering Ranger",
-            "character": "Qhorin Halfhand",
-            "cost": "6",
-            "names": "Sacrifice For The Cause / \nHalfhand's Guidance",
-            "descriptions": "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy cannot Activate or perform Actions this Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly Cavalry or Infantry unit, it gains +1 [MOVEMENT] and +1 Attack Die.",
-            "id": "30506",
-            "quote": "\"Our honor means no more than our lives, so long as the realm is safe.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Donal Noye, Expert Blacksmith",
-            "character": "Donal Noye",
-            "cost": "5",
-            "names": "Expert Maintenance",
-            "descriptions": "Donal begins the game with 2 Order Tokens on him.\nEach time a unit is performing an Attack, after rolling Attack Dice, you may remove 1 Order Token from Donal. If you do, choose 1:\n• Attacker may re-roll any Attack Dice and opponents cannot expend **Weakened** tokens from them.\n• Defender gains +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens from them.",
-            "id": "30507",
-            "quote": "\"The Watch is not what it was. Too few honest men to keep the rogues in line.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Othell Yarwyck, Warmachine Specialist",
-            "character": "Othell Yarwyck",
-            "cost": "5",
-            "names": "War Machines of The Wall",
-            "descriptions": "Each time Othell Claims a zone, you may replace that zone's effect with:\n*Make the following Ranged Attack on 1 enemy Combat Unit:*\n[ATTACK:Ranged:Ranged Volley:3+3]\n*Gains +1 Attack Die for each of the Defenders remaining ranks and the following based on the zone Othell Claimed:*\n[CROWN]: **Vicious** [MONEY]: **Sundering**\n[SWORDS]: Defender becomes **Weakened**",
-            "id": "30508",
-            "quote": "\"This will show them how we deal with their kind.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Samwell Tarley, Craven Scholar",
-            "character": "Samwell Tarley",
-            "cost": "5",
-            "names": "Knowledge Is Power",
-            "descriptions": "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
-            "id": "30509",
-            "quote": "\"I can't command you to be brave, but I can\ncommand you to hide your fears.\" -Jon Snow",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Gilly, The Wildling Girl",
-            "character": "Gilly",
-            "cost": "0",
-            "names": "Samwell's Influence",
-            "descriptions": "Gilly may only be Activated once per game.",
-            "id": "30510",
-            "quote": "\"Well I think you're quite brave.\"",
-            "restrictions": "*May only be fielded in an army including **Samwell Tarley, Craven Scholar**.*"
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Craster, Ally of the Watch",
-            "character": "Craster",
-            "cost": "4",
-            "names": "Rest and Refuge",
-            "descriptions": "When Craster Claims the following zones, their effects gains:\n[MONEY]: *Instead of restoring Wounds from 1 unit, you may restore 3 Wounds (total) across any number of friendly Combat Units.*\n[SWORDS]: *The targeted unit counts as having +1 remaining rank for determining Attack Dice.*\n[HORSE]: *The targeted unit moves with +1 [MOVEMENT].*",
-            "id": "30511",
-            "quote": "\"The man's half-mad, I won't deny\nit, but you'd be the same if you'd spent\nyour life in this cursed wood.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Yoren, Wandering Crow",
-            "character": "Yoren",
-            "cost": "6",
-            "names": "Recruitment",
-            "descriptions": "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with: \n*Place 1 Order token on Yoren.*\nEach time Yoren Claims a zone, you may replace that zone's effect with:\n*Remove 4 Order tokens from Yoren.*\n*If you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge.*",
-            "id": "30512",
-            "quote": "\"I'm here to find men for the Wall...\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Night's Watch",
-            "name": "Ser Denys Mallister, Honorable Brother",
-            "character": "Ser Denys Mallister",
-            "cost": "4",
-            "names": "Time May Yet Come",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, if that unit began the Turn engaged, each time it performs a Melee Attack, before rolling Attack Dice, choose 1. If this unit has only 1 remaining rank, gain both instead:\n• This unit rolls its highest Attack Die Value.\n• 1 enemy engaged with this unit gains 1 Condition token.",
-            "id": "30513",
-            "quote": "\"The men of the Night's Watch dressed in black, Ser Denys Mallister reminded me sternly, as if I had forgotten.\" -Mance Rayder",
-            "restrictions": ""
-        }
-    ],
-    "Baratheon": [
-        {
-            "faction": "Baratheon",
-            "name": "Alester Florent, Lord of Brightwater",
-            "character": "Alester Florent",
-            "cost": "4",
-            "names": "Shifting Loyalties",
-            "descriptions": "Alester begins the game with 3 Order tokens on him.\nEach time Alester Claims a zone, after resolving that zone's effect, you may remove 1 Order Token from him. If you do, move him to any empty zone, or switch zones with any other NCU.",
-            "id": "30601",
-            "quote": "\"...a man who changes kings and gods the way I change my boots.\" -Cortnay Penrose",
-            "restrictions": ""
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Shyra Errol, Lady of Haystack Hall",
-            "character": "Shyra Errol",
-            "cost": "4",
-            "names": "Support Of Haystack Hall",
-            "descriptions": "Each time Shyra Claims [CROWN], restore 1 Wound to 1 friendly Combat Unit.\nEach time Shyra Claims [LETTER], remove 1 Condition Token from 1 friendly Combat Unit.\nEach time Shyra Claims [MONEY], if you remove a token, place 1 Condition Token of that type on 1 enemy Combat Unit.",
-            "id": "30602",
-            "quote": "\"Sworn to House Baratheon... First Renly, then Stannis.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Melisandre, The Red Woman",
-            "character": "Melisandre",
-            "cost": "5",
-            "names": "Sacrifice To The Lord Of Light /\nLoyalty: Stannis Baratheon",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhen Melisandre Influences a friendly unit, you may have them suffer 2 Wounds and 1 Panic Test. If you do, target 1 enemy Combat Unit. That enemy suffers 1 Panic Test with -2 to their roll and +2 Wounds on failure.\nWhile Influencing a friendly unit, that unit is a R'hllor unit and its Melee Attacks gain **Vicious**.",
-            "id": "30603",
-            "quote": "\"Lady Melisandre wore no crown, but every man there knew that she was Stannis Baratheon’s real queen.\"",
-            "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Davos Seaworth, Hand of The True King",
-            "character": "Davos Seaworth",
-            "cost": "4",
-            "names": "Smuggler's Cunning /\nLoyalty: Stannis Baratheon",
-            "descriptions": "Davos begins the game with 3 Order tokens on him.\nEach time a friendly unit Charges, after rolling Charge Distance Dice, you may remove 1 token from Davos. If you do, you may re-roll any Charge Distance Dice.\nEach time a friendly unit Activates, you may remove 1 token from Davos. If you do, until the end of the Turn, enemies engaged with that unit may not use Orders or be the target of friendly Tactics cards.",
-            "id": "30604",
-            "quote": "\"Kings and corpses always draw attendants.\"",
-            "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Selyse & Shireen, Queen and Princess",
-            "character": "Selyse & Shireen",
-            "cost": "6",
-            "names": "Fervent Conviction /\nNecessary Sacrifices /\nLoyalty: Stannis Baratheon",
-            "descriptions": "***Influence** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, it gains +1 to Morale Test rolls and, each time it passes a Morale test, 1 enemy it is engaged with suffers 1 Wound. /\nOnce per game, when a friendly Combat Unit would be destroyed, instead, that unit is not destroyed and remains in play with D3 Wounds. Until the end of the game, it is a R'hllor unit.",
-            "id": "30605",
-            "quote": "\"The red woman had won her, heart and soul, turning her from the gods of the Seven Kingdoms.\"",
-            "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Axell Florent, Hand of the Queen",
-            "character": "Axell Florent",
-            "cost": "4",
-            "names": "In R'hllor's Name /\nLoyalty: Stannis Baratheon",
-            "descriptions": "***Influence** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, each time they fail a Panic Test, they become **Weakened**.\nWhile Influencing an enemy unit, if they are engaged with a R'hllor unit, they suffer +1 Wound from failing Panic Tests.",
-            "id": "30606",
-            "quote": "\"If you are truly the Queen's Hand, I pity her Grace.\" -Jon Snow",
-            "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Margaery Tyrell, Little Rose",
-            "character": "Margaery Tyrell",
-            "cost": "4",
-            "names": "A Rose and its Thorns /\nLoyalty: Renly Baratheon",
-            "descriptions": "Each time Margaery Claims a zone, you may target 1 friendly Combat Unit. They restore 1 Wound. You may then target 1 enemy engaged with that unit. They become **Vulnerable**.",
-            "id": "30608",
-            "quote": "\"The girl is a maid of fourteen, sweet and beautiful and tractable.\" -Varys",
-            "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Olenna Tyrell, Queen of Thorns",
-            "character": "Olenna Tyrell",
-            "cost": "5",
-            "names": "Pulling Weeds /\nLoyalty: Renly Baratheon",
-            "descriptions": "Each time Olenna Claims a zone, target 1 enemy NCU and choose 1:\n• That NCU loses all Abilities until the end of the Round.\n• If that NCU Claims a zone this Round, before resolving that zone's effect, target 1 enemy Combat Unit. They suffer D3 Hits and becomes **Weakened**.",
-            "id": "30609",
-            "quote": "\"All men are fools, if truth be told, but the ones in motley are more amusing than the ones in crowns.\"",
-            "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Eldon Estermont, Venerable Knight",
-            "character": "Eldon Estermont",
-            "cost": "4",
-            "names": "Elderly Caution /\nLoyalty: Renly Baratheon",
-            "descriptions": "Each time Eldon Claims a zone, you may replace that Zone's effect with: \n*Draw 3 Tactics Cards, then shuffle 1 card from your hand into your Tactics Deck.*",
-            "id": "30610",
-            "quote": "\"An old knight, nearing seventy, he is the Lord of Greenstone\"",
-            "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        },
-        {
-            "faction": "Baratheon",
-            "name": "Cortnay Penrose, Reliable Castellan",
-            "character": "Cortnay Penrose",
-            "cost": "4",
-            "names": "Castellan’s Duty /\nLoyalty: Renly Baratheon",
-            "descriptions": "Cortnay begins the game with 3 Order tokens on him.\nEach time an enemy NCU activates, you may remove 1 Order token from Cortnay. If you do, choose 2 zones. If that NCU Claims either zone this Turn, before resolving that zone's effect, target any number of friendly Combat Units. Restore D3+2 Wounds *(total)* across these units.",
-            "id": "30612",
-            "quote": "\"Is it the justice of your cause you doubt, my lord, or the strength of your arm?\"",
-            "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
-        }
-    ],
-    "Targaryen": [
-        {
-            "faction": "Targaryen",
-            "name": "Daenerys Targaryen, Khaleesi",
-            "character": "Daenerys Targaryen",
-            "cost": "4",
-            "names": "Conviction of a True Khaleesi",
-            "descriptions": "**Influence** *(When this unit claims a Tactics Zone, attach this card to a Combat Unit until the end of the round)*:\nEach time Daenerys Influences a unit, remove 1 Condition token from them.\nWhile Influencing a unit, that unit's Melee Attacks may re-roll any Attack Dice.",
-            "id": "30701",
-            "quote": "\"My sun-and-stars made a queen of me, but if he had been a different man, it might have been much otherwise.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Targaryen",
-            "name": "Illyrio Mopatis, Magister of Pentos",
-            "character": "Illyrio Mopatis",
-            "cost": "4",
-            "names": "Illyrio's Boon",
-            "descriptions": "Each time lllyrio Claims a zone, you may replace that zone's effect with:\n*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes **Weakened**.*",
-            "id": "30702",
-            "quote": "\"You Westerosi are all the same. You sew some beast upon a scrap of silk, and suddenly you are all lions or dragons or eagles.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Targaryen",
-            "name": "Pyat Pree, Warlock of Qarth ",
-            "character": "Pyat Pree",
-            "cost": "4",
-            "names": "House of The Undying / \nRules: 50701",
-            "descriptions": "Place the **House of the Undying** Tactics zone card next to the Tactics Board at the start of the game. It acts as an additional Tactics zone for all purposes. \nEach time a friendly NCU Claims the [UNDYING] zone, you may replace that zone's effect with: \n*Your opponent must reveal 1 Tactics card at random from their hand. You may have them discard that card or return it to their hand. If you return it to their hand, they must then randomly discard 1 Tactics card.*",
-            "id": "30703",
-            "quote": "\"Come with me to the House of the Undying, and you shall drink of truth and wisdom.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Targaryen",
-            "name": "Barristan Selmy, Advisor to the Dragon",
-            "character": "Barristan Selmy",
-            "cost": "5",
-            "names": "Wisdom of The Old Knight",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a unit, each time that unit is targeted by an enemy Ability or Tactics card, you may remove this card from that unit to cancel the effect of that Ability or Tactics card.",
-            "id": "30704",
-            "quote": "\"Men can always ﬁght, Your Grace. Ask rather if we can win.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Targaryen",
-            "name": "Xaro Xhoan Daxos, Merchant Prince of Qarth ",
-            "character": "Xaro Xhoan Daxos",
-            "cost": "4",
-            "names": "Wealth Of The Thirteen",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a unit, that unit suffers/gains the following, based on what zone Xaro Controls:\n[CROWN]: This unit suffers +1 Wound from failing Panic Tests.\n[MONEY]: After rolling Defense Dice, this unit blocks +1 Hit. \n[LETTER]: Unit's Attacks gain +1 Attack Die.\n[UNDYING]: Unit's Attacks suffer -1 Attack Die.",
-            "id": "30705",
-            "quote": "\"I no longer lust for dragons. I saw their work at Astapor.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Targaryen",
-            "name": "Daenerys Targaryen, The Unburnt",
-            "character": "Daenerys Targaryen",
-            "cost": "5",
-            "names": "Dracarys!",
-            "descriptions": "Each time Daenerys Claims a zone, you may replace that zone's effect with:\n*1 friendly **Drogon**, **Rhaegal**, or **Viserion** unit performs 1 Attack Action.*",
-            "id": "30707",
-            "quote": "\"I am blood of the dragon. I am Daenerys Stormborn, Princess of Dragonstone, of the blood and seed of Aegon the Conqueror.\"",
-            "restrictions": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
-        }
-    ],
-    "Greyjoy": [
-        {
-            "faction": "Greyjoy",
-            "name": "Rodrik Harlaw, The Reader",
-            "character": "Rodrik Harlaw",
-            "cost": "4",
-            "names": "Scholar Among Raiders",
-            "descriptions": "Rodrik begins the game with 2 Order Tokens.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, place any number of Tactics cards from your hand to the side, then draw 1+ that many cards. Shuffle the cards you set aside into your Tactics Deck.",
-            "id": "30801",
-            "quote": "\"I prefer my history dead. Dead history is writ in ink, the living sort in blood.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Aeron Greyjoy, The Damphair",
-            "character": "Aeron Greyjoy",
-            "cost": "4",
-            "names": "Rise Again, Harder and Stronger",
-            "descriptions": "**Aeron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, when that unit performs an Action, before resolving that Action, it restores 1 Wound.\nWhen it destroys an enemy with a Melee Attack, it restores 1 Wound for each of its destroyed ranks.",
-            "id": "30802",
-            "quote": "\"What is dead may never die, but rises again, harder and stronger.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Balon Greyjoy, King of Salt and Rock",
-            "character": "Balon Greyjoy",
-            "cost": "5",
-            "names": "Rise Again, Blade in Hand",
-            "descriptions": "Once per game, when Balon Claims a zone, you may replace that zone's effect with:\n*Redeploy 1 previously destroyed Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys Activated and with any Pillage tokens it previously had.*",
-            "id": "30803",
-            "quote": "\"No man has ever died from bending his knee. He who kneels may rise again, blade in hand.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Wendamyr, Maester Of House Greyjoy",
-            "character": "Wendamyr",
-            "cost": "4",
-            "names": "Raven Tending",
-            "descriptions": "Wendamyr begins the game with 1 Order token.\nAt the start of a friendly Turn, you may remove 1 Order token from Wendamyr. If you do, choose 1:\n• Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.\n• 1 friendly Combat Unit performs a 3\" shift.\nWhen Wendamyr Claims a zone, you may replace that zone's effect with:\n*Place 1 Order token on Wendamyr.*",
-            "id": "30804",
-            "quote": "\"If you do not have a maester, it is taken to mean that you are of little consequence.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Erik Ironmaker, The Just",
-            "character": "Erik Ironmaker",
-            "cost": "4",
-            "names": "Gifts of Iron, Gold, and Steel",
-            "descriptions": "At the start of the game, place 2 Pillage tokens on Erik.\nWhen an enemy NCU Claims [MONEY] place 1 Pillage token on Erik.\nWhen Erik Claims a zone, you may remove 1 Pillage token from him and place it on 1 friendly unit with Pillage.",
-            "id": "30805",
-            "quote": "\"If old is wise, no one is wiser than me. If big is strong, no one's stronger.\"",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Tristifer Botley, Lord of Lordsport",
-            "character": "Tristifer Botley",
-            "cost": "4",
-            "names": "Ironborn Diplomat",
-            "descriptions": "Once per game, at the start of the Round, you may select 1 Tactics Zone. If you do, that zone may not be Claimed this Round.\nOnce per game, when an enemy NCU Activates, you may select 2 Tactics Zones. If that NCU Claims either zone this Activation, target 1 enemy Combat Unit. It becomes **Panicked** and **Vulnerable**.",
-            "id": "30806",
-            "quote": "\"Sweet eyes, truly. That was the trouble with poor Tristifer; he was too sweet for the Iron Islands.\" -Asha Greyjoy",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Moqorro, The Black Flame",
-            "character": "Moqorro",
-            "cost": "5",
-            "names": "R'hllor's Magics",
-            "descriptions": "Moqorro begins the game with 2 Order tokens on him.\nEach time Moqorro Claims a zone, you may remove 1 Order token from him. If you do, look at the top card of any Tactics Deck. You may then shuffle that deck.\nOnce per game, when Moqorro Claims a zone, you may replace that zone's effect with:\n*Return 1 previously destroyed friendly Attachment to a friendly Combat Unit, replacing a model as usual but ignoring the usual Attachment limits.*",
-            "id": "30807",
-            "quote": "\"Why do you say this man is a wizard? I see only a ragged red priest.\" -Victarion Greyjoy to Rodrik Sparr",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Beron Blacktyde, Blind Beron",
-            "character": "Beron Blacktyde",
-            "cost": "5",
-            "names": "Zeal of the Drowned God",
-            "descriptions": "**Beron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a friendly unit, that unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.\nRemove Beron's Influence if that unit fails a Panic Test.",
-            "id": "30808",
-            "quote": "\"ASHA! ASHA QUEEN!\" - Blind Beron, in support of Asha Greyjoy at the Kingsmoot",
-            "restrictions": ""
-        },
-        {
-            "faction": "Greyjoy",
-            "name": "Asha Greyjoy, Would-be Queen",
-            "character": "Asha Greyjoy",
-            "cost": "4",
-            "names": "Queen's Promises",
-            "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a friendly unit, that unit gains +1 to Morale Test rolls for each Pillage token on it.\nIf that unit has 2 Pillage tokens, it suffers -1 Wound from failing Panic Tests.",
-            "id": "30809",
-            "quote": "\"Your choice is simple. Crown me, for peace and victory. Or crown my uncle, for more war and more defeat.\"",
-            "restrictions": ""
-        }
-    ]
+  "Lannister": [
+    {
+      "faction": "Lannister",
+      "name": "Tywin Lannister, The Great Lion",
+      "character": "Tywin Lannister",
+      "cost": "6",
+      "names": "The Rains of Castamere",
+      "descriptions": "Once per game, at the start of any Turn, target any number of enemy Combat Units:\n• 1 of those enemies becomes Panicked.\n• 1 of those enemies becomes Vulnerable.\n• 1 of those enemies suffers 4 Hits.\n• 1 of those enemies suffers 1 Panic Test.\n• 1 of those enemies loses all Abilities until the end of the Round.\n*(The same Combat Unit may be targeted by multiple effects)*",
+      "id": "30101",
+      "quote": "\"Some battles are won with swords and spears, others with quills and ravens.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Pycelle, Grand Maester",
+      "character": "Pycelle",
+      "cost": "4",
+      "names": "Manipulation and Deception",
+      "descriptions": "Each time Pycelle Claims a zone, target 1 enemy Combat Unit. They become **Weakened**.",
+      "id": "30102",
+      "quote": "\"Pycelle is a toad. But better a Lannister toad then a Tyrell toad, no?\" -Tyrion Lannister",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "The High Sparrow, Father of the Faithful",
+      "character": "High Sparrow",
+      "cost": "4",
+      "names": "Fealty to The Seven",
+      "descriptions": "**Influence** *(When this unit Claims a Tactics Zone, attach this card to a Combat Unit until the end of the Round)*: \nWhile Influencing an enemy, each time that enemy suffers Wounds from failing Panic Tests, target 1 friendly unit in Long Range. They restore that many Wounds, up to 3.",
+      "id": "30103",
+      "quote": "\"I seldom feel so close to god as when I am being whipped for mine own wickedness...\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Tyrion Lannister, The Imp",
+      "character": "Tyrion Lannister",
+      "cost": "5",
+      "names": "Tactical Mastermind",
+      "descriptions": "Your maximum Tactics Hand size is increased by +1. You start the game with 4 cards and may draw up to 4 cards when re-filling your hand.\nOnce per game, when an opponent plays a Tactics card, before resolving that card, you may search your Tactics deck or discard pile for 1 **Counterplot** card and play it. Shuffle your Tactics deck. ",
+      "id": "30104",
+      "quote": "\"He is a bigger man than he seems, I think.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Cersei Lannister, Queen Regent",
+      "character": "Cersei Lannister",
+      "cost": "4",
+      "names": "Playing The Game",
+      "descriptions": "Cersei begins the game with 2 Order tokens. \nEach time Cersei Claims a zone, you may remove 1 Order token from her.\nIf you do, perform the following: \nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Hear Me Roar!** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Subjugation of Power** card and add it to your hand. Shuffle your Tactics deck.",
+      "id": "30105",
+      "quote": "\"When you play the game of thrones, you win or you die. There is no middle ground.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Joffrey Baratheon, Lord of the Seven Kingdoms",
+      "character": "Joffrey Baratheon",
+      "cost": "5",
+      "names": "Might of The Iron Throne",
+      "descriptions": "While Joffrey is on the Tactics Board, you count as Controlling [CROWN].\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile lnfluencing an enemy, that enemy suffers +1 Wound from failing Panic Tests.",
+      "id": "30106",
+      "quote": "\"His Grace has a unique way of winning the hearts of his subjects.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Kevan Lannister, Master Of Law",
+      "character": "Kevan Lannister",
+      "cost": "5",
+      "names": "Unbiased Justice",
+      "descriptions": "Once per game, at the start of any Turn, target any number of friendly Combat Units:\n• 1 of those units restores 2 Wounds.\n• 1 of those units removes all Condition tokens.\n• 1 of those units performs a 2\" shift.\nUntil the end of the Round, 1 of those units Attacks using its highest Attack Die Value, and may re-roll any Attack Dice.\n*(The same Combat Unit may be targeted by multiple effects)*",
+      "id": "30107",
+      "quote": "\"The gods shaped him to be a follower, not a leader.\" -Tyrion Lannister",
+      "restrictions": ""
+    },
+    {
+      "faction": "Lannister",
+      "name": "Qyburn, Master Of Whisperers",
+      "character": "Qyburn",
+      "cost": "5",
+      "names": "Little Doves",
+      "descriptions": "Qyburn begins the game with 4 Order tokens.\nEach time an enemy NCU Claims a zone, before resolving that zone's effect, you may remove 1 Order token from Qyburn. If you do, gain the following based on that zone:\n[CROWN]: 1 enemy becomes **Panicked**.\n[MONEY]: 1 enemy Combat Unit suffers 1 Wound.\n[SWORDS]: Attacker counts as having -1 rank for Attack Dice.\n[LETTER]: Opponent draws 1 fewer Tactics Card.\n[HORSE]: Enemy moves with -1 [MOVEMENT].",
+      "id": "30108",
+      "quote": "\"Your secrets are safe with me.\"",
+      "restrictions": "*May not be fielded in an army that includes Varys.*"
+    },
+    {
+      "faction": "Lannister",
+      "name": "Tommen Baratheon, Next in Succession",
+      "character": "Tommen Baratheon",
+      "cost": "4",
+      "names": "Queen's Influence",
+      "descriptions": "Tommen begins the game with 2 Order tokens.\nEach time Tommen Claims a zone, you may remove 1 Order token from him. If you do, perform the following:\nIf you Control [CROWN], search your Tactics deck or discard pile for 1 **Fealty to the Crown** card and add it to your hand. Shuffle your Tactics deck.\nIf you Control [MONEY], search your Tactics deck or discard pile for 1 **Bribery** card and add it to your hand. Shuffle your Tactics deck.",
+      "id": "30109",
+      "quote": "\"When I'm king in my own right, I'm going to outlaw beets.\"",
+      "restrictions": ""
+    }
+  ],
+  "Stark": [
+    {
+      "faction": "Stark",
+      "name": "Catelyn Stark, Lady of Winterfell",
+      "character": "Catelyn Stark",
+      "cost": "4",
+      "names": "Family, Duty, Honor",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nEach time Catelyn Influences a unit, remove 1 Condition token from them.\nWhile lnfluencing a unit, that unit Attacks using its highest Attack Die Value.",
+      "id": "30201",
+      "quote": "\"Show me the path I must walk and do not let me stumble in the dark places that lie ahead.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Sansa Stark, Little Bird",
+      "character": "Sansa Stark",
+      "cost": "4",
+      "names": "Repeating the Words",
+      "descriptions": "Once per game, when Sansa Activates, you may return 1 Tactics card from your discard pile to your hand.\nEach time Sansa Claims a zone, you may replace that zone's effect with:\n*Return 1 Tactics card from your discard pile to your hand.*",
+      "id": "30202",
+      "quote": "\"The Hound is right ... I am only a little bird, repeating the words they taught me.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Eddard Stark, Warden of the North",
+      "character": "Eddard Stark",
+      "cost": "6",
+      "names": "Bravery in the Face of Death",
+      "descriptions": "Eddard begins the game with 4 Order tokens on him.\nEach time a friendly unit is performing a Panic Test, after rolling dice, you may remove 1 Order token from Eddard. If you do, that unit may re-roll any dice for this test.\nEach time a friendly unit passes a Panic Test, you may remove 1 Order token from Eddard. If you do, that unit restores 2 Wounds, +1 Wound for each of its destroyed ranks.",
+      "id": "30204",
+      "quote": "\"You wear your honor like a suit of armor, Stark.\"\n-Petyr Baelish",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Rodrik Cassel, Combat Veteran",
+      "character": "Rodrik Cassel",
+      "cost": "4",
+      "names": "Martial Expertise",
+      "descriptions": "Each time Rodrik Claims [SWORDS], target 1 enemy Combat Unit. They become Vulnerable.\nRodrik begins the game with 2 Order tokens on him.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, remove 1 Order token from 1 friendly unit. That Order may be used again this Round.",
+      "id": "30205",
+      "quote": "\"There is no better trainer than Rodrik.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Arya Stark, The Wolf Girl",
+      "character": "Arya Stark",
+      "cost": "4",
+      "names": "Never Do What They Expect.",
+      "descriptions": "Arya begins the game with 2 Order tokens on her. At the start of an enemy Turn, you may remove 1 Order token from Arya. If you do, target 1 friendly lnfantry unit. lt performs 1 Maneuver or Retreat Action.",
+      "id": "30206",
+      "quote": "\"Boy, girl, you are a sword, that is all.\" -Syrio Forel",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Howland Reed, Protector of the Neck",
+      "character": "Howland Reed",
+      "cost": "5",
+      "names": "Hunter's Guile",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, that enemy's Attacks suffer -1 to Hit and they treat all Terrain as having the Hindering and Rough keywords.",
+      "id": "30207",
+      "quote": "\"He could talk to trees and weave words and make castles appear and disappear.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Eddard Stark, Hand of The King",
+      "character": "Eddard Stark",
+      "cost": "6",
+      "names": "Price of Honor /\nHand's Orders",
+      "descriptions": "At the start of any Turn, you may destroy Eddard. If you do, target 1 enemy NCU. That NCU cannot Activate and loses all Abilities until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat  Unit until the end of the Round)*:\nWhile Influencing a unit, each time that unit is targeted by an NCU Ability or Tactics Zone, you may cancel the effect of that NCU or zone.",
+      "id": "30208",
+      "quote": "\"I have met so few of them in my life... When I see what honesty and honor have won you, I understand why...\" -Varys",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Lyanna Mormont, Youngest She-Bear",
+      "character": "Lyanna Mormont",
+      "cost": "4",
+      "names": "Avenging The North",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, it gains the following based on the number of destroyed friendly Combat Units *(effects are cumulative)*:\n**0+:** Unit gains +1 to Morale Test rolls.\n**1+:** Melee Attacks gain **Critical Blow**.\n**2+:** Automatically passes all Panic Tests.\n**3+:** May re-roll any Attack Dice.",
+      "id": "30209",
+      "quote": "\"Bear Island knows no king but the King in the North, whose name is STARK.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Stark",
+      "name": "Robb Stark, King in the North",
+      "character": "Robb Stark",
+      "cost": "5",
+      "names": "Wolf's Cunning",
+      "descriptions": "After deployment, target 1 friendly Combat Unit. Remove it from the battlefield, placing it off the table *(in Reserve)*. Once per game, when Robb Claims [HORSE], you may replace that zone's effect with:\n*Deploy the unit Robb placed in Reserve fully in Short Range of any Flank table edge and attach this card to them until the end of the game. While attached, enemies that unit Successfully Charges in the Flank or Rear become **Panicked** and **Vulnerable**.*",
+      "id": "30210",
+      "quote": "\"I thought the battles would be the hard part...\"",
+      "restrictions": "*Your army may not include Eddard Stark.*"
+    }
+  ],
+  "Free Folk": [
+    {
+      "faction": "Free Folk",
+      "name": "Lady Val, The Wildling Princess",
+      "character": "Lady Val",
+      "cost": "4",
+      "names": "Lady of the Wilds",
+      "descriptions": "Each time Lady Val Claims a zone, you may replace that zone's effect with:\n*1 friendly Combat Unit performs 1 Manuever or Retreat Action. If they Retreat, 1 enemy they disengage from becomes **Vulnerable**.*",
+      "id": "30301",
+      "quote": "\"I know the forest better than all your black-cloaked rangers. It holds no ghosts for me.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Mance Rayder, Artful Tactician",
+      "character": "Mance Rayder",
+      "cost": "4",
+      "names": "Skillful Preparations",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, each time that unit is targeted by a Tactics Zone, before resolving that zone's effect, you may draw 1 Tactics card.",
+      "id": "30302",
+      "quote": "\"Mance has cunning. He was raised a crow, you know, and the crow's a tricksy bird.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Craster, Ally of Convenience",
+      "character": "Craster",
+      "cost": "4",
+      "names": "Refuge and Supplies",
+      "descriptions": "Once per game, at the start of any Turn, you may restore 2 Wounds to 1 friendly unit.\nEach time Craster Claims a zone, you may replace its effect with:\n*Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.*",
+      "id": "30303",
+      "quote": "\"He's never turned a ranger away from his fire, nor does he love Mance Rayder...\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Styr, Iron-Fisted Tyrant",
+      "character": "Styr",
+      "cost": "5",
+      "names": "Fury of the Thenns",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly unit, that unit's Melee Attacks gain +1 Attack Die and **Sundering**. ",
+      "id": "30304",
+      "quote": "\"These are wildlings... more beast than man.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Ygritte, Kissed by Fire",
+      "character": "Ygritte",
+      "cost": "4",
+      "names": "Spearwife's Guile",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly unit, that unit gains +1 [MOVEMENT] and ignores the Hindering and Rough keywords.\nWhile Influencing an enemy unit, that enemy suffers -1 [MOVEMENT] and triggers Disorderly Charges on rolls of 1 or 2.",
+      "id": "30305",
+      "quote": "\"I know one thing. I know that you are wildling to the bone\" -Jon Snow",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Lady Dalla, Wife and Council",
+      "character": "Lady Dalla",
+      "cost": "5",
+      "names": "Spearwife Council",
+      "descriptions": "Each time Dalla Claims a zone, perform the following based on the zone she Claimed:\n[CROWN]: 1 enemy becomes Weakened.\n[MONEY]: Instead of removing a Condition token, target 1 enemy engaged with that unit. They suffer 1 Hit, +1 Hit for each remaining rank in this unit.\n[LETTER]: Instead of drawing cards, look at the top 2 cards of your opponent's Tactics deck. You may discard one of those cards. Then, place the remaining cards on the top of the Tactics deck.",
+      "id": "30306",
+      "quote": "\"We free folk know things you kneelers have forgotten. Sometimes the short road is not the safest, Jon Snow.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Mance Rayder, Deceptive Bard",
+      "character": "Mance Rayder",
+      "cost": "6",
+      "names": "Intrigue and Subterfuge /\nDisrupt Communication",
+      "descriptions": "Once per game, when an enemy NCU Activates, that NCU loses all Abilities until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, your opponent may not target that unit with Tactics Zone effects or Influence Abilities.",
+      "id": "30307",
+      "quote": "\"The Wall can stop an army, but not a man alone.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Free Folk",
+      "name": "Jon Snow, Turncloak Crow",
+      "character": "Jon Snow",
+      "cost": "4",
+      "names": "Southern Discipline",
+      "descriptions": "Once per game, at the start of any Round, you may search your Tactics deck or discard pile for one **Coordination Tactics** or **Regroup and Reform** Tactics card and add it to your hand. Shuffle your Tactics deck.",
+      "id": "30308",
+      "quote": "\"Mance Rayder swore an oath as well...\"",
+      "restrictions": ""
+    }
+  ],
+  "Neutral": [
+    {
+      "faction": "Neutral",
+      "name": "Petyr Baelish, Littlefinger",
+      "character": "Petyr Baelish",
+      "cost": "4",
+      "names": "Master of the Game",
+      "descriptions": "Each time Petyr Claims a zone, you may replace its effect with the effect of any unclaimed zone.\nOnce per game, at the start of any Turn, you may select 1 zone. Until the end of the Round, you count as Controlling that zone.",
+      "id": "30402",
+      "quote": "\"In King's Landing, there are two sorts of people. The players and the pieces.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "Lord Varys, The Spider",
+      "character": "Lord Varys",
+      "cost": "5",
+      "names": "Little Birds",
+      "descriptions": "Varys begins the game with 4 Order tokens. \nEach time an enemy NCU Claims a zone, after resolving that zone's effect, you may remove 1 Order token from Varys. If you do, gain the following based on that zone:\n[CROWN]: 1 enemy suffers 1 Panic Test. \n[MONEY]: Restore 2 Wounds to 1 friendly unit.\n[SWORDS]: 1 enemy suffers 3 Hits.\n[LETTER]: Draw 1 Tactics card.\n[HORSE]: 1 friendly unit shifts 3\".",
+      "id": "30403",
+      "quote": "\"Varys has ways of learning things that no man could know.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "The High Seneschal",
+      "character": "George Martin",
+      "cost": "0",
+      "names": "History is Written by the Victors",
+      "descriptions": "**The High Seneschal cannot activate and cannot be targeted in any way. He merely observes the battle.**\nOnce the victor has been determined, that player may define all actions and events that transpired throughout the game. No opponent may refute or deny any retelling of said events *(regardless of how unlikely or exaggerated)* until such a time where they best the victor in a new game.",
+      "id": "30404",
+      "quote": "\"He is the keeper of this world's history.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "Jaqen H'ghar, Follower of The Red God",
+      "character": "Jaqen H'ghar",
+      "cost": "5",
+      "names": "Choosing a Name /\nA Name Given",
+      "descriptions": "Each time Jaqen Activates, he may replace his Influence Ability with the Influence Ability of any friendly or enemy NCU until the end of the Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly Infantry unit, its Melee Attacks gain **Precision**.",
+      "id": "30405",
+      "quote": "\"The Red God has his due, sweet girl, and only death may pay for life.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "Tycho Nestoris, Iron Banker",
+      "character": "Tycho Nestoris",
+      "cost": "5",
+      "names": "Backing of The Iron Bank",
+      "descriptions": "Once per game, at the start of any Turn, you may restore 5 Wounds *(total)* across any number of friendly Combat Units. ",
+      "id": "30406",
+      "quote": "\"We who serve the Iron Bank face death full as often as you who serve the Iron Throne.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "Walder Frey, Lord of the Crossing",
+      "character": "Walder Frey",
+      "cost": "4",
+      "names": "The Late Walder Frey",
+      "descriptions": "You may only Activate Walder if you have no other units that can Activate this Round.\nEach time Walder Claims a zone, you may replace that zone's effect with the effect of any zone. If Walder Claims [CROWN], you may replace that zone's effect with:\n*1 enemy becomes **Weakened**. 1 friendly unit restores 2 Wounds. At the start of the next Round, you become the First Player.*",
+      "id": "30407",
+      "quote": "\"He has an old man's caution and a young man's ambition, and has never lacked for cunning.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Neutral",
+      "name": "Roose Bolton, Calculating and Cruel",
+      "character": "Roose Bolton",
+      "cost": "4",
+      "names": "Horrific Rumors",
+      "descriptions": "Roose begins the game with 3 Order tokens. \nEach time Roose Activates, you may remove 1 Order token from him. \nIf you do, target 1 enemy Combat Unit. They become **Panicked**.\nEach time Roose Claims a zone, you may replace that zone's effect with:\n*1 enemy Combat Unit suffers 1 Panic Test.*",
+      "id": "30408",
+      "quote": "\"You had only to look at Bolton to know that he had more cruelty in his pinky toe than all the Freys combined.\"",
+      "restrictions": ""
+    }
+  ],
+  "Night's Watch": [
+    {
+      "faction": "Night's Watch",
+      "name": "Bowen Marsh, First Steward",
+      "character": "Bowen Marsh",
+      "cost": "4",
+      "names": "Counts and Measures",
+      "descriptions": "Each time Bowen Claims a zone, you may look at the top 2 cards of your Tactics Deck. Place 1 of those cards in your hand and the other on the bottom of your Tactics Deck.",
+      "id": "30501",
+      "quote": "\"For the Watch.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Aemon, Maester of Castle Black",
+      "character": "Aemon",
+      "cost": "4",
+      "names": "Maester's Healing",
+      "descriptions": "Each time Aemon Claims a zone, you may target 1 friendly Combat Unit. That unit restores 1 Wound, +1 additional Wound for each of its destroyed ranks.",
+      "id": "30502",
+      "quote": "\"Knowledge is a weapon, Jon. Arm yourself well before you ride forth to battle.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Jeor Mormont, The Old Bear",
+      "character": "Jeor Mormont",
+      "cost": "4",
+      "names": "Duty To The Realms Of Men",
+      "descriptions": "Each time Jeor Claims a zone, you may target 2 friendly Night's Watch Combat Units in Long Range of each other. Move 1 friendly attached Tactics card from 1 of those units to the other.\nOnce per game, when Jeor Claims a zone, you may replace that zone's effect with:\n*Take 1 Tactics card that can be attached to a unit from your discard pile and attach it to a friendly Night's Watch unit.*",
+      "id": "30503",
+      "quote": "\"The Wall was made to guard the realms of men... and not against other men\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Qhorin Halfhand, Unwavering Ranger",
+      "character": "Qhorin Halfhand",
+      "cost": "6",
+      "names": "Sacrifice For The Cause / \nHalfhand's Guidance",
+      "descriptions": "At the start of any Turn, if Qhorin is not on the Tactics Board, you may destroy him. If you do, target 1 enemy unit. That enemy cannot Activate or perform Actions this Round. /\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a friendly Cavalry or Infantry unit, it gains +1 [MOVEMENT] and +1 Attack Die.",
+      "id": "30506",
+      "quote": "\"Our honor means no more than our lives, so long as the realm is safe.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Donal Noye, Expert Blacksmith",
+      "character": "Donal Noye",
+      "cost": "5",
+      "names": "Expert Maintenance",
+      "descriptions": "Donal begins the game with 2 Order Tokens on him.\nEach time a unit is performing an Attack, after rolling Attack Dice, you may remove 1 Order Token from Donal. If you do, choose 1:\n• Attacker may re-roll any Attack Dice and opponents cannot expend **Weakened** tokens from them.\n• Defender gains +1 to Defense Dice rolls and opponents cannot expend **Vulnerable** tokens from them.",
+      "id": "30507",
+      "quote": "\"The Watch is not what it was. Too few honest men to keep the rogues in line.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Othell Yarwyck, Warmachine Specialist",
+      "character": "Othell Yarwyck",
+      "cost": "5",
+      "names": "War Machines of The Wall",
+      "descriptions": "Each time Othell Claims a zone, you may replace that zone's effect with:\n*Make the following Ranged Attack on 1 enemy Combat Unit:*\n[ATTACK:Ranged:Ranged Volley:3+3]\n*Gains +1 Attack Die for each of the Defenders remaining ranks and the following based on the zone Othell Claimed:*\n[CROWN]: **Vicious** [MONEY]: **Sundering**\n[SWORDS]: Defender becomes **Weakened**",
+      "id": "30508",
+      "quote": "\"This will show them how we deal with their kind.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Samwell Tarley, Craven Scholar",
+      "character": "Samwell Tarley",
+      "cost": "5",
+      "names": "Knowledge Is Power",
+      "descriptions": "Increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
+      "id": "30509",
+      "quote": "\"I can't command you to be brave, but I can\ncommand you to hide your fears.\" -Jon Snow",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Gilly, The Wildling Girl",
+      "character": "Gilly",
+      "cost": "0",
+      "names": "Samwell's Influence",
+      "descriptions": "Gilly may only be Activated once per game.",
+      "id": "30510",
+      "quote": "\"Well I think you're quite brave.\"",
+      "restrictions": "*May only be fielded in an army including **Samwell Tarley, Craven Scholar**.*"
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Craster, Ally of the Watch",
+      "character": "Craster",
+      "cost": "4",
+      "names": "Rest and Refuge",
+      "descriptions": "When Craster Claims the following zones, their effects gains:\n[MONEY]: *Instead of restoring Wounds from 1 unit, you may restore 3 Wounds (total) across any number of friendly Combat Units.*\n[SWORDS]: *The targeted unit counts as having +1 remaining rank for determining Attack Dice.*\n[HORSE]: *The targeted unit moves with +1 [MOVEMENT].*",
+      "id": "30511",
+      "quote": "\"The man's half-mad, I won't deny\nit, but you'd be the same if you'd spent\nyour life in this cursed wood.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Yoren, Wandering Crow",
+      "character": "Yoren",
+      "cost": "6",
+      "names": "Recruitment",
+      "descriptions": "Each time Yoren Claims a zone, before resolving that zone's effect, place 1 Order token on him.\nEach time Yoren Claims [CROWN], you may replace that zone's effect with: \n*Place 1 Order token on Yoren.*\nEach time Yoren Claims a zone, you may replace that zone's effect with:\n*Remove 4 Order tokens from Yoren.*\n*If you do, Deploy 1 Conscripts unit fully within Long Range of a friendly Table Edge.*",
+      "id": "30512",
+      "quote": "\"I'm here to find men for the Wall...\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Night's Watch",
+      "name": "Ser Denys Mallister, Honorable Brother",
+      "character": "Ser Denys Mallister",
+      "cost": "4",
+      "names": "Time May Yet Come",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, if that unit began the Turn engaged, each time it performs a Melee Attack, before rolling Attack Dice, choose 1. If this unit has only 1 remaining rank, gain both instead:\n• This unit rolls its highest Attack Die Value.\n• 1 enemy engaged with this unit gains 1 Condition token.",
+      "id": "30513",
+      "quote": "\"The men of the Night's Watch dressed in black, Ser Denys Mallister reminded me sternly, as if I had forgotten.\" -Mance Rayder",
+      "restrictions": ""
+    }
+  ],
+  "Baratheon": [
+    {
+      "faction": "Baratheon",
+      "name": "Alester Florent, Lord of Brightwater",
+      "character": "Alester Florent",
+      "cost": "4",
+      "names": "Shifting Loyalties",
+      "descriptions": "Alester begins the game with 3 Order tokens on him.\nEach time Alester Claims a zone, after resolving that zone's effect, you may remove 1 Order Token from him. If you do, move him to any empty zone, or switch zones with any other NCU.",
+      "id": "30601",
+      "quote": "\"...a man who changes kings and gods the way I change my boots.\" -Cortnay Penrose",
+      "restrictions": ""
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Shyra Errol, Lady of Haystack Hall",
+      "character": "Shyra Errol",
+      "cost": "4",
+      "names": "Support Of Haystack Hall",
+      "descriptions": "Each time Shyra Claims [CROWN], restore 1 Wound to 1 friendly Combat Unit.\nEach time Shyra Claims [LETTER], remove 1 Condition Token from 1 friendly Combat Unit.\nEach time Shyra Claims [MONEY], if you remove a token, place 1 Condition Token of that type on 1 enemy Combat Unit.",
+      "id": "30602",
+      "quote": "\"Sworn to House Baratheon... First Renly, then Stannis.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Melisandre, The Red Woman",
+      "character": "Melisandre",
+      "cost": "5",
+      "names": "Sacrifice To The Lord Of Light /\nLoyalty: Stannis Baratheon",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhen Melisandre Influences a friendly unit, you may have them suffer 2 Wounds and 1 Panic Test. If you do, target 1 enemy Combat Unit. That enemy suffers 1 Panic Test with -2 to their roll and +2 Wounds on failure.\nWhile Influencing a friendly unit, that unit is a R'hllor unit and its Melee Attacks gain **Vicious**.",
+      "id": "30603",
+      "quote": "\"Lady Melisandre wore no crown, but every man there knew that she was Stannis Baratheon’s real queen.\"",
+      "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Davos Seaworth, Hand of The True King",
+      "character": "Davos Seaworth",
+      "cost": "4",
+      "names": "Smuggler's Cunning /\nLoyalty: Stannis Baratheon",
+      "descriptions": "Davos begins the game with 3 Order tokens on him.\nEach time a friendly unit Charges, after rolling Charge Distance Dice, you may remove 1 token from Davos. If you do, you may re-roll any Charge Distance Dice.\nEach time a friendly unit Activates, you may remove 1 token from Davos. If you do, until the end of the Turn, enemies engaged with that unit may not use Orders or be the target of friendly Tactics cards.",
+      "id": "30604",
+      "quote": "\"Kings and corpses always draw attendants.\"",
+      "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Selyse & Shireen, Queen and Princess",
+      "character": "Selyse & Shireen",
+      "cost": "6",
+      "names": "Fervent Conviction /\nNecessary Sacrifices /\nLoyalty: Stannis Baratheon",
+      "descriptions": "***Influence** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, it gains +1 to Morale Test rolls and, each time it passes a Morale test, 1 enemy it is engaged with suffers 1 Wound. /\nOnce per game, when a friendly Combat Unit would be destroyed, instead, that unit is not destroyed and remains in play with D3 Wounds. Until the end of the game, it is a R'hllor unit.",
+      "id": "30605",
+      "quote": "\"The red woman had won her, heart and soul, turning her from the gods of the Seven Kingdoms.\"",
+      "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Axell Florent, Hand of the Queen",
+      "character": "Axell Florent",
+      "cost": "4",
+      "names": "In R'hllor's Name /\nLoyalty: Stannis Baratheon",
+      "descriptions": "***Influence** (When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing an enemy unit, each time they fail a Panic Test, they become **Weakened**.\nWhile Influencing an enemy unit, if they are engaged with a R'hllor unit, they suffer +1 Wound from failing Panic Tests.",
+      "id": "30606",
+      "quote": "\"If you are truly the Queen's Hand, I pity her Grace.\" -Jon Snow",
+      "restrictions": "Loyalty: **STANNIS BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Margaery Tyrell, Little Rose",
+      "character": "Margaery Tyrell",
+      "cost": "4",
+      "names": "A Rose and its Thorns /\nLoyalty: Renly Baratheon",
+      "descriptions": "Each time Margaery Claims a zone, you may target 1 friendly Combat Unit. They restore 1 Wound. You may then target 1 enemy engaged with that unit. They become **Vulnerable**.",
+      "id": "30608",
+      "quote": "\"The girl is a maid of fourteen, sweet and beautiful and tractable.\" -Varys",
+      "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Olenna Tyrell, Queen of Thorns",
+      "character": "Olenna Tyrell",
+      "cost": "5",
+      "names": "Pulling Weeds /\nLoyalty: Renly Baratheon",
+      "descriptions": "Each time Olenna Claims a zone, target 1 enemy NCU and choose 1:\n• That NCU loses all Abilities until the end of the Round.\n• If that NCU Claims a zone this Round, before resolving that zone's effect, target 1 enemy Combat Unit. They suffer D3 Hits and becomes **Weakened**.",
+      "id": "30609",
+      "quote": "\"All men are fools, if truth be told, but the ones in motley are more amusing than the ones in crowns.\"",
+      "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Eldon Estermont, Venerable Knight",
+      "character": "Eldon Estermont",
+      "cost": "4",
+      "names": "Elderly Caution /\nLoyalty: Renly Baratheon",
+      "descriptions": "Each time Eldon Claims a zone, you may replace that Zone's effect with: \n*Draw 3 Tactics Cards, then shuffle 1 card from your hand into your Tactics Deck.*",
+      "id": "30610",
+      "quote": "\"An old knight, nearing seventy, he is the Lord of Greenstone\"",
+      "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    },
+    {
+      "faction": "Baratheon",
+      "name": "Cortnay Penrose, Reliable Castellan",
+      "character": "Cortnay Penrose",
+      "cost": "4",
+      "names": "Castellan’s Duty /\nLoyalty: Renly Baratheon",
+      "descriptions": "Cortnay begins the game with 3 Order tokens on him.\nEach time an enemy NCU activates, you may remove 1 Order token from Cortnay. If you do, choose 2 zones. If that NCU Claims either zone this Turn, before resolving that zone's effect, target any number of friendly Combat Units. Restore D3+2 Wounds *(total)* across these units.",
+      "id": "30612",
+      "quote": "\"Is it the justice of your cause you doubt, my lord, or the strength of your arm?\"",
+      "restrictions": "Loyalty: **RENLY BARATHEON**\n*Your army may never include Units or Attachments with different Loyalties.*"
+    }
+  ],
+  "Targaryen": [
+    {
+      "faction": "Targaryen",
+      "name": "Daenerys Targaryen, Khaleesi",
+      "character": "Daenerys Targaryen",
+      "cost": "4",
+      "names": "Conviction of a True Khaleesi",
+      "descriptions": "**Influence** *(When this unit claims a Tactics Zone, attach this card to a Combat Unit until the end of the round)*:\nEach time Daenerys Influences a unit, remove 1 Condition token from them.\nWhile Influencing a unit, that unit's Melee Attacks may re-roll any Attack Dice.",
+      "id": "30701",
+      "quote": "\"My sun-and-stars made a queen of me, but if he had been a different man, it might have been much otherwise.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Targaryen",
+      "name": "Illyrio Mopatis, Magister of Pentos",
+      "character": "Illyrio Mopatis",
+      "cost": "4",
+      "names": "Illyrio's Boon",
+      "descriptions": "Each time lllyrio Claims a zone, you may replace that zone's effect with:\n*Target 1 friendly Combat Unit. They restore 3 Wounds. 1 enemy they are engaged with becomes **Weakened**.*",
+      "id": "30702",
+      "quote": "\"You Westerosi are all the same. You sew some beast upon a scrap of silk, and suddenly you are all lions or dragons or eagles.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Targaryen",
+      "name": "Pyat Pree, Warlock of Qarth ",
+      "character": "Pyat Pree",
+      "cost": "4",
+      "names": "House of The Undying / \nRules: 50701",
+      "descriptions": "Place the **House of the Undying** Tactics zone card next to the Tactics Board at the start of the game. It acts as an additional Tactics zone for all purposes. \nEach time a friendly NCU Claims the [UNDYING] zone, you may replace that zone's effect with: \n*Your opponent must reveal 1 Tactics card at random from their hand. You may have them discard that card or return it to their hand. If you return it to their hand, they must then randomly discard 1 Tactics card.*",
+      "id": "30703",
+      "quote": "\"Come with me to the House of the Undying, and you shall drink of truth and wisdom.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Targaryen",
+      "name": "Barristan Selmy, Advisor to the Dragon",
+      "character": "Barristan Selmy",
+      "cost": "5",
+      "names": "Wisdom of The Old Knight",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a unit, each time that unit is targeted by an enemy Ability or Tactics card, you may remove this card from that unit to cancel the effect of that Ability or Tactics card.",
+      "id": "30704",
+      "quote": "\"Men can always ﬁght, Your Grace. Ask rather if we can win.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Targaryen",
+      "name": "Xaro Xhoan Daxos, Merchant Prince of Qarth ",
+      "character": "Xaro Xhoan Daxos",
+      "cost": "4",
+      "names": "Wealth Of The Thirteen",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the round)*:\nWhile Influencing a unit, that unit suffers/gains the following, based on what zone Xaro Controls:\n[CROWN]: This unit suffers +1 Wound from failing Panic Tests.\n[MONEY]: After rolling Defense Dice, this unit blocks +1 Hit. \n[LETTER]: Unit's Attacks gain +1 Attack Die.\n[UNDYING]: Unit's Attacks suffer -1 Attack Die.",
+      "id": "30705",
+      "quote": "\"I no longer lust for dragons. I saw their work at Astapor.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Targaryen",
+      "name": "Daenerys Targaryen, The Unburnt",
+      "character": "Daenerys Targaryen",
+      "cost": "5",
+      "names": "Dracarys!",
+      "descriptions": "Each time Daenerys Claims a zone, you may replace that zone's effect with:\n*1 friendly **Drogon**, **Rhaegal**, or **Viserion** unit performs 1 Attack Action.*",
+      "id": "30707",
+      "quote": "\"I am blood of the dragon. I am Daenerys Stormborn, Princess of Dragonstone, of the blood and seed of Aegon the Conqueror.\"",
+      "restrictions": "*Reduce the cost of 1 **Drogon**, **Rhaegal**, or **Viserion** unit in your army by 1.*"
+    }
+  ],
+  "Greyjoy": [
+    {
+      "faction": "Greyjoy",
+      "name": "Rodrik Harlaw, The Reader",
+      "character": "Rodrik Harlaw",
+      "cost": "4",
+      "names": "Scholar Among Raiders",
+      "descriptions": "Rodrik begins the game with 2 Order Tokens.\nAt the start of any Turn, you may remove 1 Order token from Rodrik. If you do, place any number of Tactics cards from your hand to the side, then draw 1+ that many cards. Shuffle the cards you set aside into your Tactics Deck.",
+      "id": "30801",
+      "quote": "\"I prefer my history dead. Dead history is writ in ink, the living sort in blood.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Aeron Greyjoy, The Damphair",
+      "character": "Aeron Greyjoy",
+      "cost": "4",
+      "names": "Rise Again, Harder and Stronger",
+      "descriptions": "**Aeron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a unit, when that unit performs an Action, before resolving that Action, it restores 1 Wound.\nWhen it destroys an enemy with a Melee Attack, it restores 1 Wound for each of its destroyed ranks.",
+      "id": "30802",
+      "quote": "\"What is dead may never die, but rises again, harder and stronger.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Balon Greyjoy, King of Salt and Rock",
+      "character": "Balon Greyjoy",
+      "cost": "5",
+      "names": "Rise Again, Blade in Hand",
+      "descriptions": "Once per game, when Balon Claims a zone, you may replace that zone's effect with:\n*Redeploy 1 previously destroyed Greyjoy Combat Unit fully within Long Range of a friendly Deployment Edge, or fully within Short Range of any Flank table edge. It deploys Activated and with any Pillage tokens it previously had.*",
+      "id": "30803",
+      "quote": "\"No man has ever died from bending his knee. He who kneels may rise again, blade in hand.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Wendamyr, Maester Of House Greyjoy",
+      "character": "Wendamyr",
+      "cost": "4",
+      "names": "Raven Tending",
+      "descriptions": "Wendamyr begins the game with 1 Order token.\nAt the start of a friendly Turn, you may remove 1 Order token from Wendamyr. If you do, choose 1:\n• Draw 1 Tactics card and restore 2 Wounds to 1 friendly Combat Unit.\n• 1 friendly Combat Unit performs a 3\" shift.\nWhen Wendamyr Claims a zone, you may replace that zone's effect with:\n*Place 1 Order token on Wendamyr.*",
+      "id": "30804",
+      "quote": "\"If you do not have a maester, it is taken to mean that you are of little consequence.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Erik Ironmaker, The Just",
+      "character": "Erik Ironmaker",
+      "cost": "4",
+      "names": "Gifts of Iron, Gold, and Steel",
+      "descriptions": "At the start of the game, place 2 Pillage tokens on Erik.\nWhen an enemy NCU Claims [MONEY] place 1 Pillage token on Erik.\nWhen Erik Claims a zone, you may remove 1 Pillage token from him and place it on 1 friendly unit with Pillage.",
+      "id": "30805",
+      "quote": "\"If old is wise, no one is wiser than me. If big is strong, no one's stronger.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Tristifer Botley, Lord of Lordsport",
+      "character": "Tristifer Botley",
+      "cost": "4",
+      "names": "Ironborn Diplomat",
+      "descriptions": "Once per game, at the start of the Round, you may select 1 Tactics Zone. If you do, that zone may not be Claimed this Round.\nOnce per game, when an enemy NCU Activates, you may select 2 Tactics Zones. If that NCU Claims either zone this Activation, target 1 enemy Combat Unit. It becomes **Panicked** and **Vulnerable**.",
+      "id": "30806",
+      "quote": "\"Sweet eyes, truly. That was the trouble with poor Tristifer; he was too sweet for the Iron Islands.\" -Asha Greyjoy",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Moqorro, The Black Flame",
+      "character": "Moqorro",
+      "cost": "5",
+      "names": "R'hllor's Magics",
+      "descriptions": "Moqorro begins the game with 2 Order tokens on him.\nEach time Moqorro Claims a zone, you may remove 1 Order token from him. If you do, look at the top card of any Tactics Deck. You may then shuffle that deck.\nOnce per game, when Moqorro Claims a zone, you may replace that zone's effect with:\n*Return 1 previously destroyed friendly Attachment to a friendly Combat Unit, replacing a model as usual but ignoring the usual Attachment limits.*",
+      "id": "30807",
+      "quote": "\"Why do you say this man is a wizard? I see only a ragged red priest.\" -Victarion Greyjoy to Rodrik Sparr",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Beron Blacktyde, Blind Beron",
+      "character": "Beron Blacktyde",
+      "cost": "5",
+      "names": "Zeal of the Drowned God",
+      "descriptions": "**Beron may only Influence Greyjoy units.**\n**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a friendly unit, that unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.\nRemove Beron's Influence if that unit fails a Panic Test.",
+      "id": "30808",
+      "quote": "\"ASHA! ASHA QUEEN!\" - Blind Beron, in support of Asha Greyjoy at the Kingsmoot",
+      "restrictions": ""
+    },
+    {
+      "faction": "Greyjoy",
+      "name": "Asha Greyjoy, Would-be Queen",
+      "character": "Asha Greyjoy",
+      "cost": "4",
+      "names": "Queen's Promises",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round):*\nWhile Influencing a friendly unit, that unit gains +1 to Morale Test rolls for each Pillage token on it.\nIf that unit has 2 Pillage tokens, it suffers -1 Wound from failing Panic Tests.",
+      "id": "30809",
+      "quote": "\"Your choice is simple. Crown me, for peace and victory. Or crown my uncle, for more war and more defeat.\"",
+      "restrictions": ""
+    }
+  ],
+  "Martell": [
+    {
+      "faction": "Martell",
+      "name": "Doran Martell, Lord of Sunspear",
+      "character": "Doran Martell",
+      "cost": "5C",
+      "names": "Proxy Orders",
+      "descriptions": "Each time Doran Martell Claims a zone, you may replace that zone's effect with:\n*Choose 1:*\n*•Areo Hotah's unit may Pivot then perform 1 March Action.*\n*•Areo Hotah's unit may perform 1 Retreat Action.*",
+      "id": "30901",
+      "quote": "\"I am not blind, nor deaf.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Martell",
+      "name": "Doran Martell, Prince of Dorne",
+      "character": "Doran Martell",
+      "cost": "4",
+      "names": "Sunspear Secrets",
+      "descriptions": "Each time Doran Martell Claims the zone indicated for the Round, place 1 Order token on him.\n• Round 1: Claim [MONEY] or [SWORDS]\n• Round 2: Claim [CROWN] or [OASIS]\n• Round 3: Claim [LETTER] or [HORSE]\n• Round 4: Claim [CROWN] or [SWORDS]\n• Round 5: Claim [MONEY] or [OASIS]\n• Round 6: Claim [LETTER] or [HORSE]\nAt the End of each Round, if there are 4+ Order tokens on Doran Martell, gain 2 Victory Points.",
+      "id": "30902",
+      "quote": "\"Who fears to walk upon the grass?\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Martell",
+      "name": "Ellaria Sand, Viper's Paramour",
+      "character": "Ellaria Sand",
+      "cost": "4",
+      "names": "Lysene Charm",
+      "descriptions": "Each time Ellaria Claims a zone, target 1 friendly Combat Unit. You may remove 1 Condition token from them.\nIf you Control [SWORDS], target 2 enemy units in Long Range of the targeted friendly unit. Place 1 Condition token on each of those enemies.",
+      "id": "30903",
+      "quote": "\"Where does it end?\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Martell",
+      "name": "Oberyn Martell, Prince of Dorne",
+      "character": "Oberyn Martell",
+      "cost": "4",
+      "names": "Hot Tempered",
+      "descriptions": "**Influence** *(When this unit Claims  a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly unit, each time an enemy Attacks this unit with a Melee Attack, before resolving that Attack, the Attacker suffers 2 Hits, +1 Hit for each of the Defender's remaining Ranks.",
+      "id": "30904",
+      "quote": "\"Oberyn has always been half mad.\" -Tywin Lannister",
+      "restrictions": ""
+    },
+    {
+      "faction": "Martell",
+      "name": "Tyene Sand, Septa's Daughter",
+      "character": "Tyene Sand",
+      "cost": "5",
+      "names": "Healing Hands",
+      "descriptions": "At the Start of Round 2, choose 1 Tactics Zone. The next time an enemy NCU Claims that zone, attach **The Strangler** Poison card to that NCU.\n[SKILL:Venom]",
+      "id": "30905",
+      "quote": "\"White suits my coloring. I look so ... pure.\"",
+      "restrictions": ""
+    },
+    {
+      "faction": "Martell",
+      "name": "Nymeria Sand, Lady Nym",
+      "character": "Nymeria Sand",
+      "cost": "4",
+      "names": "Conflicting Reactions",
+      "descriptions": "**Influence** *(When this unit Claims a zone, attach this card to a Combat Unit until the end of the Round)*:\nWhile Influencing a friendly Infantry unit:\n• If you or your opponent Controls [CROWN], its Melee Attacks gain **Vicious**.\n• If you or your opponent Controls [SWORDS], its Melee Attacks gain **Critical Blow**.\n• If you or your opponent Controls [OASIS], it gains +1[MOVEMENT].",
+      "id": "30906",
+      "quote": "\"Only royal blood can wash out my father's murder.\"",
+      "restrictions": ""
+    }
+  ]
 }

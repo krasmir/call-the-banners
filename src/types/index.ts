@@ -17,6 +17,7 @@ export enum Faction {
     NightsWatch = "Night's Watch",
     Stark = "Stark",
     Targaryen = "Targaryen",
+    Martell = "Martell",
 }
 
 export enum UnitType {

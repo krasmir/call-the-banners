@@ -41,6 +41,7 @@ const factions = [
     "Baratheon",
     "Targaryen",
     "Greyjoy",
+    "Martell",
 ];
 
 const userArmyState: UserArmyState = {};
