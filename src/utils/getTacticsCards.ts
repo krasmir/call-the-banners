@@ -5,11 +5,15 @@ function getTacticsCards(
     faction: Faction,
     commander: Attachment | undefined
 ): TacticCard[] {
-    let factionTacticsCards = tactics[faction].filter(
-        ({ deck }) =>
-            deck.includes("Basic Deck") ||
-            (commander !== undefined && deck === commander.name)
+    let factionTacticsCards = tactics[faction].filter(({ deck }) =>
+        deck.includes("Basic Deck")
     ) as TacticCard[];
+    if (commander !== undefined) {
+        const commanderTacticsCards = tactics[commander.faction].filter(
+            ({ deck }) => deck === commander.name
+        ) as TacticCard[];
+        factionTacticsCards = factionTacticsCards.concat(commanderTacticsCards);
+    }
 
     const cardToRemove = factionTacticsCards.find(
         ({ remove }) => remove
