@@ -14,9 +14,7 @@ function UnitTypeIcon({ type }: UnitTypeIconProps): JSX.Element {
     return (
         <IMG
             alt={type}
-            src={
-                type === "None" ? "" : `./UnitType${type.replace(" ", "")}.png`
-            }
+            src={`./UnitType${type.replace(" ", "")}.png`}
             title={type}
         />
     );

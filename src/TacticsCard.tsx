@@ -4,12 +4,16 @@ import styled from "styled-components/macro";
 const Card = styled.div`
     height: 100%;
     width: 100px;
+    position: relative;
     background-color: ${(props) => props.theme.bg};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: ${(props) => props.theme.colors.secondary} solid 1px;
 
     padding: 0 5px;
     text-align: center;
-    font-size: 0.4em;
+    font-size: 6px;
     &:hover {
         transform: scale(3) translate(-35%, 20%);
         z-index: 5;
@@ -27,23 +31,58 @@ const H4 = styled.h4`
     margin: 2px;
 `;
 
+const CardText = styled.div`
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    top: 30%;
+    padding: 5%;
+    font-size: 4px;
+    color: black;
+    background-image: url("./Bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+`;
+
 function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
     const { name, text } = card;
-    let trigger: string = "";
-    // const triggerMatch = text.match(/(?<=\*\*)[^*/]+?(?=\*\*)/g);
-    const triggerMatch = text.match(/^\*\*[^*/]+?\*\*/g);
-    console.log(triggerMatch);
+    let firstTrigger: string = "";
+    let secondTrigger: string | undefined;
+
+    const triggerMatch = text.match(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g);
+
     if (triggerMatch !== null) {
-        trigger = triggerMatch[0];
+        firstTrigger = triggerMatch[0].replace(/\*|\//g, "");
+        if (triggerMatch.length > 1)
+            secondTrigger = triggerMatch[1].replace(/\*|\//g, "");
     }
-    const newText = text.replace(/^\*\*[^*]+\*\*/, "");
-    // console.log(text);
-    // console.log(trigger);
+
+    const newText = text
+        .split(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g)
+        .filter((val) => val)
+        .map((val) => val.replace(/\*|\//g, ""));
+
     return (
-        <Card>
+        <Card
+            style={{
+                backgroundImage: `url(
+                    "./Bg_${card.faction.replace(/[' ]/g, "")}.jpg"
+                )`,
+            }}
+        >
             <H3>{name}</H3>
-            <H4>{trigger}</H4>
-            <p>{newText}</p>
+            <CardText>
+                <H4>{firstTrigger}</H4>
+                <p>{newText[0]}</p>
+                {secondTrigger !== undefined && (
+                    <>
+                        <hr />
+                        <H4>{secondTrigger}</H4>
+                        <p>{newText[1]}</p>
+                    </>
+                )}
+            </CardText>
         </Card>
     );
 }
