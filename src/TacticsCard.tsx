@@ -9,13 +9,15 @@ const Card = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: ${(props) => props.theme.colors.secondary} solid 1px;
+    border-radius: 4px;
+    /* border: ${(props) => props.theme.colors.secondary} solid 1px; */
 
     padding: 0 5px;
     text-align: center;
     font-size: 6px;
+    /* letter-spacing: 0.6px; */
     &:hover {
-        transform: scale(3) translate(-35%, 20%);
+        transform: scale(4) translate(-35%, 20%);
         z-index: 5;
     }
 `;
@@ -33,16 +35,22 @@ const H4 = styled.h4`
 
 const CardText = styled.div`
     width: 90%;
-    height: 60%;
+    height: 70%;
     position: absolute;
-    top: 30%;
+    top: 26%;
     padding: 5%;
     font-size: 4px;
     color: black;
+    border: 1px inset grey;
     background-image: url("./Bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+`;
+
+const IMG = styled.img`
+    height: 1.5em;
+    transform: translateY(20%);
 `;
 
 function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
@@ -63,6 +71,45 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
         .filter((val) => val)
         .map((val) => val.replace(/\*|\//g, ""));
 
+    const icons = [
+        "CROWN",
+        "LETTER",
+        "MONEY",
+        "SWORDS",
+        "HORSE",
+        "MOVEMENT",
+        "UNDYING",
+        "OASIS",
+    ];
+
+    const processText = (text: string): JSX.Element => {
+        const textArr = text.split(/\[|\]/g);
+        console.log(textArr);
+        return (
+            <>
+                {textArr.map((text, ind) =>
+                    icons.includes(text) ? (
+                        <IMG
+                            key={ind}
+                            alt={text}
+                            src={`./${text}.png`}
+                            title={text}
+                            style={{
+                                filter: ` ${
+                                    text !== "MOVEMENT"
+                                        ? "invert(100%)"
+                                        : "none"
+                                }`,
+                            }}
+                        />
+                    ) : (
+                        <span key={ind}>{text}</span>
+                    )
+                )}
+            </>
+        );
+    };
+
     return (
         <Card
             style={{
@@ -73,13 +120,13 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
         >
             <H3>{name}</H3>
             <CardText>
-                <H4>{firstTrigger}</H4>
-                <p>{newText[0]}</p>
+                <H4>{processText(firstTrigger)}</H4>
+                <p>{processText(newText[0])}</p>
                 {secondTrigger !== undefined && (
                     <>
                         <hr />
-                        <H4>{secondTrigger}</H4>
-                        <p>{newText[1]}</p>
+                        <H4>{processText(secondTrigger)}</H4>
+                        <p>{processText(newText[1])}</p>
                     </>
                 )}
             </CardText>

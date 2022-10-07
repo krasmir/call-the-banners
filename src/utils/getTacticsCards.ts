@@ -21,7 +21,7 @@ function getTacticsCards(
 
     if (cardToRemove !== undefined) {
         factionTacticsCards = factionTacticsCards.filter(
-            ({ id }) => id !== cardToRemove
+            ({ id }) => !cardToRemove.includes(id)
         );
     }
 
