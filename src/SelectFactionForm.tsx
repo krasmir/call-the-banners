@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 import { Button } from "./Button";
 import { useDispatch } from "react-redux";
 import { setCurrentFaction } from "./store/currentFaction/currentFaction";
+import useCurrentFaction from "./hooks/useCurrentFaction";
 
 const Form = styled.form`
     padding: 12px;
@@ -33,7 +34,8 @@ const Label = styled.label`
 `;
 
 function SelectFactionForm(): JSX.Element {
-    const [chosenFaction, setChosenFaction] = useState("Lannister");
+    const currentFaction = useCurrentFaction();
+    const [chosenFaction, setChosenFaction] = useState(currentFaction);
     const dispatch = useDispatch();
 
     const factions = [
