@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 import Navbar from "./Navbar";
 
 const Head = styled.header`
-    width: 100vw;
+    width: 98vw;
     height: 100px;
     display: flex;
     justify-content: space-between;

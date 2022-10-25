@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
 import DisplayDeck from "./DisplayDeck";
-import DisplayUnits from "./DisplayUnits";
+import DisplayUnits from "./DisplayUnitsTable";
 import SelectFactionForm from "./SelectFactionForm";
 
 const Div = styled.div`

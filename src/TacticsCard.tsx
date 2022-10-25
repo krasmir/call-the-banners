@@ -72,8 +72,12 @@ const CardText = styled.div`
     background-size: cover;
 `;
 
+const P = styled.p`
+    margin-top: 2px;
+`;
+
 const IMG = styled.img`
-    height: 1.5em;
+    height: 1.2em;
     transform: translateY(20%);
 `;
 
@@ -90,11 +94,6 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
             secondTrigger = triggerMatch[1].replace(/\*|\//g, "");
     }
 
-    const newText = text
-        .split(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g)
-        .filter((val) => val)
-        .map((val) => val.replace(/\*|\//g, ""));
-
     const icons = [
         "CROWN",
         "LETTER",
@@ -106,9 +105,28 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
         "OASIS",
     ];
 
+    const newText = text
+        .split(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g)
+        .filter((val) => val)
+        .map((val) =>
+            val
+                .replace(/\//g, "")
+                .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+                .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+                .replace(/^\n\n/g, "")
+                .replace(/\n\n/g, "<br />")
+        );
+
     const processText = (text: string): JSX.Element => {
-        const textArr = text.split(/\[|\]/g);
-        console.log(textArr);
+        let textArr = text.split(/\[|\]/g);
+        textArr = textArr.map((text) => {
+            if (text.startsWith("<em>")) text = text + "</em>";
+            else if (text.startsWith("<strong>")) text = text + "</strong>";
+            else if (text.endsWith("</em>")) text = "<em>" + text;
+            else if (text.endsWith("</strong>")) text = "<strong>" + text;
+            return text;
+        });
+
         return (
             <>
                 {textArr.map((text, ind) =>
@@ -127,7 +145,10 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
                             }}
                         />
                     ) : (
-                        <span key={ind}>{text}</span>
+                        <span
+                            dangerouslySetInnerHTML={{ __html: text }}
+                            key={ind}
+                        ></span>
                     )
                 )}
             </>
@@ -152,12 +173,14 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
 
             <CardText>
                 <H4>{processText(firstTrigger)}</H4>
-                <p>{processText(newText[0])}</p>
+                <P>{processText(newText[0])}</P>
                 {secondTrigger !== undefined && (
                     <>
                         <hr />
                         <H4>{processText(secondTrigger)}</H4>
-                        <p>{processText(newText[1])}</p>
+                        {newText[1] !== undefined && (
+                            <P>{processText(newText[1])}</P>
+                        )}
                     </>
                 )}
             </CardText>
