@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "./About";
 import App from "./App";
+import DisplayUnits from "./DisplayUnits";
 import Home from "./Home";
 import Layout from "./Layout";
 import Tactics from "./Tactics";
-import Units from "./Units";
 
 export const router = createBrowserRouter([
     {
@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
         children: [
             { path: "/", element: <Home /> },
             { path: "/armybuilder", element: <Layout /> },
-            { path: "/units", element: <Units /> },
+            { path: "/units", element: <DisplayUnits /> },
             { path: "/tactics", element: <Tactics /> },
             { path: "/about", element: <About /> },
         ],
