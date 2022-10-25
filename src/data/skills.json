@@ -1,1427 +1,1427 @@
 {
-    "\"Camp Followers\"": {
-        "name": "\"Camp Followers\"",
-        "description": "Each time this unit Activates, it suffers 1 Hit for each of its remaining ranks.",
-        "icons": ""
-    },
-    "A Man Freed, A Name Owed": {
-        "name": "A Man Freed, A Name Owed",
-        "description": "When Jaqen is destroyed, your opponent may target 1 of your Combat Units. It suffer 3 Wounds. As 1 of these Wounds, they may destroy 1 Infantry Attachment in that unit.",
-        "icons": "W"
-    },
-    "Adaptive": {
-        "name": "Adaptive",
-        "description": "When building your army, reduce the cost of 1 Attachment in this unit by 1.",
-        "icons": ""
-    },
-    "Advantage Strike": {
-        "name": "Advantage Strike",
-        "description": "When Attacking enemies that  have not Activated this Round, this unit's Melee Attacks may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Aerial Scouting": {
-        "name": "Aerial Scouting",
-        "description": "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift.",
-        "icons": ""
-    },
-    "Affiliation: Bloody Mummers": {
-        "name": "Affiliation: Bloody Mummers",
-        "description": "This unit is a Bloody Mummer unit.",
-        "icons": "W"
-    },
-    "Affiliation: Builder": {
-        "name": "Affiliation: Builder",
-        "description": "This unit is a Builder unit.",
-        "icons": "W"
-    },
-    "Affiliation: Crannogman": {
-        "name": "Affiliation: Crannogman",
-        "description": "This unit is a Crannogman unit.",
-        "icons": "W"
-    },
-    "Affiliation: Frozen Shore": {
-        "name": "Affiliation: Frozen Shore",
-        "description": "This unit is a Frozen Shore unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Bolton": {
-        "name": "Affiliation: House Bolton",
-        "description": "This unit is a House Bolton unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Clegane": {
-        "name": "Affiliation: House Clegane",
-        "description": "This unit is a House Clegane unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Karstark": {
-        "name": "Affiliation: House Karstark",
-        "description": "This unit is a House Karstark unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Mormont": {
-        "name": "Affiliation: House Mormont",
-        "description": "This unit is a House Mormont unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Tully": {
-        "name": "Affiliation: House Tully",
-        "description": "This unit is a House Tully unit.",
-        "icons": "W"
-    },
-    "Affiliation: House Umber": {
-        "name": "Affiliation: House Umber",
-        "description": "This unit is a House Umber unit.",
-        "icons": "W"
-    },
-    "Affiliation: R'hllor": {
-        "name": "Affiliation: R'hllor",
-        "description": "This unit is a R'hllor unit.",
-        "icons": "W"
-    },
-    "Affiliation: Rangers": {
-        "name": "Affiliation: Rangers",
-        "description": "This unit is a Ranger unit.",
-        "icons": "W"
-    },
-    "Affiliation: Stormcrows": {
-        "name": "Affiliation: Stormcrows",
-        "description": "This unit is a Stormcrow unit.",
-        "icons": "W"
-    },
-    "Agile": {
-        "name": "Agile",
-        "description": "Enemies suffer -1 to Hit when Attacking this unit.",
-        "icons": ""
-    },
-    "Ambush": {
-        "name": "Ambush",
-        "description": "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**.",
-        "icons": "M"
-    },
-    "Arrow Volley": {
-        "name": "Arrow Volley",
-        "description": "• Ignores units and terrain when determining Line of Sight.\n• Defenders that fail their Panic Test lose all Order Abilities until the end of the Round and become **Weakened**.",
-        "icons": "R"
-    },
-    "Battle Prayer": {
-        "name": "Battle Prayer",
-        "description": "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:\n**• When an enemy is performing an Attack on this unit, after rolling Defense Dice:**\nThis unit blocks +1 Hit, +1 additional Hit for each of its destroyed ranks.\n**• When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack gains Sundering and may re-roll any Attack Dice.",
-        "icons": "F"
-    },
-    "Battle Scars (Belwas)": {
-        "name": "Battle Scars (Belwas)",
-        "description": "After this unit is Attacked, place 1 Order token on Belwas. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Battle Scars (Cohollo)": {
-        "name": "Battle Scars (Cohollo)",
-        "description": "After this unit is Attacked, place 1 Order token on Cohollo. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Battle Scars (Dagmer)": {
-        "name": "Battle Scars (Dagmer)",
-        "description": "After this unit is Attacked, place 1 Order token on Dagmer. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Battle Scars (Maege)": {
-        "name": "Battle Scars (Maege)",
-        "description": "After this unit is Attacked, place 1 Order token on Maege. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Battle Scars (Qhorin Halfhand)": {
-        "name": "Battle Scars (Qhorin Halfhand)",
-        "description": "After this unit is Attacked, place 1 Order token on Qhorin. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Battle Scars (The Great Walrus)": {
-        "name": "Battle Scars (The Great Walrus)",
-        "description": "After this unit is Attacked, place 1 Order token on The Great Walrus. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Bear Cavalry": {
-        "name": "Bear Cavalry",
-        "description": "• Each model in this unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Berserker Axes": {
-        "name": "Berserker Axes",
-        "description": "Gains +1 to Hit for each of this unit’s destroyed ranks.",
-        "icons": "M"
-    },
-    "Black Fire": {
-        "name": "Black Fire",
-        "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Panicked**.",
-        "icons": "W,M"
-    },
-    "Blade and Fang": {
-        "name": "Blade and Fang",
-        "description": "• **Vicious**",
-        "icons": "M"
-    },
-    "Bloodrider": {
-        "name": "Bloodrider",
-        "description": "This unit cannot become **Weakened**.",
-        "icons": "W"
-    },
-    "Boisterous Charisma": {
-        "name": "Boisterous Charisma",
-        "description": "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs.",
-        "icons": "W"
-    },
-    "Boldness and Courage": {
-        "name": "Boldness and Courage",
-        "description": "Each time this unit Attacks, if it has full ranks, it gains +1 Attack Die. Otherwise, it is treated as having +1 rank for Attack Dice.",
-        "icons": "R,M"
-    },
-    "Bolt Thrower": {
-        "name": "Bolt Thrower",
-        "description": "• **Vicious**\n• Measures Range and Line of Sight from any part of this unit's tray.\n• May suffer -3 to Hit to ignore Line of Sight and gain **Unlimited Range**.\n• Defenders do not roll Defense Dice.\n• For each unblocked Hit,Cavalry, Monster, and War Machine units suffer 2 Wounds.",
-        "icons": "R,W"
-    },
-    "Bonded Bear": {
-        "name": "Bonded Bear",
-        "description": "• This unit has 1 Wound and cannot grant Victory Points. \n• If this unit is destroyed, it cannot be selected by its Skinchanger again. \n• If this unit was selected, when its Bonded Skinchanger Activates, Deploy it engaged in the Front or Flank of 1 enemy engaging its Skinchanger. It then performs 1 Melee Attack Action. Remove this unit at the end of the Round.",
-        "icons": "W"
-    },
-    "Bonded Boar": {
-        "name": "Bonded Boar",
-        "description": "• This unit has 3 Wounds and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• At the start of any Round, if this unit is not in Long Range of Borroq’s unit, it is destroyed.\n• This unit does not Activate as normal. Instead, when Borroq’s unit Activates, this unit Activates immediately after them.",
-        "icons": "W"
-    },
-    "Bonded Eagle": {
-        "name": "Bonded Eagle",
-        "description": "Each time this unit is selected, target 1 enemy. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
-        "icons": ""
-    },
-    "Bonded Skinchanger": {
-        "name": "Bonded Skinchanger",
-        "description": "At the start of each Round, select Bear, Eagle, or Wolf. See that unit's card for additional effects.",
-        "icons": ""
-    },
-    "Bonded Wolf": {
-        "name": "Bonded Wolf",
-        "description": "Each time this unit is selected, target 1 enemy in Long Range of its Skinchanger's unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
-        "icons": ""
-    },
-    "Bookkeeping (Cortnay Penrose)": {
-        "name": "Bookkeeping (Cortnay Penrose)",
-        "description": "As long as Cortnay Penrose is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
-        "icons": ""
-    },
-    "Bookkeeping (Samwell Tarley)": {
-        "name": "Bookkeeping (Samwell Tarley)",
-        "description": "As long as Samwell Tarley is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
-        "icons": ""
-    },
-    "Bran’s Protector": {
-        "name": "Bran’s Protector",
-        "description": "After Bran Stark’s unit is Attacked, this unit may perform 1 Attack or Charge Action on the Attacker.",
-        "icons": ""
-    },
-    "Brutal Armaments": {
-        "name": "Brutal Armaments",
-        "description": "• **Vicious**\n• Defender suffers +1 Wound from failing Panic Tests from this Attack for each of its destroyed ranks.",
-        "icons": "M"
-    },
-    "Bulwark Formation": {
-        "name": "Bulwark Formation",
-        "description": "If this unit has not performed an Action this Round, it gains +2 to Defense Dice rolls.",
-        "icons": ""
-    },
-    "Cavalry": {
-        "name": "Cavalry",
-        "description": "• Each model in this unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Champion’s Wrath": {
-        "name": "Champion’s Wrath",
-        "description": "• **Critical Blow**\n• Enemies Succesfully Charged become **Weakened**.\n• If this unit began the Turn engaged with the Defender, before rolling Attack Dice, the Defender becomes **Vulnerable**.",
-        "icons": "M"
-    },
-    "Chariot": {
-        "name": "Chariot",
-        "description": "• This unit has 6 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Chieftain's Fury": {
-        "name": "Chieftain's Fury",
-        "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• When Mag is destroyed, before being removed, he performs 1 Chieftain’s Fury Attack.",
-        "icons": "M,W"
-    },
-    "Claw & Blade": {
-        "name": "Claw & Blade",
-        "description": "• **Vicious**",
-        "icons": "M"
-    },
-    "Cleaving Blows": {
-        "name": "Cleaving Blows",
-        "description": "• When Charging, gains **Critical Blow**.\n• Defenders do not roll Defense Dice.",
-        "icons": "M"
-    },
-    "Commander's Vassal": {
-        "name": "Commander's Vassal",
-        "description": "This model counts as your Commander when its unit is being targeted by Tactics cards.",
-        "icons": "W"
-    },
-    "Coordinated Assault": {
-        "name": "Coordinated Assault",
-        "description": "When Charging, deals +1 Hit for each remaining rank in this unit.",
-        "icons": "M"
-    },
-    "Counterstrike": {
-        "name": "Counterstrike",
-        "description": "Each time this unit is Attacked with a Melee Attack, for each Miss, the Attacker suffers 1 Hit.",
-        "icons": ""
-    },
-    "Crossbow": {
-        "name": "Crossbow",
-        "description": "• **Sundering**\n• May re-roll Attack Dice when Attacking enemies in Short Range.",
-        "icons": "R"
-    },
-    "Dauntless": {
-        "name": "Dauntless",
-        "description": "Each time this unit passes a Morale Test, it restores 1 Wound.",
-        "icons": ""
-    },
-    "Deadly Bloom": {
-        "name": "Deadly Bloom",
-        "description": "Each time this unit restores Wounds, target 1 enemy it is engaged with. They suffer 1 Wound.",
-        "icons": ""
-    },
-    "Deadly Impact": {
-        "name": "Deadly Impact",
-        "description": "When Charging, gains **Sundering**, **Vicious**, and deals +1 Hit for each of the Defender’s remaining ranks.",
-        "icons": "M"
-    },
-    "Dervish Blades": {
-        "name": "Dervish Blades",
-        "description": "• **Precision**\n• When Attacking enemies that have not Activated this Round, this Attack gains **Critical Blow**.",
-        "icons": "M"
-    },
-    "Direwolf": {
-        "name": "Direwolf",
-        "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Disorganized": {
-        "name": "Disorganized",
-        "description": "This unit suffers +1 Wound from failing Panic Tests.",
-        "icons": ""
-    },
-    "Disrupt": {
-        "name": "Disrupt",
-        "description": "Enemies engaged with this unit suffer -1 to Hit.",
-        "icons": ""
-    },
-    "Distract": {
-        "name": "Distract",
-        "description": "During your Turn, enemies this unit is engaging in the Flank or Rear lose all Abilities and cannot be the target of friendly Tactics Cards.",
-        "icons": ""
-    },
-    "Divide The Spoils": {
-        "name": "Divide The Spoils",
-        "description": "After completing an Attack, for each enemy rank that was destroyed, 1 friendly unit with Pillage in Long Range of that enemy gains 1 Pillage token.",
-        "icons": "R,M"
-    },
-    "Divine Sacrifices": {
-        "name": "Divine Sacrifices",
-        "description": "Each time this unit Attacks, before rolling Attack Dice, it may suffer up to 2 Wounds. If it does, for each Wound suffered, the Defender becomes **Panicked** or **Vulnerable**.",
-        "icons": "R,M"
-    },
-    "Dominance Of The Crown": {
-        "name": "Dominance Of The Crown",
-        "description": "If you Control [CROWN] when this unit is performing a Melee Attack, this Attack gains +1 to Hit and **Sundering**.",
-        "icons": "M"
-    },
-    "Domineering Pride": {
-        "name": "Domineering Pride",
-        "description": "While engaged by an enemy with fewer remaining ranks, this unit automatically passes all Panic Tests.",
-        "icons": ""
-    },
-    "Dornish Conviction": {
-        "name": "Dornish Conviction",
-        "description": "While you Control [CROWN], this unit Attacks using its highest Attack Die Value.",
-        "icons": "R,M"
-    },
-    "Dornish Vengeance": {
-        "name": "Dornish Vengeance",
-        "description": "After this unit is Attacked with a Melee Attack, if you Control [SWORDS], the Attacker suffers 2 Wounds, +1 Wound for each of this unit's destroyed ranks.",
-        "icons": ""
-    },
-    "Double Hammers": {
-        "name": "Double Hammers",
-        "description": "• **Sundering**",
-        "icons": "M"
-    },
-    "Drowned God’s Fanatics": {
-        "name": "Drowned God’s Fanatics",
-        "description": "• This unit has 4 Wounds.\n• This unit can only suffer a maximum of 1 Wound from failing Panic Tests.\n• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.",
-        "icons": "W"
-    },
-    "Dutiful Commander": {
-        "name": "Dutiful Commander",
-        "description": "If this is a Night's Watch unit, after Deployment, you may search your deck for 1 **Tempered by Duty** Tactics card and attach it to this unit. Shuffle your Tactics deck.",
-        "icons": ""
-    },
-    "Duty to The Crown": {
-        "name": "Duty to The Crown",
-        "description": "Each time this unit passes a Morale Test, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",
-        "icons": ""
-    },
-    "Elusive Escape": {
-        "name": "Elusive Escape",
-        "description": "This unit may re-roll any Retreat Distance Dice. Enemies this unit disengages from may not pivot and become **Weakened**.",
-        "icons": ""
-    },
-    "Embolden": {
-        "name": "Embolden",
-        "description": "Friendly units in Short Range gain +1 to Morale Test rolls.",
-        "icons": ""
-    },
-    "Enhanced Mobility": {
-        "name": "Enhanced Mobility",
-        "description": "This unit gains +1 [MOVEMENT] and may pivot before Marching.",
-        "icons": ""
-    },
-    "Executioner's Fury": {
-        "name": "Executioner's Fury",
-        "description": "• **Sundering**\n• Enemies suffer an additional -1 to Defense Dice rolls for each of this unit’s destroyed ranks.",
-        "icons": "M"
-    },
-    "Experiment Enhancements": {
-        "name": "Experiment Enhancements",
-        "description": "This unit's Melee Attacks gain +1 to Hit and **Vicious**. Opponents cannot expend Weakened tokens on this unit while it is Attacking.",
-        "icons": "W,M"
-    },
-    "Expert Duelist": {
-        "name": "Expert Duelist",
-        "description": "Each time this unit performs a Melee Attack, before rolling Attack Dice, choose 1:\n• This Attack deals +1 Wound. \n• Target 1 lnfantry Attachment in the Defender's unit and roll a die. On a 3+, destroy that Attachment.",
-        "icons": "M"
-    },
-    "Eye Of The Crow": {
-        "name": "Eye Of The Crow",
-        "description": "• This unit has 4 Wounds.\n• At the start of this unit's Activation, it may perform 1 Maneuver or Retreat Action.\n• If this unit is destroyed, at the start of the next Round, you may Redeploy it fully within Short Range of any Flank table edge.",
-        "icons": "W"
-    },
-    "Fanatical Zeal": {
-        "name": "Fanatical Zeal",
-        "description": "This unit begins the game with 1 **Faith token**. Each time this unit passes a Morale Test, it gains 1 Faith token. Each time this unit is performing a Melee Attack, before rolling Attack Dice, it may expend 1 Faith token. If it does, this Attack gains **Precision** and may re-roll any Attack Dice.",
-        "icons": "F"
-    },
-    "Fearless Avarice": {
-        "name": "Fearless Avarice",
-        "description": "While you Control [MONEY], this unit suffers -1 Wound from failed Panic Tests.",
-        "icons": ""
-    },
-    "Fire Arrows": {
-        "name": "Fire Arrows",
-        "description": "• **Vicious**\n• If the Defender fails their Panic Test, target 1 other enemy in Short Range of that unit. They suffer 1 Panic Test with -2 to their roll.",
-        "icons": "R"
-    },
-    "First of The King's Men": {
-        "name": "First of The King's Men",
-        "description": "You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit.",
-        "icons": ""
-    },
-    "Flail": {
-        "name": "Flail",
-        "description": "• **Precision**",
-        "icons": "M"
-    },
-    "Frenzied Swings": {
-        "name": "Frenzied Swings",
-        "description": "• **Sundering**\n• Gains +1 to Hit for each of this unit’s destroyed ranks.\n• After completing this Attack, this unit suffers 1 Wound for each Attack Die roll of 1.",
-        "icons": "M"
-    },
-    "Fueled By Slaughter": {
-        "name": "Fueled By Slaughter",
-        "description": "After this unit completes a Melee Attack, if the Defender suffered any Wounds, this unit restores 1 Wound, +1 additional Wound for each of the Defender's destroyed ranks.",
-        "icons": "M"
-    },
-    "Furious Charge": {
-        "name": "Furious Charge",
-        "description": "Enemies Successfully Charged by this unit become **Vulnerable**.",
-        "icons": "M"
-    },
-    "Furious Swing": {
-        "name": "Furious Swing",
-        "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each Wound this unit has suffered.",
-        "icons": "M,W"
-    },
-    "Gallows Humor": {
-        "name": "Gallows Humor",
-        "description": "While this unit has at least 1 destroyed rank, it may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs. While it has only 1 remaining rank, its Melee Attacks gain +1 to Hit.",
-        "icons": "W"
-    },
-    "Gang-Up": {
-        "name": "Gang-Up",
-        "description": "All friendly unit's Melee Attacks gain +1 to Hit and +1 Attack Die on enemies that are engaged with this unit and at least 1 other friendly unit.",
-        "icons": ""
-    },
-    "Giant": {
-        "name": "Giant",
-        "description": "• This unit has 6 Wounds.\n• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.",
-        "icons": "W"
-    },
-    "Gifts of Silver and Bronze": {
-        "name": "Gifts of Silver and Bronze",
-        "description": "At the start of the game, target 1 friendly unit with Pillage. It gains 1 Pillage token.",
-        "icons": ""
-    },
-    "Go Down Fighting": {
-        "name": "Go Down Fighting",
-        "description": "Each time a rank in this unit is destroyed, 1 enemy they are engaged with suffers 1 Wound.",
-        "icons": ""
-    },
-    "Golden Fire": {
-        "name": "Golden Fire",
-        "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Vulnerable**.",
-        "icons": "W,M"
-    },
-    "Gore and Feed": {
-        "name": "Gore and Feed",
-        "description": "• **Sundering**\n• After completing this Attack, if it dealt any Wounds, this unit restores 1 Wound.",
-        "icons": "M"
-    },
-    "Great Axe": {
-        "name": "Great Axe",
-        "description": "• **Sundering**",
-        "icons": "M"
-    },
-    "Great Hammer": {
-        "name": "Great Hammer",
-        "description": "• **Critical Blow**\n• If the Defender rolls a 1 on any Defense Dice, after this Attack is completed, they become **Weakened**.",
-        "icons": "M"
-    },
-    "Greatsword": {
-        "name": "Greatsword",
-        "description": "• **Sundering**",
-        "icons": "M"
-    },
-    "Halberd": {
-        "name": "Halberd",
-        "description": "• **Sundering**",
-        "icons": "M"
-    },
-    "Hardened": {
-        "name": "Hardened",
-        "description": "Each time an enemy is performing an Attack on this unit, after rolling Defense Dice, this unit blocks +1 Hit, and +1 additional Hit for each of its destroyed ranks.",
-        "icons": ""
-    },
-    "Harma's Vassal": {
-        "name": "Harma's Vassal",
-        "description": "This model counts as Harma when its unit is being targeted by Tactics cards.",
-        "icons": "W"
-    },
-    "Heart of Fire": {
-        "name": "Heart of Fire",
-        "description": "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:\n• **When an enemy engaged with this unit performs an Attack, before resolving that Attack:**\nFor each of this unit’s destroyed ranks, the Attacker suffers 3 Hits.\n• **When this unit performs a Melee Attack, before rolling Attack Dice:**\nThis Attack gains **Precision** and **Vicious**.\n• **When this unit is destroyed:**\n1 other R’hllor unit in Long Range performs 1 Attack Action.",
-        "icons": "Fire"
-    },
-    "Heir of House Targaryen": {
-        "name": "Heir of House Targaryen",
-        "description": "When Daenerys is destroyed, your opponent gains 2 Victory Points.",
-        "icons": "W"
-    },
-    "Hodor!": {
-        "name": "Hodor!",
-        "description": "This unit's Melee Attacks deal +1 Wound.",
-        "icons": "M"
-    },
-    "Hodor!!!": {
-        "name": "Hodor!!!",
-        "description": "When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game.",
-        "icons": ""
-    },
-    "Horrific Visage": {
-        "name": "Horrific Visage",
-        "description": "Each time an enemy performs a Melee Attack on this unit, before resolving that Attack, target the Attacker. They suffer 1 Panic Test with -1 to their roll for each remaining rank in this unit.",
-        "icons": ""
-    },
-    "Hrakkars & Tamers": {
-        "name": "Hrakkars & Tamers",
-        "description": "• This unit has 6 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Improved Armaments": {
-        "name": "Improved Armaments",
-        "description": "While you Control [MONEY], this unit's Melee Attacks gain **Sundering** and roll their highest Attack Die Value.",
-        "icons": "M"
-    },
-    "Improved Defenses": {
-        "name": "Improved Defenses",
-        "description": "While you Control [MONEY], this unit gains +1 to Defense Dice rolls.",
-        "icons": ""
-    },
-    "Insignificant": {
-        "name": "Insignificant",
-        "description": "This unit cannot grant Victory Points from **Victory Through Combat**.",
-        "icons": ""
-    },
-    "Inspiring Presence": {
-        "name": "Inspiring Presence",
-        "description": "This unit's Morale Stat becomes 5+.",
-        "icons": "Morale5"
-    },
-    "Intimidating Presence": {
-        "name": "Intimidating Presence",
-        "description": "Enemies engaged with this unit suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests.",
-        "icons": ""
-    },
-    "Intimidation Of The Crown": {
-        "name": "Intimidation Of The Crown",
-        "description": "If you Control [CROWN], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.",
-        "icons": ""
-    },
-    "Iron Resolve": {
-        "name": "Iron Resolve",
-        "description": "This unit gains +1 to Panic Test rolls and suffers -1 Wound from failing Panic Tests.",
-        "icons": ""
-    },
-    "Ironborn Arrows": {
-        "name": "Ironborn Arrows",
-        "description": "May re-roll Attack Dice when Attacking enemies in the Flank or Rear.",
-        "icons": "R"
-    },
-    "Jade Fire": {
-        "name": "Jade Fire",
-        "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Weakened**.",
-        "icons": "W,M"
-    },
-    "Jagged Weapons": {
-        "name": "Jagged Weapons",
-        "description": "• **Vicious**",
-        "icons": "M"
-    },
-    "Jaime's Protector": {
-        "name": "Jaime's Protector",
-        "description": "After Jaime Lannister's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
-        "icons": ""
-    },
-    "Jaime's Vassal": {
-        "name": "Jaime's Vassal",
-        "description": "This model counts as Jaime Lannister when its unit is being targeted by Tactics Cards.",
-        "icons": "W"
-    },
-    "Joffrey’s Retinue": {
-        "name": "Joffrey’s Retinue",
-        "description": "This unit has 8 models *(including Joffrey)*, 8 Wounds, and 2 ranks.",
-        "icons": "W"
-    },
-    "Jojen's Greensight": {
-        "name": "Jojen's Greensight",
-        "description": "Each time this unit performs an Attack or Charge Action, before resolving that Action, it gains 1 of the following:\r\n• May re-roll any Attack Dice. \r\n• May re-roll any Charge Distance Dice and ignores the Hindering and Rough keywords this Turn.",
-        "icons": "W"
-    },
-    "Juvenile Dragon": {
-        "name": "Juvenile Dragon",
-        "description": "• This unit has 8 Wounds.\n• This unit ignores units and terrain when Maneuvering and Marching.\n• At the start of its Activation, this unit may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "King’s Blade": {
-        "name": "King’s Blade",
-        "description": "Before rolling Attack Dice, you may search your Tactics Deck or discard pile for 1 **Ours Is The Fury!** card and play it, or add it to your hand. Shuffle your Tactics Deck.",
-        "icons": "M"
-    },
-    "Knight’s Blade": {
-        "name": "Knight’s Blade",
-        "description": "• **Sundering**\n• If you Control [SWORDS], before rolling Attack Dice, the Defender becomes **Vulnerable**.",
-        "icons": "M"
-    },
-    "Knightly Vow": {
-        "name": "Knightly Vow",
-        "description": "After Deployment, target 1 enemy unit. When Attacking or Charging that enemy, this unit's Melee Attacks gain +1 to Hit and it may re-roll any Charge Distance Dice.",
-        "icons": "M"
-    },
-    "Lance": {
-        "name": "Lance",
-        "description": "• **Sundering**\n• When Charging, rolls +2 Attack Dice for each remaining rank in this unit.",
-        "icons": "M"
-    },
-    "Lannister Justice": {
-        "name": "Lannister Justice",
-        "description": "While you Control [CROWN], each time this unit performs an Action, before resolving that Action, 1 enemy in Long Range suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit.",
-        "icons": ""
-    },
-    "Lannister Oppression": {
-        "name": "Lannister Oppression",
-        "description": "Before rolling Attack Dice, you may expend Condition tokens on the Defender to gain the following:\n• **Panicked**: Until the end of the Turn, Defender loses any Abilities and may not be the target of friendly Tactics Cards.\n• **Vulnerable**: Attack may re-roll any Attack Dice. After completing this Attack, restore 2 Wounds for each of the Defender’s ranks destroyed by this Attack.\n• **Weakened**: Attack rolls highest Attack Die Value and gains Sundering.",
-        "icons": "M"
-    },
-    "Loyalty Through Coin": {
-        "name": "Loyalty through Coin",
-        "description": "While you Control [MONEY], this unit gains +1 to Defense Dice rolls and +1 to Morale Test rolls.",
-        "icons": ""
-    },
-    "Loyalty: Renly Baratheon": {
-        "name": "Loyalty: Renly Baratheon",
-        "description": "Your army may never include Units or Attachments with different Loyalties.",
-        "icons": ""
-    },
-    "Loyalty: Stannis Baratheon": {
-        "name": "Loyalty: Stannis Baratheon",
-        "description": "Your army may never include Units or Attachments with different Loyalties.",
-        "icons": ""
-    },
-    "Mace & Spike": {
-        "name": "Mace & Spike",
-        "description": "Before rolling Attack Dice, choose 1. For each of this unit’s destroyed ranks, choose +1:\n• **Critical Blow**\n• **Precision**\n• Re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Mammoth": {
-        "name": "Mammoth",
-        "description": "• This unit has 8 Wounds.\n• This unit cannot Control Objectives.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.\n• When this unit is destroyed, before being removed, target 1 enemy it is engaged with. They suffer D3 Wounds.",
-        "icons": "W"
-    },
-    "Manticore Venom": {
-        "name": "Manticore Venom",
-        "description": "Once per game, after this unit completes a Melee Attack, attach the **Manticore Venom** Poison card to the Defender until they are destroyed.",
-        "icons": "V,M"
-    },
-    "Marauder’s Blades": {
-        "name": "Marauder’s Blades",
-        "description": "• **Critical Blow**\n• Gains +1 to Hit and Vicious when Attacking enemies with the same or fewer remaining ranks.",
-        "icons": "M"
-    },
-    "Marshal": {
-        "name": "Marshal",
-        "description": "• This unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action. \n• Other friendly units in Short Range gain +1 Attack Die on Melee Attacks.",
-        "icons": "W"
-    },
-    "Master Skinchanger": {
-        "name": "Master Skinchanger",
-        "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• Gain **Varamyr’s Eagle**. See that unit’s card for additional effects.",
-        "icons": "W"
-    },
-    "Mercenary’s Longbow": {
-        "name": "Mercenary’s Longbow",
-        "description": "• While you Control [MONEY], gains **Sundering**.\n• While you Control [LETTER], before rolling Attack Dice, the Defender becomes **Vulnerable**.\n• While you Control [SWORDS], may re-roll any Attack Dice.",
-        "icons": "R"
-    },
-    "Might of the Throne": {
-        "name": "Might of the Throne",
-        "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Kevan Lannister's unit performs 1 Attack or Charge Action.*",
-        "icons": ""
-    },
-    "Mother of Dragons": {
-        "name": "Mother of Dragons",
-        "description": "Once per game, at the start of any Turn, you may search your Tactics Deck or discard pile for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck.",
-        "icons": "W"
-    },
-    "Motivated by Coin": {
-        "name": "Motivated by Coin",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 [NAME] unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Bronn)": {
-        "name": "Motivated by Coin (Bronn)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Bronn's unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Daario Naharis)": {
-        "name": "Motivated by Coin (Daario Naharis)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Daario Naharis' unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Fortune Seeker)": {
-        "name": "Motivated by Coin (Fortune Seeker)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Fortune Seeker's unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Nute)": {
-        "name": "Motivated by Coin (Nute)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Nute's unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Stormcrow Dervishes)": {
-        "name": "Motivated by Coin (Stormcrow Dervishes)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 Stormcrow Dervishes unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motivated by Coin (Stormcrow Mercenaries)": {
-        "name": "Motivated by Coin (Stormcrow Mercenaries)",
-        "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 Stormcrow Mercenaries unit performs 1 Attack Action.*",
-        "icons": ""
-    },
-    "Motley Armaments": {
-        "name": "Motley Armaments",
-        "description": "If Attacking in the Flank, choose 1. If Attacking in the Rear, gain both: \n• +1 Attack Die and **Critical Blow**.\n• Defender loses all Abilities this Turn.",
-        "icons": "M"
-    },
-    "Mummer’s Blade": {
-        "name": "Mummer’s Blade",
-        "description": "If Attacking an enemy that has not Activated this Round, before rolling Attack Dice, the Defender becomes **Weakened**.",
-        "icons": "M"
-    },
-    "Noble’s Wrath": {
-        "name": "Noble’s Wrath",
-        "description": "• **Sundering**\n• Deals +2 Hits for each Wound this unit has suffered.",
-        "icons": "M"
-    },
-    "Order: Adaptive Planning": {
-        "name": "Order: Adaptive Planning",
-        "description": "**Start of any Turn:**\r\nTarget 1 Combat Unit in Long Range. Replace 1 Condition token on that unit with any other Condition token.",
-        "icons": ""
-    },
-    "Order: Adaptive Style": {
-        "name": "Order: Adaptive Style",
-        "description": "**When this unit Attacks or is Attacked, before Attack Dice are rolled:**\nChoose 1:\n• This unit gains +1 to Defense Dice Rolls.\n• This Attack deals +1 Hit for each of this unit’s remaining ranks.",
-        "icons": ""
-    },
-    "Order: Battle Plan": {
-        "name": "Order: Battle Plan",
-        "description": "**Start of any Turn:**\nDiscard 2 Tactics cards to search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics Deck.",
-        "icons": ""
-    },
-    "Order: Charging Volley": {
-        "name": "Order: Charging Volley",
-        "description": "**After this unit completes a Ranged Attack:**\nThis unit performs 1 Charge Action on the Defender.",
-        "icons": ""
-    },
-    "Order: Counterstrategy": {
-        "name": "Order: Counterstrategy",
-        "description": "**When an enemy in Short Range uses an Order or is targeted by a Tactics card:**\r\nRoll a die. On a 3+, cancel the effect of that Order/Tactics card.",
-        "icons": ""
-    },
-    "Order: Drowned God’s Blessing": {
-        "name": "Order: Drowned God’s Blessing",
-        "description": "**Start of any Turn:**\nTarget 1 friendly Greyjoy Infantry unit in Short Range and choose 1:\n• That unit restores 2 Wounds.\n• That unit may re-roll any Attack Dice this Turn.\n• Enemies that Attack that unit this Turn become **Vulnerable**.",
-        "icons": ""
-    },
-    "Order: Grisly Example": {
-        "name": "Order: Grisly Example",
-        "description": "**Start of any Turn:**\r\nThis unit suffers 1 Wound. Target all enemies in Short Range. They become **Panicked**.",
-        "icons": ""
-    },
-    "Order: Hidden Traps": {
-        "name": "Order: Hidden Traps",
-        "description": "**When an unengaged enemy in Long Range performs any Action, before resolving that Action:**\nChoose 1:\n• That enemy suffers 1 Hit, +1 Hit for each of its remaining ranks.\n• That Enemy suffers -1 [MOVEMENT] until the end of the Turn.",
-        "icons": ""
-    },
-    "Order: Hold The Line!": {
-        "name": "Order: Hold The Line!",
-        "description": "**When this unit Activates:**\nTarget 1 enemy engaged with this unit. It suffers 2 Hits, +1 Hit for each of this unit’s remaining ranks.",
-        "icons": ""
-    },
-    "Order: Incite": {
-        "name": "Order: Incite",
-        "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\r\nThis Attack gains **Vicious** and rolls its highest Attack Die Value.",
-        "icons": ""
-    },
-    "Order: Just Shares": {
-        "name": "Order: Just Shares",
-        "description": "**Start of any Turn:**\r\nTarget 1 friendly Combat Unit in Long Range. Move 1 Pillage token from that unit to 1 other friendly unit with Pillage in Short Range of that unit.",
-        "icons": ""
-    },
-    "Order: King’s Blade": {
-        "name": "Order: King’s Blade",
-        "description": "**After this unit is Attacked:**\nSearch your Tactics Deck or discard pile for 1 **Ours is The Fury!** and add it to your hand. Shuffle your Tactics Deck.",
-        "icons": ""
-    },
-    "Order: Lannister Supremacy": {
-        "name": "Order: Lannister Supremacy",
-        "description": "**After an enemy completes an Attack on this unit:**\nTarget the Attacker. They suffer 1 Panic Test with -1 to their roll and +1 Wounds on failure for each remaining rank in this unit.",
-        "icons": ""
-    },
-    "Order: Mark Target": {
-        "name": "Order: Mark Target",
-        "description": "**Start of a friendly Turn:**\nTarget 1 enemy in Line of Sight and Long Range. They become **Vulnerable**.",
-        "icons": ""
-    },
-    "Order: Martial Training": {
-        "name": "Order: Martial Training",
-        "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack may re-roll any Attack Dice and the Defender becomes **Vulnerable**.",
-        "icons": ""
-    },
-    "Order: Overrun": {
-        "name": "Order: Overrun",
-        "description": "**When this unit Surges Forth:**\nInstead of Surging Forth, this unit performs 1 Charge Action.",
-        "icons": ""
-    },
-    "Order: Overwatch": {
-        "name": "Order: Overwatch",
-        "description": "**After an enemy ends a March or Maneuver Action in Long Range and Line of Sight of this unit:**\r\nThis unit performs 1 Ranged Attack Action on that enemy.",
-        "icons": ""
-    },
-    "Order: Queen’s Blade": {
-        "name": "Order: Queen’s Blade",
-        "description": "**When a friendly R’hllor unit in Short Range is Attacked, before rolling Attack Dice:**\nSearch your Tactics Deck or discard pile for 1 **Baratheon Conviction** or **Baratheon Justice** card and add it to your hand. Shuffle your Tactics Deck.",
-        "icons": ""
-    },
-    "Order: Quick Fire": {
-        "name": "Order: Quick Fire",
-        "description": "**After this unit completes a Maneuver or Retreat Action:**\nThis unit performs 1 Ranged Attack Action.",
-        "icons": ""
-    },
-    "Order: Raven Flock": {
-        "name": "Order: Raven Flock",
-        "description": "**When an enemy in Long Range performs an Attack Action, before resolving that Action:**\nThat Attack suffers -1 to Hit.",
-        "icons": ""
-    },
-    "Order: Ready! Aim! Release!": {
-        "name": "Order: Ready! Aim! Release!",
-        "description": "**When an enemy performs a Charge Action on this unit, before resolving that Charge Action:**\nIf being Charged from the Front, this unit performs 1 Ranged Attack Action on that enemy using its lowest Attack Die Value.",
-        "icons": ""
-    },
-    "Order: Reckless Heroism": {
-        "name": "Order: Reckless Heroism",
-        "description": "**When this unit performs a Charge Action, before resolving that Action:**\nThis unit suffers D3 Wounds, but counts as rolling a 6 on all Charge Distance Dice.",
-        "icons": ""
-    },
-    "Order: Relentless": {
-        "name": "Order: Relentless",
-        "description": "**Start of a friendly Turn:**\nThis unit performs 1 Melee Attack or Maneuver Action. Do not Activate a unit this Turn.",
-        "icons": ""
-    },
-    "Order: Resilience": {
-        "name": "Order: Resilience",
-        "description": "**When an enemy is performing an Attack on this unit, after Attack Dice are rolled:**\nThis unit only suffers 1 Wound for every 2 unblocked Hits.",
-        "icons": ""
-    },
-    "Order: Scout Openings": {
-        "name": "Order: Scout Openings",
-        "description": "**Start of a friendly Turn:**\nTarget 1 enemy in Long Range. Until the end of the Turn, friendly unit’s Attacks on that enemy may re-roll any Attack Dice and gain **Precision**.",
-        "icons": ""
-    },
-    "Order: Sentinel": {
-        "name": "Order: Sentinel",
-        "description": "**After another friendly unit in Long Range is Attacked:**\nThis unit performs 1 Charge or Maneuver Action. If Charging, it must target the Attacker.",
-        "icons": ""
-    },
-    "Order: Set an Example": {
-        "name": "Order: Set an Example",
-        "description": "**Start of any Turn:**\r\nTarget all enemies in Short Range. They become Panicked. Roll a die, on a 6, destroy Theon.",
-        "icons": ""
-    },
-    "Order: Set For Charge": {
-        "name": "Order: Set for Charge",
-        "description": "**When this unit is Successfully Charged from the Front or Flank:**\nIf this unit is not engaged with another enemy, it performs 1 Melee Attack Action on the Attacker before they perform their Melee Attack.",
-        "icons": ""
-    },
-    "Order: Shield Wall": {
-        "name": "Order: Shield Wall",
-        "description": "**When an enemy is performing a Melee Attack on this unit, after rolling Defense Dice:**\nIf this unit is being Attacked from the Front or Flank, it blocks +1 Hit for each of its remaining ranks.",
-        "icons": ""
-    },
-    "Order: Shieldwall": {
-        "name": "Order: Shieldwall",
-        "description": "**When an enemy performs a Melee Attack on this unit, after rolling Defense Dice:**\nIf this unit is being Attacked from the Front or Flank, it blocks +1 Hit for each of its remaining ranks.",
-        "icons": ""
-    },
-    "Order: Sow Discord": {
-        "name": "Order: Sow Discord",
-        "description": "**Start of any Turn:**\nTarget 1 enemy in Long Range. They suffer 1 Morale Test with -1 to their roll for each of their destroyed ranks. On a failure, they lose all Abilities until the end of the Round.",
-        "icons": ""
-    },
-    "Order: Spread Fear": {
-        "name": "Order: Spread Fear",
-        "description": "**When an enemy engaged with this unit fails a Panic Test:**\nTarget 1 other enemy in Long Range of this unit. It suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit. On failure, it suffers +1 Wound.",
-        "icons": ""
-    },
-    "Order: Stark Fury": {
-        "name": "Order: Stark Fury",
-        "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack gains **Critical Blow** and **Sundering**. After completing this Attack, this unit suffers 2 Wounds, -1 Wound for each of its destroyed ranks.",
-        "icons": ""
-    },
-    "Order: Strange Relics": {
-        "name": "Order: Strange Relics",
-        "description": "**When this unit Activates:**\nThis unit suffers 1 Wound. Target 1 enemy in Long Range. They gain 1 Condition token.",
-        "icons": ""
-    },
-    "Order: Superior Flanking": {
-        "name": "Order: Superior Flanking",
-        "description": "**When a friendly unit in Long Range performs an Attack, before rolling Attack Dice:**\nIf Attacking the Defender in the Flank or Rear, the Defender becomes **Panicked** and **Vulnerable**.",
-        "icons": ""
-    },
-    "Order: Supply Aid": {
-        "name": "Order: Supply Aid",
-        "description": "**Start of a friendly Turn:**\nThis unit suffers up to 3 Wounds. Restore 1+ that many Wounds to 1 other friendly unit in Long Range.",
-        "icons": ""
-    },
-    "Order: Swift Retreat": {
-        "name": "Order: Swift Retreat",
-        "description": "**After an enemy completes a Melee Attack on this unit:**\nThis unit performs 1 Retreat Action.",
-        "icons": ""
-    },
-    "Order: Tactical Reposition": {
-        "name": "Order: Tactical Reposition",
-        "description": "**Start of an enemy Turn:**\nTarget 1 friendly unit in Short Range. They perform a 3\" shift.",
-        "icons": ""
-    },
-    "Order: Taking a New Name": {
-        "name": "Order: Taking a New Name",
-        "description": "**Start of a friendly Turn:**\nDestroy this model and replace it with 1 destroyed Infantry Attachment. That Attachment gains **Order: Taking a New Name**. It counts as already having been used this Round.",
-        "icons": ""
-    },
-    "Order: Taunt": {
-        "name": "Order: Taunt",
-        "description": "**When an enemy in Short Range Activates:**\nIf that enemy can Charge this unit, it performs 1 Morale Test with -1 to their roll for each remaining rank in this unit. On a failure, it performs 1 Charge Action on this unit (this is their Action for the Turn).",
-        "icons": ""
-    },
-    "Order: Thenn Supremacy": {
-        "name": "Order: Thenn Supremacy",
-        "description": "**After an enemy completes an Attack on this unit:**\r\nTarget the Attacker. They suffer 1 Panic Test with -1 to their roll and +1 Wounds on failure for each remaining rank in this unit.",
-        "icons": ""
-    },
-    "Order: Threaten": {
-        "name": "Order: Threaten",
-        "description": "**When this unit Activates:**\r\nTarget 1 enemy in Long Range. They become **Weakened**.",
-        "icons": ""
-    },
-    "Order: To The Last!": {
-        "name": "Order: To The Last!",
-        "description": "**When this unit would be destroyed:**\r\nThis unit performs 1 Morale Test. On a success, it is not destroyed but remains in play with 1 Wound, then becomes **Panicked** and **Vulnerable**.",
-        "icons": ""
-    },
-    "Order: Trapper’s Tools": {
-        "name": "Order: Trapper’s Tools",
-        "description": "**Start of any Turn:**\nTarget 1 enemy engaged with this unit. For each Pillage token on this unit, they become **Vulnerable** or **Weakened**.",
-        "icons": ""
-    },
-    "Order: Trophy Collecting": {
-        "name": "Order: Trophy Collecting",
-        "description": "**After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:**\nSearch your Tactics Deck or discard pile for 1 of Rattleshirt's Commander Tactics cards and play it. Shuffle your Tactics deck.",
-        "icons": ""
-    },
-    "Order: War Cry": {
-        "name": "Order: War Cry",
-        "description": "**Start of a friendly Turn:**\r\nThis unit performs 1 Morale Test. On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Vulnerable**.",
-        "icons": ""
-    },
-    "Orders Of The Crown": {
-        "name": "Orders Of The Crown",
-        "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Preston Greenfield's unit performs 1 Maneuver or March Action.*",
-        "icons": ""
-    },
-    "Orders Of The Crown (Cortnay Penrose)": {
-        "name": "Orders Of The Crown (Cortnay Penrose)",
-        "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Cortnay Penrose's unit performs 1 Maneuver or March Action.*",
-        "icons": ""
-    },
-    "Orders Of The Crown (Preston Greenfield)": {
-        "name": "Orders Of The Crown (Preston Greenfield)",
-        "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Preston Greenfield's unit performs 1 Maneuver or March Action.*",
-        "icons": ""
-    },
-    "Outflank": {
-        "name": "Outflank",
-        "description": "You may hold this unit off the table *(In Reserve)* instead of of Deploying them. When a friendly NCU Claims [HORSE], you may replace that zone’s effect with:\n*Deploy 1 unit from Reserve fully within Short Range of any Flank table edge.*",
-        "icons": ""
-    },
-    "Outrider’s Bow": {
-        "name": "Outrider’s Bow",
-        "description": "If this unit has not performed the Maneuver from Cavalry this Turn, this Attack gains +1 to Hit and becomes [LONGRANGE].",
-        "icons": "R"
-    },
-    "Pathfinder": {
-        "name": "Pathfinder",
-        "description": "This unit ignores the Dangerous, Hindering, and Rough keywords.",
-        "icons": ""
-    },
-    "Perseverance and Valor": {
-        "name": "Perseverance and Valor",
-        "description": "Each time this unit performs a Melee Attack, before rolling Attack Dice, it restores 1 Wound.",
-        "icons": "M"
-    },
-    "Pillage": {
-        "name": "Pillage",
-        "description": "After completing a Melee Attack, for each enemy rank that was destroyed, this unit gains 1 **Pillage token**. It may have up to 2 Pillage tokens at any time.",
-        "icons": "M,P"
-    },
-    "Poisoned Gifts": {
-        "name": "Poisoned Gifts",
-        "description": "If this unit has Pillage, it deploys with 2 Pillage tokens. When it performs an Action, before resolving that Action, it suffers 1 Wound.",
-        "icons": ""
-    },
-    "Precision": {
-        "name": "Precision",
-        "description": "This unit's Melee Attacks gain **Precision**.",
-        "icons": "M"
-    },
-    "Predator's Instincts": {
-        "name": "Predator's Instincts",
-        "description": "Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2. When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice.",
-        "icons": ""
-    },
-    "Prey On Fear": {
-        "name": "Prey On Fear",
-        "description": "Each time an enemy engaged with this unit fails a Panic Test, this unit restores 2 Wounds.",
-        "icons": ""
-    },
-    "Protection Of The Crown": {
-        "name": "Protection Of The Crown",
-        "description": "While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice.",
-        "icons": ""
-    },
-    "Pummeling Fists": {
-        "name": "Pummeling Fists",
-        "description": "• **Critical Blow**\n• **Sundering**",
-        "icons": "M,W"
-    },
-    "Raided Armaments": {
-        "name": "Raided Armaments",
-        "description": "For each Pillage token on this unit, it gains +1 to Defense Dice rolls.",
-        "icons": ""
-    },
-    "Rally Cry": {
-        "name": "Rally Cry",
-        "description": "Each time this unit is performing a Melee Attack, before rolling Attack Dice, target 1 other friendly unit in Long Range. It restores 2 Wounds.",
-        "icons": "M"
-    },
-    "Rally Point": {
-        "name": "Rally Point",
-        "description": "Friendly units in Short Range may use this unit's Morale Stat for all Morale Tests.",
-        "icons": ""
-    },
-    "Rampage": {
-        "name": "Rampage",
-        "description": "• **Critical Blow**\n• **Sundering**\n• Before rolling Attack Dice, the Defender becomes **Panicked**.",
-        "icons": "M,W"
-    },
-    "Ranging Specialist (Benjen)": {
-        "name": "Ranging Specialist (Benjen)",
-        "description": "Benjen may only be Attached to Ranger units.",
-        "icons": "W"
-    },
-    "Reaper’s Fervor": {
-        "name": "Reaper’s Fervor",
-        "description": "• **Vicious**\n• When an enemy fails a Panic Test from this Attack, for each Pillage token on this unit, choose 1. The same effect may be chosen multiple times:\n   • That enemy suffers +1 Wound.\n   • This unit restores 1 Wound.",
-        "icons": "M"
-    },
-    "Reaver Axes": {
-        "name": "Reaver Axes",
-        "description": "• **Sundering**\n• Gains +1 to Hit for each Pillage token on this unit.",
-        "icons": "M"
-    },
-    "Reckless Strikes": {
-        "name": "Reckless Strikes",
-        "description": "This unit's Melee Attack gain **Critical Blow** and **Precision**. For each Attack Die roll of 1, this unit suffers 1 Wound.",
-        "icons": "M"
-    },
-    "Regroup": {
-        "name": "Regroup",
-        "description": "After completing a Retreat Action, this unit restores 2 Wounds, +1 Wound for each of its destroyed ranks.",
-        "icons": ""
-    },
-    "Reinforcements": {
-        "name": "Reinforcements",
-        "description": "Each time this unit Activates, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",
-        "icons": ""
-    },
-    "Renly's Protector": {
-        "name": "Renly's Protector",
-        "description": "After Renly Baratheon’s unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
-        "icons": ""
-    },
-    "Resolute Strikes": {
-        "name": "Resolute Strikes",
-        "description": "• **Critical Blow**\n• Gains +1 to Hit for each of this unit’s destroyed ranks.",
-        "icons": "M"
-    },
-    "Rock Volley": {
-        "name": "Rock Volley",
-        "description": "• Cannot Attack Solo units.\n• May Attack enemies regardless of range and Line of Sight.\n• If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers 1 Wound, +1 Wound for each of its remaining ranks.",
-        "icons": "R,W"
-    },
-    "Ruthless Aggression": {
-        "name": "Ruthless Aggression",
-        "description": "• **Vicious**\n• When Attacking enemies that have not Activated this Round, may re-roll Attack Dice and the Defender becomes **Vulnerable**.",
-        "icons": "M"
-    },
-    "Sabotage and Subvert": {
-        "name": "Sabotage and Subvert",
-        "description": "Once per game, at the start of any Turn, your opponent may deal this unit 1 Wound *(remove this model)*. If they do, they place 1 Condition token on this unit, and it may not use Orders or be the target of friendly Tactics cards this Turn.",
-        "icons": ""
-    },
-    "Sadistic Mutilation": {
-        "name": "Sadistic Mutilation",
-        "description": "After this unit completes a Melee Attack, you may expend 1 Weakened token from the Defender. If you do, destroy 1 Infantry Attachment in that unit.",
-        "icons": "M"
-    },
-    "Savage Mauling": {
-        "name": "Savage Mauling",
-        "description": "• **Sundering**\n• **Vicious**\n• Gains +1 Attack Die for each Wound this unit has suffered.",
-        "icons": "M"
-    },
-    "Savage Mauling (Bear)": {
-        "name": "Savage Mauling (Bear)",
-        "description": "Defenders do not roll Defense Dice.",
-        "icons": "M"
-    },
-    "Solo Rider": {
-        "name": "Solo Rider",
-        "description": "• This unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",
-        "icons": "W"
-    },
-    "Southern Knowledge": {
-        "name": "Southern Knowledge",
-        "description": "Once per game, at the Start of any Turn, target 1 enemy in Long Range and Line of Sight. Until the end of the Turn, they lose all Abilities and cannot be the target of friendly Tactics cards.",
-        "icons": ""
-    },
-    "Spear & Net": {
-        "name": "Spear & Net",
-        "description": "After completing this Attack, the Defender becomes **Weakened**.",
-        "icons": "M"
-    },
-    "Spear and Maul": {
-        "name": "Spear and Maul",
-        "description": "• **Vicious**\n• **Sundering**\n• **Precision**",
-        "icons": "M"
-    },
-    "Spiked Flail": {
-        "name": "Spiked Flail",
-        "description": "• **Vicious**",
-        "icons": "M"
-    },
-    "Spotter": {
-        "name": "Spotter",
-        "description": "When Attacking enemies in Long Range of this unit, friendly War Machine units may re-roll any Attack Dice.",
-        "icons": ""
-    },
-    "Stag’s Fury": {
-        "name": "Stag’s Fury",
-        "description": "This Attack gains the following based on the Game Round *(effects are cumulative)*:\n**• 2+:** **Critical Blow**\n**• 3+:** **Vicious**\n**• 4+:** **Sundering**\n**• 5+:** Deals +1 Hit for each of this unit’s remaining ranks.",
-        "icons": "M"
-    },
-    "Stake Building": {
-        "name": "Stake Building",
-        "description": "Once per game, at the start of any Round, place 1 Stake terrain with the Dangerous and Destructible Keywords within 2\" of this unit. This terrain may not be placed over other terrain or units.",
-        "icons": ""
-    },
-    "Stake Mountings": {
-        "name": "Stake Mountings",
-        "description": "When this unit is Successfully Charged, before the Attacker performs their Melee Attack, they suffer D3+1 Wounds.",
-        "icons": ""
-    },
-    "Stalwart": {
-        "name": "Stalwart",
-        "description": "This unit gains +2 to Morale Test rolls.",
-        "icons": ""
-    },
-    "Stand Your Ground!": {
-        "name": "Stand Your Ground!",
-        "description": "Each time an enemy performs a Melee Attack on this unit, if this unit is only engaged with 1 enemy, that enemy does not gain Charge, Flank, or Rear Bonuses.",
-        "icons": ""
-    },
-    "Stomp": {
-        "name": "Stomp",
-        "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• When Charging, gains +1 Attack Die for each of the Defender’s remaining ranks.",
-        "icons": "W,M"
-    },
-    "Stubborn Tenacity": {
-        "name": "Stubborn Tenacity",
-        "description": "Each time this unit passes a Panic Test, 1 enemy they are engaged with suffers 1 Wound.",
-        "icons": ""
-    },
-    "Sundering": {
-        "name": "Sundering",
-        "description": "This unit's Melee Attacks gain **Sundering**.",
-        "icons": "M"
-    },
-    "Superior Numbers": {
-        "name": "Superior Numbers",
-        "description": "This unit's Melee Attacks may re-roll any Attack Dice when Attacking enemies with fewer remaining ranks.",
-        "icons": "M"
-    },
-    "Swift Strike": {
-        "name": "Swift Strike",
-        "description": "After this Attack is completed, this unit may perform 1 Retreat Action.",
-        "icons": "M"
-    },
-    "Tactical Strike": {
-        "name": "Tactical Strike",
-        "description": "• **Sundering**\n• While you control [LETTER], this attack rolls its highest Attack Die Value.",
-        "icons": "M"
-    },
-    "The King Is Dead!": {
-        "name": "The King Is Dead!",
-        "description": "When Joffrey is destroyed, your opponent gains 2 Victory Points and each of your units in Long Range becomes **Panicked**.",
-        "icons": "W"
-    },
-    "The Mountain That Rides": {
-        "name": "The Mountain That Rides",
-        "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver action.",
-        "icons": "W"
-    },
-    "The Rightful Queen": {
-        "name": "The Rightful Queen",
-        "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\r\nSearch your Tactics Deck for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck. ",
-        "icons": ""
-    },
-    "The Silence's Infamy": {
-        "name": "The Silence's Infamy",
-        "description": "This unit suffers -1 Wound from failing Panic Tests for each Pillage token on this unit and, while in Short Range, enemies suffer -1 to Morale Test rolls for each Pillage token on this unit.",
-        "icons": ""
-    },
-    "To The Last!": {
-        "name": "To The Last!",
-        "description": "Place 2 [WOUND] tokens on this card at the start of the game. Each time this unit would be destroyed, remove 1 [WOUND] token from this card. It makes 1 Morale Test. On a success, this unit is not destroyed but remains in play with 1 Wound.",
-        "icons": "W"
-    },
-    "Tooth & Claw": {
-        "name": "Tooth & Claw",
-        "description": "• **Sundering**",
-        "icons": "M"
-    },
-    "Tracker’s Bow": {
-        "name": "Tracker’s Bow",
-        "description": "After completing this Attack, the Defender becomes **Vulnerable**.",
-        "icons": "R"
-    },
-    "Trample": {
-        "name": "Trample",
-        "description": "Each time this unit performs a March Action, it may replace that Action with a Trample Action:\nPivot it, then move it 12”, moving through units. If it ends over a unit, it instead stops 1” before it. Each non-Solo unit moved through, or that it would have ended on, suffers D3 Wounds.",
-        "icons": "W"
-    },
-    "True Bond": {
-        "name": "True Bond",
-        "description": "• Ghost may treat any friendly Tactics cards attached to Jon Snow's unit as also attached to him.\n• When Jon Snow's unit Activates, this unit may Activate after that unit.",
-        "icons": "W"
-    },
-    "True Conviction": {
-        "name": "True Conviction",
-        "description": "If this unit is a Baratheon unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice.",
-        "icons": "R,M"
-    },
-    "Uncontrolled Rage": {
-        "name": "Uncontrolled Rage",
-        "description": "Each time this unit Activates, if it can Charge an enemy, it performs 1 Morale Test. On a failure, it performs 1 Charge Action on the nearest valid enemy and counts as rolling a 6 for all Charge Distance Dice.",
-        "icons": ""
-    },
-    "Unstoppable Wrath": {
-        "name": "Unstoppable Wrath",
-        "description": "This unit's Melee Attacks deal +2 Wounds.",
-        "icons": "M"
-    },
-    "Unsullied Prowess": {
-        "name": "Unsullied Prowess",
-        "description": "• **Precision**\n• May always re-roll Attack Dice. \n• Opponents cannot expend Weakened tokens on this unit while it is Attacking.",
-        "icons": "M"
-    },
-    "Untrained Masses": {
-        "name": "Untrained Masses",
-        "description": "• This unit has 6 Wounds.\r\n• Cannot Control Objectives and cannot grant Victory Points. \r\n• Start of the Round, if this unit is not in Short Range of a friendly unit without **Untrained Masses**, it is destroyed.",
-        "icons": "W"
-    },
-    "Unyielding": {
-        "name": "Unyielding",
-        "description": "This unit suffers -1 Wound from failing Panic Tests for each of its destroyed ranks.",
-        "icons": ""
-    },
-    "Valuable Captive (Jaime Lannister)": {
-        "name": "Valuable Captive (Jaime Lannister)",
-        "description": "This unit gains +1 to Morale Test rolls. When Jaime is destroyed, your opponent gains 1 Victory Point.",
-        "icons": "W"
-    },
-    "Valuable Captive (Rickon Stark)": {
-        "name": "Valuable Captive (Rickon Stark)",
-        "description": "This unit gains +1 to Morale Test rolls. When Rickon is destroyed, your opponent gains 1 Victory Point.",
-        "icons": "W"
-    },
-    "Varamyr's Eagle": {
-        "name": "Varamyr's Eagle",
-        "description": "At the start of each Round, attach this card to 1 enemy Combat Unit until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
-        "icons": ""
-    },
-    "Varamyr's Scout": {
-        "name": "Varamyr's Scout",
-        "description": "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, 1 Varamyr, Shadowcat, or Wolf Pack unit may perform a 2\" shift.",
-        "icons": ""
-    },
-    "Varamyr’s Shadowcat": {
-        "name": "Varamyr’s Shadowcat",
-        "description": "• This unit has 2 Wounds.\n• Cannot Control Objectives and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• This unit does not deploy as usual. At the start of any Round, you may deploy this unit fully within Short Range of any Flank table edge.",
-        "icons": "W"
-    },
-    "Varamyr’s Wolf Pack": {
-        "name": "Varamyr’s Wolf Pack",
-        "description": "• This unit has 3 Wounds.\n• Cannot Control Objectives and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
-        "icons": "W"
-    },
-    "Vengeance Of The Crown": {
-        "name": "Vengeance Of The Crown",
-        "description": "After this unit is Attacked with a Melee Attack, if you Control [CROWN], the Attacker suffers 1 Wound, +1 Wound for each of this unit's destroyed ranks.",
-        "icons": ""
-    },
-    "Vengeful Captive": {
-        "name": "Vengeful Captive",
-        "description": "While your opponent Controls [CROWN], this unit suffers -1 to Hit.",
-        "icons": "W"
-    },
-    "Vicious": {
-        "name": "Vicious",
-        "description": "This unit's Melee Attacks gain **Vicious**.",
-        "icons": "M"
-    },
-    "Victarion's Vassal": {
-        "name": "Victarion's Vassal",
-        "description": "This model counts as Victarion Greyjoy when its unit is being targeted by Tactics cards.",
-        "icons": "W"
-    },
-    "Violent Reactions": {
-        "name": "Violent Reactions",
-        "description": "This unit suffers -1 to Defense Dice rolls.",
-        "icons": "W"
-    },
-    "Viper's Fangs": {
-        "name": "Viper's Fangs",
-        "description": "When Attacking enemies that  have not Activated this Round, the Defender becomes **Vulnerable** and **Weakened**.",
-        "icons": "M"
-    },
-    "War Elephant": {
-        "name": "War Elephant",
-        "description": "• This unit has 8 Wounds and cannot Control Objectives.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.\n• Each time this unit would perform an Action, if there is no friendly Golden Company Infantry unit within Long Range, it must perform 1 Morale Test. On a failure, it does not perform that Action.",
-        "icons": "W"
-    },
-    "War Flail": {
-        "name": "War Flail",
-        "description": "• **Vicious**\n• When Charging, gains **Critical Blow**.",
-        "icons": "M"
-    },
-    "War Hammer": {
-        "name": "War Hammer",
-        "description": "If the Defender rolls a 1 on any Defense Dice, after this Attack is completed, they become **Weakened**.",
-        "icons": "M"
-    },
-    "War Machine": {
-        "name": "War Machine",
-        "description": "• This unit has 6 Wounds.\n• This unit cannot Control Objectives.\n• This unit cannot gain Condition tokens, Charge, Retreat, or Shift.",
-        "icons": "W"
-    },
-    "Watcher's Crossbow": {
-        "name": "Watcher's Crossbow",
-        "description": "• **Sundering**",
-        "icons": "R"
-    },
-    "Weaken Resolve": {
-        "name": "Weaken Resolve",
-        "description": "Each time an enemy engaged with this unit fails a Panic Test, that enemy becomes **Weakened**.",
-        "icons": ""
-    },
-    "Whatever May Come": {
-        "name": "Whatever May Come",
-        "description": "Each time an enemy performs a Melee Attack on this unit, after rolling Attack Dice, you may destroy Jorah. If you do, that enemy becomes **Vulnerable** and **Weakened**.",
-        "icons": "W"
-    },
-    "Wildfire": {
-        "name": "Wildfire",
-        "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• After completing this Attack, for each Attack Die roll of 1, this unit suffers 1 Wound.",
-        "icons": "R,M"
-    },
-    "Winter's Bite": {
-        "name": "Winter's Bite",
-        "description": "• **Critical Blow**\n• If this unit has 1 or more destroyed ranks, gains +1 to Hit.\n• If this unit has 2 destroyed ranks, may re-roll any Attack Dice.",
-        "icons": "M"
-    },
-    "Zealous Fanaticism": {
-        "name": "Zealous Fanaticism",
-        "description": "This unit's Melee Attacks gain Vicious and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1.",
-        "icons": "W,M"
-    },
-    "Zealous Resurgence": {
-        "name": "Zealous Resurgence",
-        "description": "Each time this unit Activates, it may expend 1 Faith token. If it does, it restores 2 Wounds.",
-        "icons": "F"
-    }
+  "\"Camp Followers\"": {
+    "name": "\"Camp Followers\"",
+    "description": "Each time this unit Activates, it suffers 1 Hit for each of its remaining ranks.",
+    "icons": ""
+  },
+  "A Man Freed, A Name Owed": {
+    "name": "A Man Freed, A Name Owed",
+    "description": "When Jaqen is destroyed, your opponent may target 1 of your Combat Units. It suffer 3 Wounds. As 1 of these Wounds, they may destroy 1 Infantry Attachment in that unit.",
+    "icons": "W"
+  },
+  "Adaptive": {
+    "name": "Adaptive",
+    "description": "When building your army, reduce the cost of 1 Attachment in this unit by 1.",
+    "icons": ""
+  },
+  "Advantage Strike": {
+    "name": "Advantage Strike",
+    "description": "When Attacking enemies that  have not Activated this Round, this unit's Melee Attacks may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Aerial Scouting": {
+    "name": "Aerial Scouting",
+    "description": "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, this model's Skinchanger unit may perform a 2\" shift.",
+    "icons": ""
+  },
+  "Affiliation: Bloody Mummers": {
+    "name": "Affiliation: Bloody Mummers",
+    "description": "This unit is a Bloody Mummer unit.",
+    "icons": "W"
+  },
+  "Affiliation: Builder": {
+    "name": "Affiliation: Builder",
+    "description": "This unit is a Builder unit.",
+    "icons": "W"
+  },
+  "Affiliation: Crannogman": {
+    "name": "Affiliation: Crannogman",
+    "description": "This unit is a Crannogman unit.",
+    "icons": "W"
+  },
+  "Affiliation: Frozen Shore": {
+    "name": "Affiliation: Frozen Shore",
+    "description": "This unit is a Frozen Shore unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Bolton": {
+    "name": "Affiliation: House Bolton",
+    "description": "This unit is a House Bolton unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Clegane": {
+    "name": "Affiliation: House Clegane",
+    "description": "This unit is a House Clegane unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Karstark": {
+    "name": "Affiliation: House Karstark",
+    "description": "This unit is a House Karstark unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Mormont": {
+    "name": "Affiliation: House Mormont",
+    "description": "This unit is a House Mormont unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Tully": {
+    "name": "Affiliation: House Tully",
+    "description": "This unit is a House Tully unit.",
+    "icons": "W"
+  },
+  "Affiliation: House Umber": {
+    "name": "Affiliation: House Umber",
+    "description": "This unit is a House Umber unit.",
+    "icons": "W"
+  },
+  "Affiliation: R'hllor": {
+    "name": "Affiliation: R'hllor",
+    "description": "This unit is a R'hllor unit.",
+    "icons": "W"
+  },
+  "Affiliation: Rangers": {
+    "name": "Affiliation: Rangers",
+    "description": "This unit is a Ranger unit.",
+    "icons": "W"
+  },
+  "Affiliation: Stormcrows": {
+    "name": "Affiliation: Stormcrows",
+    "description": "This unit is a Stormcrow unit.",
+    "icons": "W"
+  },
+  "Agile": {
+    "name": "Agile",
+    "description": "Enemies suffer -1 to Hit when Attacking this unit.",
+    "icons": ""
+  },
+  "Ambush": {
+    "name": "Ambush",
+    "description": "Enemies this unit Successfully Charges in the Flank or Rear become **Panicked** and **Weakened**.",
+    "icons": "M"
+  },
+  "Arrow Volley": {
+    "name": "Arrow Volley",
+    "description": "• Ignores units and terrain when determining Line of Sight.\n• Defenders that fail their Panic Test lose all Order Abilities until the end of the Round and become **Weakened**.",
+    "icons": "R"
+  },
+  "Battle Prayer": {
+    "name": "Battle Prayer",
+    "description": "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:\n**• When an enemy is performing an Attack on this unit, after rolling Defense Dice:**\nThis unit blocks +1 Hit, +1 additional Hit for each of its destroyed ranks.\n**• When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack gains Sundering and may re-roll any Attack Dice.",
+    "icons": "F"
+  },
+  "Battle Scars (Belwas)": {
+    "name": "Battle Scars (Belwas)",
+    "description": "After this unit is Attacked, place 1 Order token on Belwas. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Battle Scars (Cohollo)": {
+    "name": "Battle Scars (Cohollo)",
+    "description": "After this unit is Attacked, place 1 Order token on Cohollo. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Battle Scars (Dagmer)": {
+    "name": "Battle Scars (Dagmer)",
+    "description": "After this unit is Attacked, place 1 Order token on Dagmer. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Battle Scars (Maege)": {
+    "name": "Battle Scars (Maege)",
+    "description": "After this unit is Attacked, place 1 Order token on Maege. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Battle Scars (Qhorin Halfhand)": {
+    "name": "Battle Scars (Qhorin Halfhand)",
+    "description": "After this unit is Attacked, place 1 Order token on Qhorin. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Battle Scars (The Great Walrus)": {
+    "name": "Battle Scars (The Great Walrus)",
+    "description": "After this unit is Attacked, place 1 Order token on The Great Walrus. This unit's Melee Attacks gain the following based on the number of tokens:\n**• 1+:** **Vicious**\n**• 2+:** **Sundering**\n**• 3+:** This Attack always rolls its highest Attack Die Value and may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Bear Cavalry": {
+    "name": "Bear Cavalry",
+    "description": "• Each model in this unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Berserker Axes": {
+    "name": "Berserker Axes",
+    "description": "Gains +1 to Hit for each of this unit’s destroyed ranks.",
+    "icons": "M"
+  },
+  "Black Fire": {
+    "name": "Black Fire",
+    "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Panicked**.",
+    "icons": "W,M"
+  },
+  "Blade and Fang": {
+    "name": "Blade and Fang",
+    "description": "• **Vicious**",
+    "icons": "M"
+  },
+  "Bloodrider": {
+    "name": "Bloodrider",
+    "description": "This unit cannot become **Weakened**.",
+    "icons": "W"
+  },
+  "Boisterous Charisma": {
+    "name": "Boisterous Charisma",
+    "description": "This unit may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs.",
+    "icons": "W"
+  },
+  "Boldness and Courage": {
+    "name": "Boldness and Courage",
+    "description": "Each time this unit Attacks, if it has full ranks, it gains +1 Attack Die. Otherwise, it is treated as having +1 rank for Attack Dice.",
+    "icons": "R,M"
+  },
+  "Bolt Thrower": {
+    "name": "Bolt Thrower",
+    "description": "• **Vicious**\n• Measures Range and Line of Sight from any part of this unit's tray.\n• May suffer -3 to Hit to ignore Line of Sight and gain **Unlimited Range**.\n• Defenders do not roll Defense Dice.\n• For each unblocked Hit,Cavalry, Monster, and War Machine units suffer 2 Wounds.",
+    "icons": "R,W"
+  },
+  "Bonded Bear": {
+    "name": "Bonded Bear",
+    "description": "• This unit has 1 Wound and cannot grant Victory Points. \n• If this unit is destroyed, it cannot be selected by its Skinchanger again. \n• If this unit was selected, when its Bonded Skinchanger Activates, Deploy it engaged in the Front or Flank of 1 enemy engaging its Skinchanger. It then performs 1 Melee Attack Action. Remove this unit at the end of the Round.",
+    "icons": "W"
+  },
+  "Bonded Boar": {
+    "name": "Bonded Boar",
+    "description": "• This unit has 3 Wounds and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• At the start of any Round, if this unit is not in Long Range of Borroq’s unit, it is destroyed.\n• This unit does not Activate as normal. Instead, when Borroq’s unit Activates, this unit Activates immediately after them.",
+    "icons": "W"
+  },
+  "Bonded Eagle": {
+    "name": "Bonded Eagle",
+    "description": "Each time this unit is selected, target 1 enemy. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
+    "icons": ""
+  },
+  "Bonded Skinchanger": {
+    "name": "Bonded Skinchanger",
+    "description": "At the start of each Round, select Bear, Eagle, or Wolf. See that unit's card for additional effects.",
+    "icons": ""
+  },
+  "Bonded Wolf": {
+    "name": "Bonded Wolf",
+    "description": "Each time this unit is selected, target 1 enemy in Long Range of its Skinchanger's unit. Attach this card to that enemy until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
+    "icons": ""
+  },
+  "Bookkeeping (Cortnay Penrose)": {
+    "name": "Bookkeeping (Cortnay Penrose)",
+    "description": "As long as Cortnay Penrose is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
+    "icons": ""
+  },
+  "Bookkeeping (Samwell Tarley)": {
+    "name": "Bookkeeping (Samwell Tarley)",
+    "description": "As long as Samwell Tarley is on the battlefield, increase your Tactics Hand Size limit by +1. You start the game with 4 cards and may draw up to 4 cards when refilling your hand.",
+    "icons": ""
+  },
+  "Bran’s Protector": {
+    "name": "Bran’s Protector",
+    "description": "After Bran Stark’s unit is Attacked, this unit may perform 1 Attack or Charge Action on the Attacker.",
+    "icons": ""
+  },
+  "Brutal Armaments": {
+    "name": "Brutal Armaments",
+    "description": "• **Vicious**\n• Defender suffers +1 Wound from failing Panic Tests from this Attack for each of its destroyed ranks.",
+    "icons": "M"
+  },
+  "Bulwark Formation": {
+    "name": "Bulwark Formation",
+    "description": "If this unit has not performed an Action this Round, it gains +2 to Defense Dice rolls.",
+    "icons": ""
+  },
+  "Cavalry": {
+    "name": "Cavalry",
+    "description": "• Each model in this unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Champion’s Wrath": {
+    "name": "Champion’s Wrath",
+    "description": "• **Critical Blow**\n• Enemies Succesfully Charged become **Weakened**.\n• If this unit began the Turn engaged with the Defender, before rolling Attack Dice, the Defender becomes **Vulnerable**.",
+    "icons": "M"
+  },
+  "Chariot": {
+    "name": "Chariot",
+    "description": "• This unit has 6 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Chieftain's Fury": {
+    "name": "Chieftain's Fury",
+    "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• When Mag is destroyed, before being removed, he performs 1 Chieftain’s Fury Attack.",
+    "icons": "M,W"
+  },
+  "Claw & Blade": {
+    "name": "Claw & Blade",
+    "description": "• **Vicious**",
+    "icons": "M"
+  },
+  "Cleaving Blows": {
+    "name": "Cleaving Blows",
+    "description": "• When Charging, gains **Critical Blow**.\n• Defenders do not roll Defense Dice.",
+    "icons": "M"
+  },
+  "Commander's Vassal": {
+    "name": "Commander's Vassal",
+    "description": "This model counts as your Commander when its unit is being targeted by Tactics cards.",
+    "icons": "W"
+  },
+  "Coordinated Assault": {
+    "name": "Coordinated Assault",
+    "description": "When Charging, deals +1 Hit for each remaining rank in this unit.",
+    "icons": "M"
+  },
+  "Counterstrike": {
+    "name": "Counterstrike",
+    "description": "Each time this unit is Attacked with a Melee Attack, for each Miss, the Attacker suffers 1 Hit.",
+    "icons": ""
+  },
+  "Crossbow": {
+    "name": "Crossbow",
+    "description": "• **Sundering**\n• May re-roll Attack Dice when Attacking enemies in Short Range.",
+    "icons": "R"
+  },
+  "Dauntless": {
+    "name": "Dauntless",
+    "description": "Each time this unit passes a Morale Test, it restores 1 Wound.",
+    "icons": ""
+  },
+  "Deadly Bloom": {
+    "name": "Deadly Bloom",
+    "description": "Each time this unit restores Wounds, target 1 enemy it is engaged with. They suffer 1 Wound.",
+    "icons": ""
+  },
+  "Deadly Impact": {
+    "name": "Deadly Impact",
+    "description": "When Charging, gains **Sundering**, **Vicious**, and deals +1 Hit for each of the Defender’s remaining ranks.",
+    "icons": "M"
+  },
+  "Dervish Blades": {
+    "name": "Dervish Blades",
+    "description": "• **Precision**\n• When Attacking enemies that have not Activated this Round, this Attack gains **Critical Blow**.",
+    "icons": "M"
+  },
+  "Direwolf": {
+    "name": "Direwolf",
+    "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Disorganized": {
+    "name": "Disorganized",
+    "description": "This unit suffers +1 Wound from failing Panic Tests.",
+    "icons": ""
+  },
+  "Disrupt": {
+    "name": "Disrupt",
+    "description": "Enemies engaged with this unit suffer -1 to Hit.",
+    "icons": ""
+  },
+  "Distract": {
+    "name": "Distract",
+    "description": "During your Turn, enemies this unit is engaging in the Flank or Rear lose all Abilities and cannot be the target of friendly Tactics Cards.",
+    "icons": ""
+  },
+  "Divide The Spoils": {
+    "name": "Divide The Spoils",
+    "description": "After completing an Attack, for each enemy rank that was destroyed, 1 friendly unit with Pillage in Long Range of that enemy gains 1 Pillage token.",
+    "icons": "R,M"
+  },
+  "Divine Sacrifices": {
+    "name": "Divine Sacrifices",
+    "description": "Each time this unit Attacks, before rolling Attack Dice, it may suffer up to 2 Wounds. If it does, for each Wound suffered, the Defender becomes **Panicked** or **Vulnerable**.",
+    "icons": "R,M"
+  },
+  "Dominance Of The Crown": {
+    "name": "Dominance Of The Crown",
+    "description": "If you Control [CROWN] when this unit is performing a Melee Attack, this Attack gains +1 to Hit and **Sundering**.",
+    "icons": "M"
+  },
+  "Domineering Pride": {
+    "name": "Domineering Pride",
+    "description": "While engaged by an enemy with fewer remaining ranks, this unit automatically passes all Panic Tests.",
+    "icons": ""
+  },
+  "Dornish Conviction": {
+    "name": "Dornish Conviction",
+    "description": "While you Control [CROWN], this unit Attacks using its highest Attack Die Value.",
+    "icons": "R,M"
+  },
+  "Dornish Vengeance": {
+    "name": "Dornish Vengeance",
+    "description": "After this unit is Attacked with a Melee Attack, if you Control [SWORDS], the Attacker suffers 2 Wounds, +1 Wound for each of this unit's destroyed ranks.",
+    "icons": ""
+  },
+  "Double Hammers": {
+    "name": "Double Hammers",
+    "description": "• **Sundering**",
+    "icons": "M"
+  },
+  "Drowned God’s Fanatics": {
+    "name": "Drowned God’s Fanatics",
+    "description": "• This unit has 4 Wounds.\n• This unit can only suffer a maximum of 1 Wound from failing Panic Tests.\n• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.",
+    "icons": "W"
+  },
+  "Dutiful Commander": {
+    "name": "Dutiful Commander",
+    "description": "If this is a Night's Watch unit, after Deployment, you may search your deck for 1 **Tempered by Duty** Tactics card and attach it to this unit. Shuffle your Tactics deck.",
+    "icons": ""
+  },
+  "Duty to The Crown": {
+    "name": "Duty to The Crown",
+    "description": "Each time this unit passes a Morale Test, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",
+    "icons": ""
+  },
+  "Elusive Escape": {
+    "name": "Elusive Escape",
+    "description": "This unit may re-roll any Retreat Distance Dice. Enemies this unit disengages from may not pivot and become **Weakened**.",
+    "icons": ""
+  },
+  "Embolden": {
+    "name": "Embolden",
+    "description": "Friendly units in Short Range gain +1 to Morale Test rolls.",
+    "icons": ""
+  },
+  "Enhanced Mobility": {
+    "name": "Enhanced Mobility",
+    "description": "This unit gains +1 [MOVEMENT] and may pivot before Marching.",
+    "icons": ""
+  },
+  "Executioner's Fury": {
+    "name": "Executioner's Fury",
+    "description": "• **Sundering**\n• Enemies suffer an additional -1 to Defense Dice rolls for each of this unit’s destroyed ranks.",
+    "icons": "M"
+  },
+  "Experiment Enhancements": {
+    "name": "Experiment Enhancements",
+    "description": "This unit's Melee Attacks gain +1 to Hit and **Vicious**. Opponents cannot expend Weakened tokens on this unit while it is Attacking.",
+    "icons": "W,M"
+  },
+  "Expert Duelist": {
+    "name": "Expert Duelist",
+    "description": "Each time this unit performs a Melee Attack, before rolling Attack Dice, choose 1:\n• This Attack deals +1 Wound. \n• Target 1 lnfantry Attachment in the Defender's unit and roll a die. On a 3+, destroy that Attachment.",
+    "icons": "M"
+  },
+  "Eye Of The Crow": {
+    "name": "Eye Of The Crow",
+    "description": "• This unit has 4 Wounds.\n• At the start of this unit's Activation, it may perform 1 Maneuver or Retreat Action.\n• If this unit is destroyed, at the start of the next Round, you may Redeploy it fully within Short Range of any Flank table edge.",
+    "icons": "W"
+  },
+  "Fanatical Zeal": {
+    "name": "Fanatical Zeal",
+    "description": "This unit begins the game with 1 **Faith token**. Each time this unit passes a Morale Test, it gains 1 Faith token. Each time this unit is performing a Melee Attack, before rolling Attack Dice, it may expend 1 Faith token. If it does, this Attack gains **Precision** and may re-roll any Attack Dice.",
+    "icons": "F"
+  },
+  "Fearless Avarice": {
+    "name": "Fearless Avarice",
+    "description": "While you Control [MONEY], this unit suffers -1 Wound from failed Panic Tests.",
+    "icons": ""
+  },
+  "Fire Arrows": {
+    "name": "Fire Arrows",
+    "description": "• **Vicious**\n• If the Defender fails their Panic Test, target 1 other enemy in Short Range of that unit. They suffer 1 Panic Test with -2 to their roll.",
+    "icons": "R"
+  },
+  "First of The King's Men": {
+    "name": "First of The King's Men",
+    "description": "You count as Controlling the [CROWN] *and* [LETTER] zones for Tactics cards that target this unit.",
+    "icons": ""
+  },
+  "Flail": {
+    "name": "Flail",
+    "description": "• **Precision**",
+    "icons": "M"
+  },
+  "Frenzied Swings": {
+    "name": "Frenzied Swings",
+    "description": "• **Sundering**\n• Gains +1 to Hit for each of this unit’s destroyed ranks.\n• After completing this Attack, this unit suffers 1 Wound for each Attack Die roll of 1.",
+    "icons": "M"
+  },
+  "Fueled By Slaughter": {
+    "name": "Fueled By Slaughter",
+    "description": "After this unit completes a Melee Attack, if the Defender suffered any Wounds, this unit restores 1 Wound, +1 additional Wound for each of the Defender's destroyed ranks.",
+    "icons": "M"
+  },
+  "Furious Charge": {
+    "name": "Furious Charge",
+    "description": "Enemies Successfully Charged by this unit become **Vulnerable**.",
+    "icons": "M"
+  },
+  "Furious Swing": {
+    "name": "Furious Swing",
+    "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates any Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each Wound this unit has suffered.",
+    "icons": "M,W"
+  },
+  "Gallows Humor": {
+    "name": "Gallows Humor",
+    "description": "While this unit has at least 1 destroyed rank, it may never be targeted by enemy Orders, Tactics cards, or be Influenced by enemy NCUs. While it has only 1 remaining rank, its Melee Attacks gain +1 to Hit.",
+    "icons": "W"
+  },
+  "Gang-Up": {
+    "name": "Gang-Up",
+    "description": "All friendly unit's Melee Attacks gain +1 to Hit and +1 Attack Die on enemies that are engaged with this unit and at least 1 other friendly unit.",
+    "icons": ""
+  },
+  "Giant": {
+    "name": "Giant",
+    "description": "• This unit has 6 Wounds.\n• This unit only suffers 1 Wound for every 2 unblocked Hits from any Attack or effect.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.",
+    "icons": "W"
+  },
+  "Gifts of Silver and Bronze": {
+    "name": "Gifts of Silver and Bronze",
+    "description": "At the start of the game, target 1 friendly unit with Pillage. It gains 1 Pillage token.",
+    "icons": ""
+  },
+  "Go Down Fighting": {
+    "name": "Go Down Fighting",
+    "description": "Each time a rank in this unit is destroyed, 1 enemy they are engaged with suffers 1 Wound.",
+    "icons": ""
+  },
+  "Golden Fire": {
+    "name": "Golden Fire",
+    "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Vulnerable**.",
+    "icons": "W,M"
+  },
+  "Gore and Feed": {
+    "name": "Gore and Feed",
+    "description": "• **Sundering**\n• After completing this Attack, if it dealt any Wounds, this unit restores 1 Wound.",
+    "icons": "M"
+  },
+  "Great Axe": {
+    "name": "Great Axe",
+    "description": "• **Sundering**",
+    "icons": "M"
+  },
+  "Great Hammer": {
+    "name": "Great Hammer",
+    "description": "• **Critical Blow**\n• If the Defender rolls a 1 on any Defense Dice, after this Attack is completed, they become **Weakened**.",
+    "icons": "M"
+  },
+  "Greatsword": {
+    "name": "Greatsword",
+    "description": "• **Sundering**",
+    "icons": "M"
+  },
+  "Halberd": {
+    "name": "Halberd",
+    "description": "• **Sundering**",
+    "icons": "M"
+  },
+  "Hardened": {
+    "name": "Hardened",
+    "description": "Each time an enemy is performing an Attack on this unit, after rolling Defense Dice, this unit blocks +1 Hit, and +1 additional Hit for each of its destroyed ranks.",
+    "icons": ""
+  },
+  "Harma's Vassal": {
+    "name": "Harma's Vassal",
+    "description": "This model counts as Harma when its unit is being targeted by Tactics cards.",
+    "icons": "W"
+  },
+  "Heart of Fire": {
+    "name": "Heart of Fire",
+    "description": "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:\n• **When an enemy engaged with this unit performs an Attack, before resolving that Attack:**\nFor each of this unit’s destroyed ranks, the Attacker suffers 3 Hits.\n• **When this unit performs a Melee Attack, before rolling Attack Dice:**\nThis Attack gains **Precision** and **Vicious**.\n• **When this unit is destroyed:**\n1 other R’hllor unit in Long Range performs 1 Attack Action.",
+    "icons": "Fire"
+  },
+  "Heir of House Targaryen": {
+    "name": "Heir of House Targaryen",
+    "description": "When Daenerys is destroyed, your opponent gains 2 Victory Points.",
+    "icons": "W"
+  },
+  "Hodor!": {
+    "name": "Hodor!",
+    "description": "This unit's Melee Attacks deal +1 Wound.",
+    "icons": "M"
+  },
+  "Hodor!!!": {
+    "name": "Hodor!!!",
+    "description": "When this unit is performing a Retreat Action, after rolling Retreat Distance Dice, you may have all dice count as rolling a 6. If you do, this Attachment loses all Abilities until the end of the game.",
+    "icons": ""
+  },
+  "Horrific Visage": {
+    "name": "Horrific Visage",
+    "description": "Each time an enemy performs a Melee Attack on this unit, before resolving that Attack, target the Attacker. They suffer 1 Panic Test with -1 to their roll for each remaining rank in this unit.",
+    "icons": ""
+  },
+  "Hrakkars & Tamers": {
+    "name": "Hrakkars & Tamers",
+    "description": "• This unit has 6 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Improved Armaments": {
+    "name": "Improved Armaments",
+    "description": "While you Control [MONEY], this unit's Melee Attacks gain **Sundering** and roll their highest Attack Die Value.",
+    "icons": "M"
+  },
+  "Improved Defenses": {
+    "name": "Improved Defenses",
+    "description": "While you Control [MONEY], this unit gains +1 to Defense Dice rolls.",
+    "icons": ""
+  },
+  "Insignificant": {
+    "name": "Insignificant",
+    "description": "This unit cannot grant Victory Points from **Victory Through Combat**.",
+    "icons": ""
+  },
+  "Inspiring Presence": {
+    "name": "Inspiring Presence",
+    "description": "This unit's Morale Stat becomes 5+.",
+    "icons": "Morale5"
+  },
+  "Intimidating Presence": {
+    "name": "Intimidating Presence",
+    "description": "Enemies engaged with this unit suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests.",
+    "icons": ""
+  },
+  "Intimidation Of The Crown": {
+    "name": "Intimidation Of The Crown",
+    "description": "If you Control [CROWN], when this unit is performing a Melee Attack, before rolling Attack Dice, the Defender becomes **Panicked** and **Weakened**.",
+    "icons": ""
+  },
+  "Iron Resolve": {
+    "name": "Iron Resolve",
+    "description": "This unit gains +1 to Panic Test rolls and suffers -1 Wound from failing Panic Tests.",
+    "icons": ""
+  },
+  "Ironborn Arrows": {
+    "name": "Ironborn Arrows",
+    "description": "May re-roll Attack Dice when Attacking enemies in the Flank or Rear.",
+    "icons": "R"
+  },
+  "Jade Fire": {
+    "name": "Jade Fire",
+    "description": "• **Vicious**\n• Hits from this Attack cannot be blocked. If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers D3 Wounds, +1 Wound for each of its remaining ranks, and 1 enemy in Short Range of the Defender becomes **Weakened**.",
+    "icons": "W,M"
+  },
+  "Jagged Weapons": {
+    "name": "Jagged Weapons",
+    "description": "• **Vicious**",
+    "icons": "M"
+  },
+  "Jaime's Protector": {
+    "name": "Jaime's Protector",
+    "description": "After Jaime Lannister's unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
+    "icons": ""
+  },
+  "Jaime's Vassal": {
+    "name": "Jaime's Vassal",
+    "description": "This model counts as Jaime Lannister when its unit is being targeted by Tactics Cards.",
+    "icons": "W"
+  },
+  "Joffrey’s Retinue": {
+    "name": "Joffrey’s Retinue",
+    "description": "This unit has 8 models *(including Joffrey)*, 8 Wounds, and 2 ranks.",
+    "icons": "W"
+  },
+  "Jojen's Greensight": {
+    "name": "Jojen's Greensight",
+    "description": "Each time this unit performs an Attack or Charge Action, before resolving that Action, it gains 1 of the following:\r\n• May re-roll any Attack Dice. \r\n• May re-roll any Charge Distance Dice and ignores the Hindering and Rough keywords this Turn.",
+    "icons": "W"
+  },
+  "Juvenile Dragon": {
+    "name": "Juvenile Dragon",
+    "description": "• This unit has 8 Wounds.\n• This unit ignores units and terrain when Maneuvering and Marching.\n• At the start of its Activation, this unit may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "King’s Blade": {
+    "name": "King’s Blade",
+    "description": "Before rolling Attack Dice, you may search your Tactics Deck or discard pile for 1 **Ours Is The Fury!** card and play it, or add it to your hand. Shuffle your Tactics Deck.",
+    "icons": "M"
+  },
+  "Knight’s Blade": {
+    "name": "Knight’s Blade",
+    "description": "• **Sundering**\n• If you Control [SWORDS], before rolling Attack Dice, the Defender becomes **Vulnerable**.",
+    "icons": "M"
+  },
+  "Knightly Vow": {
+    "name": "Knightly Vow",
+    "description": "After Deployment, target 1 enemy unit. When Attacking or Charging that enemy, this unit's Melee Attacks gain +1 to Hit and it may re-roll any Charge Distance Dice.",
+    "icons": "M"
+  },
+  "Lance": {
+    "name": "Lance",
+    "description": "• **Sundering**\n• When Charging, rolls +2 Attack Dice for each remaining rank in this unit.",
+    "icons": "M"
+  },
+  "Lannister Justice": {
+    "name": "Lannister Justice",
+    "description": "While you Control [CROWN], each time this unit performs an Action, before resolving that Action, 1 enemy in Long Range suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit.",
+    "icons": ""
+  },
+  "Lannister Oppression": {
+    "name": "Lannister Oppression",
+    "description": "Before rolling Attack Dice, you may expend Condition tokens on the Defender to gain the following:\n• **Panicked**: Until the end of the Turn, Defender loses any Abilities and may not be the target of friendly Tactics Cards.\n• **Vulnerable**: Attack may re-roll any Attack Dice. After completing this Attack, restore 2 Wounds for each of the Defender’s ranks destroyed by this Attack.\n• **Weakened**: Attack rolls highest Attack Die Value and gains Sundering.",
+    "icons": "M"
+  },
+  "Loyalty through Coin": {
+    "name": "Loyalty through Coin",
+    "description": "While you Control [MONEY], this unit gains +1 to Defense Dice rolls and +1 to Morale Test rolls.",
+    "icons": ""
+  },
+  "Loyalty: Renly Baratheon": {
+    "name": "Loyalty: Renly Baratheon",
+    "description": "Your army may never include Units or Attachments with different Loyalties.",
+    "icons": ""
+  },
+  "Loyalty: Stannis Baratheon": {
+    "name": "Loyalty: Stannis Baratheon",
+    "description": "Your army may never include Units or Attachments with different Loyalties.",
+    "icons": ""
+  },
+  "Mace & Spike": {
+    "name": "Mace & Spike",
+    "description": "Before rolling Attack Dice, choose 1. For each of this unit’s destroyed ranks, choose +1:\n• **Critical Blow**\n• **Precision**\n• Re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Mammoth": {
+    "name": "Mammoth",
+    "description": "• This unit has 8 Wounds.\n• This unit cannot Control Objectives.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.\n• When this unit is destroyed, before being removed, target 1 enemy it is engaged with. They suffer D3 Wounds.",
+    "icons": "W"
+  },
+  "Manticore Venom": {
+    "name": "Manticore Venom",
+    "description": "Once per game, after this unit completes a Melee Attack, attach the **Manticore Venom** Poison card to the Defender until they are destroyed.",
+    "icons": "V,M"
+  },
+  "Marauder’s Blades": {
+    "name": "Marauder’s Blades",
+    "description": "• **Critical Blow**\n• Gains +1 to Hit and Vicious when Attacking enemies with the same or fewer remaining ranks.",
+    "icons": "M"
+  },
+  "Marshal": {
+    "name": "Marshal",
+    "description": "• This unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action. \n• Other friendly units in Short Range gain +1 Attack Die on Melee Attacks.",
+    "icons": "W"
+  },
+  "Master Skinchanger": {
+    "name": "Master Skinchanger",
+    "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• Gain **Varamyr’s Eagle**. See that unit’s card for additional effects.",
+    "icons": "W"
+  },
+  "Mercenary’s Longbow": {
+    "name": "Mercenary’s Longbow",
+    "description": "• While you Control [MONEY], gains **Sundering**.\n• While you Control [LETTER], before rolling Attack Dice, the Defender becomes **Vulnerable**.\n• While you Control [SWORDS], may re-roll any Attack Dice.",
+    "icons": "R"
+  },
+  "Might of the Throne": {
+    "name": "Might of the Throne",
+    "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Kevan Lannister's unit performs 1 Attack or Charge Action.*",
+    "icons": ""
+  },
+  "Mother of Dragons": {
+    "name": "Mother of Dragons",
+    "description": "Once per game, at the start of any Turn, you may search your Tactics Deck or discard pile for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck.",
+    "icons": "W"
+  },
+  "Motivated by Coin": {
+    "name": "Motivated by Coin",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 [NAME] unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Bronn)": {
+    "name": "Motivated by Coin (Bronn)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Bronn's unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Daario Naharis)": {
+    "name": "Motivated by Coin (Daario Naharis)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Daario Naharis' unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Fortune Seeker)": {
+    "name": "Motivated by Coin (Fortune Seeker)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Fortune Seeker's unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Nute)": {
+    "name": "Motivated by Coin (Nute)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*Nute's unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Stormcrow Dervishes)": {
+    "name": "Motivated by Coin (Stormcrow Dervishes)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 Stormcrow Dervishes unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motivated by Coin (Stormcrow Mercenaries)": {
+    "name": "Motivated by Coin (Stormcrow Mercenaries)",
+    "description": "Each time a friendly NCU Claims [MONEY], you may replace that zone’s effect with:\n*1 Stormcrow Mercenaries unit performs 1 Attack Action.*",
+    "icons": ""
+  },
+  "Motley Armaments": {
+    "name": "Motley Armaments",
+    "description": "If Attacking in the Flank, choose 1. If Attacking in the Rear, gain both: \n• +1 Attack Die and **Critical Blow**.\n• Defender loses all Abilities this Turn.",
+    "icons": "M"
+  },
+  "Mummer’s Blade": {
+    "name": "Mummer’s Blade",
+    "description": "If Attacking an enemy that has not Activated this Round, before rolling Attack Dice, the Defender becomes **Weakened**.",
+    "icons": "M"
+  },
+  "Noble’s Wrath": {
+    "name": "Noble’s Wrath",
+    "description": "• **Sundering**\n• Deals +2 Hits for each Wound this unit has suffered.",
+    "icons": "M"
+  },
+  "Order: Adaptive Planning": {
+    "name": "Order: Adaptive Planning",
+    "description": "**Start of any Turn:**\r\nTarget 1 Combat Unit in Long Range. Replace 1 Condition token on that unit with any other Condition token.",
+    "icons": ""
+  },
+  "Order: Adaptive Style": {
+    "name": "Order: Adaptive Style",
+    "description": "**When this unit Attacks or is Attacked, before Attack Dice are rolled:**\nChoose 1:\n• This unit gains +1 to Defense Dice Rolls.\n• This Attack deals +1 Hit for each of this unit’s remaining ranks.",
+    "icons": ""
+  },
+  "Order: Battle Plan": {
+    "name": "Order: Battle Plan",
+    "description": "**Start of any Turn:**\nDiscard 2 Tactics cards to search your Tactics Deck for any 1 card and add it to your hand. Shuffle your Tactics Deck.",
+    "icons": ""
+  },
+  "Order: Charging Volley": {
+    "name": "Order: Charging Volley",
+    "description": "**After this unit completes a Ranged Attack:**\nThis unit performs 1 Charge Action on the Defender.",
+    "icons": ""
+  },
+  "Order: Counterstrategy": {
+    "name": "Order: Counterstrategy",
+    "description": "**When an enemy in Short Range uses an Order or is targeted by a Tactics card:**\r\nRoll a die. On a 3+, cancel the effect of that Order/Tactics card.",
+    "icons": ""
+  },
+  "Order: Drowned God’s Blessing": {
+    "name": "Order: Drowned God’s Blessing",
+    "description": "**Start of any Turn:**\nTarget 1 friendly Greyjoy Infantry unit in Short Range and choose 1:\n• That unit restores 2 Wounds.\n• That unit may re-roll any Attack Dice this Turn.\n• Enemies that Attack that unit this Turn become **Vulnerable**.",
+    "icons": ""
+  },
+  "Order: Grisly Example": {
+    "name": "Order: Grisly Example",
+    "description": "**Start of any Turn:**\r\nThis unit suffers 1 Wound. Target all enemies in Short Range. They become **Panicked**.",
+    "icons": ""
+  },
+  "Order: Hidden Traps": {
+    "name": "Order: Hidden Traps",
+    "description": "**When an unengaged enemy in Long Range performs any Action, before resolving that Action:**\nChoose 1:\n• That enemy suffers 1 Hit, +1 Hit for each of its remaining ranks.\n• That Enemy suffers -1 [MOVEMENT] until the end of the Turn.",
+    "icons": ""
+  },
+  "Order: Hold The Line!": {
+    "name": "Order: Hold The Line!",
+    "description": "**When this unit Activates:**\nTarget 1 enemy engaged with this unit. It suffers 2 Hits, +1 Hit for each of this unit’s remaining ranks.",
+    "icons": ""
+  },
+  "Order: Incite": {
+    "name": "Order: Incite",
+    "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\r\nThis Attack gains **Vicious** and rolls its highest Attack Die Value.",
+    "icons": ""
+  },
+  "Order: Just Shares": {
+    "name": "Order: Just Shares",
+    "description": "**Start of any Turn:**\r\nTarget 1 friendly Combat Unit in Long Range. Move 1 Pillage token from that unit to 1 other friendly unit with Pillage in Short Range of that unit.",
+    "icons": ""
+  },
+  "Order: King’s Blade": {
+    "name": "Order: King’s Blade",
+    "description": "**After this unit is Attacked:**\nSearch your Tactics Deck or discard pile for 1 **Ours is The Fury!** and add it to your hand. Shuffle your Tactics Deck.",
+    "icons": ""
+  },
+  "Order: Lannister Supremacy": {
+    "name": "Order: Lannister Supremacy",
+    "description": "**After an enemy completes an Attack on this unit:**\nTarget the Attacker. They suffer 1 Panic Test with -1 to their roll and +1 Wounds on failure for each remaining rank in this unit.",
+    "icons": ""
+  },
+  "Order: Mark Target": {
+    "name": "Order: Mark Target",
+    "description": "**Start of a friendly Turn:**\nTarget 1 enemy in Line of Sight and Long Range. They become **Vulnerable**.",
+    "icons": ""
+  },
+  "Order: Martial Training": {
+    "name": "Order: Martial Training",
+    "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack may re-roll any Attack Dice and the Defender becomes **Vulnerable**.",
+    "icons": ""
+  },
+  "Order: Overrun": {
+    "name": "Order: Overrun",
+    "description": "**When this unit Surges Forth:**\nInstead of Surging Forth, this unit performs 1 Charge Action.",
+    "icons": ""
+  },
+  "Order: Overwatch": {
+    "name": "Order: Overwatch",
+    "description": "**After an enemy ends a March or Maneuver Action in Long Range and Line of Sight of this unit:**\r\nThis unit performs 1 Ranged Attack Action on that enemy.",
+    "icons": ""
+  },
+  "Order: Queen’s Blade": {
+    "name": "Order: Queen’s Blade",
+    "description": "**When a friendly R’hllor unit in Short Range is Attacked, before rolling Attack Dice:**\nSearch your Tactics Deck or discard pile for 1 **Baratheon Conviction** or **Baratheon Justice** card and add it to your hand. Shuffle your Tactics Deck.",
+    "icons": ""
+  },
+  "Order: Quick Fire": {
+    "name": "Order: Quick Fire",
+    "description": "**After this unit completes a Maneuver or Retreat Action:**\nThis unit performs 1 Ranged Attack Action.",
+    "icons": ""
+  },
+  "Order: Raven Flock": {
+    "name": "Order: Raven Flock",
+    "description": "**When an enemy in Long Range performs an Attack Action, before resolving that Action:**\nThat Attack suffers -1 to Hit.",
+    "icons": ""
+  },
+  "Order: Ready! Aim! Release!": {
+    "name": "Order: Ready! Aim! Release!",
+    "description": "**When an enemy performs a Charge Action on this unit, before resolving that Charge Action:**\nIf being Charged from the Front, this unit performs 1 Ranged Attack Action on that enemy using its lowest Attack Die Value.",
+    "icons": ""
+  },
+  "Order: Reckless Heroism": {
+    "name": "Order: Reckless Heroism",
+    "description": "**When this unit performs a Charge Action, before resolving that Action:**\nThis unit suffers D3 Wounds, but counts as rolling a 6 on all Charge Distance Dice.",
+    "icons": ""
+  },
+  "Order: Relentless": {
+    "name": "Order: Relentless",
+    "description": "**Start of a friendly Turn:**\nThis unit performs 1 Melee Attack or Maneuver Action. Do not Activate a unit this Turn.",
+    "icons": ""
+  },
+  "Order: Resilience": {
+    "name": "Order: Resilience",
+    "description": "**When an enemy is performing an Attack on this unit, after Attack Dice are rolled:**\nThis unit only suffers 1 Wound for every 2 unblocked Hits.",
+    "icons": ""
+  },
+  "Order: Scout Openings": {
+    "name": "Order: Scout Openings",
+    "description": "**Start of a friendly Turn:**\nTarget 1 enemy in Long Range. Until the end of the Turn, friendly unit’s Attacks on that enemy may re-roll any Attack Dice and gain **Precision**.",
+    "icons": ""
+  },
+  "Order: Sentinel": {
+    "name": "Order: Sentinel",
+    "description": "**After another friendly unit in Long Range is Attacked:**\nThis unit performs 1 Charge or Maneuver Action. If Charging, it must target the Attacker.",
+    "icons": ""
+  },
+  "Order: Set an Example": {
+    "name": "Order: Set an Example",
+    "description": "**Start of any Turn:**\r\nTarget all enemies in Short Range. They become Panicked. Roll a die, on a 6, destroy Theon.",
+    "icons": ""
+  },
+  "Order: Set for Charge": {
+    "name": "Order: Set for Charge",
+    "description": "**When this unit is Successfully Charged from the Front or Flank:**\nIf this unit is not engaged with another enemy, it performs 1 Melee Attack Action on the Attacker before they perform their Melee Attack.",
+    "icons": ""
+  },
+  "Order: Shield Wall": {
+    "name": "Order: Shield Wall",
+    "description": "**When an enemy is performing a Melee Attack on this unit, after rolling Defense Dice:**\nIf this unit is being Attacked from the Front or Flank, it blocks +1 Hit for each of its remaining ranks.",
+    "icons": ""
+  },
+  "Order: Shieldwall": {
+    "name": "Order: Shieldwall",
+    "description": "**When an enemy performs a Melee Attack on this unit, after rolling Defense Dice:**\nIf this unit is being Attacked from the Front or Flank, it blocks +1 Hit for each of its remaining ranks.",
+    "icons": ""
+  },
+  "Order: Sow Discord": {
+    "name": "Order: Sow Discord",
+    "description": "**Start of any Turn:**\nTarget 1 enemy in Long Range. They suffer 1 Morale Test with -1 to their roll for each of their destroyed ranks. On a failure, they lose all Abilities until the end of the Round.",
+    "icons": ""
+  },
+  "Order: Spread Fear": {
+    "name": "Order: Spread Fear",
+    "description": "**When an enemy engaged with this unit fails a Panic Test:**\nTarget 1 other enemy in Long Range of this unit. It suffers 1 Panic Test with -1 to their roll for each remaining rank in this unit. On failure, it suffers +1 Wound.",
+    "icons": ""
+  },
+  "Order: Stark Fury": {
+    "name": "Order: Stark Fury",
+    "description": "**When this unit is performing a Melee Attack, before rolling Attack Dice:**\nThis Attack gains **Critical Blow** and **Sundering**. After completing this Attack, this unit suffers 2 Wounds, -1 Wound for each of its destroyed ranks.",
+    "icons": ""
+  },
+  "Order: Strange Relics": {
+    "name": "Order: Strange Relics",
+    "description": "**When this unit Activates:**\nThis unit suffers 1 Wound. Target 1 enemy in Long Range. They gain 1 Condition token.",
+    "icons": ""
+  },
+  "Order: Superior Flanking": {
+    "name": "Order: Superior Flanking",
+    "description": "**When a friendly unit in Long Range performs an Attack, before rolling Attack Dice:**\nIf Attacking the Defender in the Flank or Rear, the Defender becomes **Panicked** and **Vulnerable**.",
+    "icons": ""
+  },
+  "Order: Supply Aid": {
+    "name": "Order: Supply Aid",
+    "description": "**Start of a friendly Turn:**\nThis unit suffers up to 3 Wounds. Restore 1+ that many Wounds to 1 other friendly unit in Long Range.",
+    "icons": ""
+  },
+  "Order: Swift Retreat": {
+    "name": "Order: Swift Retreat",
+    "description": "**After an enemy completes a Melee Attack on this unit:**\nThis unit performs 1 Retreat Action.",
+    "icons": ""
+  },
+  "Order: Tactical Reposition": {
+    "name": "Order: Tactical Reposition",
+    "description": "**Start of an enemy Turn:**\nTarget 1 friendly unit in Short Range. They perform a 3\" shift.",
+    "icons": ""
+  },
+  "Order: Taking a New Name": {
+    "name": "Order: Taking a New Name",
+    "description": "**Start of a friendly Turn:**\nDestroy this model and replace it with 1 destroyed Infantry Attachment. That Attachment gains **Order: Taking a New Name**. It counts as already having been used this Round.",
+    "icons": ""
+  },
+  "Order: Taunt": {
+    "name": "Order: Taunt",
+    "description": "**When an enemy in Short Range Activates:**\nIf that enemy can Charge this unit, it performs 1 Morale Test with -1 to their roll for each remaining rank in this unit. On a failure, it performs 1 Charge Action on this unit (this is their Action for the Turn).",
+    "icons": ""
+  },
+  "Order: Thenn Supremacy": {
+    "name": "Order: Thenn Supremacy",
+    "description": "**After an enemy completes an Attack on this unit:**\r\nTarget the Attacker. They suffer 1 Panic Test with -1 to their roll and +1 Wounds on failure for each remaining rank in this unit.",
+    "icons": ""
+  },
+  "Order: Threaten": {
+    "name": "Order: Threaten",
+    "description": "**When this unit Activates:**\r\nTarget 1 enemy in Long Range. They become **Weakened**.",
+    "icons": ""
+  },
+  "Order: To The Last!": {
+    "name": "Order: To The Last!",
+    "description": "**When this unit would be destroyed:**\r\nThis unit performs 1 Morale Test. On a success, it is not destroyed but remains in play with 1 Wound, then becomes **Panicked** and **Vulnerable**.",
+    "icons": ""
+  },
+  "Order: Trapper’s Tools": {
+    "name": "Order: Trapper’s Tools",
+    "description": "**Start of any Turn:**\nTarget 1 enemy engaged with this unit. For each Pillage token on this unit, they become **Vulnerable** or **Weakened**.",
+    "icons": ""
+  },
+  "Order: Trophy Collecting": {
+    "name": "Order: Trophy Collecting",
+    "description": "**After a friendly unit completes a Melee Attack, if it destroyed an enemy rank:**\nSearch your Tactics Deck or discard pile for 1 of Rattleshirt's Commander Tactics cards and play it. Shuffle your Tactics deck.",
+    "icons": ""
+  },
+  "Order: War Cry": {
+    "name": "Order: War Cry",
+    "description": "**Start of a friendly Turn:**\r\nThis unit performs 1 Morale Test. On a success, target 1 enemy in Long Range. It becomes **Panicked** and **Vulnerable**.",
+    "icons": ""
+  },
+  "Orders Of The Crown": {
+    "name": "Orders Of The Crown",
+    "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Preston Greenfield's unit performs 1 Maneuver or March Action.*",
+    "icons": ""
+  },
+  "Orders Of The Crown (Cortnay Penrose)": {
+    "name": "Orders Of The Crown (Cortnay Penrose)",
+    "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Cortnay Penrose's unit performs 1 Maneuver or March Action.*",
+    "icons": ""
+  },
+  "Orders Of The Crown (Preston Greenfield)": {
+    "name": "Orders Of The Crown (Preston Greenfield)",
+    "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Preston Greenfield's unit performs 1 Maneuver or March Action.*",
+    "icons": ""
+  },
+  "Outflank": {
+    "name": "Outflank",
+    "description": "You may hold this unit off the table *(In Reserve)* instead of of Deploying them. When a friendly NCU Claims [HORSE], you may replace that zone’s effect with:\n*Deploy 1 unit from Reserve fully within Short Range of any Flank table edge.*",
+    "icons": ""
+  },
+  "Outrider’s Bow": {
+    "name": "Outrider’s Bow",
+    "description": "If this unit has not performed the Maneuver from Cavalry this Turn, this Attack gains +1 to Hit and becomes [LONGRANGE].",
+    "icons": "R"
+  },
+  "Pathfinder": {
+    "name": "Pathfinder",
+    "description": "This unit ignores the Dangerous, Hindering, and Rough keywords.",
+    "icons": ""
+  },
+  "Perseverance and Valor": {
+    "name": "Perseverance and Valor",
+    "description": "Each time this unit performs a Melee Attack, before rolling Attack Dice, it restores 1 Wound.",
+    "icons": "M"
+  },
+  "Pillage": {
+    "name": "Pillage",
+    "description": "After completing a Melee Attack, for each enemy rank that was destroyed, this unit gains 1 **Pillage token**. It may have up to 2 Pillage tokens at any time.",
+    "icons": "M,P"
+  },
+  "Poisoned Gifts": {
+    "name": "Poisoned Gifts",
+    "description": "If this unit has Pillage, it deploys with 2 Pillage tokens. When it performs an Action, before resolving that Action, it suffers 1 Wound.",
+    "icons": ""
+  },
+  "Precision": {
+    "name": "Precision",
+    "description": "This unit's Melee Attacks gain **Precision**.",
+    "icons": "M"
+  },
+  "Predator's Instincts": {
+    "name": "Predator's Instincts",
+    "description": "Each time this unit Charges, it suffers a Disorderly Charge on rolls of 1 or 2. When this model's Skinchanger unit Charges this unit, they may re-roll any Charge Distance Dice.",
+    "icons": ""
+  },
+  "Prey On Fear": {
+    "name": "Prey On Fear",
+    "description": "Each time an enemy engaged with this unit fails a Panic Test, this unit restores 2 Wounds.",
+    "icons": ""
+  },
+  "Protection Of The Crown": {
+    "name": "Protection Of The Crown",
+    "description": "While you Control [CROWN], each time this unit is Attacked, it may re-roll any Defense Dice.",
+    "icons": ""
+  },
+  "Pummeling Fists": {
+    "name": "Pummeling Fists",
+    "description": "• **Critical Blow**\n• **Sundering**",
+    "icons": "M,W"
+  },
+  "Raided Armaments": {
+    "name": "Raided Armaments",
+    "description": "For each Pillage token on this unit, it gains +1 to Defense Dice rolls.",
+    "icons": ""
+  },
+  "Rally Cry": {
+    "name": "Rally Cry",
+    "description": "Each time this unit is performing a Melee Attack, before rolling Attack Dice, target 1 other friendly unit in Long Range. It restores 2 Wounds.",
+    "icons": "M"
+  },
+  "Rally Point": {
+    "name": "Rally Point",
+    "description": "Friendly units in Short Range may use this unit's Morale Stat for all Morale Tests.",
+    "icons": ""
+  },
+  "Rampage": {
+    "name": "Rampage",
+    "description": "• **Critical Blow**\n• **Sundering**\n• Before rolling Attack Dice, the Defender becomes **Panicked**.",
+    "icons": "M,W"
+  },
+  "Ranging Specialist (Benjen)": {
+    "name": "Ranging Specialist (Benjen)",
+    "description": "Benjen may only be Attached to Ranger units.",
+    "icons": "W"
+  },
+  "Reaper’s Fervor": {
+    "name": "Reaper’s Fervor",
+    "description": "• **Vicious**\n• When an enemy fails a Panic Test from this Attack, for each Pillage token on this unit, choose 1. The same effect may be chosen multiple times:\n   • That enemy suffers +1 Wound.\n   • This unit restores 1 Wound.",
+    "icons": "M"
+  },
+  "Reaver Axes": {
+    "name": "Reaver Axes",
+    "description": "• **Sundering**\n• Gains +1 to Hit for each Pillage token on this unit.",
+    "icons": "M"
+  },
+  "Reckless Strikes": {
+    "name": "Reckless Strikes",
+    "description": "This unit's Melee Attack gain **Critical Blow** and **Precision**. For each Attack Die roll of 1, this unit suffers 1 Wound.",
+    "icons": "M"
+  },
+  "Regroup": {
+    "name": "Regroup",
+    "description": "After completing a Retreat Action, this unit restores 2 Wounds, +1 Wound for each of its destroyed ranks.",
+    "icons": ""
+  },
+  "Reinforcements": {
+    "name": "Reinforcements",
+    "description": "Each time this unit Activates, it restores 1 Wound. If you Control [CROWN], restore +1 Wound.",
+    "icons": ""
+  },
+  "Renly's Protector": {
+    "name": "Renly's Protector",
+    "description": "After Renly Baratheon’s unit is Attacked, this unit performs 1 Attack or Charge Action on the Attacker.",
+    "icons": ""
+  },
+  "Resolute Strikes": {
+    "name": "Resolute Strikes",
+    "description": "• **Critical Blow**\n• Gains +1 to Hit for each of this unit’s destroyed ranks.",
+    "icons": "M"
+  },
+  "Rock Volley": {
+    "name": "Rock Volley",
+    "description": "• Cannot Attack Solo units.\n• May Attack enemies regardless of range and Line of Sight.\n• If this Attack generates **any** Hits, instead of rolling Defense Dice, the Defender suffers 1 Wound, +1 Wound for each of its remaining ranks.",
+    "icons": "R,W"
+  },
+  "Ruthless Aggression": {
+    "name": "Ruthless Aggression",
+    "description": "• **Vicious**\n• When Attacking enemies that have not Activated this Round, may re-roll Attack Dice and the Defender becomes **Vulnerable**.",
+    "icons": "M"
+  },
+  "Sabotage and Subvert": {
+    "name": "Sabotage and Subvert",
+    "description": "Once per game, at the start of any Turn, your opponent may deal this unit 1 Wound *(remove this model)*. If they do, they place 1 Condition token on this unit, and it may not use Orders or be the target of friendly Tactics cards this Turn.",
+    "icons": ""
+  },
+  "Sadistic Mutilation": {
+    "name": "Sadistic Mutilation",
+    "description": "After this unit completes a Melee Attack, you may expend 1 Weakened token from the Defender. If you do, destroy 1 Infantry Attachment in that unit.",
+    "icons": "M"
+  },
+  "Savage Mauling": {
+    "name": "Savage Mauling",
+    "description": "• **Sundering**\n• **Vicious**\n• Gains +1 Attack Die for each Wound this unit has suffered.",
+    "icons": "M"
+  },
+  "Savage Mauling (Bear)": {
+    "name": "Savage Mauling (Bear)",
+    "description": "Defenders do not roll Defense Dice.",
+    "icons": "M"
+  },
+  "Solo Rider": {
+    "name": "Solo Rider",
+    "description": "• This unit has 3 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver or Retreat Action.",
+    "icons": "W"
+  },
+  "Southern Knowledge": {
+    "name": "Southern Knowledge",
+    "description": "Once per game, at the Start of any Turn, target 1 enemy in Long Range and Line of Sight. Until the end of the Turn, they lose all Abilities and cannot be the target of friendly Tactics cards.",
+    "icons": ""
+  },
+  "Spear & Net": {
+    "name": "Spear & Net",
+    "description": "After completing this Attack, the Defender becomes **Weakened**.",
+    "icons": "M"
+  },
+  "Spear and Maul": {
+    "name": "Spear and Maul",
+    "description": "• **Vicious**\n• **Sundering**\n• **Precision**",
+    "icons": "M"
+  },
+  "Spiked Flail": {
+    "name": "Spiked Flail",
+    "description": "• **Vicious**",
+    "icons": "M"
+  },
+  "Spotter": {
+    "name": "Spotter",
+    "description": "When Attacking enemies in Long Range of this unit, friendly War Machine units may re-roll any Attack Dice.",
+    "icons": ""
+  },
+  "Stag’s Fury": {
+    "name": "Stag’s Fury",
+    "description": "This Attack gains the following based on the Game Round *(effects are cumulative)*:\n**• 2+:** **Critical Blow**\n**• 3+:** **Vicious**\n**• 4+:** **Sundering**\n**• 5+:** Deals +1 Hit for each of this unit’s remaining ranks.",
+    "icons": "M"
+  },
+  "Stake Building": {
+    "name": "Stake Building",
+    "description": "Once per game, at the start of any Round, place 1 Stake terrain with the Dangerous and Destructible Keywords within 2\" of this unit. This terrain may not be placed over other terrain or units.",
+    "icons": ""
+  },
+  "Stake Mountings": {
+    "name": "Stake Mountings",
+    "description": "When this unit is Successfully Charged, before the Attacker performs their Melee Attack, they suffer D3+1 Wounds.",
+    "icons": ""
+  },
+  "Stalwart": {
+    "name": "Stalwart",
+    "description": "This unit gains +2 to Morale Test rolls.",
+    "icons": ""
+  },
+  "Stand Your Ground!": {
+    "name": "Stand Your Ground!",
+    "description": "Each time an enemy performs a Melee Attack on this unit, if this unit is only engaged with 1 enemy, that enemy does not gain Charge, Flank, or Rear Bonuses.",
+    "icons": ""
+  },
+  "Stomp": {
+    "name": "Stomp",
+    "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• When Charging, gains +1 Attack Die for each of the Defender’s remaining ranks.",
+    "icons": "W,M"
+  },
+  "Stubborn Tenacity": {
+    "name": "Stubborn Tenacity",
+    "description": "Each time this unit passes a Panic Test, 1 enemy they are engaged with suffers 1 Wound.",
+    "icons": ""
+  },
+  "Sundering": {
+    "name": "Sundering",
+    "description": "This unit's Melee Attacks gain **Sundering**.",
+    "icons": "M"
+  },
+  "Superior Numbers": {
+    "name": "Superior Numbers",
+    "description": "This unit's Melee Attacks may re-roll any Attack Dice when Attacking enemies with fewer remaining ranks.",
+    "icons": "M"
+  },
+  "Swift Strike": {
+    "name": "Swift Strike",
+    "description": "After this Attack is completed, this unit may perform 1 Retreat Action.",
+    "icons": "M"
+  },
+  "Tactical Strike": {
+    "name": "Tactical Strike",
+    "description": "• **Sundering**\n• While you control [LETTER], this attack rolls its highest Attack Die Value.",
+    "icons": "M"
+  },
+  "The King Is Dead!": {
+    "name": "The King Is Dead!",
+    "description": "When Joffrey is destroyed, your opponent gains 2 Victory Points and each of your units in Long Range becomes **Panicked**.",
+    "icons": "W"
+  },
+  "The Mountain That Rides": {
+    "name": "The Mountain That Rides",
+    "description": "• This unit has 4 Wounds.\n• At the start of this unit’s Activation, it may perform 1 Maneuver action.",
+    "icons": "W"
+  },
+  "The Rightful Queen": {
+    "name": "The Rightful Queen",
+    "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\r\nSearch your Tactics Deck for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck. ",
+    "icons": ""
+  },
+  "The Silence's Infamy": {
+    "name": "The Silence's Infamy",
+    "description": "This unit suffers -1 Wound from failing Panic Tests for each Pillage token on this unit and, while in Short Range, enemies suffer -1 to Morale Test rolls for each Pillage token on this unit.",
+    "icons": ""
+  },
+  "To The Last!": {
+    "name": "To The Last!",
+    "description": "Place 2 [WOUND] tokens on this card at the start of the game. Each time this unit would be destroyed, remove 1 [WOUND] token from this card. It makes 1 Morale Test. On a success, this unit is not destroyed but remains in play with 1 Wound.",
+    "icons": "W"
+  },
+  "Tooth & Claw": {
+    "name": "Tooth & Claw",
+    "description": "• **Sundering**",
+    "icons": "M"
+  },
+  "Tracker’s Bow": {
+    "name": "Tracker’s Bow",
+    "description": "After completing this Attack, the Defender becomes **Vulnerable**.",
+    "icons": "R"
+  },
+  "Trample": {
+    "name": "Trample",
+    "description": "Each time this unit performs a March Action, it may replace that Action with a Trample Action:\nPivot it, then move it 12”, moving through units. If it ends over a unit, it instead stops 1” before it. Each non-Solo unit moved through, or that it would have ended on, suffers D3 Wounds.",
+    "icons": "W"
+  },
+  "True Bond": {
+    "name": "True Bond",
+    "description": "• Ghost may treat any friendly Tactics cards attached to Jon Snow's unit as also attached to him.\n• When Jon Snow's unit Activates, this unit may Activate after that unit.",
+    "icons": "W"
+  },
+  "True Conviction": {
+    "name": "True Conviction",
+    "description": "If this unit is a Baratheon unit, each time it Attacks an enemy with more remaining ranks, it may re-roll any Attack Dice.",
+    "icons": "R,M"
+  },
+  "Uncontrolled Rage": {
+    "name": "Uncontrolled Rage",
+    "description": "Each time this unit Activates, if it can Charge an enemy, it performs 1 Morale Test. On a failure, it performs 1 Charge Action on the nearest valid enemy and counts as rolling a 6 for all Charge Distance Dice.",
+    "icons": ""
+  },
+  "Unstoppable Wrath": {
+    "name": "Unstoppable Wrath",
+    "description": "This unit's Melee Attacks deal +2 Wounds.",
+    "icons": "M"
+  },
+  "Unsullied Prowess": {
+    "name": "Unsullied Prowess",
+    "description": "• **Precision**\n• May always re-roll Attack Dice. \n• Opponents cannot expend Weakened tokens on this unit while it is Attacking.",
+    "icons": "M"
+  },
+  "Untrained Masses": {
+    "name": "Untrained Masses",
+    "description": "• This unit has 6 Wounds.\r\n• Cannot Control Objectives and cannot grant Victory Points. \r\n• Start of the Round, if this unit is not in Short Range of a friendly unit without **Untrained Masses**, it is destroyed.",
+    "icons": "W"
+  },
+  "Unyielding": {
+    "name": "Unyielding",
+    "description": "This unit suffers -1 Wound from failing Panic Tests for each of its destroyed ranks.",
+    "icons": ""
+  },
+  "Valuable Captive (Jaime Lannister)": {
+    "name": "Valuable Captive (Jaime Lannister)",
+    "description": "This unit gains +1 to Morale Test rolls. When Jaime is destroyed, your opponent gains 1 Victory Point.",
+    "icons": "W"
+  },
+  "Valuable Captive (Rickon Stark)": {
+    "name": "Valuable Captive (Rickon Stark)",
+    "description": "This unit gains +1 to Morale Test rolls. When Rickon is destroyed, your opponent gains 1 Victory Point.",
+    "icons": "W"
+  },
+  "Varamyr's Eagle": {
+    "name": "Varamyr's Eagle",
+    "description": "At the start of each Round, attach this card to 1 enemy Combat Unit until the end of the Round, placing this model near the unit's tray to mark it. This model is ignored for all other purposes.",
+    "icons": ""
+  },
+  "Varamyr's Scout": {
+    "name": "Varamyr's Scout",
+    "description": "Once each Turn, when this unit performs a Maneuver or March Action, before resolving that Action, 1 Varamyr, Shadowcat, or Wolf Pack unit may perform a 2\" shift.",
+    "icons": ""
+  },
+  "Varamyr’s Shadowcat": {
+    "name": "Varamyr’s Shadowcat",
+    "description": "• This unit has 2 Wounds.\n• Cannot Control Objectives and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.\n• This unit does not deploy as usual. At the start of any Round, you may deploy this unit fully within Short Range of any Flank table edge.",
+    "icons": "W"
+  },
+  "Varamyr’s Wolf Pack": {
+    "name": "Varamyr’s Wolf Pack",
+    "description": "• This unit has 3 Wounds.\n• Cannot Control Objectives and cannot grant Victory Points.\n• At the start of this unit’s Activation, it may perform 1 Maneuver Action.",
+    "icons": "W"
+  },
+  "Vengeance Of The Crown": {
+    "name": "Vengeance Of The Crown",
+    "description": "After this unit is Attacked with a Melee Attack, if you Control [CROWN], the Attacker suffers 1 Wound, +1 Wound for each of this unit's destroyed ranks.",
+    "icons": ""
+  },
+  "Vengeful Captive": {
+    "name": "Vengeful Captive",
+    "description": "While your opponent Controls [CROWN], this unit suffers -1 to Hit.",
+    "icons": "W"
+  },
+  "Vicious": {
+    "name": "Vicious",
+    "description": "This unit's Melee Attacks gain **Vicious**.",
+    "icons": "M"
+  },
+  "Victarion's Vassal": {
+    "name": "Victarion's Vassal",
+    "description": "This model counts as Victarion Greyjoy when its unit is being targeted by Tactics cards.",
+    "icons": "W"
+  },
+  "Violent Reactions": {
+    "name": "Violent Reactions",
+    "description": "This unit suffers -1 to Defense Dice rolls.",
+    "icons": "W"
+  },
+  "Viper's Fangs": {
+    "name": "Viper's Fangs",
+    "description": "When Attacking enemies that  have not Activated this Round, the Defender becomes **Vulnerable** and **Weakened**.",
+    "icons": "M"
+  },
+  "War Elephant": {
+    "name": "War Elephant",
+    "description": "• This unit has 8 Wounds and cannot Control Objectives.\n• This unit can only suffer a maximum of 2 Wounds from failing Panic Tests.\n• Each time this unit would perform an Action, if there is no friendly Golden Company Infantry unit within Long Range, it must perform 1 Morale Test. On a failure, it does not perform that Action.",
+    "icons": "W"
+  },
+  "War Flail": {
+    "name": "War Flail",
+    "description": "• **Vicious**\n• When Charging, gains **Critical Blow**.",
+    "icons": "M"
+  },
+  "War Hammer": {
+    "name": "War Hammer",
+    "description": "If the Defender rolls a 1 on any Defense Dice, after this Attack is completed, they become **Weakened**.",
+    "icons": "M"
+  },
+  "War Machine": {
+    "name": "War Machine",
+    "description": "• This unit has 6 Wounds.\n• This unit cannot Control Objectives.\n• This unit cannot gain Condition tokens, Charge, Retreat, or Shift.",
+    "icons": "W"
+  },
+  "Watcher's Crossbow": {
+    "name": "Watcher's Crossbow",
+    "description": "• **Sundering**",
+    "icons": "R"
+  },
+  "Weaken Resolve": {
+    "name": "Weaken Resolve",
+    "description": "Each time an enemy engaged with this unit fails a Panic Test, that enemy becomes **Weakened**.",
+    "icons": ""
+  },
+  "Whatever May Come": {
+    "name": "Whatever May Come",
+    "description": "Each time an enemy performs a Melee Attack on this unit, after rolling Attack Dice, you may destroy Jorah. If you do, that enemy becomes **Vulnerable** and **Weakened**.",
+    "icons": "W"
+  },
+  "Wildfire": {
+    "name": "Wildfire",
+    "description": "• **Vicious**\n• Defenders do not roll Defense Dice.\n• After completing this Attack, for each Attack Die roll of 1, this unit suffers 1 Wound.",
+    "icons": "R,M"
+  },
+  "Winter's Bite": {
+    "name": "Winter's Bite",
+    "description": "• **Critical Blow**\n• If this unit has 1 or more destroyed ranks, gains +1 to Hit.\n• If this unit has 2 destroyed ranks, may re-roll any Attack Dice.",
+    "icons": "M"
+  },
+  "Zealous Fanaticism": {
+    "name": "Zealous Fanaticism",
+    "description": "This unit's Melee Attacks gain Vicious and always roll their highest Attack Die Value. This unit suffers 1 Wound for each Attack Die roll of 1.",
+    "icons": "W,M"
+  },
+  "Zealous Resurgence": {
+    "name": "Zealous Resurgence",
+    "description": "Each time this unit Activates, it may expend 1 Faith token. If it does, it restores 2 Wounds.",
+    "icons": "F"
+  }
 }
