@@ -24,6 +24,7 @@ const ValueDiv = styled.div`
     font-weight: bold;
     width: 38px;
     height: 38px;
+    color: #cdcdcd;
     background-image: url("./Cost.webp");
     background-position: center;
     background-repeat: no-repeat;

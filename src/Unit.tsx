@@ -46,6 +46,7 @@ const TypeNameDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    color: #cdcdcd;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 `;
 
