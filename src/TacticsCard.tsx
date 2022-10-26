@@ -1,34 +1,26 @@
 import { TacticCard } from "./types";
 import styled from "styled-components/macro";
+import ProcessCardText from "./ProcessCardText";
 
 const Card = styled.div`
-    height: 100%;
-    width: 100px;
+    height: 420px;
+    width: 300px;
     position: relative;
-    background-color: ${(props) => props.theme.bg};
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 4px;
-
-    padding: 0 5px;
+    border-radius: 8px;
     text-align: center;
-    font-size: 5px;
-
-    &:hover {
-        transform: scale(4) translate(-35%, 20%);
-        z-index: 5;
-    }
 `;
 
 const TitleDiv = styled.div`
-    height: 16%;
+    height: 74px;
     display: flex;
-    margin: 2%;
+    padding: 16px 16px 0;
 `;
 
 const CrestImg = styled.img`
-    height: 100%;
+    height: 60px;
 `;
 
 const H3 = styled.h3`
@@ -38,122 +30,43 @@ const H3 = styled.h3`
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-weight: bold;
-    font-size: 5px;
+    padding: 0 6px;
+    font-size: 18px;
     font-family: "Courier New", Courier, monospace;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8),
+        -1px -1px 2px rgba(0, 0, 0, 0.8);
     color: white;
     margin: 2px;
 `;
 
 const Deck = styled(H3)`
-    font-size: 4px;
-    margin: 0 auto;
-`;
-
-const H4 = styled.h4`
-    font-weight: bold;
-    font-size: 5px;
-    margin: 2px;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    padding: 0 16px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8),
+        -1px -1px 2px rgba(0, 0, 0, 0.8);
 `;
 
 const CardText = styled.div`
-    width: 90%;
+    width: 268px;
     height: 70%;
     position: absolute;
-    top: 26%;
-    padding: 0 5%;
-    font-size: 5px;
+    left: 16px;
+    bottom: 16px;
+    padding: 0 4%;
+    font-size: 15px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: black;
-    border: 1px inset grey;
+    border: 3px inset grey;
     background-image: url("./Bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 `;
 
-const P = styled.p`
-    margin-top: 2px;
-`;
-
-const IMG = styled.img`
-    height: 1.2em;
-    transform: translateY(20%);
-`;
-
 function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
     const { name, text, deck } = card;
-    let firstTrigger: string = "";
-    let secondTrigger: string | undefined;
-
-    const triggerMatch = text.match(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g);
-
-    if (triggerMatch !== null) {
-        firstTrigger = triggerMatch[0].replace(/\*|\//g, "");
-        if (triggerMatch.length > 1)
-            secondTrigger = triggerMatch[1].replace(/\*|\//g, "");
-    }
-
-    const icons = [
-        "CROWN",
-        "LETTER",
-        "MONEY",
-        "SWORDS",
-        "HORSE",
-        "MOVEMENT",
-        "UNDYING",
-        "OASIS",
-    ];
-
-    const newText = text
-        .split(/(?<=^|\/\s)\*\*[^*/]+?\*\*/g)
-        .filter((val) => val)
-        .map((val) =>
-            val
-                .replace(/\//g, "")
-                .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-                .replace(/\*([^*]+)\*/g, "<em>$1</em>")
-                .replace(/^\n\n/g, "")
-                .replace(/\n\n/g, "<br />")
-        );
-
-    const processText = (text: string): JSX.Element => {
-        let textArr = text.split(/\[|\]/g);
-        textArr = textArr.map((text) => {
-            if (text.startsWith("<em>")) text = text + "</em>";
-            else if (text.startsWith("<strong>")) text = text + "</strong>";
-            else if (text.endsWith("</em>")) text = "<em>" + text;
-            else if (text.endsWith("</strong>")) text = "<strong>" + text;
-            return text;
-        });
-
-        return (
-            <>
-                {textArr.map((text, ind) =>
-                    icons.includes(text) ? (
-                        <IMG
-                            key={ind}
-                            alt={text}
-                            src={`./${text}.png`}
-                            title={text}
-                            style={{
-                                filter: ` ${
-                                    text !== "MOVEMENT"
-                                        ? "invert(100%)"
-                                        : "none"
-                                }`,
-                            }}
-                        />
-                    ) : (
-                        <span
-                            dangerouslySetInnerHTML={{ __html: text }}
-                            key={ind}
-                        ></span>
-                    )
-                )}
-            </>
-        );
-    };
 
     return (
         <Card
@@ -172,17 +85,7 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
             {!deck.includes("Basic Deck") && <Deck>{deck}</Deck>}
 
             <CardText>
-                <H4>{processText(firstTrigger)}</H4>
-                <P>{processText(newText[0])}</P>
-                {secondTrigger !== undefined && (
-                    <>
-                        <hr />
-                        <H4>{processText(secondTrigger)}</H4>
-                        {newText[1] !== undefined && (
-                            <P>{processText(newText[1])}</P>
-                        )}
-                    </>
-                )}
+                <ProcessCardText cardText={text} />
             </CardText>
         </Card>
     );
