@@ -50,7 +50,7 @@ function Layout(): JSX.Element {
                 <SelectFactionForm />
             </FormDiv>
             <DeckDiv>
-                <DisplayDeck></DisplayDeck>
+                <DisplayDeck />
             </DeckDiv>
             <ArmyDiv>
                 <Army />
