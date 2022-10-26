@@ -4,11 +4,14 @@ const AttackDiv = styled.div`
     height: 78px;
     width: 160px;
     position: relative;
+    /* margin: 0 auto; */
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
 `;
 
 const IMG = styled.img`
     height: 64px;
     position: relative;
+    display: block;
     z-index: 2;
 `;
 
@@ -44,6 +47,7 @@ const ProfileDiv = styled.div`
     display: flex;
     align-items: center;
     z-index: 3;
+    color: #cdcdcd;
 `;
 
 const ValueDiv = styled.div`

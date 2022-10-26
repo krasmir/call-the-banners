@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import AttackBar from "./AttackBar";
 
 const H4 = styled.h4`
     font-weight: bold;
@@ -13,6 +14,13 @@ const P = styled.p`
 const IMG = styled.img`
     height: 1.2em;
     transform: translateY(20%);
+`;
+
+const CardTextAttackDiv = styled.div`
+    height: 78px;
+    width: 160px;
+    position: relative;
+    margin: 0 auto;
 `;
 
 function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
@@ -50,8 +58,24 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
                 .replace(/^\n\n|^\r\n/g, "")
                 .replace(/\n\n/g, "<br />")
                 .replace(/^\n/g, "")
-                .replace(/\n/g, "<br />")
+                .replace(/\n•/g, "<br />•")
+                .replace(/\n/g, " ")
         );
+
+    const processAttackText = (text: string): JSX.Element => {
+        const [, range, name, valAndDice] = text.split(":");
+        let rangeCode = "";
+        if (range === "LongRanged") {
+            rangeCode = "[" + "RL" + "]";
+        }
+        const toHit = valAndDice.slice(0, 2);
+        const dices = valAndDice.slice(2);
+        return (
+            <CardTextAttackDiv>
+                <AttackBar attackProfile={[rangeCode + name, toHit, dices]} />
+            </CardTextAttackDiv>
+        );
+    };
 
     const processText = (text: string): JSX.Element => {
         let textArr = text.split(/\[|\]/g);
@@ -69,28 +93,34 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
 
         return (
             <>
-                {textArr.map((text, ind) =>
-                    icons.includes(text) ? (
-                        <IMG
-                            key={ind}
-                            alt={text}
-                            src={`./${text}.png`}
-                            title={text}
-                            style={{
-                                filter: ` ${
-                                    text !== "MOVEMENT" && text !== "LONGRANGE"
-                                        ? "invert(100%)"
-                                        : "none"
-                                }`,
-                            }}
-                        />
-                    ) : (
-                        <span
-                            dangerouslySetInnerHTML={{ __html: text }}
-                            key={ind}
-                        ></span>
-                    )
-                )}
+                {textArr.map((text, ind) => {
+                    if (icons.includes(text))
+                        return (
+                            <IMG
+                                key={ind}
+                                alt={text}
+                                src={`./${text}.png`}
+                                title={text}
+                                style={{
+                                    filter: ` ${
+                                        text !== "MOVEMENT" &&
+                                        text !== "LONGRANGE"
+                                            ? "invert(100%)"
+                                            : "none"
+                                    }`,
+                                }}
+                            />
+                        );
+                    else if (text.includes("ATTACK"))
+                        return processAttackText(text);
+                    else
+                        return (
+                            <span
+                                dangerouslySetInnerHTML={{ __html: text }}
+                                key={ind}
+                            ></span>
+                        );
+                })}
             </>
         );
     };
