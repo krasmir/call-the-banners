@@ -45,9 +45,10 @@ const AbilityDiv = styled.div`
     margin-left: auto;
     margin-bottom: 10px;
     padding: 0 12px 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 15px;
-    color: black;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-size: 12px;
+    /* color: #2f2f2f; */
+    color: #121212;
     border: 3px inset grey;
     border-right: none;
     background-image: url("./Bg2.jpg");
@@ -59,7 +60,7 @@ const AbilityDiv = styled.div`
 const NameDiv = styled.div`
     padding-top: 6px;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: maroon;
 `;

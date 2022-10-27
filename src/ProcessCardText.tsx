@@ -6,7 +6,7 @@ const H4 = styled.h4`
     margin: 2px;
 `;
 
-const P = styled.p`
+const Text = styled.div`
     margin-top: 2px;
     margin-bottom: 0;
 `;
@@ -128,13 +128,13 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
     return (
         <>
             <H4>{processText(firstTrigger)}</H4>
-            <P>{processText(newText[0])}</P>
+            <Text>{processText(newText[0])}</Text>
             {secondTrigger !== undefined && (
                 <>
                     <hr />
                     <H4>{processText(secondTrigger)}</H4>
                     {newText[1] !== undefined && (
-                        <P>{processText(newText[1])}</P>
+                        <Text>{processText(newText[1])}</Text>
                     )}
                 </>
             )}

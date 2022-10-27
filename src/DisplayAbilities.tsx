@@ -10,7 +10,8 @@ function DisplayAbilities({ abilities }: { abilities: string }): JSX.Element {
             !ability.includes("Loyalty:") &&
             !ability.includes("Cost Reduced") &&
             !ability.includes("Fielded by") &&
-            !ability.includes("Commander")
+            !ability.includes("Attached to") &&
+            !(ability === "Commander")
     );
 
     return (
