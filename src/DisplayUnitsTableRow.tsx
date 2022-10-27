@@ -6,6 +6,10 @@ const TR = styled.tr`
     border-bottom: ${(props) => props.theme.colors.secondary} solid 1px;
 `;
 
+const Type = styled.div`
+    height: 40px;
+`;
+
 interface DisplayUnitsTableRowProps {
     children?: React.ReactNode;
     unit: CombatUnit | Attachment | NCU;
@@ -29,7 +33,9 @@ function DisplayUnitsTableRow({
         >
             <td>{unit.name}</td>
             <td>
-                <UnitTypeIcon type={type} />
+                <Type>
+                    <UnitTypeIcon type={type} />
+                </Type>
             </td>
             <td>{unit.cost}</td>
             <td>{canUnitBeChosen && children}</td>

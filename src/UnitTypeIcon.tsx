@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 const IMG = styled.img`
-    height: 40px;
+    height: 100%;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9))
         drop-shadow(-3px -3px 3px rgba(0, 0, 0, 0.9));
 `;

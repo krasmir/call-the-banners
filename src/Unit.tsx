@@ -50,6 +50,10 @@ const TypeNameDiv = styled.div`
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 `;
 
+const Type = styled.div`
+    height: 40px;
+`;
+
 const SkillsDiv = styled.div`
     height: 100%;
     width: 60%;
@@ -80,7 +84,9 @@ function Unit({ unit }: { unit: CombatUnit }): JSX.Element {
                     <Icon icon="Morale" value={unit.morale} />
                 </MoraleDefenceDiv>
                 <TypeNameDiv>
-                    <UnitTypeIcon type={unit.type} />
+                    <Type>
+                        <UnitTypeIcon type={unit.type} />
+                    </Type>
                     {unit.name}
                 </TypeNameDiv>
             </InfoDiv>
