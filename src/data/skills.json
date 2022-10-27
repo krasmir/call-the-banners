@@ -519,7 +519,7 @@
         "description": "This unit begins the game with 1 **Faith token**. Each time it passes a Morale Test, it gains 1 Faith token. Faith tokens may be expended to do the following:\n• **When an enemy engaged with this unit performs an Attack, before resolving that Attack:**\nFor each of this unit’s destroyed ranks, the Attacker suffers 3 Hits.\n• **When this unit performs a Melee Attack, before rolling Attack Dice:**\nThis Attack gains **Precision** and **Vicious**.\n• **When this unit is destroyed:**\n1 other R’hllor unit in Long Range performs 1 Attack Action.",
         "icons": "Fire"
     },
-    "Heir of House Targaryen": {
+    "Heir Of House Targaryen": {
         "name": "Heir of House Targaryen",
         "description": "When Daenerys is destroyed, your opponent gains 2 Victory Points.",
         "icons": "W"
@@ -704,7 +704,7 @@
         "description": "Each time a friendly NCU Claims [CROWN], you may replace that zone's effect with:\n*Kevan Lannister's unit performs 1 Attack or Charge Action.*",
         "icons": ""
     },
-    "Mother of Dragons": {
+    "Mother Of Dragons": {
         "name": "Mother of Dragons",
         "description": "Once per game, at the start of any Turn, you may search your Tactics Deck or discard pile for 1 of Daenerys' Commander cards and add it to your hand. Shuffle your Tactics Deck.",
         "icons": "W"
@@ -889,7 +889,7 @@
         "description": "**After another friendly unit in Long Range is Attacked:**\nThis unit performs 1 Charge or Maneuver Action. If Charging, it must target the Attacker.",
         "icons": ""
     },
-    "Order: Set an Example": {
+    "Order: Set An Example": {
         "name": "Order: Set an Example",
         "description": "**Start of any Turn:**\r\nTarget all enemies in Short Range. They become Panicked. Roll a die, on a 6, destroy Theon.",
         "icons": ""
