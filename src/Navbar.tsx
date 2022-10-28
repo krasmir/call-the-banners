@@ -47,6 +47,9 @@ function Navbar(): JSX.Element {
                     <StyledNavLink to="attachments">Attachments</StyledNavLink>
                 </Li>
                 <Li>
+                    <StyledNavLink to="ncus">NCUs</StyledNavLink>
+                </Li>
+                <Li>
                     <StyledNavLink to="tactics">Tactics Cards</StyledNavLink>
                 </Li>
 
