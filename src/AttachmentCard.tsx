@@ -97,7 +97,11 @@ const CardText = styled.div`
     bottom: 0;
 `;
 
-function TacticsCard({ attachment }: { attachment: Attachment }): JSX.Element {
+function AttachmentCard({
+    attachment,
+}: {
+    attachment: Attachment;
+}): JSX.Element {
     const { name, faction, abilities, type, cost } = attachment;
     const [attName, attTitle] = name.split(", ");
 
@@ -135,4 +139,4 @@ function TacticsCard({ attachment }: { attachment: Attachment }): JSX.Element {
     );
 }
 
-export default TacticsCard;
+export default AttachmentCard;

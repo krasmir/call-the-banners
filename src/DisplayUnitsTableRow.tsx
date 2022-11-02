@@ -11,34 +11,51 @@ const Type = styled.div`
 `;
 
 interface DisplayUnitsTableRowProps {
-    children?: React.ReactNode;
+    // children?: React.ReactNode;
     unit: CombatUnit | Attachment | NCU;
     canUnitBeChosen: boolean;
+    addUnitButton: React.ReactNode;
+    showUnitButton: React.ReactNode;
 }
 
 function DisplayUnitsTableRow({
-    children,
+    // children,
     unit,
     canUnitBeChosen,
+    addUnitButton,
+    showUnitButton,
 }: DisplayUnitsTableRowProps): JSX.Element {
     const calculateOpacity = canUnitBeChosen ? "1" : "0.4";
 
     const type = unit.type ?? "NCU";
 
     return (
-        <TR
-            style={{
-                opacity: calculateOpacity,
-            }}
-        >
-            <td>{unit.name}</td>
-            <td>
+        <TR>
+            <td
+                style={{
+                    opacity: calculateOpacity,
+                }}
+            >
+                {unit.name}
+            </td>
+            <td
+                style={{
+                    opacity: calculateOpacity,
+                }}
+            >
                 <Type>
                     <UnitTypeIcon type={type} />
                 </Type>
             </td>
-            <td>{unit.cost}</td>
-            <td>{canUnitBeChosen && children}</td>
+            <td
+                style={{
+                    opacity: calculateOpacity,
+                }}
+            >
+                {unit.cost}
+            </td>
+            <td>{showUnitButton}</td>
+            <td>{canUnitBeChosen && addUnitButton}</td>
         </TR>
     );
 }

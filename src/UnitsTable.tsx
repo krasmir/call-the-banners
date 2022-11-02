@@ -49,6 +49,7 @@ function UnitsTable({ children, typeOfUnits }: UnitsTableProps): JSX.Element {
                             <TH>Name</TH>
                             <TH>Type</TH>
                             <TH>Cost</TH>
+                            <TH>Details</TH>
                             <TH>Add</TH>
                         </tr>
                     </thead>

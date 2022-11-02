@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import styled from "styled-components/macro";
 import useCurrentFaction from "./hooks/useCurrentFaction";
 import { Faction } from "./types";
-import Unit from "./Unit";
+import CombatUnitCard from "./CombatUnitCard";
 import getUnits from "./utils/getUnits";
 
 const UnitsDiv = styled.div`
@@ -23,7 +23,7 @@ function DisplayUnits(): JSX.Element {
     return (
         <UnitsDiv>
             {factionCombatUnits.map((unit) => {
-                return <Unit key={unit.id} unit={unit} />;
+                return <CombatUnitCard key={unit.id} combatUnit={unit} />;
             })}
         </UnitsDiv>
     );

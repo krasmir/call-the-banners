@@ -10,6 +10,7 @@ import { Faction } from "./types";
 import { Button } from "./Button";
 import AttachButton from "./AttachButton";
 import { v4 as uuid } from "uuid";
+import ShowUnitButton from "./ShowUnitButton";
 
 function DisplayUnitsTable(): JSX.Element {
     const currentFaction = useCurrentFaction();
@@ -48,25 +49,32 @@ function DisplayUnitsTable(): JSX.Element {
                             unit,
                             unit.character
                         )}
-                    >
-                        {type === "attachments" ? (
-                            <AttachButton attachment={unit} />
-                        ) : (
-                            <Button
-                                onClick={() =>
-                                    handleAddUnit(
-                                        {
-                                            ...unit,
-                                            uuid: uuid(),
-                                        },
-                                        type
-                                    )
-                                }
-                            >
-                                Add
-                            </Button>
-                        )}
-                    </DisplayUnitsTableRow>
+                        addUnitButton={
+                            type === "attachments" ? (
+                                <AttachButton attachment={unit} />
+                            ) : (
+                                <Button
+                                    onClick={() =>
+                                        handleAddUnit(
+                                            {
+                                                ...unit,
+                                                uuid: uuid(),
+                                            },
+                                            type
+                                        )
+                                    }
+                                >
+                                    Add
+                                </Button>
+                            )
+                        }
+                        showUnitButton={
+                            <ShowUnitButton
+                                unit={unit}
+                                type={type}
+                            ></ShowUnitButton>
+                        }
+                    />
                 ))}
             </>
         );

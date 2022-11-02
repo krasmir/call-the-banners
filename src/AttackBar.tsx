@@ -54,7 +54,7 @@ const ValueDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 19px;
     font-weight: bold;
     width: 38px;
     height: 38px;
@@ -84,6 +84,7 @@ const DiceValue = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
     font-weight: bold;
     height: 18px;
     width: 18px;

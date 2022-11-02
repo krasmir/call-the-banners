@@ -8,7 +8,7 @@ const IconDiv = styled.div`
 
 const IMG = styled.img`
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
 `;
 
@@ -20,7 +20,7 @@ const ValueDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 19px;
     font-weight: bold;
     width: 38px;
     height: 38px;
