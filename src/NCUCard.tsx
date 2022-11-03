@@ -63,6 +63,7 @@ const NameDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0 6px;
 `;
 
@@ -91,8 +92,9 @@ const Title = styled.h4`
 const CardText = styled.div`
     width: 266px;
     height: 308px;
-    padding: 0 4%;
+    padding: 2% 4%;
     position: relative;
+    font-size: 14px;
     color: #2f2f2f;
     top: -2px;
     left: 0;
@@ -100,16 +102,19 @@ const CardText = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 12px;
 `;
 
 function NCUCard({ ncu }: { ncu: NCU }): JSX.Element {
     const { name, names, descriptions, faction, cost } = ncu;
-    const [attName, attTitle] = name.split(", ");
+    const [ncuName, ncuTitle] = name.split(", ");
 
     const abilitiesNames = names
-        .split(" /\n")
+        .split(/ \/\s*/)
         .map((name) => "**" + name + "**");
-    const abilitiesDescription = descriptions.split(" /\n");
+    const abilitiesDescription = descriptions
+        .split(/ \/\s*/)
+        .map((desc) => desc.replace(/\n/g, "\n\n"));
 
     const abilitiesArr = [abilitiesNames[0], abilitiesDescription[0]];
 
@@ -139,9 +144,9 @@ function NCUCard({ ncu }: { ncu: NCU }): JSX.Element {
                         <UnitTypeIcon type="NCU" />
                     </AttType>
                     <NameDiv>
-                        <H3>{attName}</H3>
+                        <H3>{ncuName}</H3>
                         <br />
-                        {attTitle !== undefined && <Title>{attTitle}</Title>}
+                        {ncuTitle !== undefined && <Title>{ncuTitle}</Title>}
                     </NameDiv>
                 </TitleDiv>
 

@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 import tactics from "./data/tactics.json";
 import useCurrentFaction from "./hooks/useCurrentFaction";
+import SelectFactionForm from "./SelectFactionForm";
 import TacticsCard from "./TacticsCard";
 import { Faction, TacticCard } from "./types";
 
@@ -19,6 +20,7 @@ function Tactics(): JSX.Element {
     ] as TacticCard[];
     return (
         <TacticsDiv>
+            <SelectFactionForm></SelectFactionForm>
             {allFactionTacticsCards.map((card) => (
                 <TacticsCard key={card.id} card={card} />
             ))}

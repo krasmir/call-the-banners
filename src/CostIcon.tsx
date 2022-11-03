@@ -11,6 +11,10 @@ const IconDiv = styled.div`
     background-size: cover;
 `;
 
+const CommanderIconDiv = styled(IconDiv)`
+    background-image: url("./CommanderCost.png");
+`;
+
 const ValueDiv = styled.div`
     position: absolute;
     left: 11px;
@@ -23,12 +27,20 @@ const ValueDiv = styled.div`
     font-weight: bold;
 `;
 
+const CommanderValue = styled(ValueDiv)`
+    left: 10px;
+`;
+
 interface IconProps {
     value: string;
 }
 
 function CostIcon({ value }: IconProps): JSX.Element {
-    return (
+    return value === "C" ? (
+        <CommanderIconDiv>
+            <CommanderValue>{value}</CommanderValue>
+        </CommanderIconDiv>
+    ) : (
         <IconDiv>
             <ValueDiv>{value}</ValueDiv>
         </IconDiv>

@@ -12,7 +12,7 @@ const Card = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
-    text-align: center;
+    /* text-align: center; */
 `;
 
 const Content = styled.div`
@@ -63,6 +63,7 @@ const NameDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0 6px;
 `;
 

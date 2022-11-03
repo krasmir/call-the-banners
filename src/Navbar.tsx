@@ -21,9 +21,13 @@ const Li = styled.li`
 
 const StyledNavLink = styled(NavLink)`
     text-decoration: none;
-    color: white;
+    color: ${(props) => props.theme.colors.main};
     &.active {
-        color: red;
+        color: ${(props) => props.theme.colors.activeLink};
+        text-decoration: underline;
+    }
+    &:hover {
+        color: ${(props) => props.theme.colors.activeLink};
     }
 `;
 

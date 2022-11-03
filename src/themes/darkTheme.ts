@@ -6,6 +6,7 @@ const darkTheme: DefaultTheme = {
     colors: {
         main: "#cdcdcd",
         secondary: "#460f46",
+        activeLink: "lightblue",
     },
     button: {
         main: "#cdcdcd",

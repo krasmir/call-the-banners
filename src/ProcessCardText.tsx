@@ -55,11 +55,8 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
                 .replace(/\//g, "")
                 .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
                 .replace(/\*([^*]+)\*/g, "<em>$1</em>")
-                .replace(/^\n\n|^\r\n/g, "")
-                .replace(/\n\n/g, "<br />")
-                .replace(/^\n/g, "")
-                .replace(/\n•/g, "<br />•")
-                .replace(/\n/g, " ")
+                .replace(/^\n\n|^\r\n|^\n/g, "")
+                .replace(/\n/g, "<br />")
         );
 
     const processAttackText = (text: string): JSX.Element => {
@@ -112,7 +109,7 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
                             />
                         );
                     else if (text.includes("ATTACK"))
-                        return processAttackText(text);
+                        return <div key={ind}>{processAttackText(text)}</div>;
                     else
                         return (
                             <span

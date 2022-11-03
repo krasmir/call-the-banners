@@ -6,6 +6,7 @@ const Head = styled.header`
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
     padding: 0 20px;
     background-color: ${(props) => props.theme.bg};

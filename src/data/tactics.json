@@ -28,7 +28,7 @@
             "faction": "Lannister",
             "name": "Bribery",
             "deck": "Lannister Basic Deck",
-            "text": "**When a friendly NCU Claims a zone:**\n\nReplace that zone's effect with:\n\n*Target 1 enemy Combat Unit and attach\nthe Bribery card to them until they pass\na Morale Test, or are targeted by [MONEY]*.\n\nWhile attached, this unit Attacks\nusing its lowest Attack Die Value.",
+            "text": "**When a friendly NCU Claims a zone:**\n\nReplace that zone's effect with:\n\n*Target 1 enemy Combat Unit and attach the Bribery card to them until they pass a Morale Test, or are targeted by [MONEY]*.\n\nWhile attached, this unit Attacks\nusing its lowest Attack Die Value.",
             "remove": "",
             "id": "40104"
         },
@@ -696,7 +696,7 @@
             "faction": "Free Folk",
             "name": "Remorseless\nExamples",
             "deck": "The Weeper, Horrific Butcher",
-            "text": "**After a friendly unit completes\na Melee Attack:**\n\nIf this Attack destroyed an enemy rank,\ntarget 1 other enemy in Long Range of\nthat enemy. They become **Panicked**.\n\nIf this Attack destroyed the enemy, also\nplace 1 Corpse Pile with the following\nkeywords anywhere fully in Short Range\nand not overlapping other Terrain:\n\n• **Hindering**\n\n• **Grim Reminder:** Enemies suffer -1 to\nMorale Test rolls and +1 Wound from\nfailing Panic Tests while in Short Range.",
+            "text": "**After a friendly unit completes\na Melee Attack:**\n\nIf this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**.\nIf this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:\n• **Hindering**\n• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range.",
             "remove": "",
             "id": "40322"
         },
@@ -784,7 +784,7 @@
             "faction": "Free Folk",
             "name": "Hurl Boulder",
             "deck": "Mag the Mighty, Mag Mar Tun Doh Weg",
-            "text": "**When a friendly Giant Unit\nperforms an Action, before\nresolving that Action:**\n\nThat unit replaces that\nAction with performing\nthe following Ranged Attack:\n\n[ATTACK:LongRanged:Hurl Boulder:3+1]\n\nIf this Attack generates any Hits, instead\nof rolling Defense Dice, the Defender\nsuffers D3 Wounds, +1 Wound\nfor each remaining rank in that unit.",
+            "text": "**When a friendly Giant Unit\nperforms an Action, before\nresolving that Action:**\n\nThat unit replaces that\nAction with performing\nthe following Ranged Attack:\n\n[ATTACK:LongRanged:Hurl Boulder:3+1]If this Attack generates any Hits, instead\nof rolling Defense Dice, the Defender\nsuffers D3 Wounds, +1 Wound\nfor each remaining rank in that unit.",
             "remove": "",
             "id": "40333"
         },
@@ -1334,14 +1334,14 @@
             "faction": "Baratheon",
             "name": "Oath of Duty",
             "deck": "Baratheon Basic Deck",
-            "text": "**Start of any Turn:**\n\nTarget 1 friendly Combat Unit and\nattach this card to them until the\nend of the game. When a friendly\nInfantry or Cavalry unit is destroyed,\nplace 1 Order token on this card.\n\nWhile this card has a token,\nthe attached unit gains:\n\nThis unit suffers -1 Wound\nfrom failing Panic Tests.\n\nWhile you Control [CROWN], each\ntime this unit performs a\nMelee Attack, the Defender\ngains 1 Condition token.",
+            "text": "**Start of any Turn:**\n\nTarget 1 friendly Combat Unit and\nattach this card to them until the\nend of the game. When a friendly\nInfantry or Cavalry unit is destroyed,\nplace 1 Order token on this card.\nWhile this card has a token,\nthe attached unit gains:\n\nThis unit suffers -1 Wound\nfrom failing Panic Tests.\n\nWhile you Control [CROWN], each\ntime this unit performs a\nMelee Attack, the Defender\ngains 1 Condition token.",
             "remove": "",
             "id": "40607"
         },
         {
             "faction": "Baratheon",
             "name": "Inexplicable\nReturn",
-            "deck": "Renly Baratheon, Lord Paramount",
+            "deck": "Renly Baratheon, Lord Paramount of the Stormlands",
             "text": "**When a friendly NCU Claims a zone,\nreplace that zone's effect with:**\n\nChoose 1:\n\n*• Move 1 friendly Attachment from\n1 unit to another friendly unit without\nan Attachment in Long Range.*\n\n*• Attach 1 previously destroyed\nfriendly Attachment to 1 friendly\nCombat Unit without an Attachment\n(replacing a model as usual).*",
             "remove": "",
             "id": "40608"
@@ -1349,7 +1349,7 @@
         {
             "faction": "Baratheon",
             "name": "Hidden\nAffairs",
-            "deck": "Renly Baratheon, Lord Paramount",
+            "deck": "Renly Baratheon, Lord Paramount of the Stormlands",
             "text": "**After a friendly unit not containing\nRenly Baratheon is Attacked:**\n\nRenly's unit performs 1 Attack\nor Charge Action on the\nAttacker. This Attack rolls its\nhighest Attack Die Value. /\n**Start of a friendly Turn:**\n\nDraw 1 Tactics card.",
             "remove": "",
             "id": "40609"
@@ -1357,7 +1357,7 @@
         {
             "faction": "Baratheon",
             "name": "In His\nBrothers'\nShadows",
-            "deck": "Renly Baratheon, Lord Paramount",
+            "deck": "Renly Baratheon, Lord Paramount of the Stormlands",
             "text": "**When an enemy Commander's\nunit Activates:**\n\nChoose 1:\n\n• If that enemy is in Long Range of\nRenly's unit, that Commander loses all\nAbilities until the end of the Round.\n\n• Renly's unit performs\n1 Maneuver or Retreat Action. /\n**Start of any Turn:**\n\nIf the enemy Commander has\nbeen destroyed, Renly Baratheon's\nunit restores 2 Wounds.",
             "remove": "",
             "id": "40610"
@@ -1864,7 +1864,7 @@
             "faction": "Targaryen",
             "name": "Remorseless\nExamples",
             "deck": "Daenerys Targaryen, Queen of Meereen",
-            "text": "**After a friendly unit\ncompletes a Melee Attack:**\n\nIf this Attack destroyed an enemy rank,\ntarget 1 other enemy in Long Range of\nthat enemy. They become **Panicked**.\nIf this Attack destroyed the enemy, also\nplace 1 Corpse Pile with the following\nkeywords anywhere fully in Short Range\nand not overlapping other Terrain:\n\n• **Hindering**\n\n• **Grim Reminder:** Enemies suffer -1 to\nMorale Test rolls and +1 Wound from\nfailing Panic Tests while in Short Range.",
+            "text": "**After a friendly unit\ncompletes a Melee Attack:**\n\nIf this Attack destroyed an enemy rank, target 1 other enemy in Long Range of that enemy. They become **Panicked**.\nIf this Attack destroyed the enemy, also place 1 Corpse Pile with the following keywords anywhere fully in Short Range and not overlapping other Terrain:\n• **Hindering**\n• **Grim Reminder:** Enemies suffer -1 to Morale Test rolls and +1 Wound from failing Panic Tests while in Short Range.",
             "remove": "",
             "id": "40735"
         },
@@ -2114,7 +2114,7 @@
             "faction": "Greyjoy",
             "name": "Blacktyde\nResentment",
             "deck": "Baelor Blacktyde, Lord of Blacktyde",
-            "text": "**Start of any Turn:**\n\nAttach this card to a friendly\nCombat Unit. If this unit ever\nrestores Wounds, remove this card.\n\nWhen this unit is performing\na Melee Attack, for each of its\ndestroyed ranks, choose 1:\n\n• This Attack gains +1 to Hit\nand +1 Attack Die for each of\nthis unit's destroyed ranks.\n\n• This Attack gains **Vicious** and, if\nthe Defender fails their Panic Test,\nthey suffer +1 Wound for each\nof this unit's destroyed ranks.",
+            "text": "**Start of any Turn:**\n\nAttach this card to a friendly\nCombat Unit. If this unit ever\nrestores Wounds, remove this card.\n\nWhen this unit is performing\na Melee Attack, for each of its\ndestroyed ranks, choose 1:\n• This Attack gains +1 to Hit\nand +1 Attack Die for each of\nthis unit's destroyed ranks.\n• This Attack gains **Vicious** and, if\nthe Defender fails their Panic Test,\nthey suffer +1 Wound for each\nof this unit's destroyed ranks.",
             "remove": "",
             "id": "40827"
         },
@@ -2228,7 +2228,7 @@
             "faction": "Martell",
             "name": "Viper's Infamy",
             "deck": "Oberyn Martell, Prince of Dorne",
-            "text": "**When an enemy Combat Unit Activates:**\n\nThat enemy suffers -2[MOVEMENT] when Charging\nOberyn Martell's unit this Turn.\nIf that enemy fails a Charge this Turn,\nit becomes **Vulnerable**. /\n**Start of any Turn:**\n\nChoose 1:\n\n*• Draw 1 Tactics card.*\n\n*• If Oberyn Martell's unit is engaged,\nsearch your Tactics Deck or discard\npile for 1 Commander Tactics\ncard and add it to your hand.*",
+            "text": "**When an enemy Combat Unit Activates:**\n\nThat enemy suffers -2[MOVEMENT] when Charging\nOberyn Martell's unit this Turn.\nIf that enemy fails a Charge this Turn,\nit becomes **Vulnerable**. /\n**Start of any Turn:**\n\nChoose 1:\n*• Draw 1 Tactics card.*\n*• If Oberyn Martell's unit is engaged,\nsearch your Tactics Deck or discard\npile for 1 Commander Tactics\ncard and add it to your hand.*",
             "remove": "",
             "id": "40910"
         },

@@ -54,8 +54,7 @@ const CardText = styled.div`
     height: 70%;
     position: absolute;
     top: 26%;
-    padding: 0 4%;
-    font-size: 5px;
+    padding: 0 1%;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: black;
     border: 1px inset grey;

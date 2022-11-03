@@ -31,7 +31,6 @@ const NameDiv = styled.div`
     font-size: 11px;
     font-style: italic;
     font-weight: bold;
-    color: black;
     background-image: url("./Bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -103,13 +102,17 @@ function AttackBar({ attackProfile }: AttackBarProps): JSX.Element {
     const name = attack.replace(/\[\w+\]/, "");
 
     let typeCode = "";
+    let attackColor = "black";
     if (type !== null) {
         typeCode = type[0];
     }
     let icon = "";
-    if (typeCode === "M") icon = "Melee";
-    else if (typeCode.includes("R")) {
+    if (typeCode === "M") {
+        icon = "Melee";
+        attackColor = "navy";
+    } else if (typeCode.includes("R")) {
         icon = "Ranged";
+        attackColor = "maroon";
     }
 
     const [first, second, third] = dices.split(".");
@@ -117,7 +120,7 @@ function AttackBar({ attackProfile }: AttackBarProps): JSX.Element {
     return (
         <AttackDiv>
             <IMG alt={icon} src={`./Icon${icon}.png`} title={icon} />
-            <NameDiv>{name}</NameDiv>
+            <NameDiv style={{ color: attackColor }}>{name}</NameDiv>
             <ProfileDiv>
                 <ValueDiv>{toHitValue}</ValueDiv>
                 <DicesDiv>

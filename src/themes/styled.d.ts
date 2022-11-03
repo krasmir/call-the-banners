@@ -8,6 +8,7 @@ declare module "styled-components" {
         colors: {
             main: string;
             secondary: string;
+            activeLink: string;
         };
         button: {
             main: string;

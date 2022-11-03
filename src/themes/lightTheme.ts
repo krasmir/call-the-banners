@@ -7,10 +7,11 @@ const lightTheme: DefaultTheme = {
     colors: {
         main: "#3e3c3c;",
         secondary: "#98d8ff",
+        activeLink: "maroon",
     },
     button: {
-        main: "#030517",
-        secondary: "#dea5fd",
+        main: "#0013c4;",
+        secondary: "#cde3f0",
     },
 };
 
