@@ -3,6 +3,7 @@ import tactics from "./data/tactics.json";
 import FilteringOptionsForm from "./FilteringOptionsForm";
 import useCurrentFaction from "./hooks/useCurrentFaction";
 import useFilteringOptions from "./hooks/useFilteringOptions";
+import useSortingOptions from "./hooks/useSortingOptions";
 // import useFilteringOptions from "./hooks/useFilteringOptions";
 // import useSelectedUnits from "./hooks/useSelectedUnits";
 import SelectFactionForm from "./SelectFactionForm";
@@ -21,6 +22,7 @@ const TacticsDiv = styled.div`
 function Tactics(): JSX.Element {
     const currentFaction = useCurrentFaction();
     const filteringOptions = useFilteringOptions();
+    const sortingOptions = useSortingOptions();
 
     let allFactionTacticsCards = tactics[
         currentFaction as Faction
@@ -29,7 +31,8 @@ function Tactics(): JSX.Element {
     if (currentFaction === Faction.Baratheon) {
         const { factionCommanders } = getUnits(
             currentFaction,
-            filteringOptions
+            filteringOptions,
+            sortingOptions
         );
         const commanderNames = factionCommanders.map(({ name }) => name);
         allFactionTacticsCards = allFactionTacticsCards.filter(

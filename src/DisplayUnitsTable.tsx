@@ -13,11 +13,13 @@ import { v4 as uuid } from "uuid";
 import ShowUnitButton from "./ShowUnitButton";
 import useFilteringOptions from "./hooks/useFilteringOptions";
 import { getLoyalty } from "./utils/getLoyalty";
+import useSortingOptions from "./hooks/useSortingOptions";
 
 function DisplayUnitsTable(): JSX.Element {
     const currentFaction = useCurrentFaction();
 
     const filteringOptions = useFilteringOptions();
+    const sortingOptions = useSortingOptions();
 
     const {
         factionAttachments,
@@ -25,8 +27,13 @@ function DisplayUnitsTable(): JSX.Element {
         factionNCUS,
         factionCombatUnits,
     } = useMemo(
-        () => getUnits(currentFaction as Faction, filteringOptions),
-        [currentFaction, filteringOptions]
+        () =>
+            getUnits(
+                currentFaction as Faction,
+                filteringOptions,
+                sortingOptions
+            ),
+        [currentFaction, filteringOptions, sortingOptions]
     );
 
     const { selectedCharacters, selectedCommander, selectedLoyalty } =

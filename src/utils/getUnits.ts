@@ -13,6 +13,7 @@ import {
 import { FilteringOptionsState } from "../store/filteringOptions/filteringOptions";
 import { getLoyalty } from "./getLoyalty";
 import { Unit } from "../store/userArmy/userArmySlice";
+import { SortingOptionsState } from "../store/sortingOptions/sortingOptions";
 
 interface Units {
     factionCombatUnits: CombatUnit[];
@@ -23,9 +24,11 @@ interface Units {
 
 function getUnits(
     faction: Faction,
-    filteringOptions: FilteringOptionsState
+    filteringOptions: FilteringOptionsState,
+    sortingOptions: SortingOptionsState
 ): Units {
     const { includeNeutrals, loyaltyRenly, loyaltyStannis } = filteringOptions;
+    const { order, orderBy } = sortingOptions;
 
     let factionCombatUnits = (units as CombatUnits)[faction];
     let factionAttachments = (attachments as Attachments)[faction].filter(
@@ -55,9 +58,37 @@ function getUnits(
         factionNCUS = factionNCUS.concat(neutralNCUs);
     }
 
-    factionCombatUnits.sort((a, b) => +a.cost - +b.cost);
-    factionAttachments.sort((a, b) => +a.cost - +b.cost);
-    factionNCUS.sort((a, b) => +a.cost - +b.cost);
+    if (orderBy === "cost") {
+        console.log("sorting by cost");
+        interface Cost {
+            cost: string;
+        }
+        const sortByCost = (first: Cost, sec: Cost): number => {
+            return order === "asc"
+                ? +first.cost - +sec.cost
+                : +sec.cost - +first.cost;
+        };
+        factionCombatUnits.sort(sortByCost);
+        factionAttachments.sort(sortByCost);
+        factionNCUS.sort(sortByCost);
+    } else if (orderBy === "name") {
+        console.log("sorting by name");
+        console.log(order);
+        interface Name {
+            name: string;
+        }
+        const sortByName = (first: Name, sec: Name): number => {
+            if (order === "asc") {
+                return first.name > sec.name ? 1 : -1;
+            } else if (order === "desc") {
+                return first.name > sec.name ? -1 : 1;
+            } else return 0;
+        };
+        factionCombatUnits.sort(sortByName);
+        factionAttachments.sort(sortByName);
+        factionCommanders.sort(sortByName);
+        factionNCUS.sort(sortByName);
+    }
 
     if (faction === Faction.Baratheon && (!loyaltyRenly || !loyaltyStannis)) {
         const loyalties = [""];
