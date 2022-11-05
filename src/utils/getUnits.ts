@@ -10,6 +10,9 @@ import {
     Attachment,
     NCU,
 } from "../types";
+import { FilteringOptionsState } from "../store/filteringOptions/filteringOptions";
+import { getLoyalty } from "./getLoyalty";
+import { Unit } from "../store/userArmy/userArmySlice";
 
 interface Units {
     factionCombatUnits: CombatUnit[];
@@ -18,7 +21,12 @@ interface Units {
     factionNCUS: NCU[];
 }
 
-function getUnits(faction: Faction): Units {
+function getUnits(
+    faction: Faction,
+    filteringOptions: FilteringOptionsState
+): Units {
+    const { includeNeutrals, loyaltyRenly, loyaltyStannis } = filteringOptions;
+
     let factionCombatUnits = (units as CombatUnits)[faction];
     let factionAttachments = (attachments as Attachments)[faction].filter(
         ({ cost }) => cost !== "C"
@@ -29,7 +37,7 @@ function getUnits(faction: Faction): Units {
     let factionNCUS = (ncus as NCUS)[faction];
 
     // Free Folk can't have neutral units in their army
-    if (faction !== "Free Folk" && faction !== "Neutral") {
+    if (faction !== "Free Folk" && faction !== "Neutral" && includeNeutrals) {
         const neutralUnits = (units as CombatUnits).Neutral;
         factionCombatUnits = factionCombatUnits.concat(neutralUnits);
 
@@ -49,8 +57,26 @@ function getUnits(faction: Faction): Units {
 
     factionCombatUnits.sort((a, b) => +a.cost - +b.cost);
     factionAttachments.sort((a, b) => +a.cost - +b.cost);
-    factionAttachments.sort((a, b) => +a.cost - +b.cost);
     factionNCUS.sort((a, b) => +a.cost - +b.cost);
+
+    if (faction === Faction.Baratheon && (!loyaltyRenly || !loyaltyStannis)) {
+        const loyalties = [""];
+        if (loyaltyRenly) loyalties.push("Renly Baratheon");
+        if (loyaltyStannis) loyalties.push("Stannis Baratheon");
+
+        factionCombatUnits = factionCombatUnits.filter((unit) =>
+            loyalties.includes(getLoyalty(unit as Unit, "combatUnits"))
+        );
+        factionAttachments = factionAttachments.filter((unit) =>
+            loyalties.includes(getLoyalty(unit as Unit, "attachments"))
+        );
+        factionCommanders = factionCommanders.filter((unit) =>
+            loyalties.includes(getLoyalty(unit as Unit, "attachments"))
+        );
+        factionNCUS = factionNCUS.filter((unit) =>
+            loyalties.includes(getLoyalty(unit as Unit, "ncus"))
+        );
+    }
 
     return {
         factionAttachments,

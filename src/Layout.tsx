@@ -1,7 +1,8 @@
 import styled from "styled-components/macro";
 import Army from "./Army";
 import DisplayDeck from "./DisplayDeck";
-import DisplayUnits from "./DisplayUnitsTable";
+import DisplayUnitsTable from "./DisplayUnitsTable";
+import FilteringOptionsForm from "./FilteringOptionsForm";
 import SelectFactionForm from "./SelectFactionForm";
 
 const Div = styled.div`
@@ -48,6 +49,7 @@ function Layout(): JSX.Element {
         <Div>
             <FormDiv>
                 <SelectFactionForm />
+                <FilteringOptionsForm />
             </FormDiv>
             <DeckDiv>
                 <DisplayDeck />
@@ -56,7 +58,7 @@ function Layout(): JSX.Element {
                 <Army />
             </ArmyDiv>
             <UnitDiv>
-                <DisplayUnits />
+                <DisplayUnitsTable />
             </UnitDiv>
         </Div>
     );

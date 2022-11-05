@@ -45,6 +45,7 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
         "UNDYING",
         "OASIS",
         "LONGRANGE",
+        "WOUND",
     ];
 
     const newText = cardText
@@ -101,7 +102,8 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
                                 style={{
                                     filter: ` ${
                                         text !== "MOVEMENT" &&
-                                        text !== "LONGRANGE"
+                                        text !== "LONGRANGE" &&
+                                        text !== "WOUND"
                                             ? "invert(100%)"
                                             : "none"
                                     }`,
@@ -110,6 +112,16 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
                         );
                     else if (text.includes("ATTACK"))
                         return <div key={ind}>{processAttackText(text)}</div>;
+                    else if (text.includes("SKILL"))
+                        return (
+                            <img
+                                key={ind}
+                                style={{ height: "60px" }}
+                                alt="Venom"
+                                src={`./IconVenom.png`}
+                                title="Venom"
+                            />
+                        );
                     else
                         return (
                             <span

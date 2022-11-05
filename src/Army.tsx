@@ -2,8 +2,10 @@ import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components/macro";
 import { Button } from "./Button";
 import useCurrentFaction from "./hooks/useCurrentFaction";
+import useSelectedUnits from "./hooks/useSelectedUnits";
 import { RootState } from "./store";
 import { deleteUnit, UnitType } from "./store/userArmy/userArmySlice";
+import { Faction } from "./types";
 
 const Units = styled.div`
     width: 90%;
@@ -48,6 +50,7 @@ const PointsSpan = styled.span`
 
 export default function Army(): JSX.Element {
     const currentFaction = useCurrentFaction();
+    const { selectedLoyalty } = useSelectedUnits(currentFaction as Faction);
     const { combatUnits, ncus, attachments } = useSelector(
         (state: RootState) => state.userArmy[currentFaction]
     );
@@ -63,6 +66,9 @@ export default function Army(): JSX.Element {
     return (
         <Units>
             <H2>{currentFaction} Army</H2>
+            {currentFaction === Faction.Baratheon && selectedLoyalty !== "" && (
+                <H3>Loyalty - {selectedLoyalty}</H3>
+            )}
             <Div>
                 <H3>Combat Units</H3>
                 <ul>

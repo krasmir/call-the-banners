@@ -6,6 +6,7 @@ interface SelectedUnits {
     selectedCommander: ArmyAttachment | undefined;
     selectedCombatUnits: Map<string, ArmyCombatUnit[]> | undefined;
     selectedCharacters: Set<string>;
+    selectedLoyalty: string;
 }
 
 function useSelectedUnits(faction: Faction): SelectedUnits {
@@ -14,12 +15,27 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
             state.userArmy[faction as keyof RootState["userArmy"]]
     );
 
+    let selectedLoyalty = "";
+    if (faction === Faction.Baratheon) {
+        const getLoyalty = (str: string): string => {
+            return (str.match(/(?<=Loyalty: )\w+ \w+/i) ?? [""])[0];
+        };
+        const loyalty = [
+            ...attachments.map(({ abilities }) => abilities),
+            ...combatUnits.map(({ abilities }) => abilities),
+            ...ncus.map(({ names }) => names),
+        ]
+            .map((str) => getLoyalty(str))
+            .filter((str) => str !== "");
+        if (loyalty.length > 0) selectedLoyalty = loyalty[0];
+    }
+
     const attachmentCharacters = attachments?.map(
         ({ character }) => character
     ) ?? [""];
     const unitsCharacters = combatUnits?.reduce(
         (arr, { character }) => {
-            return character.includes(", ")
+            return character.includes(", ") // unit may include several characters seperated by comma
                 ? [...arr, ...character.split(", ")]
                 : [...arr, character];
         },
@@ -50,6 +66,7 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
         selectedCombatUnits,
         selectedCharacters,
         selectedCommander,
+        selectedLoyalty,
     };
 }
 

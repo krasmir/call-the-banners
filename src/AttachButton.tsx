@@ -8,6 +8,7 @@ import { Faction } from "./types";
 import { v4 as uuid } from "uuid";
 import useCurrentFaction from "./hooks/useCurrentFaction";
 import useSelectedUnits from "./hooks/useSelectedUnits";
+// import { getLoyalty } from "./utils/getLoyalty";
 
 const LI = styled.li`
     list-style: none;
@@ -26,6 +27,7 @@ function AttachButton({ attachment }: AttachButtonProps): JSX.Element {
     const { selectedCombatUnits } = useSelectedUnits(currentFaction as Faction);
 
     const handleAttachToUnit = (attachment: Unit): void => {
+        // console.log(getLoyalty(attachment, "attachments"));
         dispatch(
             addUnit({
                 unit: attachment,

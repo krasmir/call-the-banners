@@ -11,21 +11,37 @@ import { Button } from "./Button";
 import AttachButton from "./AttachButton";
 import { v4 as uuid } from "uuid";
 import ShowUnitButton from "./ShowUnitButton";
+import useFilteringOptions from "./hooks/useFilteringOptions";
+import { getLoyalty } from "./utils/getLoyalty";
 
 function DisplayUnitsTable(): JSX.Element {
     const currentFaction = useCurrentFaction();
+
+    const filteringOptions = useFilteringOptions();
+
     const {
         factionAttachments,
         factionCommanders,
         factionNCUS,
         factionCombatUnits,
-    } = useMemo(() => getUnits(currentFaction as Faction), [currentFaction]);
-
-    const { selectedCharacters, selectedCommander } = useSelectedUnits(
-        currentFaction as Faction
+    } = useMemo(
+        () => getUnits(currentFaction as Faction, filteringOptions),
+        [currentFaction, filteringOptions]
     );
 
-    const checkIfUnitCanBeChosen = (unit: Unit, character: string): boolean => {
+    const { selectedCharacters, selectedCommander, selectedLoyalty } =
+        useSelectedUnits(currentFaction as Faction);
+
+    const checkIfUnitCanBeChosen = (
+        unit: Unit,
+        character: string,
+        type: UnitType
+    ): boolean => {
+        if (currentFaction === Faction.Baratheon && selectedLoyalty !== "") {
+            const unitLoyalty = getLoyalty(unit, type);
+            if (unitLoyalty !== "" && unitLoyalty !== selectedLoyalty)
+                return false;
+        }
         if (unit.cost === "C" && selectedCommander !== undefined) return false;
         if (character.includes(", ")) {
             const characterArr = character.split(", ");
@@ -47,7 +63,8 @@ function DisplayUnitsTable(): JSX.Element {
                         unit={unit}
                         canUnitBeChosen={checkIfUnitCanBeChosen(
                             unit,
-                            unit.character
+                            unit.character,
+                            type
                         )}
                         addUnitButton={
                             type === "attachments" ? (

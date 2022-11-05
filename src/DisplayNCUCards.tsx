@@ -1,9 +1,13 @@
+import { useMemo } from "react";
 import styled from "styled-components/macro";
-import ncus from "./data/ncus.json";
+import FilteringOptionsForm from "./FilteringOptionsForm";
+// import ncus from "./data/ncus.json";
 import useCurrentFaction from "./hooks/useCurrentFaction";
+import useFilteringOptions from "./hooks/useFilteringOptions";
 import NCUCard from "./NCUCard";
 import SelectFactionForm from "./SelectFactionForm";
-import { Faction, NCU } from "./types";
+import { Faction } from "./types";
+import getUnits from "./utils/getUnits";
 
 const NCUDiv = styled.div`
     margin: 20px 10px;
@@ -15,11 +19,19 @@ const NCUDiv = styled.div`
 
 function DisplayAttachmentCards(): JSX.Element {
     const currentFaction = useCurrentFaction();
-    const allFactionAttachmentCards = ncus[currentFaction as Faction] as NCU[];
+    const filteringOptions = useFilteringOptions();
+
+    const { factionNCUS } = useMemo(
+        () => getUnits(currentFaction as Faction, filteringOptions),
+        [currentFaction, filteringOptions]
+    );
+    // const allFactionAttachmentCards = ncus[currentFaction as Faction] as NCU[];
+
     return (
         <NCUDiv>
             <SelectFactionForm></SelectFactionForm>
-            {allFactionAttachmentCards.map((ncu) => (
+            <FilteringOptionsForm></FilteringOptionsForm>
+            {factionNCUS.map((ncu) => (
                 <NCUCard key={ncu.id} ncu={ncu} />
             ))}
         </NCUDiv>

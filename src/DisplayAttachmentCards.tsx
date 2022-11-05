@@ -1,9 +1,13 @@
+import { useMemo } from "react";
 import styled from "styled-components/macro";
 import AttachmentCard from "./AttachmentCard";
-import attachments from "./data/attachments.json";
+// import attachments from "./data/attachments.json";
 import useCurrentFaction from "./hooks/useCurrentFaction";
+import useFilteringOptions from "./hooks/useFilteringOptions";
 import SelectFactionForm from "./SelectFactionForm";
-import { Attachment, Faction } from "./types";
+import { Faction } from "./types";
+import getUnits from "./utils/getUnits";
+import FilteringOptionsForm from "./FilteringOptionsForm";
 
 const AttachmentDiv = styled.div`
     margin: 20px 10px;
@@ -15,12 +19,23 @@ const AttachmentDiv = styled.div`
 
 function DisplayAttachmentCards(): JSX.Element {
     const currentFaction = useCurrentFaction();
-    const allFactionAttachmentCards = attachments[
-        currentFaction as Faction
-    ] as Attachment[];
+
+    const filteringOptions = useFilteringOptions();
+
+    const { factionCommanders, factionAttachments } = useMemo(
+        () => getUnits(currentFaction as Faction, filteringOptions),
+        [currentFaction, filteringOptions]
+    );
+
+    const allFactionAttachmentCards = [
+        ...factionCommanders,
+        ...factionAttachments,
+    ];
+
     return (
         <AttachmentDiv>
             <SelectFactionForm></SelectFactionForm>
+            <FilteringOptionsForm></FilteringOptionsForm>
             {allFactionAttachmentCards.map((attachment) => (
                 <AttachmentCard key={attachment.id} attachment={attachment} />
             ))}
