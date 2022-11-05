@@ -1,9 +1,7 @@
-import { useMemo } from "react";
 import { useDispatch } from "react-redux";
 import { addUnit, Unit, UnitType } from "./store/userArmy/userArmySlice";
 import UnitsTable from "./UnitsTable";
 import DisplayUnitsTableRow from "./DisplayUnitsTableRow";
-import getUnits from "./utils/getUnits";
 import useCurrentFaction from "./hooks/useCurrentFaction";
 import useSelectedUnits from "./hooks/useSelectedUnits";
 import { Faction } from "./types";
@@ -11,30 +9,18 @@ import { Button } from "./Button";
 import AttachButton from "./AttachButton";
 import { v4 as uuid } from "uuid";
 import ShowUnitButton from "./ShowUnitButton";
-import useFilteringOptions from "./hooks/useFilteringOptions";
 import { getLoyalty } from "./utils/getLoyalty";
-import useSortingOptions from "./hooks/useSortingOptions";
+import useGetUnits from "./hooks/useGetUnits";
 
 function DisplayUnitsTable(): JSX.Element {
     const currentFaction = useCurrentFaction();
-
-    const filteringOptions = useFilteringOptions();
-    const sortingOptions = useSortingOptions();
 
     const {
         factionAttachments,
         factionCommanders,
         factionNCUS,
         factionCombatUnits,
-    } = useMemo(
-        () =>
-            getUnits(
-                currentFaction as Faction,
-                filteringOptions,
-                sortingOptions
-            ),
-        [currentFaction, filteringOptions, sortingOptions]
-    );
+    } = useGetUnits();
 
     const { selectedCharacters, selectedCommander, selectedLoyalty } =
         useSelectedUnits(currentFaction as Faction);

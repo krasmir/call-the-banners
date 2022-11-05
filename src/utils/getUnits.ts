@@ -15,7 +15,7 @@ import { getLoyalty } from "./getLoyalty";
 import { Unit } from "../store/userArmy/userArmySlice";
 import { SortingOptionsState } from "../store/sortingOptions/sortingOptions";
 
-interface Units {
+export interface Units {
     factionCombatUnits: CombatUnit[];
     factionAttachments: Attachment[];
     factionCommanders: Attachment[];

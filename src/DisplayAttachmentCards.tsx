@@ -1,15 +1,9 @@
-import { useMemo } from "react";
 import styled from "styled-components/macro";
 import AttachmentCard from "./AttachmentCard";
-// import attachments from "./data/attachments.json";
-import useCurrentFaction from "./hooks/useCurrentFaction";
-import useFilteringOptions from "./hooks/useFilteringOptions";
 import SelectFactionForm from "./SelectFactionForm";
-import { Faction } from "./types";
-import getUnits from "./utils/getUnits";
 import FilteringOptionsForm from "./FilteringOptionsForm";
-import useSortingOptions from "./hooks/useSortingOptions";
 import SortingOptionsForm from "./SortingOptionsForm";
+import useGetUnits from "./hooks/useGetUnits";
 
 const AttachmentDiv = styled.div`
     margin: 20px 10px;
@@ -20,20 +14,7 @@ const AttachmentDiv = styled.div`
 `;
 
 function DisplayAttachmentCards(): JSX.Element {
-    const currentFaction = useCurrentFaction();
-
-    const filteringOptions = useFilteringOptions();
-    const sortingOptions = useSortingOptions();
-
-    const { factionCommanders, factionAttachments } = useMemo(
-        () =>
-            getUnits(
-                currentFaction as Faction,
-                filteringOptions,
-                sortingOptions
-            ),
-        [currentFaction, filteringOptions, sortingOptions]
-    );
+    const { factionCommanders, factionAttachments } = useGetUnits();
 
     const allFactionAttachmentCards = [
         ...factionCommanders,
