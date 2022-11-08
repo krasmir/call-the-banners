@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const AttackDiv = styled.div`
     height: 78px;
-    width: 160px;
+    width: 168px;
     position: relative;
     /* margin: 0 auto; */
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
@@ -15,13 +15,23 @@ const IMG = styled.img`
     z-index: 2;
 `;
 
+const RangeIcon = styled.img`
+    height: 24px;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 40px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8))
+        drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.8));
+`;
+
 const NameDiv = styled.div`
     position: absolute;
     top: 6px;
     left: 56px;
-    width: 100px;
+    width: 108px;
     height: 40px;
-    padding: 0 3px;
+    padding: 0 6px;
     border: 2px inset grey;
     text-align: center;
     text-transform: uppercase;
@@ -72,14 +82,14 @@ const DicesDiv = styled.div`
     justify-content: flex-start;
     align-items: center;
     height: 28px;
-    width: 88px;
+    width: 96px;
     border: 2px inset grey;
     background-color: silver;
 `;
 
 const DiceValue = styled.div`
     background-color: green;
-    margin: 2px;
+    margin: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +112,7 @@ function AttackBar({ attackProfile }: AttackBarProps): JSX.Element {
     const name = attack.replace(/\[\w+\]/, "");
 
     let typeCode = "";
+    let range = "";
     let attackColor = "black";
     if (type !== null) {
         typeCode = type[0];
@@ -112,6 +123,12 @@ function AttackBar({ attackProfile }: AttackBarProps): JSX.Element {
         attackColor = "navy";
     } else if (typeCode.includes("R")) {
         icon = "Ranged";
+        range =
+            typeCode[1] === "S"
+                ? "RangeShort"
+                : typeCode[1] === "L"
+                ? "RangeLong"
+                : "";
         attackColor = "maroon";
     }
 
@@ -120,6 +137,9 @@ function AttackBar({ attackProfile }: AttackBarProps): JSX.Element {
     return (
         <AttackDiv>
             <IMG alt={icon} src={`./Icon${icon}.png`} title={icon} />
+            {range !== "" && (
+                <RangeIcon alt={range} src={`./${range}.png`} title={range} />
+            )}
             <NameDiv style={{ color: attackColor }}>{name}</NameDiv>
             <ProfileDiv>
                 <ValueDiv>{toHitValue}</ValueDiv>
