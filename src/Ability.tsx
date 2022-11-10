@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 import ProcessCardText from "./ProcessCardText";
 import { Skill } from "./types";
+import { FactionColors, factionColors } from "./utils/factionColors";
 
 const IconsDiv = styled.div`
     position: absolute;
@@ -45,9 +46,7 @@ const AbilityDiv = styled.div`
     margin-left: auto;
     margin-bottom: 10px;
     padding: 0 12px 4px;
-    /* font-family: Georgia, "Times New Roman", Times, serif; */
     font-size: 12px;
-    /* color: #2f2f2f; */
     color: #121212;
     border: 3px inset grey;
     border-right: none;
@@ -61,13 +60,22 @@ const NameDiv = styled.div`
     padding-top: 6px;
     width: 100%;
     font-size: 12px;
+    font-weight: bold;
     text-transform: uppercase;
-    color: maroon;
 `;
 
-interface AbilityProps extends Skill {}
+interface AbilityProps extends Skill {
+    factionColor?: string;
+}
 
-function Ability({ description, icons, name }: AbilityProps): JSX.Element {
+function Ability({
+    description,
+    icons,
+    name,
+    factionColor,
+}: AbilityProps): JSX.Element {
+    const color = factionColors[factionColor as keyof FactionColors];
+
     const Icons: { [key: string]: string } = {
         M: "Melee",
         R: "Ranged",
@@ -110,7 +118,7 @@ function Ability({ description, icons, name }: AbilityProps): JSX.Element {
                         );
                 })}
             </IconsDiv>
-            <NameDiv>{name}</NameDiv>
+            <NameDiv style={{ color }}>{name}</NameDiv>
             <ProcessCardText cardText={description} />
         </AbilityDiv>
     );

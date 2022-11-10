@@ -151,7 +151,10 @@ function NCUCard({ ncu }: { ncu: NCU }): JSX.Element {
                 </TitleDiv>
 
                 <CardText>
-                    <ProcessCardText cardText={abilities} />
+                    <ProcessCardText
+                        factionColor={faction}
+                        cardText={abilities}
+                    />
                 </CardText>
             </Content>
         </Card>

@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import AttackBar from "./AttackBar";
+import { factionColors, FactionColors } from "./utils/factionColors";
 
 const H4 = styled.h4`
     font-weight: bold;
@@ -23,7 +24,16 @@ const CardTextAttackDiv = styled.div`
     margin: 0 auto;
 `;
 
-function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
+interface ProcessCardTextProps {
+    cardText: string;
+    factionColor?: string;
+}
+
+function ProcessCardText({
+    cardText,
+    factionColor,
+}: ProcessCardTextProps): JSX.Element {
+    const color = factionColors[factionColor as keyof FactionColors];
     let firstTrigger: string = "";
     let secondTrigger: string | undefined;
 
@@ -136,12 +146,12 @@ function ProcessCardText({ cardText }: { cardText: string }): JSX.Element {
 
     return (
         <>
-            <H4>{processText(firstTrigger)}</H4>
+            <H4 style={{ color }}>{processText(firstTrigger)}</H4>
             <Text>{processText(newText[0])}</Text>
             {secondTrigger !== undefined && (
                 <>
                     <hr />
-                    <H4>{processText(secondTrigger)}</H4>
+                    <H4 style={{ color }}>{processText(secondTrigger)}</H4>
                     {newText[1] !== undefined && (
                         <Text>{processText(newText[1])}</Text>
                     )}

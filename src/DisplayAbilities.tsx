@@ -1,7 +1,15 @@
 import Ability from "./Ability";
 import getSkill from "./utils/getSkill";
 
-function DisplayAbilities({ abilities }: { abilities: string }): JSX.Element {
+interface DisplayAbilitiesProps {
+    abilities: string;
+    faction?: string;
+}
+
+function DisplayAbilities({
+    abilities,
+    faction,
+}: DisplayAbilitiesProps): JSX.Element {
     let abilitiesArr = abilities.split(/\s*\/\s*/);
     abilitiesArr = abilitiesArr.filter(
         (ability) =>
@@ -26,6 +34,7 @@ function DisplayAbilities({ abilities }: { abilities: string }): JSX.Element {
                             name={name}
                             description={description}
                             icons={icons}
+                            factionColor={faction}
                         ></Ability>
                     );
                 } else return null;

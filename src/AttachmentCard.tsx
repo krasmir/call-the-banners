@@ -12,7 +12,6 @@ const Card = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
-    /* text-align: center; */
 `;
 
 const Content = styled.div`
@@ -133,7 +132,7 @@ function AttachmentCard({
                 </TitleDiv>
 
                 <CardText>
-                    <DisplayAbilities abilities={abilities} />
+                    <DisplayAbilities faction={faction} abilities={abilities} />
                 </CardText>
             </Content>
         </Card>

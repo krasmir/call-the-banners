@@ -95,7 +95,10 @@ function CombatUnitCard({
                 </TypeNameDiv>
             </InfoDiv>
             <SkillsDiv>
-                <DisplayAbilities abilities={combatUnit.abilities} />
+                <DisplayAbilities
+                    faction={combatUnit.faction}
+                    abilities={combatUnit.abilities}
+                />
             </SkillsDiv>
         </UnitCard>
     );

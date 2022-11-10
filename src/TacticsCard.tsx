@@ -66,7 +66,7 @@ const CardText = styled.div`
 `;
 
 function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
-    const { name, text, deck } = card;
+    const { name, text, deck, faction } = card;
 
     return (
         <Card
@@ -85,7 +85,7 @@ function TacticsCard({ card }: { card: TacticCard }): JSX.Element {
             {!deck.includes("Basic Deck") && <Deck>{deck}</Deck>}
 
             <CardText>
-                <ProcessCardText cardText={text} />
+                <ProcessCardText factionColor={faction} cardText={text} />
             </CardText>
         </Card>
     );
