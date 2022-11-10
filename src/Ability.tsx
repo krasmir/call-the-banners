@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import MoraleVertIcon from "./MoraleVertIcon";
 import ProcessCardText from "./ProcessCardText";
 import { Skill } from "./types";
 import { FactionColors, factionColors } from "./utils/factionColors";
@@ -42,7 +43,6 @@ const IMG = styled.img`
 const AbilityDiv = styled.div`
     width: 90%;
     position: relative;
-    right: 0;
     margin-left: auto;
     margin-bottom: 10px;
     padding: 0 12px 4px;
@@ -100,6 +100,7 @@ function Ability({
             <IconsDiv>
                 {iconsArr.map((val, ind) => {
                     if (val === "") return null;
+                    if (val === "Morale5") return <MoraleVertIcon key={ind} />;
                     const icon = Icons[val];
                     if (icon === "Wound" && numOfWounds !== "") {
                         return (
