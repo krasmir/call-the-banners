@@ -12,6 +12,11 @@ const Text = styled.div`
     margin-bottom: 0;
 `;
 
+const HR = styled.hr`
+    border: none;
+    border-top: 1px solid dimgrey;
+`;
+
 const IMG = styled.img`
     height: 1.2em;
     transform: translateY(20%);
@@ -150,7 +155,7 @@ function ProcessCardText({
             <Text>{processText(newText[0])}</Text>
             {secondTrigger !== undefined && (
                 <>
-                    <hr />
+                    <HR />
                     <H4 style={{ color }}>{processText(secondTrigger)}</H4>
                     {newText[1] !== undefined && (
                         <Text>{processText(newText[1])}</Text>
