@@ -4,7 +4,6 @@ const AttackDiv = styled.div`
     height: 78px;
     width: 168px;
     position: relative;
-    /* margin: 0 auto; */
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
 `;
 

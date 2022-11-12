@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const IconDiv = styled.div`
     height: 64px;
-    width: 128px;
+    width: 110px;
     position: relative;
 `;
 
