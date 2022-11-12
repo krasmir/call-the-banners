@@ -15,6 +15,7 @@ function useSelectedUnits(faction: Faction): SelectedUnits {
             state.userArmy[faction as keyof RootState["userArmy"]]
     );
 
+    // check and set Loyalty of Baratheon Faction
     let selectedLoyalty = "";
     if (faction === Faction.Baratheon) {
         const getLoyalty = (str: string): string => {
