@@ -59,7 +59,6 @@ function getUnits(
     }
 
     if (orderBy === "cost") {
-        console.log("sorting by cost");
         interface Cost {
             cost: string;
         }
@@ -72,8 +71,6 @@ function getUnits(
         factionAttachments.sort(sortByCost);
         factionNCUS.sort(sortByCost);
     } else if (orderBy === "name") {
-        console.log("sorting by name");
-        console.log(order);
         interface Name {
             name: string;
         }

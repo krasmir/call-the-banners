@@ -30,16 +30,35 @@ function DisplayUnitsTable(): JSX.Element {
         character: string,
         type: UnitType
     ): boolean => {
+        if (selectedCharacters.has(character)) return false;
+
+        if (character.includes(", ")) {
+            const characterArr = character.split(", ");
+            return !characterArr.some((char) => selectedCharacters.has(char));
+        }
+
+        if (unit.cost === "C" && selectedCommander !== undefined) return false;
+
         if (currentFaction === Faction.Baratheon && selectedLoyalty !== "") {
             const unitLoyalty = getLoyalty(unit, type);
             if (unitLoyalty !== "" && unitLoyalty !== selectedLoyalty)
                 return false;
         }
-        if (unit.cost === "C" && selectedCommander !== undefined) return false;
-        if (character.includes(", ")) {
-            const characterArr = character.split(", ");
-            return !characterArr.some((char) => selectedCharacters.has(char));
-        } else return !selectedCharacters.has(character);
+        if (unit.abilities?.includes("Must be attached to ")) {
+            const neededCharacter = (unit.abilities.match(
+                /(?<=Must be attached to ').*(?=')/
+            ) ?? [""])[0];
+            if (selectedCharacters.has(neededCharacter)) return true;
+            return false;
+        }
+        if (unit.requirementText?.includes("May only be fielded ")) {
+            const neededCharacter = (unit.requirementText.match(
+                /(?<=May only be fielded in an army including )[^.]*(?=.)/
+            ) ?? [""])[0];
+            if (selectedCharacters.has(neededCharacter)) return true;
+            return false;
+        }
+        return true;
     };
 
     const dispatch = useDispatch();

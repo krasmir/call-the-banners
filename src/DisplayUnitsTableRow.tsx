@@ -11,7 +11,6 @@ const Type = styled.div`
 `;
 
 interface DisplayUnitsTableRowProps {
-    // children?: React.ReactNode;
     unit: CombatUnit | Attachment | NCU;
     canUnitBeChosen: boolean;
     addUnitButton: React.ReactNode;
@@ -19,7 +18,6 @@ interface DisplayUnitsTableRowProps {
 }
 
 function DisplayUnitsTableRow({
-    // children,
     unit,
     canUnitBeChosen,
     addUnitButton,
