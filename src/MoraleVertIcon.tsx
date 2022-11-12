@@ -21,7 +21,7 @@ const ValueDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: bold;
     width: 30px;
     height: 30px;
@@ -36,7 +36,7 @@ function MoraleVertIcon(): JSX.Element {
     return (
         <IconDiv>
             <IMG alt="Morale" src="./IconMorale.png" title="Morale" />
-            <ValueDiv>{5}</ValueDiv>
+            <ValueDiv>{"5+"}</ValueDiv>
         </IconDiv>
     );
 }

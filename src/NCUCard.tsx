@@ -145,7 +145,6 @@ function NCUCard({ ncu }: { ncu: NCU }): JSX.Element {
                     </AttType>
                     <NameDiv>
                         <H3>{ncuName}</H3>
-                        <br />
                         {ncuTitle !== undefined && <Title>{ncuTitle}</Title>}
                     </NameDiv>
                 </TitleDiv>

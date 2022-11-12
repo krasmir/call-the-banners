@@ -4,6 +4,7 @@ import DisplayDeck from "./DisplayDeck";
 import DisplayUnitsTable from "./DisplayUnitsTable";
 import FilteringOptionsForm from "./FilteringOptionsForm";
 import SelectFactionForm from "./SelectFactionForm";
+import SortingOptionsForm from "./SortingOptionsForm";
 
 const Div = styled.div`
     width: 100vw;
@@ -22,6 +23,8 @@ const Div = styled.div`
 
 const FormDiv = styled.div`
     grid-area: form;
+    display: flex;
+    flex-wrap: wrap;
 `;
 
 const DeckDiv = styled.div`
@@ -50,6 +53,7 @@ function Layout(): JSX.Element {
             <FormDiv>
                 <SelectFactionForm />
                 <FilteringOptionsForm />
+                <SortingOptionsForm />
             </FormDiv>
             <DeckDiv>
                 <DisplayDeck />

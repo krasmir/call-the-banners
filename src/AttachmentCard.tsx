@@ -126,7 +126,6 @@ function AttachmentCard({
                     </AttType>
                     <NameDiv>
                         <H3>{attName}</H3>
-                        <br />
                         {attTitle !== undefined && <Title>{attTitle}</Title>}
                     </NameDiv>
                 </TitleDiv>
